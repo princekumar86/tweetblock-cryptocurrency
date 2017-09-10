@@ -1,12 +1,17 @@
 .dashboardcol {
-    min-height: 86vh;
+    min-height: 45vh;
     border-right: 1px solid #cecece;
 }
-.dashboardcol h5 {
+.dashboardcol .dashheading {
     text-align: center;
     background-color: #f1f1f1;
     padding-top: 5px;
     padding-bottom: 5px;
+    font-weight: bold;
+}
+.dashheading i {
+    padding-right: 10px;
+    color: #a4a4a4;
 }
 .iconcolumns a {
     color: #cecece;
