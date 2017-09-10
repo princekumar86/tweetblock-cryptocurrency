@@ -1,8 +1,24 @@
-<h1>Tweet Block</h1>
+<div class="container-fluid">
+  <!-- Content here -->
+  <nav class="navbar navbar-expand-lg  navbar-dark bg-primary">
+      <a class="navbar-brand" href="#">TweetBlock</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-item nav-link active" routerLink="/home" routerLinkActive="active">Home</a>
+          <a class="nav-item nav-link" routerLink="/dashboard" routerLinkActive="active">Dashboard</a>
+          <a class="nav-item nav-link" href="#">About Us</a>
+          <a class="nav-item nav-link" href="#">Latest News</a>
+          <a class="nav-item nav-link" href="#">Blog</a>
+          <a class="nav-item nav-link" href="#">Contact us</a>
+        </div>
+      </div>
 
-<h3>Angular Router Menu Links</h3>
-<nav>
-    <a routerLink="/home" routerLinkActive="active">Home</a>
-  <a routerLink="/dashboard" routerLinkActive="active">Dashboard</a>
-</nav>
-<router-outlet></router-outlet>
+      <form class="form-inline">
+          <a class="navbar-brand" href="#">Login</a>
+        </form>
+    </nav>
+  <router-outlet></router-outlet>
+</div>

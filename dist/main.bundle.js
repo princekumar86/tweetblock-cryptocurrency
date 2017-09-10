@@ -1,68 +1,31 @@
 webpackJsonp([1,4],{
 
-/***/ 152:
-/***/ (function(module, exports, __webpack_require__) {
+/***/ 100:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(16)();
-// imports
-
-
-// module
-exports.push([module.i, "", ""]);
-
-// exports
-
-
-/*** EXPORTS FROM exports-loader ***/
-module.exports = module.exports.toString();
-
-/***/ }),
-
-/***/ 153:
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__(16)();
-// imports
-
-
-// module
-exports.push([module.i, "", ""]);
-
-// exports
-
-
-/*** EXPORTS FROM exports-loader ***/
-module.exports = module.exports.toString();
-
-/***/ }),
-
-/***/ 154:
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__(16)();
-// imports
-
-
-// module
-exports.push([module.i, "", ""]);
-
-// exports
-
-
-/*** EXPORTS FROM exports-loader ***/
-module.exports = module.exports.toString();
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return environment; });
+// The file contents for the current environment will overwrite these during build.
+// The build system defaults to the dev environment which uses `environment.ts`, but if you do
+// `ng build --env=prod` then `environment.prod.ts` will be used instead.
+// The list of which env maps to which file can be found in `.angular-cli.json`.
+// The file contents for the current environment will overwrite these during build.
+var environment = {
+    production: false
+};
+//# sourceMappingURL=environment.js.map
 
 /***/ }),
 
 /***/ 155:
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(16)();
+exports = module.exports = __webpack_require__(15)();
 // imports
 
 
 // module
-exports.push([module.i, "", ""]);
+exports.push([module.i, ".container-fluid {\r\n   padding: 0px;\r\n}\r\n", ""]);
 
 // exports
 
@@ -73,37 +36,91 @@ module.exports = module.exports.toString();
 /***/ }),
 
 /***/ 156:
-/***/ (function(module, exports) {
+/***/ (function(module, exports, __webpack_require__) {
 
-module.exports = "<h1>Tweet Block</h1>\n\n<h3>Angular Router Menu Links</h3>\n<nav>\n    <a routerLink=\"/home\" routerLinkActive=\"active\">Home</a>\n  <a routerLink=\"/dashboard\" routerLinkActive=\"active\">Dashboard</a>\n</nav>\n<router-outlet></router-outlet>"
+exports = module.exports = __webpack_require__(15)();
+// imports
+
+
+// module
+exports.push([module.i, "", ""]);
+
+// exports
+
+
+/*** EXPORTS FROM exports-loader ***/
+module.exports = module.exports.toString();
 
 /***/ }),
 
 /***/ 157:
-/***/ (function(module, exports) {
+/***/ (function(module, exports, __webpack_require__) {
 
-module.exports = "<p>\n  dashboard works!\n</p>\n"
+exports = module.exports = __webpack_require__(15)();
+// imports
+
+
+// module
+exports.push([module.i, "", ""]);
+
+// exports
+
+
+/*** EXPORTS FROM exports-loader ***/
+module.exports = module.exports.toString();
 
 /***/ }),
 
 /***/ 158:
-/***/ (function(module, exports) {
+/***/ (function(module, exports, __webpack_require__) {
 
-module.exports = "<h2> Cryptocurrency News all around the world</h2>\n\n<h3>Latest tweets ::</h3>\n\n<h3>MongoDB is loading users!</h3>\n<ul>\n  <li *ngFor=\"let user of users\">{{ user.name }}</li>\n</ul>"
+exports = module.exports = __webpack_require__(15)();
+// imports
+
+
+// module
+exports.push([module.i, "", ""]);
+
+// exports
+
+
+/*** EXPORTS FROM exports-loader ***/
+module.exports = module.exports.toString();
 
 /***/ }),
 
 /***/ 159:
 /***/ (function(module, exports) {
 
+module.exports = "<div class=\"container-fluid\">\n  <!-- Content here -->\n  <nav class=\"navbar navbar-expand-lg  navbar-dark bg-primary\">\n      <a class=\"navbar-brand\" href=\"#\">TweetBlock</a>\n      <button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarNavAltMarkup\" aria-controls=\"navbarNavAltMarkup\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">\n        <span class=\"navbar-toggler-icon\"></span>\n      </button>\n      <div class=\"collapse navbar-collapse\" id=\"navbarNavAltMarkup\">\n        <div class=\"navbar-nav\">\n          <a class=\"nav-item nav-link active\" routerLink=\"/home\" routerLinkActive=\"active\">Home</a>\n          <a class=\"nav-item nav-link\" routerLink=\"/dashboard\" routerLinkActive=\"active\">Dashboard</a>\n          <a class=\"nav-item nav-link\" href=\"#\">About Us</a>\n          <a class=\"nav-item nav-link\" href=\"#\">Latest News</a>\n          <a class=\"nav-item nav-link\" href=\"#\">Blog</a>\n          <a class=\"nav-item nav-link\" href=\"#\">Contact us</a>\n        </div>\n      </div>\n\n      <form class=\"form-inline\">\n          <a class=\"navbar-brand\" href=\"#\">Login</a>\n        </form>\n    </nav>\n  <router-outlet></router-outlet>\n</div>\n"
+
+/***/ }),
+
+/***/ 160:
+/***/ (function(module, exports) {
+
+module.exports = "<p>\n  dashboard works!\n</p>\n"
+
+/***/ }),
+
+/***/ 161:
+/***/ (function(module, exports) {
+
+module.exports = "<section class=\"jumbotron text-center\">\n    <div class=\"container\">\n      <h1 class=\"jumbotron-heading\">Tweet Block</h1>\n      <p class=\"lead text-muted\">Crypto Currency news from all around the world, \n        with latest tweets, posts, videos from various de facto channels.\n      </p>\n      <p>\n        <a href=\"#\" class=\"btn btn-primary\">Sign in</a>\n        <a href=\"#\" class=\"btn btn-secondary\">Register</a>\n      </p>\n    </div>\n  </section>\n\n  <div class=\"album text-muted\">\n      <div class=\"container\">\n\n        <div class=\"row\">\n          <div class=\"card\">\n            <img data-src=\"holder.js/100px280/thumb\" alt=\"Card image cap\">\n            <p class=\"card-text\">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>\n          </div>\n          <div class=\"card\">\n            <img data-src=\"holder.js/100px280/thumb\" alt=\"Card image cap\">\n            <p class=\"card-text\">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>\n          </div>\n          <div class=\"card\">\n            <img data-src=\"holder.js/100px280/thumb\" alt=\"Card image cap\">\n            <p class=\"card-text\">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>\n          </div>\n\n          <div class=\"card\">\n            <img data-src=\"holder.js/100px280/thumb\" alt=\"Card image cap\">\n            <p class=\"card-text\">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>\n          </div>\n          <div class=\"card\">\n            <img data-src=\"holder.js/100px280/thumb\" alt=\"Card image cap\">\n            <p class=\"card-text\">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>\n          </div>\n          <div class=\"card\">\n            <img data-src=\"holder.js/100px280/thumb\" alt=\"Card image cap\">\n            <p class=\"card-text\">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>\n          </div>\n\n          <div class=\"card\">\n            <img data-src=\"holder.js/100px280/thumb\" alt=\"Card image cap\">\n            <p class=\"card-text\">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>\n          </div>\n          <div class=\"card\">\n            <img data-src=\"holder.js/100px280/thumb\" alt=\"Card image cap\">\n            <p class=\"card-text\">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>\n          </div>\n          <div class=\"card\">\n            <img data-src=\"holder.js/100px280/thumb\" alt=\"Card image cap\">\n            <p class=\"card-text\">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>\n          </div>\n        </div>\n\n      </div>\n    </div>\n\n    <footer class=\"text-muted\">\n      <div class=\"container\">\n        <p class=\"float-right\">\n          <a href=\"#\">Back to top</a>\n        </p>\n        <p>Album example is &copy; Bootstrap, but please download and customize it for yourself!</p>\n        <p>New to Bootstrap? <a href=\"../../\">Visit the homepage</a> or read our <a href=\"../../getting-started/\">getting started guide</a>.</p>\n      </div>\n    </footer>\n    \n<br/><br/><br/><br/><br/><br/>\n<h5>MongoDB is loading users!</h5>\n<ul>\n  <li *ngFor=\"let user of users\">{{ user.name }}</li>\n</ul>"
+
+/***/ }),
+
+/***/ 162:
+/***/ (function(module, exports) {
+
 module.exports = "<p>\n  page-not-found works!\n</p>\n"
 
 /***/ }),
 
-/***/ 191:
+/***/ 194:
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(86);
+module.exports = __webpack_require__(87);
 
 
 /***/ }),
@@ -114,7 +131,7 @@ module.exports = __webpack_require__(86);
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(4);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_http__ = __webpack_require__(60);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map__ = __webpack_require__(164);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map__ = __webpack_require__(167);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return DataService; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -150,7 +167,7 @@ var _a;
 
 /***/ }),
 
-/***/ 85:
+/***/ 86:
 /***/ (function(module, exports) {
 
 function webpackEmptyContext(req) {
@@ -159,20 +176,20 @@ function webpackEmptyContext(req) {
 webpackEmptyContext.keys = function() { return []; };
 webpackEmptyContext.resolve = webpackEmptyContext;
 module.exports = webpackEmptyContext;
-webpackEmptyContext.id = 85;
+webpackEmptyContext.id = 86;
 
 
 /***/ }),
 
-/***/ 86:
+/***/ 87:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(4);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_platform_browser_dynamic__ = __webpack_require__(91);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__app_app_module__ = __webpack_require__(94);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__environments_environment__ = __webpack_require__(98);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_platform_browser_dynamic__ = __webpack_require__(93);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__app_app_module__ = __webpack_require__(96);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__environments_environment__ = __webpack_require__(100);
 
 
 
@@ -185,7 +202,7 @@ __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__angular_platform_browser_dyna
 
 /***/ }),
 
-/***/ 93:
+/***/ 95:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -218,8 +235,8 @@ var AppComponent = (function () {
 AppComponent = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_14" /* Component */])({
         selector: 'app-root',
-        template: __webpack_require__(156),
-        styles: [__webpack_require__(152)]
+        template: __webpack_require__(159),
+        styles: [__webpack_require__(155)]
     }),
     __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__data_service__["a" /* DataService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__data_service__["a" /* DataService */]) === "function" && _a || Object])
 ], AppComponent);
@@ -229,20 +246,20 @@ var _a;
 
 /***/ }),
 
-/***/ 94:
+/***/ 96:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__ = __webpack_require__(17);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(4);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_forms__ = __webpack_require__(90);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_forms__ = __webpack_require__(92);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_http__ = __webpack_require__(60);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__angular_router__ = __webpack_require__(92);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__app_component__ = __webpack_require__(93);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__angular_router__ = __webpack_require__(94);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__app_component__ = __webpack_require__(95);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__data_service__ = __webpack_require__(35);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__pages_dashboard_dashboard_component__ = __webpack_require__(95);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__pages_page_not_found_page_not_found_component__ = __webpack_require__(97);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__pages_home_home_component__ = __webpack_require__(96);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__pages_dashboard_dashboard_component__ = __webpack_require__(97);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__pages_page_not_found_page_not_found_component__ = __webpack_require__(99);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__pages_home_home_component__ = __webpack_require__(98);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AppModule; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -295,7 +312,7 @@ AppModule = __decorate([
 
 /***/ }),
 
-/***/ 95:
+/***/ 97:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -321,8 +338,8 @@ var DashboardComponent = (function () {
 DashboardComponent = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_14" /* Component */])({
         selector: 'app-dashboard',
-        template: __webpack_require__(157),
-        styles: [__webpack_require__(153)]
+        template: __webpack_require__(160),
+        styles: [__webpack_require__(156)]
     }),
     __metadata("design:paramtypes", [])
 ], DashboardComponent);
@@ -331,7 +348,7 @@ DashboardComponent = __decorate([
 
 /***/ }),
 
-/***/ 96:
+/***/ 98:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -364,8 +381,8 @@ var HomeComponent = (function () {
 HomeComponent = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_14" /* Component */])({
         selector: 'app-home',
-        template: __webpack_require__(158),
-        styles: [__webpack_require__(154)]
+        template: __webpack_require__(161),
+        styles: [__webpack_require__(157)]
     }),
     __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__data_service__["a" /* DataService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__data_service__["a" /* DataService */]) === "function" && _a || Object])
 ], HomeComponent);
@@ -375,7 +392,7 @@ var _a;
 
 /***/ }),
 
-/***/ 97:
+/***/ 99:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -401,32 +418,15 @@ var PageNotFoundComponent = (function () {
 PageNotFoundComponent = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_14" /* Component */])({
         selector: 'app-page-not-found',
-        template: __webpack_require__(159),
-        styles: [__webpack_require__(155)]
+        template: __webpack_require__(162),
+        styles: [__webpack_require__(158)]
     }),
     __metadata("design:paramtypes", [])
 ], PageNotFoundComponent);
 
 //# sourceMappingURL=page-not-found.component.js.map
 
-/***/ }),
-
-/***/ 98:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return environment; });
-// The file contents for the current environment will overwrite these during build.
-// The build system defaults to the dev environment which uses `environment.ts`, but if you do
-// `ng build --env=prod` then `environment.prod.ts` will be used instead.
-// The list of which env maps to which file can be found in `.angular-cli.json`.
-// The file contents for the current environment will overwrite these during build.
-var environment = {
-    production: false
-};
-//# sourceMappingURL=environment.js.map
-
 /***/ })
 
-},[191]);
+},[194]);
 //# sourceMappingURL=main.bundle.js.map
