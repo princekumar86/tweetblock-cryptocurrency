@@ -42,19 +42,5 @@ userSchema.methods.validPassword = function(password) {
     return bcrypt.compareSync(password, this.local.password);
 };
 
-// 
-userSchema.methods.findOrCreate = function(profile, cb){
-    var userObj = new this();
-    this.findOne({_id : profile.id},function(err,result){ 
-        if(!result){
-            userObj.username = profile.displayName;
-            //....
-            userObj.save(cb);
-        }else{
-            cb(err,result);
-        }
-    });
-};
-
 // create the model for users and expose it to our app
 module.exports = mongoose.model('User', userSchema);
