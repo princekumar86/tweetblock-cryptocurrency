@@ -8,7 +8,7 @@ import { AuthenticationService } from '../../_services/authentication.service';
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent implements OnInit {
-  model: any = {};
+  user: any = {};
   loading = false;
   error = '';
 
@@ -22,12 +22,15 @@ export class LoginComponent implements OnInit {
   }
 
   login() {
+    console.log('entered login function');
+    console.log(this.user.email);
+    console.log(this.user.password);
       this.loading = true;
-      this.authenticationService.login(this.model.username, this.model.password)
+      this.authenticationService.login(this.user.email, this.user.password)
           .subscribe(result => {
               if (result === true) {
                   // login successful
-                  this.router.navigate(['/']);
+                  this.router.navigate(['/dashboard']);
               } else {
                   // login failed
                   this.error = 'Username or password is incorrect';

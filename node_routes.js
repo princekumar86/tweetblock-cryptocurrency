@@ -1,4 +1,7 @@
 // app/routes.js
+var parser = require('body-parser');
+var urlencodedParser = parser.urlencoded({extended : false});
+
 module.exports = function(app, passport) {
     
         // =====================================
@@ -68,8 +71,17 @@ module.exports = function(app, passport) {
         //}));
 
         // process the login form
-        app.post("/login", passport.authenticate('local-login'), function(req, res) {
+        //app.post("/login", passport.authenticate('local-login'), function(req, res) {
+        //    res.json(req.user);
+        //});
+
+        //app.post('/login', urlencodedParser, passport.authenticate('local-login', {
+            //
+        //}));
+
+        app.post('/login', passport.authenticate('local-login'), function(req,res){
             res.json(req.user);
+            //console.log(req.user);
         });
 
     };

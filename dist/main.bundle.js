@@ -235,7 +235,7 @@ var LoginComponent = (function () {
     function LoginComponent(router, authenticationService) {
         this.router = router;
         this.authenticationService = authenticationService;
-        this.model = {};
+        this.user = {};
         this.loading = false;
         this.error = '';
     }
@@ -245,12 +245,15 @@ var LoginComponent = (function () {
     };
     LoginComponent.prototype.login = function () {
         var _this = this;
+        console.log('entered login function');
+        console.log(this.user.email);
+        console.log(this.user.password);
         this.loading = true;
-        this.authenticationService.login(this.model.username, this.model.password)
+        this.authenticationService.login(this.user.email, this.user.password)
             .subscribe(function (result) {
             if (result === true) {
                 // login successful
-                _this.router.navigate(['/']);
+                _this.router.navigate(['/dashboard']);
             }
             else {
                 // login failed
@@ -561,7 +564,7 @@ module.exports = "<section class=\"jumbotron text-center\">\r\n    <div class=\"
 /***/ 177:
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"container main-form-container\">\n  <h3 class=\"text-center jumbotron-heading\">Login</h3>\n  <form>\n    <div class=\"form-group row\">\n      <label for=\"inputEmail3\" class=\"col-sm-2 col-form-label\">Email</label>\n      <div class=\"col-sm-10\">\n        <input [(ngModel)]=\"user.email\" type=\"email\" class=\"form-control\" id=\"email\" placeholder=\"Email\">\n      </div>\n    </div>\n    <div class=\"form-group row\">\n      <label for=\"inputPassword3\" class=\"col-sm-2 col-form-label\">Password</label>\n      <div class=\"col-sm-10\">\n        <input [(ngModel)]=\"user.password\" type=\"password\" class=\"form-control\" id=\"password\" placeholder=\"Password\">\n      </div>\n    </div>\n    \n    <div class=\"form-group row\">\n      <div class=\"offset-sm-2 col-sm-10 text-center\">\n        <button (click)=\"login()\" type=\"submit\" class=\"btn btn-primary\">Login</button>\n      </div>\n    </div>\n  </form>\n</div>"
+module.exports = "<div class=\"container main-form-container\">\n  <h3 class=\"text-center jumbotron-heading\">Login</h3>\n  <form>\n    <div class=\"form-group row\">\n      <label for=\"inputEmail3\" class=\"col-sm-2 col-form-label\">Email</label>\n      <div class=\"col-sm-10\">\n        <input [(ngModel)]=\"user.email\" name=\"email\" type=\"email\" class=\"form-control\" id=\"email\" placeholder=\"Email\">\n      </div>\n    </div>\n    <div class=\"form-group row\">\n      <label for=\"inputPassword3\" class=\"col-sm-2 col-form-label\">Password</label>\n      <div class=\"col-sm-10\">\n        <input [(ngModel)]=\"user.password\" name=\"password\" type=\"password\" class=\"form-control\" id=\"password\" placeholder=\"Password\">\n      </div>\n    </div>\n    \n    <div class=\"form-group row\">\n      <div class=\"offset-sm-2 col-sm-10 text-center\">\n        <button (click)=\"login()\" type=\"submit\" class=\"btn btn-primary\">Login</button>\n      </div>\n    </div>\n    <div *ngIf=\"error\" class=\"alert alert-danger\">{{error}}</div>\n  </form>\n</div>"
 
 /***/ }),
 
@@ -620,19 +623,21 @@ var AuthenticationService = (function () {
         this.http = http;
         // set token if saved in local storage
         var currentUser = JSON.parse(localStorage.getItem('currentUser'));
-        this.token = currentUser && currentUser.token;
+        this.token = currentUser;
     }
-    AuthenticationService.prototype.login = function (username, password) {
+    AuthenticationService.prototype.login = function (email, password) {
         var _this = this;
-        return this.http.post('/api/authenticate', JSON.stringify({ username: username, password: password }))
+        var headers = new __WEBPACK_IMPORTED_MODULE_1__angular_http__["b" /* Headers */]({ 'Content-Type': 'application/json' });
+        var options = new __WEBPACK_IMPORTED_MODULE_1__angular_http__["c" /* RequestOptions */]({ headers: headers });
+        return this.http.post('/login', JSON.stringify({ email: email, password: password }), options)
             .map(function (response) {
             // login successful if there's a jwt token in the response
-            var token = response.json() && response.json().token;
+            var token = response.json();
             if (token) {
                 // set token property
                 _this.token = token;
                 // store username and jwt token in local storage to keep user logged in between page refreshes
-                localStorage.setItem('currentUser', JSON.stringify({ username: username, token: token }));
+                localStorage.setItem('currentUser', JSON.stringify({ email: email, token: token }));
                 // return true to indicate successful login
                 return true;
             }
