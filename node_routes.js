@@ -4,19 +4,19 @@ module.exports = function(app, passport) {
         // =====================================
         // HOME PAGE (with login links) ========
         // =====================================
-        app.get('/', function(req, res) {
-            res.render('index.ejs'); // load the index.ejs file
-        });
+        //app.get('/', function(req, res) {
+        //    res.render('index.ejs'); // load the index.ejs file
+        //});
     
         // =====================================
         // LOGIN ===============================
         // =====================================
         // show the login form
-        app.get('/login', function(req, res) {
+        //app.get('/login', function(req, res) {
     
             // render the page and pass in any flash data if it exists
-            res.render('login.ejs', { message: req.flash('loginMessage') }); 
-        });
+        //    res.render('login.ejs', { message: req.flash('loginMessage') }); 
+        //});
     
         // process the login form
         // app.post('/login', do all our passport stuff here);
@@ -61,11 +61,16 @@ module.exports = function(app, passport) {
         }));
 
         // process the login form
-        app.post('/login', passport.authenticate('local-login', {
-            successRedirect : '/profile', // redirect to the secure profile section
-            failureRedirect : '/login', // redirect back to the signup page if there is an error
-            failureFlash : true // allow flash messages
-        }));
+        //app.post('/login', passport.authenticate('local-login', {
+        //    successRedirect : '/profile', // redirect to the secure profile section
+        //    failureRedirect : '/login', // redirect back to the signup page if there is an error
+        //    failureFlash : true // allow flash messages
+        //}));
+
+        // process the login form
+        app.post("/login", passport.authenticate('local-login'), function(req, res) {
+            res.json(req.user);
+        });
 
     };
     
