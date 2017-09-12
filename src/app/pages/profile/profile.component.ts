@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { User } from '../../_models/user';
+import { UserService } from '../../_services/user.service';
 
 @Component({
   selector: 'app-profile',
@@ -7,9 +9,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProfileComponent implements OnInit {
 
-  constructor() { }
-
+  users: User[] = [];
+  
+  constructor(private userService: UserService) { }
+  
   ngOnInit() {
+      // get users from secure api end point
+      this.userService.getUsers()
+          .subscribe(users => {
+              this.users = users;
+          });
   }
 
 }
