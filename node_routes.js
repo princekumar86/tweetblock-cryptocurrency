@@ -28,11 +28,11 @@ module.exports = function(app, passport) {
         // SIGNUP ==============================
         // =====================================
         // show the signup form
-        app.get('/signup', function(req, res) {
+        //app.get('/signup', function(req, res) {
     
             // render the page and pass in any flash data if it exists
-            res.render('signup.ejs', { message: req.flash('signupMessage') });
-        });
+        //    res.render('signup.ejs', { message: req.flash('signupMessage') });
+        //});
     
         // process the signup form
         // app.post('/signup', do all our passport stuff here);
@@ -57,11 +57,11 @@ module.exports = function(app, passport) {
         });
 
         // process the signup form
-        app.post('/signup', passport.authenticate('local-signup', {
-            successRedirect : '/profile', // redirect to the secure profile section
-            failureRedirect : '/signup', // redirect back to the signup page if there is an error
-            failureFlash : true // allow flash messages
-        }));
+        //app.post('/signup', passport.authenticate('local-signup', {
+        //    successRedirect : '/profile', // redirect to the secure profile section
+        //    failureRedirect : '/signup', // redirect back to the signup page if there is an error
+        //    failureFlash : true // allow flash messages
+        //}));
 
         // process the login form
         //app.post('/login', passport.authenticate('local-login', {
@@ -82,6 +82,12 @@ module.exports = function(app, passport) {
         app.post('/login', passport.authenticate('local-login'), function(req,res){
             res.json(req.user);
             //console.log(req.user);
+        });
+
+        app.post('/signup', passport.authenticate('local-signup'), function(req,res){
+            res.json(req.user);
+            console.log(req.user);
+            console.log(res.user);
         });
 
     };
