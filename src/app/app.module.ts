@@ -17,12 +17,14 @@ import { HomeComponent } from './pages/home/home.component';
 import { LoginComponent } from './pages/login/login.component';
 import { SignupComponent } from './pages/signup/signup.component';
 import { ProfileComponent } from './pages/profile/profile.component';
+import { SettingsComponent } from './settings/settings.component';
 
 const appRoutes: Routes = [
-  { path: 'dashboard', component: DashboardComponent, canActivate: [AuthGuard] },
   { path: 'home', component: HomeComponent },
   { path: 'login', component: LoginComponent },
   { path: 'signup', component: SignupComponent },
+  { path: 'settings', component: SettingsComponent },
+  { path: 'dashboard', component: DashboardComponent, canActivate: [AuthGuard] },
   { path: 'profile', component: ProfileComponent, canActivate: [AuthGuard]  },
   { path: '',   redirectTo: '/home', pathMatch: 'full' },
   { path: '*', component: PageNotFoundComponent }
@@ -35,7 +37,8 @@ const appRoutes: Routes = [
     HomeComponent,
     LoginComponent,
     SignupComponent,
-    ProfileComponent
+    ProfileComponent,
+    SettingsComponent
   ],
   imports: [
     RouterModule.forRoot(
