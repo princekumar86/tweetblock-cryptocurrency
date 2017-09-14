@@ -49,7 +49,7 @@ var _a;
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_http__ = __webpack_require__(25);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map__ = __webpack_require__(54);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map__ = __webpack_require__(53);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__authentication_service__ = __webpack_require__(27);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return UserService; });
@@ -71,19 +71,11 @@ var UserService = (function () {
         this.http = http;
         this.authenticationService = authenticationService;
     }
-    UserService.prototype.getUsers = function () {
-        // add authorization header with jwt token
-        var headers = new __WEBPACK_IMPORTED_MODULE_1__angular_http__["b" /* Headers */]({ 'Authorization': 'Bearer ' + this.authenticationService.userid });
-        var options = new __WEBPACK_IMPORTED_MODULE_1__angular_http__["c" /* RequestOptions */]({ headers: headers });
-        // get users from api
-        return this.http.get('/api/users', options)
-            .map(function (response) { return response.json(); });
-    };
     return UserService;
 }());
 UserService = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["c" /* Injectable */])(),
-    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_http__["d" /* Http */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_http__["d" /* Http */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_3__authentication_service__["a" /* AuthenticationService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3__authentication_service__["a" /* AuthenticationService */]) === "function" && _b || Object])
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_http__["b" /* Http */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_http__["b" /* Http */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_3__authentication_service__["a" /* AuthenticationService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3__authentication_service__["a" /* AuthenticationService */]) === "function" && _b || Object])
 ], UserService);
 
 var _a, _b;
@@ -98,7 +90,7 @@ var _a, _b;
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_jquery__ = __webpack_require__(178);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_jquery___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_jquery__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__data_service__ = __webpack_require__(38);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__data_service__ = __webpack_require__(65);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AppComponent; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -159,7 +151,7 @@ var _a;
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_http__ = __webpack_require__(25);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__angular_router__ = __webpack_require__(26);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__app_component__ = __webpack_require__(104);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__data_service__ = __webpack_require__(38);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__data_service__ = __webpack_require__(65);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__guards_auth_guard__ = __webpack_require__(102);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__services_authentication_service__ = __webpack_require__(27);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__services_user_service__ = __webpack_require__(103);
@@ -298,7 +290,6 @@ DashboardComponent = __decorate([
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__data_service__ = __webpack_require__(38);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return HomeComponent; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -310,16 +301,8 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 
-// Import the DataService
-
 var HomeComponent = (function () {
-    // Create an instance of the DataService through dependency injection
-    function HomeComponent(_dataService) {
-        var _this = this;
-        this._dataService = _dataService;
-        // Access the Data Service's getUsers() method we defined
-        this._dataService.getUsers()
-            .subscribe(function (res) { return _this.users = res; });
+    function HomeComponent() {
     }
     return HomeComponent;
 }());
@@ -329,10 +312,9 @@ HomeComponent = __decorate([
         template: __webpack_require__(184),
         styles: [__webpack_require__(170)]
     }),
-    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__data_service__["a" /* DataService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__data_service__["a" /* DataService */]) === "function" && _a || Object])
+    __metadata("design:paramtypes", [])
 ], HomeComponent);
 
-var _a;
 //# sourceMappingURL=home.component.js.map
 
 /***/ }),
@@ -456,14 +438,14 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 
+//import { UserService } from '../../_services/user.service';
 var ProfileComponent = (function () {
     function ProfileComponent() {
         this.userid = '';
         this.userEmail = '';
     }
     ProfileComponent.prototype.ngOnInit = function () {
-        // get users details from sessionstorage or localStorage JSON
-        // and set the user details
+        // get users details from sessionstorage or localStorage JSON and set user details
         if (localStorage.getItem('currentUser') === null) {
             console.log('No local storage item');
             // do nothing
@@ -723,7 +705,7 @@ module.exports = "<div class=\"row no-gutters\"> <!-- top first half row -->\n  
 /***/ 184:
 /***/ (function(module, exports) {
 
-module.exports = "<section class=\"jumbotron text-center\">\r\n    <div class=\"container\">\r\n      <h1 class=\"jumbotron-heading\">Tweet Block</h1>\r\n      <p class=\"lead text-muted\">Crypto Currency news from all around the world, \r\n        with latest tweets, posts, videos from various de facto channels.\r\n      </p>\r\n      <p>\r\n        <a  routerLink=\"/login\" class=\"btn btn-primary\">Login</a>\r\n        <a  routerLink=\"/signup\" class=\"btn btn-secondary\">Signup</a>\r\n      </p>\r\n      <p>\r\n          or Login using <br/>\r\n          <a href=\"/auth/twitter\"><i class=\"fa fa-twitter-square fa-2x\"></i></a>\r\n          <i class=\"fa fa-facebook-square fa-2x\"></i>\r\n          <i class=\"fa fa-linkedin-square fa-2x\"></i>\r\n          <i class=\"fa fa-google-plus-square fa-2x\"></i>\r\n      </p>\r\n    </div>\r\n  </section>\r\n\r\n  <div class=\"album text-muted\">\r\n      <div class=\"container\">\r\n\r\n        <div class=\"row\">\r\n          <div class=\"card\">\r\n            <img data-src=\"holder.js/100px280/thumb\" alt=\"Card image cap\">\r\n            <p class=\"card-text\">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>\r\n          </div>\r\n          <div class=\"card\">\r\n            <img data-src=\"holder.js/100px280/thumb\" alt=\"Card image cap\">\r\n            <p class=\"card-text\">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>\r\n          </div>\r\n          <div class=\"card\">\r\n            <img data-src=\"holder.js/100px280/thumb\" alt=\"Card image cap\">\r\n            <p class=\"card-text\">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>\r\n          </div>\r\n\r\n          <div class=\"card\">\r\n            <img data-src=\"holder.js/100px280/thumb\" alt=\"Card image cap\">\r\n            <p class=\"card-text\">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>\r\n          </div>\r\n          <div class=\"card\">\r\n            <img data-src=\"holder.js/100px280/thumb\" alt=\"Card image cap\">\r\n            <p class=\"card-text\">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>\r\n          </div>\r\n          <div class=\"card\">\r\n            <img data-src=\"holder.js/100px280/thumb\" alt=\"Card image cap\">\r\n            <p class=\"card-text\">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>\r\n          </div>\r\n\r\n          <div class=\"card\">\r\n            <img data-src=\"holder.js/100px280/thumb\" alt=\"Card image cap\">\r\n            <p class=\"card-text\">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>\r\n          </div>\r\n          <div class=\"card\">\r\n            <img data-src=\"holder.js/100px280/thumb\" alt=\"Card image cap\">\r\n            <p class=\"card-text\">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>\r\n          </div>\r\n          <div class=\"card\">\r\n            <img data-src=\"holder.js/100px280/thumb\" alt=\"Card image cap\">\r\n            <p class=\"card-text\">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>\r\n          </div>\r\n        </div>\r\n\r\n      </div>\r\n    </div>\r\n\r\n    <footer class=\"text-muted\">\r\n      <div class=\"container\">\r\n        <p class=\"float-right\">\r\n          <a href=\"#\">Back to top</a>\r\n        </p>\r\n        <p>Album example is &copy; Bootstrap, but please download and customize it for yourself!</p>\r\n        <p>New to Bootstrap? <a href=\"../../\">Visit the homepage</a> or read our <a href=\"../../getting-started/\">getting started guide</a>.</p>\r\n      </div>\r\n    </footer>\r\n    \r\n<br/><br/><br/><br/><br/><br/>\r\n<h5>MongoDB is loading users!</h5>\r\n<ul>\r\n  <li *ngFor=\"let user of users\">{{ user.name }}</li>\r\n</ul>"
+module.exports = "<section class=\"jumbotron text-center\">\r\n    <div class=\"container\">\r\n      <h1 class=\"jumbotron-heading\">Tweet Block</h1>\r\n      <p class=\"lead text-muted\">Crypto Currency news from all around the world, \r\n        with latest tweets, posts, videos from various de facto channels.\r\n      </p>\r\n      <p>\r\n        <a  routerLink=\"/login\" class=\"btn btn-primary\">Login</a>\r\n        <a  routerLink=\"/signup\" class=\"btn btn-secondary\">Signup</a>\r\n      </p>\r\n      <p>\r\n          or Login using <br/>\r\n          <a href=\"/auth/twitter\"><i class=\"fa fa-twitter-square fa-2x\"></i></a>\r\n          <i class=\"fa fa-facebook-square fa-2x\"></i>\r\n          <i class=\"fa fa-linkedin-square fa-2x\"></i>\r\n          <i class=\"fa fa-google-plus-square fa-2x\"></i>\r\n      </p>\r\n    </div>\r\n  </section>\r\n\r\n  <div class=\"album text-muted\">\r\n      <div class=\"container\">\r\n\r\n        <div class=\"row\">\r\n          <div class=\"card\">\r\n            <img data-src=\"holder.js/100px280/thumb\" alt=\"Card image cap\">\r\n            <p class=\"card-text\">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>\r\n          </div>\r\n          <div class=\"card\">\r\n            <img data-src=\"holder.js/100px280/thumb\" alt=\"Card image cap\">\r\n            <p class=\"card-text\">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>\r\n          </div>\r\n          <div class=\"card\">\r\n            <img data-src=\"holder.js/100px280/thumb\" alt=\"Card image cap\">\r\n            <p class=\"card-text\">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>\r\n          </div>\r\n\r\n          <div class=\"card\">\r\n            <img data-src=\"holder.js/100px280/thumb\" alt=\"Card image cap\">\r\n            <p class=\"card-text\">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>\r\n          </div>\r\n          <div class=\"card\">\r\n            <img data-src=\"holder.js/100px280/thumb\" alt=\"Card image cap\">\r\n            <p class=\"card-text\">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>\r\n          </div>\r\n          <div class=\"card\">\r\n            <img data-src=\"holder.js/100px280/thumb\" alt=\"Card image cap\">\r\n            <p class=\"card-text\">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>\r\n          </div>\r\n\r\n          <div class=\"card\">\r\n            <img data-src=\"holder.js/100px280/thumb\" alt=\"Card image cap\">\r\n            <p class=\"card-text\">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>\r\n          </div>\r\n          <div class=\"card\">\r\n            <img data-src=\"holder.js/100px280/thumb\" alt=\"Card image cap\">\r\n            <p class=\"card-text\">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>\r\n          </div>\r\n          <div class=\"card\">\r\n            <img data-src=\"holder.js/100px280/thumb\" alt=\"Card image cap\">\r\n            <p class=\"card-text\">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>\r\n          </div>\r\n        </div>\r\n\r\n      </div>\r\n    </div>\r\n\r\n    <footer class=\"text-muted\">\r\n      <div class=\"container\">\r\n        <p class=\"float-right\">\r\n          <a href=\"#\">Back to top</a>\r\n        </p>\r\n        <p>you can customize dashboard for yourself!</p>\r\n        <p>New to tweetblock <a href=\"../../\">Visit the homepage</a> or read our <a href=\"../../tweetblock-guide/\">getting started guide</a>.</p>\r\n      </div>\r\n    </footer>\r\n    \r\n<br/>"
 
 /***/ }),
 
@@ -744,7 +726,7 @@ module.exports = "<p>\n  page-not-found works!\n</p>\n"
 /***/ 187:
 /***/ (function(module, exports) {
 
-module.exports = "<p>\n  profile\n</p>\n<div class=\"container\">\n    \n        <div class=\"page-header text-center\">\n            <h1><span class=\"fa fa-anchor\"></span> Profile Page</h1>\n            <a href=\"/logout\" class=\"btn btn-default btn-sm\">Logout</a>\n        </div>\n    \n        <div class=\"row\">\n    \n            <!-- LOCAL INFORMATION -->\n            <div class=\"col-sm-6\">\n                <div class=\"well\">\n                    <h3><span class=\"fa fa-user\"></span> Local</h3>\n    \n                        <p>\n                            <strong>id</strong>: {{userid}}<br>\n                            <strong>email</strong>: {{userEmail}}<br>\n                            <strong>password</strong>: ****\n                        </p>\n    \n                </div>\n            </div>\n    \n        </div>\n\n        <div class=\"col-md-6 col-md-offset-3\">\n            <h4>Please complete your details for full access of tweetblock services</h4>\n            <p>You're logged in with Local storage</p>\n            <div>\n                Users from secure api end point:\n                <ul>\n                    <li *ngFor=\"let user of users\">{{user.firstName}} {{user.lastName}}</li>\n                </ul>\n            </div>\n            <p><a [routerLink]=\"['/login']\">Logout</a></p>\n        </div>\n    \n    </div>"
+module.exports = "<p>\n  profile\n</p>\n<div class=\"container\">\n    \n        <div class=\"page-header text-center\">\n            <h1><span class=\"fa fa-anchor\"></span> Profile</h1>\n            <a href=\"/logout\" class=\"btn btn-default btn-sm\">Logout</a>\n        </div>\n    \n        <div class=\"row\">\n    \n            <!-- LOCAL INFORMATION -->\n            <div class=\"col-sm-6\">\n                <div class=\"well\">\n                    <h3><span class=\"fa fa-user\"></span> Local</h3>\n    \n                        <p>\n                            <strong>id</strong>: {{userid}}<br>\n                            <strong>email</strong>: {{userEmail}}<br>\n                            <strong>password</strong>: ****\n                        </p>\n    \n                </div>\n            </div>\n    \n        </div>\n\n        <div class=\"col-md-6 col-md-offset-3\">\n            <h4>Customize your dashboard</h4>\n            <h5>Watch your preferred Crypto currency</h5>\n            \n            <div>\n                <form>\n                    <div class=\"form-group row\">\n                        <label for=\"exampleSelect1\" class=\"col-sm-2 col-form-label\">1.</label>\n                        <div class=\"col-sm-10\">\n                            <select class=\"form-control\" id=\"exampleSelect1\">\n                                <option selected>Ethereum</option>\n                                <option>OmiseGO</option>\n                                <option>Ripple</option>\n                                <option>Litecoin</option>\n                                <option>NEM</option>\n                                <option>Dash</option>\n                                <option>IOTA</option>\n                                <option>Monero</option>\n                            </select>\n                        </div>\n                    </div>\n                    <div class=\"form-group row\">\n                            <label for=\"exampleSelect1\" class=\"col-sm-2 col-form-label\">2.</label>\n                            <div class=\"col-sm-10\">\n                                <select class=\"form-control\" id=\"exampleSelect1\">\n                                    <option>Ethereum</option>\n                                    <option selected>OmiseGO</option>\n                                    <option>Ripple</option>\n                                    <option>Litecoin</option>\n                                    <option>NEM</option>\n                                    <option>Dash</option>\n                                    <option>IOTA</option>\n                                    <option>Monero</option>\n                                </select>\n                            </div>\n                    </div>\n                    <div class=\"form-group row\">\n                            <label for=\"exampleSelect1\" class=\"col-sm-2 col-form-label\">3.</label>\n                            <div class=\"col-sm-10\">\n                                <select class=\"form-control\" id=\"exampleSelect1\">\n                                    <option>Ethereum</option>\n                                    <option>OmiseGO</option>\n                                    <option selected>Ripple</option>\n                                    <option>Litecoin</option>\n                                    <option>NEM</option>\n                                    <option>Dash</option>\n                                    <option>IOTA</option>\n                                    <option>Monero</option>\n                                </select>\n                            </div>\n                    </div>\n                    <div class=\"form-group row\">\n                            <label for=\"exampleSelect1\" class=\"col-sm-2 col-form-label\">4.</label>\n                            <div class=\"col-sm-10\">\n                                <select class=\"form-control\" id=\"exampleSelect1\">\n                                    <option>Ethereum</option>\n                                    <option>OmiseGO</option>\n                                    <option>Ripple</option>\n                                    <option selected>Litecoin</option>\n                                    <option>NEM</option>\n                                    <option>Dash</option>\n                                    <option>IOTA</option>\n                                    <option>Monero</option>\n                                </select>\n                            </div>\n                    </div>\n                    <div class=\"form-group row\">\n                            <label for=\"exampleSelect1\" class=\"col-sm-2 col-form-label\">5.</label>\n                            <div class=\"col-sm-10\">\n                                <select class=\"form-control\" id=\"exampleSelect1\">\n                                    <option>Ethereum</option>\n                                    <option>OmiseGO</option>\n                                    <option>Ripple</option>\n                                    <option>Litecoin</option>\n                                    <option selected>NEM</option>\n                                    <option>Dash</option>\n                                    <option>IOTA</option>\n                                    <option>Monero</option>\n                                </select>\n                            </div>\n                    </div>\n                    <div class=\"form-group row\">\n                            <label for=\"exampleSelect1\" class=\"col-sm-2 col-form-label\">6.</label>\n                            <div class=\"col-sm-10\">\n                                <select class=\"form-control\" id=\"exampleSelect1\">\n                                    <option>Ethereum</option>\n                                    <option>OmiseGO</option>\n                                    <option>Ripple</option>\n                                    <option>Litecoin</option>\n                                    <option>NEM</option>\n                                    <option selected>Dash</option>\n                                    <option>IOTA</option>\n                                    <option>Monero</option>\n                                </select>\n                            </div>\n                    </div>\n                    <div class=\"form-group row\">\n                            <label for=\"exampleSelect1\" class=\"col-sm-2 col-form-label\">7.</label>\n                            <div class=\"col-sm-10\">\n                                <select class=\"form-control\" id=\"exampleSelect1\">\n                                    <option>Ethereum</option>\n                                    <option>OmiseGO</option>\n                                    <option>Ripple</option>\n                                    <option>Litecoin</option>\n                                    <option>NEM</option>\n                                    <option>Dash</option>\n                                    <option selected>IOTA</option>\n                                    <option>Monero</option>\n                                </select>\n                            </div>\n                    </div>\n                    <div class=\"form-group row\">\n                            <label for=\"exampleSelect1\" class=\"col-sm-2 col-form-label\">8.</label>\n                            <div class=\"col-sm-10\">\n                                <select class=\"form-control\" id=\"exampleSelect1\">\n                                    <option>Ethereum</option>\n                                    <option>OmiseGO</option>\n                                    <option>Ripple</option>\n                                    <option>Litecoin</option>\n                                    <option>NEM</option>\n                                    <option>Dash</option>\n                                    <option>IOTA</option>\n                                    <option selected>Monero</option>\n                                </select>\n                            </div>\n                    </div>\n                </form>\n\n            </div>\n            <p><a [routerLink]=\"['/login']\">Logout</a></p>\n        </div>\n    \n    </div>"
 
 /***/ }),
 
@@ -769,7 +751,7 @@ module.exports = __webpack_require__(91);
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_http__ = __webpack_require__(25);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map__ = __webpack_require__(54);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map__ = __webpack_require__(53);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AuthenticationService; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -793,8 +775,8 @@ var AuthenticationService = (function () {
     }
     AuthenticationService.prototype.login = function (email, password) {
         var _this = this;
-        var headers = new __WEBPACK_IMPORTED_MODULE_1__angular_http__["b" /* Headers */]({ 'Content-Type': 'application/json' });
-        var options = new __WEBPACK_IMPORTED_MODULE_1__angular_http__["c" /* RequestOptions */]({ headers: headers });
+        var headers = new __WEBPACK_IMPORTED_MODULE_1__angular_http__["c" /* Headers */]({ 'Content-Type': 'application/json' });
+        var options = new __WEBPACK_IMPORTED_MODULE_1__angular_http__["d" /* RequestOptions */]({ headers: headers });
         return this.http.post('/login', JSON.stringify({ email: email, password: password }), options)
             .map(function (response) {
             // login successful if there's json in the response
@@ -816,8 +798,8 @@ var AuthenticationService = (function () {
     };
     AuthenticationService.prototype.register = function (email, password) {
         var _this = this;
-        var headers = new __WEBPACK_IMPORTED_MODULE_1__angular_http__["b" /* Headers */]({ 'Content-Type': 'application/json' });
-        var options = new __WEBPACK_IMPORTED_MODULE_1__angular_http__["c" /* RequestOptions */]({ headers: headers });
+        var headers = new __WEBPACK_IMPORTED_MODULE_1__angular_http__["c" /* Headers */]({ 'Content-Type': 'application/json' });
+        var options = new __WEBPACK_IMPORTED_MODULE_1__angular_http__["d" /* RequestOptions */]({ headers: headers });
         return this.http.post('/signup', JSON.stringify({ email: email, password: password }), options)
             .map(function (response) {
             // signup successful if there's a json in the response
@@ -847,7 +829,7 @@ var AuthenticationService = (function () {
 }());
 AuthenticationService = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["c" /* Injectable */])(),
-    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_http__["d" /* Http */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_http__["d" /* Http */]) === "function" && _a || Object])
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_http__["b" /* Http */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_http__["b" /* Http */]) === "function" && _a || Object])
 ], AuthenticationService);
 
 var _a;
@@ -855,13 +837,13 @@ var _a;
 
 /***/ }),
 
-/***/ 38:
+/***/ 65:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_http__ = __webpack_require__(25);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map__ = __webpack_require__(54);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map__ = __webpack_require__(53);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return DataService; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -889,7 +871,7 @@ var DataService = (function () {
 }());
 DataService = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["c" /* Injectable */])(),
-    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_http__["d" /* Http */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_http__["d" /* Http */]) === "function" && _a || Object])
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_http__["b" /* Http */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_http__["b" /* Http */]) === "function" && _a || Object])
 ], DataService);
 
 var _a;

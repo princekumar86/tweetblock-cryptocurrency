@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { User } from '../../_models/user';
-import { UserService } from '../../_services/user.service';
+//import { UserService } from '../../_services/user.service';
 
 @Component({
   selector: 'app-profile',
@@ -15,8 +15,7 @@ export class ProfileComponent implements OnInit {
   constructor() { }
   
   ngOnInit() {
-      // get users details from sessionstorage or localStorage JSON
-      // and set the user details
+      // get users details from sessionstorage or localStorage JSON and set user details
       if (localStorage.getItem('currentUser') === null) {
         console.log('No local storage item');
         // do nothing
