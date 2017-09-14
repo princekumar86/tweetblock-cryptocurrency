@@ -1,4 +1,5 @@
-import { Component, Input, Output, EventEmitter } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
+import * as jQuery from 'jquery';
 
 // Import the DataService
 import { DataService } from './data.service';
@@ -8,7 +9,7 @@ import { DataService } from './data.service';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent {
+export class AppComponent implements OnInit {
   
   // Define a users property to hold our user data
   users: Array<any>;
@@ -20,6 +21,15 @@ export class AppComponent {
       // Access the Data Service's getUsers() method we defined
       this._dataService.getUsers()
           .subscribe(res => this.users = res);
+    }
+
+    ngOnInit() {
+
+      // jquery code for bootstrap4 hamburger navmenu closing in mobile
+      jQuery('#navbarNavAltMarkup>.navbar-nav a').on('click', function(){
+        jQuery('.navbar-collapse').removeClass('show');
+      });
+
     }
     
     
