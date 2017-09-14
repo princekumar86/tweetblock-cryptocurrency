@@ -5,12 +5,12 @@ import 'rxjs/add/operator/map'
  
 @Injectable()
 export class AuthenticationService {
-    public token: string;
+    public userid: string;
  
     constructor(private http: Http) {
         // set token if saved in local storage
         var currentUser = JSON.parse(localStorage.getItem('currentUser'));
-        this.token = currentUser;
+        this.userid = currentUser;
     }
  
     login(email: string, password: string): Observable<boolean> {
@@ -19,14 +19,14 @@ export class AuthenticationService {
         return this.http.post('/login', JSON.stringify({ email: email, password: password }), options)
             .map((response: Response) => {
                 // login successful if there's a jwt token in the response
-                let token = response.json();
-                if (token) {
+                let userid = response.json();
+                if (userid) {
                     // set token property
-                    this.token = token;
+                    this.userid = userid;
  
                     // store username and jwt token in local storage to keep user logged in between page refreshes
-                    localStorage.setItem('currentUser', JSON.stringify({ email: email, token: token }));
- 
+                    localStorage.setItem('currentUser', JSON.stringify({ email: email, userid: userid }));
+                    sessionStorage.setItem('currentUser', JSON.stringify({ email: email, userid: userid }));
                     // return true to indicate successful login
                     return true;
                 } else {
@@ -38,7 +38,8 @@ export class AuthenticationService {
  
     logout(): void {
         // clear token remove user from local storage to log user out
-        this.token = null;
+        this.userid = null;
         localStorage.removeItem('currentUser');
+        sessionStorage.clear();
     }
 }

@@ -1,6 +1,49 @@
-webpackJsonp([1,4],{
+webpackJsonp([1,5],{
 
-/***/ 100:
+/***/ 103:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__(36);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AuthGuard; });
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+var AuthGuard = (function () {
+    function AuthGuard(router) {
+        this.router = router;
+    }
+    AuthGuard.prototype.canActivate = function () {
+        if (localStorage.getItem('currentUser')) {
+            // logged in so return true
+            return true;
+        }
+        // not logged in so redirect to login page
+        this.router.navigate(['/login']);
+        return false;
+    };
+    return AuthGuard;
+}());
+AuthGuard = __decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["c" /* Injectable */])(),
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_router__["b" /* Router */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_router__["b" /* Router */]) === "function" && _a || Object])
+], AuthGuard);
+
+var _a;
+//# sourceMappingURL=auth.guard.js.map
+
+/***/ }),
+
+/***/ 104:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -24,17 +67,22 @@ var AppComponent = (function () {
     function AppComponent(_dataService) {
         var _this = this;
         this._dataService = _dataService;
+        this.userloggedIn = false;
         // Access the Data Service's getUsers() method we defined
         this._dataService.getUsers()
             .subscribe(function (res) { return _this.users = res; });
     }
     return AppComponent;
 }());
+__decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["O" /* Input */])(),
+    __metadata("design:type", Boolean)
+], AppComponent.prototype, "userloggedIn", void 0);
 AppComponent = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_14" /* Component */])({
         selector: 'app-root',
-        template: __webpack_require__(174),
-        styles: [__webpack_require__(164)]
+        template: __webpack_require__(181),
+        styles: [__webpack_require__(168)]
     }),
     __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__data_service__["a" /* DataService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__data_service__["a" /* DataService */]) === "function" && _a || Object])
 ], AppComponent);
@@ -44,26 +92,26 @@ var _a;
 
 /***/ }),
 
-/***/ 101:
+/***/ 105:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__ = __webpack_require__(17);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_forms__ = __webpack_require__(97);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_forms__ = __webpack_require__(101);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_http__ = __webpack_require__(25);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__angular_router__ = __webpack_require__(36);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__app_component__ = __webpack_require__(100);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__app_component__ = __webpack_require__(104);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__data_service__ = __webpack_require__(38);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__guards_auth_guard__ = __webpack_require__(99);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__guards_auth_guard__ = __webpack_require__(103);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__services_authentication_service__ = __webpack_require__(37);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__services_user_service__ = __webpack_require__(65);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__pages_dashboard_dashboard_component__ = __webpack_require__(102);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__pages_page_not_found_page_not_found_component__ = __webpack_require__(105);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__pages_home_home_component__ = __webpack_require__(103);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__pages_login_login_component__ = __webpack_require__(104);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__pages_signup_signup_component__ = __webpack_require__(107);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__pages_profile_profile_component__ = __webpack_require__(106);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__services_user_service__ = __webpack_require__(66);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__pages_dashboard_dashboard_component__ = __webpack_require__(106);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__pages_page_not_found_page_not_found_component__ = __webpack_require__(109);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__pages_home_home_component__ = __webpack_require__(107);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__pages_login_login_component__ = __webpack_require__(108);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__pages_signup_signup_component__ = __webpack_require__(111);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__pages_profile_profile_component__ = __webpack_require__(110);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AppModule; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -131,7 +179,7 @@ AppModule = __decorate([
 
 /***/ }),
 
-/***/ 102:
+/***/ 106:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -149,16 +197,37 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 var DashboardComponent = (function () {
     function DashboardComponent() {
+        this.sendLoggedInEvent = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["F" /* EventEmitter */]();
     }
     DashboardComponent.prototype.ngOnInit = function () {
+        if (localStorage.getItem('currentUser') === null) {
+            console.log('No local storage item');
+            // do nothing
+        }
+        else {
+            console.log('local storage item found');
+            // READ STRING FROM LOCAL STORAGE
+            var retrievedObject = localStorage.getItem('currentUser');
+            // CONVERT STRING TO REGULAR JS OBJECT
+            var parsedObject = JSON.parse(retrievedObject);
+            // ACCESS DATA
+            //console.log(parsedObject.item[0].Desc);
+            console.log(parsedObject.email);
+            // changing Login / Logout tag in top bar
+            this.sendLoggedInEvent.emit(true);
+        }
     };
     return DashboardComponent;
 }());
+__decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_4" /* Output */])(),
+    __metadata("design:type", Object)
+], DashboardComponent.prototype, "sendLoggedInEvent", void 0);
 DashboardComponent = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_14" /* Component */])({
         selector: 'app-dashboard',
-        template: __webpack_require__(175),
-        styles: [__webpack_require__(165)]
+        template: __webpack_require__(182),
+        styles: [__webpack_require__(169)]
     }),
     __metadata("design:paramtypes", [])
 ], DashboardComponent);
@@ -167,7 +236,7 @@ DashboardComponent = __decorate([
 
 /***/ }),
 
-/***/ 103:
+/***/ 107:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -200,8 +269,8 @@ var HomeComponent = (function () {
 HomeComponent = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_14" /* Component */])({
         selector: 'app-home',
-        template: __webpack_require__(176),
-        styles: [__webpack_require__(166)]
+        template: __webpack_require__(183),
+        styles: [__webpack_require__(170)]
     }),
     __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__data_service__["a" /* DataService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__data_service__["a" /* DataService */]) === "function" && _a || Object])
 ], HomeComponent);
@@ -211,7 +280,7 @@ var _a;
 
 /***/ }),
 
-/***/ 104:
+/***/ 108:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -240,7 +309,7 @@ var LoginComponent = (function () {
         this.error = '';
     }
     LoginComponent.prototype.ngOnInit = function () {
-        // reset login status
+        // reset login status // remove localstorage or current session
         this.authenticationService.logout();
     };
     LoginComponent.prototype.login = function () {
@@ -267,8 +336,8 @@ var LoginComponent = (function () {
 LoginComponent = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_14" /* Component */])({
         selector: 'app-login',
-        template: __webpack_require__(177),
-        styles: [__webpack_require__(167)]
+        template: __webpack_require__(184),
+        styles: [__webpack_require__(171)]
     }),
     __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_router__["b" /* Router */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_router__["b" /* Router */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__services_authentication_service__["a" /* AuthenticationService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__services_authentication_service__["a" /* AuthenticationService */]) === "function" && _b || Object])
 ], LoginComponent);
@@ -278,7 +347,7 @@ var _a, _b;
 
 /***/ }),
 
-/***/ 105:
+/***/ 109:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -304,8 +373,8 @@ var PageNotFoundComponent = (function () {
 PageNotFoundComponent = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_14" /* Component */])({
         selector: 'app-page-not-found',
-        template: __webpack_require__(178),
-        styles: [__webpack_require__(168)]
+        template: __webpack_require__(185),
+        styles: [__webpack_require__(172)]
     }),
     __metadata("design:paramtypes", [])
 ], PageNotFoundComponent);
@@ -314,12 +383,12 @@ PageNotFoundComponent = __decorate([
 
 /***/ }),
 
-/***/ 106:
+/***/ 110:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__services_user_service__ = __webpack_require__(65);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__services_user_service__ = __webpack_require__(66);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ProfileComponent; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -350,8 +419,8 @@ var ProfileComponent = (function () {
 ProfileComponent = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_14" /* Component */])({
         selector: 'app-profile',
-        template: __webpack_require__(179),
-        styles: [__webpack_require__(169)]
+        template: __webpack_require__(186),
+        styles: [__webpack_require__(173)]
     }),
     __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__services_user_service__["a" /* UserService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__services_user_service__["a" /* UserService */]) === "function" && _a || Object])
 ], ProfileComponent);
@@ -361,7 +430,7 @@ var _a;
 
 /***/ }),
 
-/***/ 107:
+/***/ 111:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -387,8 +456,8 @@ var SignupComponent = (function () {
 SignupComponent = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_14" /* Component */])({
         selector: 'app-signup',
-        template: __webpack_require__(180),
-        styles: [__webpack_require__(170)]
+        template: __webpack_require__(187),
+        styles: [__webpack_require__(174)]
     }),
     __metadata("design:paramtypes", [])
 ], SignupComponent);
@@ -397,7 +466,7 @@ SignupComponent = __decorate([
 
 /***/ }),
 
-/***/ 108:
+/***/ 112:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -414,7 +483,7 @@ var environment = {
 
 /***/ }),
 
-/***/ 164:
+/***/ 168:
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(7)();
@@ -432,78 +501,6 @@ module.exports = module.exports.toString();
 
 /***/ }),
 
-/***/ 165:
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__(7)();
-// imports
-
-
-// module
-exports.push([module.i, ".dashboardcol {\r\n    min-height: 45vh;\r\n    border-right: 1px solid #cecece;\r\n}\r\n.dashboardcol .dashheading {\r\n    text-align: center;\r\n    background-color: #f1f1f1;\r\n    padding-top: 5px;\r\n    padding-bottom: 5px;\r\n    font-weight: bold;\r\n}\r\n.dashheading i {\r\n    padding-right: 10px;\r\n    color: #a4a4a4;\r\n}\r\n.iconcolumns a {\r\n    color: #cecece;\r\n    padding: 10px;\r\n    display: inline-block;\r\n}\r\n.iconcolumns a:hover {\r\n    color: #ffffff;\r\n}\r\n.iconcolumns a.iconactive {\r\n    color: #ffffff;\r\n}\r\n.iconcolumns {\r\n    background-color: #111111;\r\n}\r\n.col-1.iconcolumns {\r\n    max-width: 50px !important;\r\n}", ""]);
-
-// exports
-
-
-/*** EXPORTS FROM exports-loader ***/
-module.exports = module.exports.toString();
-
-/***/ }),
-
-/***/ 166:
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__(7)();
-// imports
-
-
-// module
-exports.push([module.i, ".fa-facebook, .fa-facebook-square {\r\n    color: #3b5998\r\n}\r\n.fa-twitter, .fa-twitter-square {\r\n    color: #00aced\r\n}\r\n.fa-google-plus, .fa-google-plus-square {\r\n    color: #dd4b39\r\n}\r\n.fa-linkedin, .fa-linkedin-square {\r\n    color: #007bb6\r\n}", ""]);
-
-// exports
-
-
-/*** EXPORTS FROM exports-loader ***/
-module.exports = module.exports.toString();
-
-/***/ }),
-
-/***/ 167:
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__(7)();
-// imports
-
-
-// module
-exports.push([module.i, ".main-form-container {\r\n    max-width: 400px;\r\n    margin-top: 15vh;\r\n}", ""]);
-
-// exports
-
-
-/*** EXPORTS FROM exports-loader ***/
-module.exports = module.exports.toString();
-
-/***/ }),
-
-/***/ 168:
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__(7)();
-// imports
-
-
-// module
-exports.push([module.i, "", ""]);
-
-// exports
-
-
-/*** EXPORTS FROM exports-loader ***/
-module.exports = module.exports.toString();
-
-/***/ }),
-
 /***/ 169:
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -512,7 +509,7 @@ exports = module.exports = __webpack_require__(7)();
 
 
 // module
-exports.push([module.i, "", ""]);
+exports.push([module.i, ".dashboardcol {\r\n    min-height: 45vh;\r\n    border-right: 1px solid #cecece;\r\n}\r\n.dashboardcol .dashheading {\r\n    text-align: center;\r\n    background-color: #f1f1f1;\r\n    padding-top: 5px;\r\n    padding-bottom: 5px;\r\n    font-weight: bold;\r\n}\r\n.dashheading i {\r\n    padding-right: 10px;\r\n    color: #a4a4a4;\r\n}\r\n.iconcolumns a {\r\n    color: #cecece;\r\n    padding: 10px;\r\n    display: inline-block;\r\n}\r\n@media (max-width:550px){\r\n    .iconcolumns a {\r\n        padding: 10px 1px;\r\n    }\r\n}\r\n\r\n.iconcolumns a:hover {\r\n    color: #ffffff;\r\n}\r\n.iconcolumns a.iconactive {\r\n    color: #ffffff;\r\n}\r\n.iconcolumns {\r\n    background-color: #111111;\r\n}\r\n.col-1.iconcolumns {\r\n    max-width: 50px !important;\r\n}", ""]);
 
 // exports
 
@@ -530,6 +527,24 @@ exports = module.exports = __webpack_require__(7)();
 
 
 // module
+exports.push([module.i, ".fa-facebook, .fa-facebook-square {\r\n    color: #3b5998\r\n}\r\n.fa-twitter, .fa-twitter-square {\r\n    color: #00aced\r\n}\r\n.fa-google-plus, .fa-google-plus-square {\r\n    color: #dd4b39\r\n}\r\n.fa-linkedin, .fa-linkedin-square {\r\n    color: #007bb6\r\n}", ""]);
+
+// exports
+
+
+/*** EXPORTS FROM exports-loader ***/
+module.exports = module.exports.toString();
+
+/***/ }),
+
+/***/ 171:
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(7)();
+// imports
+
+
+// module
 exports.push([module.i, ".main-form-container {\r\n    max-width: 400px;\r\n    margin-top: 15vh;\r\n}", ""]);
 
 // exports
@@ -540,59 +555,113 @@ module.exports = module.exports.toString();
 
 /***/ }),
 
+/***/ 172:
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(7)();
+// imports
+
+
+// module
+exports.push([module.i, "", ""]);
+
+// exports
+
+
+/*** EXPORTS FROM exports-loader ***/
+module.exports = module.exports.toString();
+
+/***/ }),
+
+/***/ 173:
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(7)();
+// imports
+
+
+// module
+exports.push([module.i, "", ""]);
+
+// exports
+
+
+/*** EXPORTS FROM exports-loader ***/
+module.exports = module.exports.toString();
+
+/***/ }),
+
 /***/ 174:
-/***/ (function(module, exports) {
+/***/ (function(module, exports, __webpack_require__) {
 
-module.exports = "<div class=\"container-fluid\">\r\n  <!-- Content here -->\r\n  <nav class=\"navbar navbar-expand-lg  navbar-dark bg-primary\">\r\n      <a class=\"navbar-brand\" href=\"#\"><img src=\"assets/images/tweetblock-logo.png\"/></a>\r\n      <button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarNavAltMarkup\" aria-controls=\"navbarNavAltMarkup\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">\r\n        <span class=\"navbar-toggler-icon\"></span>\r\n      </button>\r\n      <div class=\"collapse navbar-collapse\" id=\"navbarNavAltMarkup\">\r\n        <div class=\"navbar-nav\">\r\n          <a class=\"nav-item nav-link active\" routerLink=\"/home\" routerLinkActive=\"active\">Home</a>\r\n          <a class=\"nav-item nav-link\" routerLink=\"/dashboard\" routerLinkActive=\"active\">Dashboard</a>\r\n          <a class=\"nav-item nav-link\" href=\"#\">About Us</a>\r\n          <a class=\"nav-item nav-link\" href=\"#\">Latest News</a>\r\n          <a class=\"nav-item nav-link\" href=\"#\">Blog</a>\r\n          <a class=\"nav-item nav-link\" href=\"#\">Contact us</a>\r\n          <a class=\"nav-item nav-link\" routerLink=\"/profile\" routerLinkActive=\"active\">Profile</a>\r\n        </div>\r\n      </div>\r\n\r\n      <form class=\"form-inline\">\r\n          <a class=\"navbar-brand\" routerLink=\"/login\">Login</a>\r\n        </form>\r\n    </nav>\r\n  <router-outlet></router-outlet>\r\n</div>\r\n"
+exports = module.exports = __webpack_require__(7)();
+// imports
+
+
+// module
+exports.push([module.i, ".main-form-container {\r\n    max-width: 400px;\r\n    margin-top: 15vh;\r\n}", ""]);
+
+// exports
+
+
+/*** EXPORTS FROM exports-loader ***/
+module.exports = module.exports.toString();
 
 /***/ }),
 
-/***/ 175:
+/***/ 181:
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"row no-gutters\"> <!-- top first half row -->\n  <div class=\"col-1 iconcolumns\">\n    <a href=\"\" class=\"iconactive\"><i class=\"fa fa-home fa-lg\"></i></a><br/>\n    <a href=\"\"><i class=\"fa fa-tachometer fa-lg\"></i></a><br/>\n    <a href=\"\"><i class=\"fa fa-line-chart fa-lg\"></i></a><br/>\n    <a href=\"\"><i class=\"fa fa-envelope-o fa-lg\"></i></a><br/>\n    <a href=\"\"><i class=\"fa fa-cogs fa-lg\"></i></a><br/>\n    <a href=\"\"><i class=\"fa fa-sliders fa-lg\"></i></a><br/>\n    <a href=\"\"><i class=\"fa fa-plus fa-lg\"></i></a><br/>\n  </div>\n  <div class=\"col-11\">\n    <div class=\"row no-gutters\">\n      <div class=\"col dashboardcol\">\n        <div class=\"dashheading\">\n          <span class=\"mainheading\"><img src=\"assets/images/cryptoicons-sm/ethereum.png\" /> Ethereum</span>\n          <span class=\"float-right\"><i class=\"fa fa-bar-chart fa-lg\"></i></span>\n        </div>\n      </div>\n      <div class=\"col dashboardcol\">\n        <div class=\"dashheading\">\n          <span class=\"mainheading\"><img src=\"assets/images/cryptoicons-sm/omisego.png\" /> OmiseGO</span>\n          <span class=\"float-right\"><i class=\"fa fa-bar-chart fa-lg\"></i></span>\n        </div>\n      </div>\n      <div class=\"col dashboardcol\">\n        <div class=\"dashheading\">\n          <span class=\"mainheading\"><img src=\"assets/images/cryptoicons-sm/ripple.png\" /> Ripple</span>\n          <span class=\"float-right\"><i class=\"fa fa-bar-chart fa-lg\"></i></span>\n        </div>\n      </div>\n      <div class=\"col dashboardcol\">\n          <div class=\"dashheading\">\n            <span class=\"mainheading\"><img src=\"assets/images/cryptoicons-sm/litecoin.png\" /> Litecoin</span>\n            <span class=\"float-right\"><i class=\"fa fa-bar-chart fa-lg\"></i></span>\n          </div>\n      </div>\n    </div>\n  </div>\n</div>\n<div class=\"row no-gutters\"> <!-- second half row -->\n  <div class=\"col-1 iconcolumns\">\n    \n  </div>\n  <div class=\"col-11\">\n    <div class=\"row no-gutters\">\n      <div class=\"col dashboardcol\">\n        <div class=\"dashheading\">\n          <span class=\"mainheading\"><img src=\"assets/images/cryptoicons-sm/nem.png\" /> NEM</span>\n          <span class=\"float-right\"><i class=\"fa fa-bar-chart fa-lg\"></i></span>\n        </div>\n      </div>\n      <div class=\"col dashboardcol\">\n        <div class=\"dashheading\">\n          <span class=\"mainheading\"><img src=\"assets/images/cryptoicons-sm/dash.png\" /> Dash</span>\n          <span class=\"float-right\"><i class=\"fa fa-bar-chart fa-lg\"></i></span>\n        </div>\n      </div>\n      <div class=\"col dashboardcol\">\n        <div class=\"dashheading\">\n          <span class=\"mainheading\"><img src=\"assets/images/cryptoicons-sm/iota.png\" /> IOTA</span>\n          <span class=\"float-right\"><i class=\"fa fa-bar-chart fa-lg\"></i></span>\n        </div>\n      </div>\n      <div class=\"col dashboardcol\">\n        <div class=\"dashheading\">\n          <span class=\"mainheading\"><img src=\"assets/images/cryptoicons-sm/monero.png\" /> Monero</span>\n          <span class=\"float-right\"><i class=\"fa fa-bar-chart fa-lg\"></i></span>\n        </div>\n      </div>\n    </div>\n  </div>\n</div>"
+module.exports = "<div class=\"container-fluid\">\r\n  <!-- Content here -->\r\n  <nav class=\"navbar navbar-expand-lg navbar-dark\" style=\"background-color: #12132d;\">\r\n      <button class=\"navbar-toggler navbar-toggler-right\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarNavAltMarkup\" aria-controls=\"navbarNavAltMarkup\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">\r\n        <span class=\"navbar-toggler-icon\"></span>\r\n      </button>\r\n      <a class=\"navbar-brand\" href=\"#\"><img src=\"assets/images/tweetblock-logo.png\"/></a>\r\n      <div class=\"collapse navbar-collapse\" id=\"navbarNavAltMarkup\">\r\n        <div class=\"navbar-nav\">\r\n          <a class=\"nav-item nav-link active\" routerLink=\"/home\" routerLinkActive=\"active\">Home</a>\r\n          <a class=\"nav-item nav-link\" routerLink=\"/dashboard\" routerLinkActive=\"active\">Dashboard</a>\r\n          <a class=\"nav-item nav-link\" href=\"#\">About Us</a>\r\n          <a class=\"nav-item nav-link\" href=\"#\">Latest News</a>\r\n          <a class=\"nav-item nav-link\" href=\"#\">Blog</a>\r\n          <a class=\"nav-item nav-link\" href=\"#\">Contact us</a>\r\n          <a class=\"nav-item nav-link\" routerLink=\"/profile\" routerLinkActive=\"active\">Profile</a>\r\n        </div>\r\n      </div>\r\n\r\n      <form class=\"form-inline\">\r\n          <a class=\"navbar-brand\" routerLink=\"/login\"><span *ngIf=\"!userloggedIn;then content else other_content\">here is ignored</span></a>\r\n          <ng-template #content>Login</ng-template>\r\n          <ng-template #other_content>Logout</ng-template>\r\n        </form>\r\n    </nav>\r\n  <router-outlet></router-outlet>\r\n</div>\r\n"
 
 /***/ }),
 
-/***/ 176:
+/***/ 182:
+/***/ (function(module, exports) {
+
+module.exports = "<div class=\"row no-gutters\"> <!-- top first half row -->\n  <div class=\"col-1 iconcolumns\">\n    <a href=\"\" class=\"iconactive\"><i class=\"fa fa-home fa-lg\"></i></a><br/>\n    <a href=\"\"><i class=\"fa fa-tachometer fa-lg\"></i></a><br/>\n    <a href=\"\"><i class=\"fa fa-line-chart fa-lg\"></i></a><br/>\n    <a href=\"\"><i class=\"fa fa-envelope-o fa-lg\"></i></a><br/>\n    <a href=\"\"><i class=\"fa fa-cogs fa-lg\"></i></a><br/>\n    <a href=\"\"><i class=\"fa fa-sliders fa-lg\"></i></a><br/>\n    <a href=\"\"><i class=\"fa fa-plus fa-lg\"></i></a><br/>\n  </div>\n  <div class=\"col-11\">\n    <div class=\"row no-gutters\">\n      <div class=\"col-xs-12 col-sm-6 col-md-3 dashboardcol\">\n        <div class=\"dashheading\">\n          <span class=\"mainheading\"><img src=\"assets/images/cryptoicons-sm/ethereum.png\" /> Ethereum</span>\n          <span class=\"float-right\"><i class=\"fa fa-bar-chart fa-lg\"></i></span>\n        </div>\n      </div>\n      <div class=\"col-xs-12 col-sm-6 col-md-3 dashboardcol\">\n        <div class=\"dashheading\">\n          <span class=\"mainheading\"><img src=\"assets/images/cryptoicons-sm/omisego.png\" /> OmiseGO</span>\n          <span class=\"float-right\"><i class=\"fa fa-bar-chart fa-lg\"></i></span>\n        </div>\n      </div>\n      <div class=\"col-xs-12 col-sm-6 col-md-3 dashboardcol\">\n        <div class=\"dashheading\">\n          <span class=\"mainheading\"><img src=\"assets/images/cryptoicons-sm/ripple.png\" /> Ripple</span>\n          <span class=\"float-right\"><i class=\"fa fa-bar-chart fa-lg\"></i></span>\n        </div>\n      </div>\n      <div class=\"col-xs-12 col-sm-6 col-md-3 dashboardcol\">\n          <div class=\"dashheading\">\n            <span class=\"mainheading\"><img src=\"assets/images/cryptoicons-sm/litecoin.png\" /> Litecoin</span>\n            <span class=\"float-right\"><i class=\"fa fa-bar-chart fa-lg\"></i></span>\n          </div>\n      </div>\n    </div>\n  </div>\n</div>\n<div class=\"row no-gutters\"> <!-- second half row -->\n  <div class=\"col-1 iconcolumns\">\n    \n  </div>\n  <div class=\"col-11\">\n    <div class=\"row no-gutters\">\n      <div class=\"col-xs-12 col-sm-6 col-md-3 dashboardcol\">\n        <div class=\"dashheading\">\n          <span class=\"mainheading\"><img src=\"assets/images/cryptoicons-sm/nem.png\" /> NEM</span>\n          <span class=\"float-right\"><i class=\"fa fa-bar-chart fa-lg\"></i></span>\n        </div>\n      </div>\n      <div class=\"col-xs-12 col-sm-6 col-md-3 dashboardcol\">\n        <div class=\"dashheading\">\n          <span class=\"mainheading\"><img src=\"assets/images/cryptoicons-sm/dash.png\" /> Dash</span>\n          <span class=\"float-right\"><i class=\"fa fa-bar-chart fa-lg\"></i></span>\n        </div>\n      </div>\n      <div class=\"col-xs-12 col-sm-6 col-md-3 dashboardcol\">\n        <div class=\"dashheading\">\n          <span class=\"mainheading\"><img src=\"assets/images/cryptoicons-sm/iota.png\" /> IOTA</span>\n          <span class=\"float-right\"><i class=\"fa fa-bar-chart fa-lg\"></i></span>\n        </div>\n      </div>\n      <div class=\"col-xs-12 col-sm-6 col-md-3 dashboardcol\">\n        <div class=\"dashheading\">\n          <span class=\"mainheading\"><img src=\"assets/images/cryptoicons-sm/monero.png\" /> Monero</span>\n          <span class=\"float-right\"><i class=\"fa fa-bar-chart fa-lg\"></i></span>\n        </div>\n      </div>\n    </div>\n  </div>\n</div>"
+
+/***/ }),
+
+/***/ 183:
 /***/ (function(module, exports) {
 
 module.exports = "<section class=\"jumbotron text-center\">\r\n    <div class=\"container\">\r\n      <h1 class=\"jumbotron-heading\">Tweet Block</h1>\r\n      <p class=\"lead text-muted\">Crypto Currency news from all around the world, \r\n        with latest tweets, posts, videos from various de facto channels.\r\n      </p>\r\n      <p>\r\n        <a  routerLink=\"/login\" class=\"btn btn-primary\">Login</a>\r\n        <a  routerLink=\"/signup\" class=\"btn btn-secondary\">Signup</a>\r\n      </p>\r\n      <p>\r\n          or Login using <br/>\r\n          <a href=\"/auth/twitter\"><i class=\"fa fa-twitter-square fa-2x\"></i></a>\r\n          <i class=\"fa fa-facebook-square fa-2x\"></i>\r\n          <i class=\"fa fa-linkedin-square fa-2x\"></i>\r\n          <i class=\"fa fa-google-plus-square fa-2x\"></i>\r\n      </p>\r\n    </div>\r\n  </section>\r\n\r\n  <div class=\"album text-muted\">\r\n      <div class=\"container\">\r\n\r\n        <div class=\"row\">\r\n          <div class=\"card\">\r\n            <img data-src=\"holder.js/100px280/thumb\" alt=\"Card image cap\">\r\n            <p class=\"card-text\">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>\r\n          </div>\r\n          <div class=\"card\">\r\n            <img data-src=\"holder.js/100px280/thumb\" alt=\"Card image cap\">\r\n            <p class=\"card-text\">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>\r\n          </div>\r\n          <div class=\"card\">\r\n            <img data-src=\"holder.js/100px280/thumb\" alt=\"Card image cap\">\r\n            <p class=\"card-text\">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>\r\n          </div>\r\n\r\n          <div class=\"card\">\r\n            <img data-src=\"holder.js/100px280/thumb\" alt=\"Card image cap\">\r\n            <p class=\"card-text\">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>\r\n          </div>\r\n          <div class=\"card\">\r\n            <img data-src=\"holder.js/100px280/thumb\" alt=\"Card image cap\">\r\n            <p class=\"card-text\">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>\r\n          </div>\r\n          <div class=\"card\">\r\n            <img data-src=\"holder.js/100px280/thumb\" alt=\"Card image cap\">\r\n            <p class=\"card-text\">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>\r\n          </div>\r\n\r\n          <div class=\"card\">\r\n            <img data-src=\"holder.js/100px280/thumb\" alt=\"Card image cap\">\r\n            <p class=\"card-text\">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>\r\n          </div>\r\n          <div class=\"card\">\r\n            <img data-src=\"holder.js/100px280/thumb\" alt=\"Card image cap\">\r\n            <p class=\"card-text\">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>\r\n          </div>\r\n          <div class=\"card\">\r\n            <img data-src=\"holder.js/100px280/thumb\" alt=\"Card image cap\">\r\n            <p class=\"card-text\">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>\r\n          </div>\r\n        </div>\r\n\r\n      </div>\r\n    </div>\r\n\r\n    <footer class=\"text-muted\">\r\n      <div class=\"container\">\r\n        <p class=\"float-right\">\r\n          <a href=\"#\">Back to top</a>\r\n        </p>\r\n        <p>Album example is &copy; Bootstrap, but please download and customize it for yourself!</p>\r\n        <p>New to Bootstrap? <a href=\"../../\">Visit the homepage</a> or read our <a href=\"../../getting-started/\">getting started guide</a>.</p>\r\n      </div>\r\n    </footer>\r\n    \r\n<br/><br/><br/><br/><br/><br/>\r\n<h5>MongoDB is loading users!</h5>\r\n<ul>\r\n  <li *ngFor=\"let user of users\">{{ user.name }}</li>\r\n</ul>"
 
 /***/ }),
 
-/***/ 177:
+/***/ 184:
 /***/ (function(module, exports) {
 
 module.exports = "<div class=\"container main-form-container\">\n  <h3 class=\"text-center jumbotron-heading\">Login</h3>\n  <form>\n    <div class=\"form-group row\">\n      <label for=\"inputEmail3\" class=\"col-sm-2 col-form-label\">Email</label>\n      <div class=\"col-sm-10\">\n        <input [(ngModel)]=\"user.email\" name=\"email\" type=\"email\" class=\"form-control\" id=\"email\" placeholder=\"Email\">\n      </div>\n    </div>\n    <div class=\"form-group row\">\n      <label for=\"inputPassword3\" class=\"col-sm-2 col-form-label\">Password</label>\n      <div class=\"col-sm-10\">\n        <input [(ngModel)]=\"user.password\" name=\"password\" type=\"password\" class=\"form-control\" id=\"password\" placeholder=\"Password\">\n      </div>\n    </div>\n    \n    <div class=\"form-group row\">\n      <div class=\"offset-sm-2 col-sm-10 text-center\">\n        <button (click)=\"login()\" type=\"submit\" class=\"btn btn-primary\">Login</button>\n      </div>\n    </div>\n    <div *ngIf=\"error\" class=\"alert alert-danger\">{{error}}</div>\n  </form>\n</div>"
 
 /***/ }),
 
-/***/ 178:
+/***/ 185:
 /***/ (function(module, exports) {
 
 module.exports = "<p>\n  page-not-found works!\n</p>\n"
 
 /***/ }),
 
-/***/ 179:
+/***/ 186:
 /***/ (function(module, exports) {
 
-module.exports = "<p>\n  profile\n</p>\n<div class=\"container\">\n    \n        <div class=\"page-header text-center\">\n            <h1><span class=\"fa fa-anchor\"></span> Profile Page</h1>\n            <a href=\"/logout\" class=\"btn btn-default btn-sm\">Logout</a>\n        </div>\n    \n        <div class=\"row\">\n    \n            <!-- LOCAL INFORMATION -->\n            <div class=\"col-sm-6\">\n                <div class=\"well\">\n                    <h3><span class=\"fa fa-user\"></span> Local</h3>\n    \n                        <p>\n                            <strong>id</strong>: <%= user._id %><br>\n                            <strong>email</strong>: <%= user.local.email %><br>\n                            <strong>password</strong>: <%= user.local.password %>\n                        </p>\n    \n                </div>\n            </div>\n    \n        </div>\n\n        <div class=\"col-md-6 col-md-offset-3\">\n            <h1>Home</h1>\n            <p>You're logged in with JWT!!</p>\n            <div>\n                Users from secure api end point:\n                <ul>\n                    <li *ngFor=\"let user of users\">{{user.firstName}} {{user.lastName}}</li>\n                </ul>\n            </div>\n            <p><a [routerLink]=\"['/login']\">Logout</a></p>\n        </div>\n    \n    </div>"
+module.exports = "<p>\n  profile\n</p>\n<div class=\"container\">\n    \n        <div class=\"page-header text-center\">\n            <h1><span class=\"fa fa-anchor\"></span> Profile Page</h1>\n            <a href=\"/logout\" class=\"btn btn-default btn-sm\">Logout</a>\n        </div>\n    \n        <div class=\"row\">\n    \n            <!-- LOCAL INFORMATION -->\n            <div class=\"col-sm-6\">\n                <div class=\"well\">\n                    <h3><span class=\"fa fa-user\"></span> Local</h3>\n    \n                        <p>\n                            <strong>id</strong>: <%= user._id %><br>\n                            <strong>email</strong>: <%= user.local.email %><br>\n                            <strong>password</strong>: <%= user.local.password %>\n                        </p>\n    \n                </div>\n            </div>\n    \n        </div>\n\n        <div class=\"col-md-6 col-md-offset-3\">\n            <h1>Home</h1>\n            <p>You're logged in with Local storage</p>\n            <div>\n                Users from secure api end point:\n                <ul>\n                    <li *ngFor=\"let user of users\">{{user.firstName}} {{user.lastName}}</li>\n                </ul>\n            </div>\n            <p><a [routerLink]=\"['/login']\">Logout</a></p>\n        </div>\n    \n    </div>"
 
 /***/ }),
 
-/***/ 180:
+/***/ 187:
 /***/ (function(module, exports) {
 
 module.exports = "<div class=\"container main-form-container\">\n  <h3 class=\"text-center jumbotron-heading\">Register</h3>\n  <form>\n    <div class=\"form-group row\">\n      <label for=\"inputEmail3\" class=\"col-sm-2 col-form-label\">Email</label>\n      <div class=\"col-sm-10\">\n        <input type=\"email\" class=\"form-control\" id=\"inputEmail3\" placeholder=\"Email\">\n      </div>\n    </div>\n    <div class=\"form-group row\">\n      <label for=\"inputPassword3\" class=\"col-sm-2 col-form-label\">Password</label>\n      <div class=\"col-sm-10\">\n        <input type=\"password\" class=\"form-control\" id=\"inputPassword3\" placeholder=\"Password\">\n      </div>\n    </div>\n    \n    <div class=\"form-group row\">\n      <div class=\"offset-sm-2 col-sm-10 text-center\">\n        <button type=\"submit\" class=\"btn btn-primary\">Signup</button>\n      </div>\n    </div>\n  </form>\n  </div>"
 
 /***/ }),
 
-/***/ 214:
+/***/ 221:
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(91);
+module.exports = __webpack_require__(92);
 
 
 /***/ }),
@@ -623,7 +692,7 @@ var AuthenticationService = (function () {
         this.http = http;
         // set token if saved in local storage
         var currentUser = JSON.parse(localStorage.getItem('currentUser'));
-        this.token = currentUser;
+        this.userid = currentUser;
     }
     AuthenticationService.prototype.login = function (email, password) {
         var _this = this;
@@ -632,12 +701,13 @@ var AuthenticationService = (function () {
         return this.http.post('/login', JSON.stringify({ email: email, password: password }), options)
             .map(function (response) {
             // login successful if there's a jwt token in the response
-            var token = response.json();
-            if (token) {
+            var userid = response.json();
+            if (userid) {
                 // set token property
-                _this.token = token;
+                _this.userid = userid;
                 // store username and jwt token in local storage to keep user logged in between page refreshes
-                localStorage.setItem('currentUser', JSON.stringify({ email: email, token: token }));
+                localStorage.setItem('currentUser', JSON.stringify({ email: email, userid: userid }));
+                sessionStorage.setItem('currentUser', JSON.stringify({ email: email, userid: userid }));
                 // return true to indicate successful login
                 return true;
             }
@@ -649,8 +719,9 @@ var AuthenticationService = (function () {
     };
     AuthenticationService.prototype.logout = function () {
         // clear token remove user from local storage to log user out
-        this.token = null;
+        this.userid = null;
         localStorage.removeItem('currentUser');
+        sessionStorage.clear();
     };
     return AuthenticationService;
 }());
@@ -706,7 +777,7 @@ var _a;
 
 /***/ }),
 
-/***/ 65:
+/***/ 66:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -736,7 +807,7 @@ var UserService = (function () {
     }
     UserService.prototype.getUsers = function () {
         // add authorization header with jwt token
-        var headers = new __WEBPACK_IMPORTED_MODULE_1__angular_http__["b" /* Headers */]({ 'Authorization': 'Bearer ' + this.authenticationService.token });
+        var headers = new __WEBPACK_IMPORTED_MODULE_1__angular_http__["b" /* Headers */]({ 'Authorization': 'Bearer ' + this.authenticationService.userid });
         var options = new __WEBPACK_IMPORTED_MODULE_1__angular_http__["c" /* RequestOptions */]({ headers: headers });
         // get users from api
         return this.http.get('/api/users', options)
@@ -754,7 +825,7 @@ var _a, _b;
 
 /***/ }),
 
-/***/ 90:
+/***/ 91:
 /***/ (function(module, exports) {
 
 function webpackEmptyContext(req) {
@@ -763,20 +834,20 @@ function webpackEmptyContext(req) {
 webpackEmptyContext.keys = function() { return []; };
 webpackEmptyContext.resolve = webpackEmptyContext;
 module.exports = webpackEmptyContext;
-webpackEmptyContext.id = 90;
+webpackEmptyContext.id = 91;
 
 
 /***/ }),
 
-/***/ 91:
+/***/ 92:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_platform_browser_dynamic__ = __webpack_require__(98);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__app_app_module__ = __webpack_require__(101);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__environments_environment__ = __webpack_require__(108);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_platform_browser_dynamic__ = __webpack_require__(102);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__app_app_module__ = __webpack_require__(105);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__environments_environment__ = __webpack_require__(112);
 
 
 
@@ -787,50 +858,7 @@ if (__WEBPACK_IMPORTED_MODULE_3__environments_environment__["a" /* environment *
 __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__angular_platform_browser_dynamic__["a" /* platformBrowserDynamic */])().bootstrapModule(__WEBPACK_IMPORTED_MODULE_2__app_app_module__["a" /* AppModule */]);
 //# sourceMappingURL=main.js.map
 
-/***/ }),
-
-/***/ 99:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__(36);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AuthGuard; });
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-var AuthGuard = (function () {
-    function AuthGuard(router) {
-        this.router = router;
-    }
-    AuthGuard.prototype.canActivate = function () {
-        if (localStorage.getItem('currentUser')) {
-            // logged in so return true
-            return true;
-        }
-        // not logged in so redirect to login page
-        this.router.navigate(['/login']);
-        return false;
-    };
-    return AuthGuard;
-}());
-AuthGuard = __decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["c" /* Injectable */])(),
-    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_router__["b" /* Router */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_router__["b" /* Router */]) === "function" && _a || Object])
-], AuthGuard);
-
-var _a;
-//# sourceMappingURL=auth.guard.js.map
-
 /***/ })
 
-},[214]);
+},[221]);
 //# sourceMappingURL=main.bundle.js.map

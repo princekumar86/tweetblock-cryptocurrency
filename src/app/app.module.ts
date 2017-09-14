@@ -19,7 +19,7 @@ import { SignupComponent } from './pages/signup/signup.component';
 import { ProfileComponent } from './pages/profile/profile.component';
 
 const appRoutes: Routes = [
-  { path: 'dashboard', component: DashboardComponent, canActivate: [AuthGuard]  },
+  { path: 'dashboard', component: DashboardComponent, canActivate: [AuthGuard] },
   { path: 'home', component: HomeComponent },
   { path: 'login', component: LoginComponent },
   { path: 'signup', component: SignupComponent },

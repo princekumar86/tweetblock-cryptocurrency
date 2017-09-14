@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input, Output, EventEmitter } from '@angular/core';
 
 // Import the DataService
 import { DataService } from './data.service';
@@ -12,7 +12,8 @@ export class AppComponent {
   
   // Define a users property to hold our user data
   users: Array<any>;
-  
+  @Input() userloggedIn:boolean = false;
+
     // Create an instance of the DataService through dependency injection
     constructor(private _dataService: DataService) {
   
@@ -20,5 +21,6 @@ export class AppComponent {
       this._dataService.getUsers()
           .subscribe(res => this.users = res);
     }
+    
     
 }
