@@ -98,10 +98,20 @@ module.exports = function(app, passport) {
         
         // handle the callback after facebook has authenticated the user
         app.get('/auth/facebook/callback',
-            passport.authenticate('facebook', {
-                successRedirect : '/profile',
-                failureRedirect : '/'
-        }));
+        passport.authenticate('facebook', { failureRedirect: '/' }),
+        function(req, res) {
+          // Successful authentication, redirect home.
+          res.redirect('/fbcallback');
+        });
+        // test - //
+        app.get('/check_fb_correctly_loggenin', function(req, res) {
+            //res.send(req.user);
+            //res.json({ id: req.user.id, username: req.user.username });
+            //console.log(req.user);
+            //console.log(req.user.id);
+            res.send(req.user);
+        });
+
 
     };
 

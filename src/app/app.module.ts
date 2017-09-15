@@ -9,6 +9,7 @@ import { AppComponent } from './app.component';
 import { DataService } from './data.service';
 import { AuthGuard } from './_guards/auth.guard';
 import { AuthenticationService } from './_services/authentication.service';
+import { SocialcallbackService } from './_services/socialcallback.service';
 import { UserService } from './_services/user.service';
 
 import { DashboardComponent } from './pages/dashboard/dashboard.component';
@@ -17,7 +18,8 @@ import { HomeComponent } from './pages/home/home.component';
 import { LoginComponent } from './pages/login/login.component';
 import { SignupComponent } from './pages/signup/signup.component';
 import { ProfileComponent } from './pages/profile/profile.component';
-import { SettingsComponent } from './settings/settings.component';
+import { SettingsComponent } from './pages/settings/settings.component';
+import { FbcallbackComponent } from './pages/fbcallback/fbcallback.component';
 
 const appRoutes: Routes = [
   { path: 'home', component: HomeComponent },
@@ -26,6 +28,7 @@ const appRoutes: Routes = [
   { path: 'settings', component: SettingsComponent },
   { path: 'dashboard', component: DashboardComponent, canActivate: [AuthGuard] },
   { path: 'profile', component: ProfileComponent, canActivate: [AuthGuard]  },
+  { path: 'fbcallback', component: FbcallbackComponent },
   { path: '',   redirectTo: '/home', pathMatch: 'full' },
   { path: '*', component: PageNotFoundComponent }
 ]
@@ -38,7 +41,8 @@ const appRoutes: Routes = [
     LoginComponent,
     SignupComponent,
     ProfileComponent,
-    SettingsComponent
+    SettingsComponent,
+    FbcallbackComponent
   ],
   imports: [
     RouterModule.forRoot(
@@ -52,6 +56,7 @@ const appRoutes: Routes = [
   providers: [DataService, 
     AuthGuard,
     AuthenticationService,
+    SocialcallbackService,
     UserService,],
   bootstrap: [AppComponent]
 })
