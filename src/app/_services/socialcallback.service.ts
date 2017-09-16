@@ -35,6 +35,50 @@ export class SocialcallbackService {
                 }
             });
     }
+
+    twittercallback(): Observable<boolean> {   
+        return this.http.get('/check_twitter_correctly_loggenin')
+            .map((response: Response) => {
+                // login successful if there's json in the response
+                let user = response.json();
+                //console.log(user);
+                let userid = user._id;
+                let username = user.twitter.username;
+                if (userid) {
+                    // if userid exists
+                    // store username and id or token local storage to keep user logged in between page refreshes
+                    localStorage.setItem('currentUser', JSON.stringify({ email: username, userid: userid }));
+                    sessionStorage.setItem('currentUser', JSON.stringify({ email: username, userid: userid }));
+                    // return true to indicate successful login
+                    return true;
+                } else {
+                    // return false to indicate failed login
+                    return false;
+                }
+            });
+    }
+
+    googlecallback(): Observable<boolean> {   
+        return this.http.get('/check_google_correctly_loggenin')
+            .map((response: Response) => {
+                // login successful if there's json in the response
+                let user = response.json();
+                //console.log(user);
+                let userid = user._id;
+                let email = user.google.email;
+                if (userid) {
+                    // if userid exists
+                    // store username and id or token local storage to keep user logged in between page refreshes
+                    localStorage.setItem('currentUser', JSON.stringify({ email: email, userid: userid }));
+                    sessionStorage.setItem('currentUser', JSON.stringify({ email: email, userid: userid }));
+                    // return true to indicate successful login
+                    return true;
+                } else {
+                    // return false to indicate failed login
+                    return false;
+                }
+            });
+    }
  
 
 }

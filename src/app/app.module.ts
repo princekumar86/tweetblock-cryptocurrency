@@ -20,6 +20,10 @@ import { SignupComponent } from './pages/signup/signup.component';
 import { ProfileComponent } from './pages/profile/profile.component';
 import { SettingsComponent } from './pages/settings/settings.component';
 import { FbcallbackComponent } from './pages/fbcallback/fbcallback.component';
+import { TwittercallbackComponent } from './pages/twittercallback/twittercallback.component';
+import { PrivacyPolicyComponent } from './pages/privacy-policy/privacy-policy.component';
+import { TermsOfServiceComponent } from './pages/terms-of-service/terms-of-service.component';
+import { GooglecallbackComponent } from './pages/googlecallback/googlecallback.component';
 
 const appRoutes: Routes = [
   { path: 'home', component: HomeComponent },
@@ -29,6 +33,10 @@ const appRoutes: Routes = [
   { path: 'dashboard', component: DashboardComponent, canActivate: [AuthGuard] },
   { path: 'profile', component: ProfileComponent, canActivate: [AuthGuard]  },
   { path: 'fbcallback', component: FbcallbackComponent },
+  { path: 'twittercallback', component: TwittercallbackComponent },
+  { path: 'googlecallback', component: GooglecallbackComponent },
+  { path: 'privacy-policy', component: PrivacyPolicyComponent },
+  { path: 'terms-of-service', component: TermsOfServiceComponent },
   { path: '',   redirectTo: '/home', pathMatch: 'full' },
   { path: '*', component: PageNotFoundComponent }
 ]
@@ -42,7 +50,11 @@ const appRoutes: Routes = [
     SignupComponent,
     ProfileComponent,
     SettingsComponent,
-    FbcallbackComponent
+    FbcallbackComponent,
+    TwittercallbackComponent,
+    PrivacyPolicyComponent,
+    TermsOfServiceComponent,
+    GooglecallbackComponent
   ],
   imports: [
     RouterModule.forRoot(

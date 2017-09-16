@@ -1,11 +1,11 @@
 webpackJsonp([1,5],{
 
-/***/ 104:
+/***/ 105:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__(19);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__(15);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AuthGuard; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -43,13 +43,13 @@ var _a;
 
 /***/ }),
 
-/***/ 105:
+/***/ 106:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_http__ = __webpack_require__(17);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map__ = __webpack_require__(27);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_http__ = __webpack_require__(12);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map__ = __webpack_require__(18);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__authentication_service__ = __webpack_require__(28);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return UserService; });
@@ -83,14 +83,14 @@ var _a, _b;
 
 /***/ }),
 
-/***/ 106:
+/***/ 107:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_jquery__ = __webpack_require__(184);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_jquery__ = __webpack_require__(193);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_jquery___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_jquery__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__data_service__ = __webpack_require__(66);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__data_service__ = __webpack_require__(67);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AppComponent; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -130,8 +130,8 @@ __decorate([
 AppComponent = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_14" /* Component */])({
         selector: 'app-root',
-        template: __webpack_require__(188),
-        styles: [__webpack_require__(172)]
+        template: __webpack_require__(197),
+        styles: [__webpack_require__(177)]
     }),
     __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_2__data_service__["a" /* DataService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__data_service__["a" /* DataService */]) === "function" && _a || Object])
 ], AppComponent);
@@ -141,29 +141,33 @@ var _a;
 
 /***/ }),
 
-/***/ 107:
+/***/ 108:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__ = __webpack_require__(18);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__ = __webpack_require__(20);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_forms__ = __webpack_require__(102);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_http__ = __webpack_require__(17);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__angular_router__ = __webpack_require__(19);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__app_component__ = __webpack_require__(106);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__data_service__ = __webpack_require__(66);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__guards_auth_guard__ = __webpack_require__(104);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_forms__ = __webpack_require__(103);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_http__ = __webpack_require__(12);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__angular_router__ = __webpack_require__(15);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__app_component__ = __webpack_require__(107);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__data_service__ = __webpack_require__(67);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__guards_auth_guard__ = __webpack_require__(105);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__services_authentication_service__ = __webpack_require__(28);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__services_socialcallback_service__ = __webpack_require__(65);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__services_user_service__ = __webpack_require__(105);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__pages_dashboard_dashboard_component__ = __webpack_require__(108);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__pages_page_not_found_page_not_found_component__ = __webpack_require__(112);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__pages_home_home_component__ = __webpack_require__(110);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__pages_login_login_component__ = __webpack_require__(111);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__pages_signup_signup_component__ = __webpack_require__(115);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__pages_profile_profile_component__ = __webpack_require__(113);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__pages_settings_settings_component__ = __webpack_require__(114);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__pages_fbcallback_fbcallback_component__ = __webpack_require__(109);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__services_socialcallback_service__ = __webpack_require__(29);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__services_user_service__ = __webpack_require__(106);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__pages_dashboard_dashboard_component__ = __webpack_require__(109);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__pages_page_not_found_page_not_found_component__ = __webpack_require__(114);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__pages_home_home_component__ = __webpack_require__(112);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__pages_login_login_component__ = __webpack_require__(113);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__pages_signup_signup_component__ = __webpack_require__(118);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__pages_profile_profile_component__ = __webpack_require__(116);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__pages_settings_settings_component__ = __webpack_require__(117);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__pages_fbcallback_fbcallback_component__ = __webpack_require__(110);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__pages_twittercallback_twittercallback_component__ = __webpack_require__(120);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__pages_privacy_policy_privacy_policy_component__ = __webpack_require__(115);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__pages_terms_of_service_terms_of_service_component__ = __webpack_require__(119);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__pages_googlecallback_googlecallback_component__ = __webpack_require__(111);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AppModule; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -171,6 +175,10 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+
+
+
+
 
 
 
@@ -198,6 +206,10 @@ var appRoutes = [
     { path: 'dashboard', component: __WEBPACK_IMPORTED_MODULE_11__pages_dashboard_dashboard_component__["a" /* DashboardComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_7__guards_auth_guard__["a" /* AuthGuard */]] },
     { path: 'profile', component: __WEBPACK_IMPORTED_MODULE_16__pages_profile_profile_component__["a" /* ProfileComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_7__guards_auth_guard__["a" /* AuthGuard */]] },
     { path: 'fbcallback', component: __WEBPACK_IMPORTED_MODULE_18__pages_fbcallback_fbcallback_component__["a" /* FbcallbackComponent */] },
+    { path: 'twittercallback', component: __WEBPACK_IMPORTED_MODULE_19__pages_twittercallback_twittercallback_component__["a" /* TwittercallbackComponent */] },
+    { path: 'googlecallback', component: __WEBPACK_IMPORTED_MODULE_22__pages_googlecallback_googlecallback_component__["a" /* GooglecallbackComponent */] },
+    { path: 'privacy-policy', component: __WEBPACK_IMPORTED_MODULE_20__pages_privacy_policy_privacy_policy_component__["a" /* PrivacyPolicyComponent */] },
+    { path: 'terms-of-service', component: __WEBPACK_IMPORTED_MODULE_21__pages_terms_of_service_terms_of_service_component__["a" /* TermsOfServiceComponent */] },
     { path: '', redirectTo: '/home', pathMatch: 'full' },
     { path: '*', component: __WEBPACK_IMPORTED_MODULE_12__pages_page_not_found_page_not_found_component__["a" /* PageNotFoundComponent */] }
 ];
@@ -217,7 +229,11 @@ AppModule = __decorate([
             __WEBPACK_IMPORTED_MODULE_15__pages_signup_signup_component__["a" /* SignupComponent */],
             __WEBPACK_IMPORTED_MODULE_16__pages_profile_profile_component__["a" /* ProfileComponent */],
             __WEBPACK_IMPORTED_MODULE_17__pages_settings_settings_component__["a" /* SettingsComponent */],
-            __WEBPACK_IMPORTED_MODULE_18__pages_fbcallback_fbcallback_component__["a" /* FbcallbackComponent */]
+            __WEBPACK_IMPORTED_MODULE_18__pages_fbcallback_fbcallback_component__["a" /* FbcallbackComponent */],
+            __WEBPACK_IMPORTED_MODULE_19__pages_twittercallback_twittercallback_component__["a" /* TwittercallbackComponent */],
+            __WEBPACK_IMPORTED_MODULE_20__pages_privacy_policy_privacy_policy_component__["a" /* PrivacyPolicyComponent */],
+            __WEBPACK_IMPORTED_MODULE_21__pages_terms_of_service_terms_of_service_component__["a" /* TermsOfServiceComponent */],
+            __WEBPACK_IMPORTED_MODULE_22__pages_googlecallback_googlecallback_component__["a" /* GooglecallbackComponent */]
         ],
         imports: [
             __WEBPACK_IMPORTED_MODULE_4__angular_router__["a" /* RouterModule */].forRoot(appRoutes, { enableTracing: true } // <-- debugging purposes only
@@ -239,7 +255,7 @@ AppModule = __decorate([
 
 /***/ }),
 
-/***/ 108:
+/***/ 109:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -286,8 +302,8 @@ __decorate([
 DashboardComponent = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_14" /* Component */])({
         selector: 'app-dashboard',
-        template: __webpack_require__(189),
-        styles: [__webpack_require__(173)]
+        template: __webpack_require__(198),
+        styles: [__webpack_require__(178)]
     }),
     __metadata("design:paramtypes", [])
 ], DashboardComponent);
@@ -296,18 +312,18 @@ DashboardComponent = __decorate([
 
 /***/ }),
 
-/***/ 109:
+/***/ 110:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__(19);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_http__ = __webpack_require__(17);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_map__ = __webpack_require__(27);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__(15);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_http__ = __webpack_require__(12);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_map__ = __webpack_require__(18);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_map___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_map__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rxjs_add_operator_catch__ = __webpack_require__(201);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rxjs_add_operator_catch__ = __webpack_require__(55);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rxjs_add_operator_catch___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_rxjs_add_operator_catch__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__services_socialcallback_service__ = __webpack_require__(65);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__services_socialcallback_service__ = __webpack_require__(29);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FbcallbackComponent; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -352,8 +368,8 @@ var FbcallbackComponent = (function () {
 FbcallbackComponent = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_14" /* Component */])({
         selector: 'app-fbcallback',
-        template: __webpack_require__(190),
-        styles: [__webpack_require__(174)]
+        template: __webpack_require__(199),
+        styles: [__webpack_require__(179)]
     }),
     __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_router__["b" /* Router */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_router__["b" /* Router */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__angular_http__["b" /* Http */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__angular_http__["b" /* Http */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_5__services_socialcallback_service__["a" /* SocialcallbackService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_5__services_socialcallback_service__["a" /* SocialcallbackService */]) === "function" && _c || Object])
 ], FbcallbackComponent);
@@ -363,7 +379,74 @@ var _a, _b, _c;
 
 /***/ }),
 
-/***/ 110:
+/***/ 111:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__(15);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_http__ = __webpack_require__(12);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_map__ = __webpack_require__(18);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_map___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_map__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rxjs_add_operator_catch__ = __webpack_require__(55);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rxjs_add_operator_catch___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_rxjs_add_operator_catch__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__services_socialcallback_service__ = __webpack_require__(29);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return GooglecallbackComponent; });
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+
+
+var GooglecallbackComponent = (function () {
+    function GooglecallbackComponent(router, http, socialcallbackService) {
+        this.router = router;
+        this.http = http;
+        this.socialcallbackService = socialcallbackService;
+    }
+    GooglecallbackComponent.prototype.ngOnInit = function () {
+        this.googlecallbackfetchdata();
+    };
+    GooglecallbackComponent.prototype.googlecallbackfetchdata = function () {
+        var _this = this;
+        this.socialcallbackService.googlecallback()
+            .subscribe(function (result) {
+            if (result === true) {
+                // login successful
+                _this.router.navigate(['/dashboard']);
+            }
+            else {
+                // login failed
+                //this.error = 'Username or password is incorrect';
+            }
+        });
+    };
+    return GooglecallbackComponent;
+}());
+GooglecallbackComponent = __decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_14" /* Component */])({
+        selector: 'app-googlecallback',
+        template: __webpack_require__(200),
+        styles: [__webpack_require__(180)]
+    }),
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_router__["b" /* Router */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_router__["b" /* Router */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__angular_http__["b" /* Http */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__angular_http__["b" /* Http */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_5__services_socialcallback_service__["a" /* SocialcallbackService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_5__services_socialcallback_service__["a" /* SocialcallbackService */]) === "function" && _c || Object])
+], GooglecallbackComponent);
+
+var _a, _b, _c;
+//# sourceMappingURL=googlecallback.component.js.map
+
+/***/ }),
+
+/***/ 112:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -387,8 +470,8 @@ var HomeComponent = (function () {
 HomeComponent = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_14" /* Component */])({
         selector: 'app-home',
-        template: __webpack_require__(191),
-        styles: [__webpack_require__(175)]
+        template: __webpack_require__(201),
+        styles: [__webpack_require__(181)]
     }),
     __metadata("design:paramtypes", [])
 ], HomeComponent);
@@ -397,12 +480,12 @@ HomeComponent = __decorate([
 
 /***/ }),
 
-/***/ 111:
+/***/ 113:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__(19);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__(15);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__services_authentication_service__ = __webpack_require__(28);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return LoginComponent; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -453,8 +536,8 @@ var LoginComponent = (function () {
 LoginComponent = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_14" /* Component */])({
         selector: 'app-login',
-        template: __webpack_require__(192),
-        styles: [__webpack_require__(176)]
+        template: __webpack_require__(202),
+        styles: [__webpack_require__(182)]
     }),
     __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_router__["b" /* Router */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_router__["b" /* Router */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__services_authentication_service__["a" /* AuthenticationService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__services_authentication_service__["a" /* AuthenticationService */]) === "function" && _b || Object])
 ], LoginComponent);
@@ -464,7 +547,7 @@ var _a, _b;
 
 /***/ }),
 
-/***/ 112:
+/***/ 114:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -490,8 +573,8 @@ var PageNotFoundComponent = (function () {
 PageNotFoundComponent = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_14" /* Component */])({
         selector: 'app-page-not-found',
-        template: __webpack_require__(193),
-        styles: [__webpack_require__(177)]
+        template: __webpack_require__(203),
+        styles: [__webpack_require__(183)]
     }),
     __metadata("design:paramtypes", [])
 ], PageNotFoundComponent);
@@ -500,7 +583,43 @@ PageNotFoundComponent = __decorate([
 
 /***/ }),
 
-/***/ 113:
+/***/ 115:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return PrivacyPolicyComponent; });
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var PrivacyPolicyComponent = (function () {
+    function PrivacyPolicyComponent() {
+    }
+    PrivacyPolicyComponent.prototype.ngOnInit = function () {
+    };
+    return PrivacyPolicyComponent;
+}());
+PrivacyPolicyComponent = __decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_14" /* Component */])({
+        selector: 'app-privacy-policy',
+        template: __webpack_require__(204),
+        styles: [__webpack_require__(184)]
+    }),
+    __metadata("design:paramtypes", [])
+], PrivacyPolicyComponent);
+
+//# sourceMappingURL=privacy-policy.component.js.map
+
+/***/ }),
+
+/***/ 116:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -546,8 +665,8 @@ var ProfileComponent = (function () {
 ProfileComponent = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_14" /* Component */])({
         selector: 'app-profile',
-        template: __webpack_require__(194),
-        styles: [__webpack_require__(178)]
+        template: __webpack_require__(205),
+        styles: [__webpack_require__(185)]
     }),
     __metadata("design:paramtypes", [])
 ], ProfileComponent);
@@ -556,7 +675,7 @@ ProfileComponent = __decorate([
 
 /***/ }),
 
-/***/ 114:
+/***/ 117:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -582,8 +701,8 @@ var SettingsComponent = (function () {
 SettingsComponent = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_14" /* Component */])({
         selector: 'app-settings',
-        template: __webpack_require__(195),
-        styles: [__webpack_require__(179)]
+        template: __webpack_require__(206),
+        styles: [__webpack_require__(186)]
     }),
     __metadata("design:paramtypes", [])
 ], SettingsComponent);
@@ -592,12 +711,12 @@ SettingsComponent = __decorate([
 
 /***/ }),
 
-/***/ 115:
+/***/ 118:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__(19);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__(15);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__services_authentication_service__ = __webpack_require__(28);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SignupComponent; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -648,8 +767,8 @@ var SignupComponent = (function () {
 SignupComponent = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_14" /* Component */])({
         selector: 'app-signup',
-        template: __webpack_require__(196),
-        styles: [__webpack_require__(180)]
+        template: __webpack_require__(207),
+        styles: [__webpack_require__(187)]
     }),
     __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_router__["b" /* Router */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_router__["b" /* Router */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__services_authentication_service__["a" /* AuthenticationService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__services_authentication_service__["a" /* AuthenticationService */]) === "function" && _b || Object])
 ], SignupComponent);
@@ -659,7 +778,110 @@ var _a, _b;
 
 /***/ }),
 
-/***/ 116:
+/***/ 119:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return TermsOfServiceComponent; });
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var TermsOfServiceComponent = (function () {
+    function TermsOfServiceComponent() {
+    }
+    TermsOfServiceComponent.prototype.ngOnInit = function () {
+    };
+    return TermsOfServiceComponent;
+}());
+TermsOfServiceComponent = __decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_14" /* Component */])({
+        selector: 'app-terms-of-service',
+        template: __webpack_require__(208),
+        styles: [__webpack_require__(188)]
+    }),
+    __metadata("design:paramtypes", [])
+], TermsOfServiceComponent);
+
+//# sourceMappingURL=terms-of-service.component.js.map
+
+/***/ }),
+
+/***/ 120:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__(15);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_http__ = __webpack_require__(12);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_map__ = __webpack_require__(18);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_map___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_map__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rxjs_add_operator_catch__ = __webpack_require__(55);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rxjs_add_operator_catch___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_rxjs_add_operator_catch__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__services_socialcallback_service__ = __webpack_require__(29);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return TwittercallbackComponent; });
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+
+
+var TwittercallbackComponent = (function () {
+    function TwittercallbackComponent(router, http, socialcallbackService) {
+        this.router = router;
+        this.http = http;
+        this.socialcallbackService = socialcallbackService;
+    }
+    TwittercallbackComponent.prototype.ngOnInit = function () {
+        this.twittercallbackfetchdata();
+    };
+    TwittercallbackComponent.prototype.twittercallbackfetchdata = function () {
+        var _this = this;
+        this.socialcallbackService.twittercallback()
+            .subscribe(function (result) {
+            if (result === true) {
+                // login successful
+                _this.router.navigate(['/dashboard']);
+            }
+            else {
+                // login failed
+                //this.error = 'Username or password is incorrect';
+            }
+        });
+    };
+    return TwittercallbackComponent;
+}());
+TwittercallbackComponent = __decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_14" /* Component */])({
+        selector: 'app-twittercallback',
+        template: __webpack_require__(209),
+        styles: [__webpack_require__(189)]
+    }),
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_router__["b" /* Router */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_router__["b" /* Router */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__angular_http__["b" /* Http */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__angular_http__["b" /* Http */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_5__services_socialcallback_service__["a" /* SocialcallbackService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_5__services_socialcallback_service__["a" /* SocialcallbackService */]) === "function" && _c || Object])
+], TwittercallbackComponent);
+
+var _a, _b, _c;
+//# sourceMappingURL=twittercallback.component.js.map
+
+/***/ }),
+
+/***/ 121:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -676,10 +898,10 @@ var environment = {
 
 /***/ }),
 
-/***/ 172:
+/***/ 177:
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(5)();
+exports = module.exports = __webpack_require__(4)();
 // imports
 
 
@@ -694,10 +916,10 @@ module.exports = module.exports.toString();
 
 /***/ }),
 
-/***/ 173:
+/***/ 178:
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(5)();
+exports = module.exports = __webpack_require__(4)();
 // imports
 
 
@@ -712,10 +934,10 @@ module.exports = module.exports.toString();
 
 /***/ }),
 
-/***/ 174:
+/***/ 179:
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(5)();
+exports = module.exports = __webpack_require__(4)();
 // imports
 
 
@@ -730,10 +952,28 @@ module.exports = module.exports.toString();
 
 /***/ }),
 
-/***/ 175:
+/***/ 180:
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(5)();
+exports = module.exports = __webpack_require__(4)();
+// imports
+
+
+// module
+exports.push([module.i, "", ""]);
+
+// exports
+
+
+/*** EXPORTS FROM exports-loader ***/
+module.exports = module.exports.toString();
+
+/***/ }),
+
+/***/ 181:
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(4)();
 // imports
 
 
@@ -748,10 +988,10 @@ module.exports = module.exports.toString();
 
 /***/ }),
 
-/***/ 176:
+/***/ 182:
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(5)();
+exports = module.exports = __webpack_require__(4)();
 // imports
 
 
@@ -766,10 +1006,10 @@ module.exports = module.exports.toString();
 
 /***/ }),
 
-/***/ 177:
+/***/ 183:
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(5)();
+exports = module.exports = __webpack_require__(4)();
 // imports
 
 
@@ -784,10 +1024,10 @@ module.exports = module.exports.toString();
 
 /***/ }),
 
-/***/ 178:
+/***/ 184:
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(5)();
+exports = module.exports = __webpack_require__(4)();
 // imports
 
 
@@ -802,10 +1042,28 @@ module.exports = module.exports.toString();
 
 /***/ }),
 
-/***/ 179:
+/***/ 185:
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(5)();
+exports = module.exports = __webpack_require__(4)();
+// imports
+
+
+// module
+exports.push([module.i, "", ""]);
+
+// exports
+
+
+/*** EXPORTS FROM exports-loader ***/
+module.exports = module.exports.toString();
+
+/***/ }),
+
+/***/ 186:
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(4)();
 // imports
 
 
@@ -820,10 +1078,10 @@ module.exports = module.exports.toString();
 
 /***/ }),
 
-/***/ 180:
+/***/ 187:
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(5)();
+exports = module.exports = __webpack_require__(4)();
 // imports
 
 
@@ -839,72 +1097,136 @@ module.exports = module.exports.toString();
 /***/ }),
 
 /***/ 188:
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(4)();
+// imports
+
+
+// module
+exports.push([module.i, "", ""]);
+
+// exports
+
+
+/*** EXPORTS FROM exports-loader ***/
+module.exports = module.exports.toString();
+
+/***/ }),
+
+/***/ 189:
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(4)();
+// imports
+
+
+// module
+exports.push([module.i, "", ""]);
+
+// exports
+
+
+/*** EXPORTS FROM exports-loader ***/
+module.exports = module.exports.toString();
+
+/***/ }),
+
+/***/ 197:
 /***/ (function(module, exports) {
 
 module.exports = "<div class=\"container-fluid\">\r\n  <!-- Content here -->\r\n  <nav class=\"navbar navbar-expand-lg navbar-dark\" style=\"background-color: #12132d;\">\r\n      <button class=\"navbar-toggler navbar-toggler-right\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarNavAltMarkup\" aria-controls=\"navbarNavAltMarkup\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">\r\n        <span class=\"navbar-toggler-icon\"></span>\r\n      </button>\r\n      <a class=\"navbar-brand\" href=\"#\"><img src=\"assets/images/tweetblock-logo.png\"/></a>\r\n      <div class=\"collapse navbar-collapse\" id=\"navbarNavAltMarkup\">\r\n        <div class=\"navbar-nav\">\r\n          <a class=\"nav-item nav-link active\" routerLink=\"/home\" routerLinkActive=\"active\">Home</a>\r\n          <a class=\"nav-item nav-link\" routerLink=\"/dashboard\" routerLinkActive=\"active\">Dashboard</a>\r\n          <a class=\"nav-item nav-link\" href=\"#\">About Us</a>\r\n          <a class=\"nav-item nav-link\" href=\"#\">Latest News</a>\r\n          <a class=\"nav-item nav-link\" href=\"#\">Blog</a>\r\n          <a class=\"nav-item nav-link\" routerLink=\"/profile\" routerLinkActive=\"active\">Profile</a>\r\n          <a class=\"nav-item nav-link\" routerLink=\"/settings\" routerLinkActive=\"active\">Settings</a>\r\n          \r\n        </div>\r\n      </div>\r\n\r\n      <form class=\"form-inline\">\r\n          <a class=\"navbar-brand\" routerLink=\"/login\"><span *ngIf=\"!userloggedIn;then content else other_content\">here is ignored</span></a>\r\n          <ng-template #content>Login</ng-template>\r\n          <ng-template #other_content>Logout</ng-template>\r\n        </form>\r\n    </nav>\r\n  <router-outlet></router-outlet>\r\n</div>\r\n"
 
 /***/ }),
 
-/***/ 189:
+/***/ 198:
 /***/ (function(module, exports) {
 
 module.exports = "<div class=\"row no-gutters\"> <!-- top first half row -->\n  <div class=\"col-1 iconcolumns\">\n    <a href=\"\" routerLink=\"/dashboard\" class=\"iconactive\"><i class=\"fa fa-home fa-lg\"></i></a><br/>\n    <a href=\"\"><i class=\"fa fa-tachometer fa-lg\"></i></a><br/>\n    <a href=\"\"><i class=\"fa fa-line-chart fa-lg\"></i></a><br/>\n    <a href=\"\"><i class=\"fa fa-envelope-o fa-lg\"></i></a><br/>\n    <a href=\"\" routerLink=\"/settings\"><i class=\"fa fa-cogs fa-lg\"></i></a><br/>\n    <a href=\"\"><i class=\"fa fa-sliders fa-lg\"></i></a><br/>\n    <a href=\"\"><i class=\"fa fa-plus fa-lg\"></i></a><br/>\n  </div>\n  <div class=\"col-11\">\n    <div class=\"row no-gutters\">\n      <div class=\"col-xs-12 col-sm-6 col-md-3 dashboardcol\">\n        <div class=\"dashheading\">\n          <span class=\"mainheading\"><img src=\"assets/images/cryptoicons-sm/ethereum.png\" /> Ethereum</span>\n          <span class=\"float-right\"><i class=\"fa fa-bar-chart fa-lg\"></i></span>\n        </div>\n      </div>\n      <div class=\"col-xs-12 col-sm-6 col-md-3 dashboardcol\">\n        <div class=\"dashheading\">\n          <span class=\"mainheading\"><img src=\"assets/images/cryptoicons-sm/omisego.png\" /> OmiseGO</span>\n          <span class=\"float-right\"><i class=\"fa fa-bar-chart fa-lg\"></i></span>\n        </div>\n      </div>\n      <div class=\"col-xs-12 col-sm-6 col-md-3 dashboardcol\">\n        <div class=\"dashheading\">\n          <span class=\"mainheading\"><img src=\"assets/images/cryptoicons-sm/ripple.png\" /> Ripple</span>\n          <span class=\"float-right\"><i class=\"fa fa-bar-chart fa-lg\"></i></span>\n        </div>\n      </div>\n      <div class=\"col-xs-12 col-sm-6 col-md-3 dashboardcol\">\n          <div class=\"dashheading\">\n            <span class=\"mainheading\"><img src=\"assets/images/cryptoicons-sm/litecoin.png\" /> Litecoin</span>\n            <span class=\"float-right\"><i class=\"fa fa-bar-chart fa-lg\"></i></span>\n          </div>\n      </div>\n    </div>\n  </div>\n</div>\n<div class=\"row no-gutters\"> <!-- second half row -->\n  <div class=\"col-1 iconcolumns\">\n    \n  </div>\n  <div class=\"col-11\">\n    <div class=\"row no-gutters\">\n      <div class=\"col-xs-12 col-sm-6 col-md-3 dashboardcol\">\n        <div class=\"dashheading\">\n          <span class=\"mainheading\"><img src=\"assets/images/cryptoicons-sm/nem.png\" /> NEM</span>\n          <span class=\"float-right\"><i class=\"fa fa-bar-chart fa-lg\"></i></span>\n        </div>\n      </div>\n      <div class=\"col-xs-12 col-sm-6 col-md-3 dashboardcol\">\n        <div class=\"dashheading\">\n          <span class=\"mainheading\"><img src=\"assets/images/cryptoicons-sm/dash.png\" /> Dash</span>\n          <span class=\"float-right\"><i class=\"fa fa-bar-chart fa-lg\"></i></span>\n        </div>\n      </div>\n      <div class=\"col-xs-12 col-sm-6 col-md-3 dashboardcol\">\n        <div class=\"dashheading\">\n          <span class=\"mainheading\"><img src=\"assets/images/cryptoicons-sm/iota.png\" /> IOTA</span>\n          <span class=\"float-right\"><i class=\"fa fa-bar-chart fa-lg\"></i></span>\n        </div>\n      </div>\n      <div class=\"col-xs-12 col-sm-6 col-md-3 dashboardcol\">\n        <div class=\"dashheading\">\n          <span class=\"mainheading\"><img src=\"assets/images/cryptoicons-sm/monero.png\" /> Monero</span>\n          <span class=\"float-right\"><i class=\"fa fa-bar-chart fa-lg\"></i></span>\n        </div>\n      </div>\n    </div>\n  </div>\n</div>"
 
 /***/ }),
 
-/***/ 190:
+/***/ 199:
 /***/ (function(module, exports) {
 
-module.exports = "<p>\n  fbcallback works!\n</p>\n"
+module.exports = "<p>\n  fbcallback !\n</p>\n\n<p>Loading ....    Please wait ...</p>\n"
 
 /***/ }),
 
-/***/ 191:
+/***/ 200:
 /***/ (function(module, exports) {
 
-module.exports = "<section class=\"jumbotron text-center\">\r\n    <div class=\"container\">\r\n      <h1 class=\"jumbotron-heading\">Tweet Block</h1>\r\n      <p class=\"lead text-muted\">Crypto Currency news from all around the world, \r\n        with latest tweets, posts, videos from various de facto channels.\r\n      </p>\r\n      <p>\r\n        <a  routerLink=\"/login\" class=\"btn btn-primary\">Login</a>\r\n        <a  routerLink=\"/signup\" class=\"btn btn-secondary\">Signup</a>\r\n      </p>\r\n      <p>\r\n          or Login using <br/>\r\n          <a href=\"/auth/twitter\"><i class=\"fa fa-twitter-square fa-2x\"></i></a>\r\n          <a href=\"/auth/facebook\"><i class=\"fa fa-facebook-square fa-2x\"></i></a>\r\n          <i class=\"fa fa-linkedin-square fa-2x\"></i>\r\n          <i class=\"fa fa-google-plus-square fa-2x\"></i>\r\n      </p>\r\n    </div>\r\n  </section>\r\n\r\n  <div class=\"album text-muted\">\r\n      <div class=\"container\">\r\n\r\n        <div class=\"row\">\r\n          <div class=\"card\">\r\n            <img data-src=\"holder.js/100px280/thumb\" alt=\"Card image cap\">\r\n            <p class=\"card-text\">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>\r\n          </div>\r\n          <div class=\"card\">\r\n            <img data-src=\"holder.js/100px280/thumb\" alt=\"Card image cap\">\r\n            <p class=\"card-text\">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>\r\n          </div>\r\n          <div class=\"card\">\r\n            <img data-src=\"holder.js/100px280/thumb\" alt=\"Card image cap\">\r\n            <p class=\"card-text\">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>\r\n          </div>\r\n\r\n          <div class=\"card\">\r\n            <img data-src=\"holder.js/100px280/thumb\" alt=\"Card image cap\">\r\n            <p class=\"card-text\">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>\r\n          </div>\r\n          <div class=\"card\">\r\n            <img data-src=\"holder.js/100px280/thumb\" alt=\"Card image cap\">\r\n            <p class=\"card-text\">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>\r\n          </div>\r\n          <div class=\"card\">\r\n            <img data-src=\"holder.js/100px280/thumb\" alt=\"Card image cap\">\r\n            <p class=\"card-text\">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>\r\n          </div>\r\n\r\n          <div class=\"card\">\r\n            <img data-src=\"holder.js/100px280/thumb\" alt=\"Card image cap\">\r\n            <p class=\"card-text\">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>\r\n          </div>\r\n          <div class=\"card\">\r\n            <img data-src=\"holder.js/100px280/thumb\" alt=\"Card image cap\">\r\n            <p class=\"card-text\">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>\r\n          </div>\r\n          <div class=\"card\">\r\n            <img data-src=\"holder.js/100px280/thumb\" alt=\"Card image cap\">\r\n            <p class=\"card-text\">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>\r\n          </div>\r\n        </div>\r\n\r\n      </div>\r\n    </div>\r\n\r\n    <footer class=\"text-muted\">\r\n      <div class=\"container\">\r\n        <p class=\"float-right\">\r\n          <a href=\"#\">Back to top</a>\r\n        </p>\r\n        <p>you can customize dashboard for yourself!</p>\r\n        <p>New to tweetblock <a href=\"../../\">Visit the homepage</a> or read our <a href=\"../../tweetblock-guide/\">getting started guide</a>.</p>\r\n      </div>\r\n    </footer>\r\n    \r\n<br/>"
+module.exports = "<p>\n  googlecallback works!\n</p>\n\n<p>Loading ....    Please wait ...</p>"
 
 /***/ }),
 
-/***/ 192:
+/***/ 201:
+/***/ (function(module, exports) {
+
+module.exports = "<section class=\"jumbotron text-center\">\r\n    <div class=\"container\">\r\n      <h1 class=\"jumbotron-heading\">Tweet Block</h1>\r\n      <p class=\"lead text-muted\">Crypto Currency news from all around the world, \r\n        with latest tweets, posts, videos from various de facto channels.\r\n      </p>\r\n      <p>\r\n        <a  routerLink=\"/login\" class=\"btn btn-primary\">Login</a>\r\n        <a  routerLink=\"/signup\" class=\"btn btn-secondary\">Signup</a>\r\n      </p>\r\n      <p>\r\n          or Login using <br/>\r\n          <a href=\"/auth/twitter\"><i class=\"fa fa-twitter-square fa-2x\"></i></a>\r\n          <a href=\"/auth/facebook\"><i class=\"fa fa-facebook-square fa-2x\"></i></a>\r\n          <i class=\"fa fa-linkedin-square fa-2x\"></i>\r\n          <a href=\"/auth/google\"><i class=\"fa fa-google-plus-square fa-2x\"></i></a>\r\n      </p>\r\n    </div>\r\n  </section>\r\n\r\n  <div class=\"album text-muted\">\r\n      <div class=\"container\">\r\n\r\n        <div class=\"row\">\r\n          <div class=\"card\">\r\n            <img data-src=\"holder.js/100px280/thumb\" alt=\"Card image cap\">\r\n            <p class=\"card-text\">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>\r\n          </div>\r\n          <div class=\"card\">\r\n            <img data-src=\"holder.js/100px280/thumb\" alt=\"Card image cap\">\r\n            <p class=\"card-text\">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>\r\n          </div>\r\n          <div class=\"card\">\r\n            <img data-src=\"holder.js/100px280/thumb\" alt=\"Card image cap\">\r\n            <p class=\"card-text\">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>\r\n          </div>\r\n\r\n          <div class=\"card\">\r\n            <img data-src=\"holder.js/100px280/thumb\" alt=\"Card image cap\">\r\n            <p class=\"card-text\">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>\r\n          </div>\r\n          <div class=\"card\">\r\n            <img data-src=\"holder.js/100px280/thumb\" alt=\"Card image cap\">\r\n            <p class=\"card-text\">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>\r\n          </div>\r\n          <div class=\"card\">\r\n            <img data-src=\"holder.js/100px280/thumb\" alt=\"Card image cap\">\r\n            <p class=\"card-text\">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>\r\n          </div>\r\n\r\n          <div class=\"card\">\r\n            <img data-src=\"holder.js/100px280/thumb\" alt=\"Card image cap\">\r\n            <p class=\"card-text\">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>\r\n          </div>\r\n          <div class=\"card\">\r\n            <img data-src=\"holder.js/100px280/thumb\" alt=\"Card image cap\">\r\n            <p class=\"card-text\">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>\r\n          </div>\r\n          <div class=\"card\">\r\n            <img data-src=\"holder.js/100px280/thumb\" alt=\"Card image cap\">\r\n            <p class=\"card-text\">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>\r\n          </div>\r\n        </div>\r\n\r\n      </div>\r\n    </div>\r\n\r\n    <footer class=\"text-muted\">\r\n      <div class=\"container\">\r\n        <p class=\"float-right\">\r\n          <a href=\"#\">Back to top</a>\r\n        </p>\r\n        <p>you can customize dashboard for yourself!</p>\r\n        <p>New to tweetblock <a href=\"../../\">Visit the homepage</a> or read our <a href=\"../../tweetblock-guide/\">getting started guide</a>.</p>\r\n      </div>\r\n    </footer>\r\n    \r\n<br/>"
+
+/***/ }),
+
+/***/ 202:
 /***/ (function(module, exports) {
 
 module.exports = "<div class=\"container main-form-container\">\n  <h3 class=\"text-center jumbotron-heading\">Login</h3>\n  <form>\n    <div class=\"form-group row\">\n      <label for=\"inputEmail3\" class=\"col-sm-2 col-form-label\">Email</label>\n      <div class=\"col-sm-10\">\n        <input [(ngModel)]=\"user.email\" name=\"email\" type=\"email\" class=\"form-control\" id=\"email\" placeholder=\"Email\">\n      </div>\n    </div>\n    <div class=\"form-group row\">\n      <label for=\"inputPassword3\" class=\"col-sm-2 col-form-label\">Password</label>\n      <div class=\"col-sm-10\">\n        <input [(ngModel)]=\"user.password\" name=\"password\" type=\"password\" class=\"form-control\" id=\"password\" placeholder=\"Password\">\n      </div>\n    </div>\n    \n    <div class=\"form-group row\">\n      <div class=\"offset-sm-2 col-sm-10 text-center\">\n        <button (click)=\"login()\" type=\"submit\" class=\"btn btn-primary\">Login</button>\n      </div>\n    </div>\n    <div *ngIf=\"error\" class=\"alert alert-danger\">{{error}}</div>\n  </form>\n</div>"
 
 /***/ }),
 
-/***/ 193:
+/***/ 203:
 /***/ (function(module, exports) {
 
 module.exports = "<p>\n  page-not-found works!\n</p>\n"
 
 /***/ }),
 
-/***/ 194:
+/***/ 204:
+/***/ (function(module, exports) {
+
+module.exports = "<p>\n  privacy-policy works!\n</p>\n"
+
+/***/ }),
+
+/***/ 205:
 /***/ (function(module, exports) {
 
 module.exports = "<div class=\"container\">\n    \n        <div class=\"page-header text-center\">\n            <h1><span class=\"fa fa-anchor\"></span> Profile</h1>\n            <a href=\"/logout\" class=\"btn btn-default btn-sm\">Logout</a>\n        </div>\n    \n        <div class=\"row\">\n    \n            <!-- LOCAL INFORMATION -->\n            <div class=\"col-sm-6\">\n                <div class=\"well\">\n                    <h3><span class=\"fa fa-user\"></span> Local</h3>\n    \n                        <p>\n                            <strong>id</strong>: {{userid}}<br>\n                            <strong>email</strong>: {{userEmail}}<br>\n                            <strong>password</strong>: ****\n                        </p>\n    \n                </div>\n            </div>\n    \n        </div>\n\n        <div class=\"col-md-6 col-md-offset-3\">\n            <h4>Customize your dashboard</h4>\n            <h5>Watch your preferred Crypto currency news Live</h5>\n            \n            <div>\n                <form>\n                    <div class=\"form-group row\">\n                        <label for=\"exampleSelect1\" class=\"col-sm-2 col-form-label\">1.</label>\n                        <div class=\"col-sm-10\">\n                            <select class=\"form-control\" id=\"exampleSelect1\">\n                                <option selected>Ethereum</option>\n                                <option>OmiseGO</option>\n                                <option>Ripple</option>\n                                <option>Litecoin</option>\n                                <option>NEM</option>\n                                <option>Dash</option>\n                                <option>IOTA</option>\n                                <option>Monero</option>\n                            </select>\n                        </div>\n                    </div>\n                    <div class=\"form-group row\">\n                            <label for=\"exampleSelect1\" class=\"col-sm-2 col-form-label\">2.</label>\n                            <div class=\"col-sm-10\">\n                                <select class=\"form-control\" id=\"exampleSelect1\">\n                                    <option>Ethereum</option>\n                                    <option selected>OmiseGO</option>\n                                    <option>Ripple</option>\n                                    <option>Litecoin</option>\n                                    <option>NEM</option>\n                                    <option>Dash</option>\n                                    <option>IOTA</option>\n                                    <option>Monero</option>\n                                </select>\n                            </div>\n                    </div>\n                    <div class=\"form-group row\">\n                            <label for=\"exampleSelect1\" class=\"col-sm-2 col-form-label\">3.</label>\n                            <div class=\"col-sm-10\">\n                                <select class=\"form-control\" id=\"exampleSelect1\">\n                                    <option>Ethereum</option>\n                                    <option>OmiseGO</option>\n                                    <option selected>Ripple</option>\n                                    <option>Litecoin</option>\n                                    <option>NEM</option>\n                                    <option>Dash</option>\n                                    <option>IOTA</option>\n                                    <option>Monero</option>\n                                </select>\n                            </div>\n                    </div>\n                    <div class=\"form-group row\">\n                            <label for=\"exampleSelect1\" class=\"col-sm-2 col-form-label\">4.</label>\n                            <div class=\"col-sm-10\">\n                                <select class=\"form-control\" id=\"exampleSelect1\">\n                                    <option>Ethereum</option>\n                                    <option>OmiseGO</option>\n                                    <option>Ripple</option>\n                                    <option selected>Litecoin</option>\n                                    <option>NEM</option>\n                                    <option>Dash</option>\n                                    <option>IOTA</option>\n                                    <option>Monero</option>\n                                </select>\n                            </div>\n                    </div>\n                    <div class=\"form-group row\">\n                            <label for=\"exampleSelect1\" class=\"col-sm-2 col-form-label\">5.</label>\n                            <div class=\"col-sm-10\">\n                                <select class=\"form-control\" id=\"exampleSelect1\">\n                                    <option>Ethereum</option>\n                                    <option>OmiseGO</option>\n                                    <option>Ripple</option>\n                                    <option>Litecoin</option>\n                                    <option selected>NEM</option>\n                                    <option>Dash</option>\n                                    <option>IOTA</option>\n                                    <option>Monero</option>\n                                </select>\n                            </div>\n                    </div>\n                    <div class=\"form-group row\">\n                            <label for=\"exampleSelect1\" class=\"col-sm-2 col-form-label\">6.</label>\n                            <div class=\"col-sm-10\">\n                                <select class=\"form-control\" id=\"exampleSelect1\">\n                                    <option>Ethereum</option>\n                                    <option>OmiseGO</option>\n                                    <option>Ripple</option>\n                                    <option>Litecoin</option>\n                                    <option>NEM</option>\n                                    <option selected>Dash</option>\n                                    <option>IOTA</option>\n                                    <option>Monero</option>\n                                </select>\n                            </div>\n                    </div>\n                    <div class=\"form-group row\">\n                            <label for=\"exampleSelect1\" class=\"col-sm-2 col-form-label\">7.</label>\n                            <div class=\"col-sm-10\">\n                                <select class=\"form-control\" id=\"exampleSelect1\">\n                                    <option>Ethereum</option>\n                                    <option>OmiseGO</option>\n                                    <option>Ripple</option>\n                                    <option>Litecoin</option>\n                                    <option>NEM</option>\n                                    <option>Dash</option>\n                                    <option selected>IOTA</option>\n                                    <option>Monero</option>\n                                </select>\n                            </div>\n                    </div>\n                    <div class=\"form-group row\">\n                            <label for=\"exampleSelect1\" class=\"col-sm-2 col-form-label\">8.</label>\n                            <div class=\"col-sm-10\">\n                                <select class=\"form-control\" id=\"exampleSelect1\">\n                                    <option>Ethereum</option>\n                                    <option>OmiseGO</option>\n                                    <option>Ripple</option>\n                                    <option>Litecoin</option>\n                                    <option>NEM</option>\n                                    <option>Dash</option>\n                                    <option>IOTA</option>\n                                    <option selected>Monero</option>\n                                </select>\n                            </div>\n                    </div>\n                    <button type=\"submit\" class=\"btn btn-primary\">Save preference</button>\n                </form>\n\n            </div>\n            <p><a [routerLink]=\"['/login']\">Logout</a></p>\n        </div>\n    \n    </div>"
 
 /***/ }),
 
-/***/ 195:
+/***/ 206:
 /***/ (function(module, exports) {
 
 module.exports = "<div class=\"row no-gutters\"> <!-- top first half row -->\n  <div class=\"col-1 iconcolumns fullheight\">\n    <a href=\"\" routerLink=\"/dashboard\"><i class=\"fa fa-home fa-lg\"></i></a><br/>\n    <a href=\"\"><i class=\"fa fa-tachometer fa-lg\"></i></a><br/>\n    <a href=\"\"><i class=\"fa fa-line-chart fa-lg\"></i></a><br/>\n    <a href=\"\"><i class=\"fa fa-envelope-o fa-lg\"></i></a><br/>\n    <a href=\"\" class=\"iconactive\" routerLink=\"/settings\"><i class=\"fa fa-cogs fa-lg\"></i></a><br/>\n    <a href=\"\"><i class=\"fa fa-sliders fa-lg\"></i></a><br/>\n    <a href=\"\"><i class=\"fa fa-plus fa-lg\"></i></a><br/>\n  </div>\n  <div class=\"col-11\">\n      <div class=\"row\">\n        <div class=\"container\">\n          <p>&nbsp;</p>\n          <div class=\"col-md-6\">\n            <h6>Login using your twitter account to start getting feeds</h6>\n            <p>You will login to twitter app cryptoNews</p>\n            <p>\n                <a class=\"btn btn-social btn-twitter\">\n                  <i class=\"fa fa-twitter\"></i> Sign in with Twitter\n                </a>\n            </p>\n          </div>\n        </div>\n      </div>\n  </div>\n</div>"
 
 /***/ }),
 
-/***/ 196:
+/***/ 207:
 /***/ (function(module, exports) {
 
 module.exports = "<div class=\"container main-form-container\">\n  <h3 class=\"text-center jumbotron-heading\">Register</h3>\n  <form>\n    <div class=\"form-group row\">\n      <label for=\"inputEmail3\" class=\"col-sm-2 col-form-label\">Email</label>\n      <div class=\"col-sm-10\">\n        <input [(ngModel)]=\"user.email\" type=\"email\" name=\"email\" class=\"form-control\"  id=\"email\" placeholder=\"Email\">\n      </div>\n    </div>\n    <div class=\"form-group row\">\n      <label for=\"inputPassword3\" class=\"col-sm-2 col-form-label\">Password</label>\n      <div class=\"col-sm-10\">\n        <input [(ngModel)]=\"user.password\" type=\"password\" name=\"password\" class=\"form-control\" id=\"password\" placeholder=\"Password\">\n      </div>\n    </div>\n    \n    <div class=\"form-group row\">\n      <div class=\"offset-sm-2 col-sm-10 text-center\">\n        <button (click)=\"register()\" type=\"submit\" class=\"btn btn-primary\">Signup</button>\n      </div>\n    </div>\n    <div *ngIf=\"error\" class=\"alert alert-danger\">{{error}}</div>\n  </form>\n  </div>"
 
 /***/ }),
 
-/***/ 230:
+/***/ 208:
+/***/ (function(module, exports) {
+
+module.exports = "<p>\n  terms-of-service works!\n</p>\n"
+
+/***/ }),
+
+/***/ 209:
+/***/ (function(module, exports) {
+
+module.exports = "<p>\n  twittercallback !\n</p>\n\n<p>Loading ....    Please wait ...</p>"
+
+/***/ }),
+
+/***/ 242:
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(93);
+module.exports = __webpack_require__(94);
 
 
 /***/ }),
@@ -914,8 +1236,8 @@ module.exports = __webpack_require__(93);
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_http__ = __webpack_require__(17);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map__ = __webpack_require__(27);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_http__ = __webpack_require__(12);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map__ = __webpack_require__(18);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AuthenticationService; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -1001,13 +1323,13 @@ var _a;
 
 /***/ }),
 
-/***/ 65:
+/***/ 29:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_http__ = __webpack_require__(17);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map__ = __webpack_require__(27);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_http__ = __webpack_require__(12);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map__ = __webpack_require__(18);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SocialcallbackService; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -1051,6 +1373,50 @@ var SocialcallbackService = (function () {
             }
         });
     };
+    SocialcallbackService.prototype.twittercallback = function () {
+        return this.http.get('/check_twitter_correctly_loggenin')
+            .map(function (response) {
+            // login successful if there's json in the response
+            var user = response.json();
+            //console.log(user);
+            var userid = user._id;
+            var username = user.twitter.username;
+            if (userid) {
+                // if userid exists
+                // store username and id or token local storage to keep user logged in between page refreshes
+                localStorage.setItem('currentUser', JSON.stringify({ email: username, userid: userid }));
+                sessionStorage.setItem('currentUser', JSON.stringify({ email: username, userid: userid }));
+                // return true to indicate successful login
+                return true;
+            }
+            else {
+                // return false to indicate failed login
+                return false;
+            }
+        });
+    };
+    SocialcallbackService.prototype.googlecallback = function () {
+        return this.http.get('/check_google_correctly_loggenin')
+            .map(function (response) {
+            // login successful if there's json in the response
+            var user = response.json();
+            //console.log(user);
+            var userid = user._id;
+            var email = user.google.email;
+            if (userid) {
+                // if userid exists
+                // store username and id or token local storage to keep user logged in between page refreshes
+                localStorage.setItem('currentUser', JSON.stringify({ email: email, userid: userid }));
+                sessionStorage.setItem('currentUser', JSON.stringify({ email: email, userid: userid }));
+                // return true to indicate successful login
+                return true;
+            }
+            else {
+                // return false to indicate failed login
+                return false;
+            }
+        });
+    };
     return SocialcallbackService;
 }());
 SocialcallbackService = __decorate([
@@ -1063,13 +1429,13 @@ var _a;
 
 /***/ }),
 
-/***/ 66:
+/***/ 67:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_http__ = __webpack_require__(17);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map__ = __webpack_require__(27);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_http__ = __webpack_require__(12);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map__ = __webpack_require__(18);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return DataService; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -1105,7 +1471,7 @@ var _a;
 
 /***/ }),
 
-/***/ 92:
+/***/ 93:
 /***/ (function(module, exports) {
 
 function webpackEmptyContext(req) {
@@ -1114,20 +1480,20 @@ function webpackEmptyContext(req) {
 webpackEmptyContext.keys = function() { return []; };
 webpackEmptyContext.resolve = webpackEmptyContext;
 module.exports = webpackEmptyContext;
-webpackEmptyContext.id = 92;
+webpackEmptyContext.id = 93;
 
 
 /***/ }),
 
-/***/ 93:
+/***/ 94:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_platform_browser_dynamic__ = __webpack_require__(103);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__app_app_module__ = __webpack_require__(107);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__environments_environment__ = __webpack_require__(116);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_platform_browser_dynamic__ = __webpack_require__(104);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__app_app_module__ = __webpack_require__(108);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__environments_environment__ = __webpack_require__(121);
 
 
 
@@ -1140,5 +1506,5 @@ __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__angular_platform_browser_dyna
 
 /***/ })
 
-},[230]);
+},[242]);
 //# sourceMappingURL=main.bundle.js.map

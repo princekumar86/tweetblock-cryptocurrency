@@ -105,12 +105,46 @@ module.exports = function(app, passport) {
         });
         // test - //
         app.get('/check_fb_correctly_loggenin', function(req, res) {
-            //res.send(req.user);
-            //res.json({ id: req.user.id, username: req.user.username });
-            //console.log(req.user);
-            //console.log(req.user.id);
             res.send(req.user);
         });
+
+        // =====================================
+        // TWITTER ROUTES ======================
+        // =====================================
+        // route for twitter authentication and login
+        app.get('/auth/twitter', passport.authenticate('twitter'));
+        
+        // handle the callback after twitter has authenticated the user
+        app.get('/auth/twitter/callback',
+            passport.authenticate('twitter', {
+                successRedirect : '/twittercallback',
+                failureRedirect : '/'
+        }));
+        // test - //
+        app.get('/check_twitter_correctly_loggenin', function(req, res) {
+            res.send(req.user);
+        });
+
+    // =====================================
+    // GOOGLE ROUTES =======================
+    // =====================================
+    // send to google to do the authentication
+    // profile gets us their basic information including their name
+    // email gets their emails
+    app.get('/auth/google', passport.authenticate('google', { scope : ['profile', 'email'] }));
+    
+    // the callback after google has authenticated the user
+    app.get('/auth/google/callback',
+            passport.authenticate('google', {
+                    successRedirect : '/googlecallback',
+                    failureRedirect : '/'
+    }));
+
+    // test - //
+    app.get('/check_google_correctly_loggenin', function(req, res) {
+        res.send(req.user);
+    });
+    
 
 
     };
