@@ -1398,7 +1398,7 @@ var SocialcallbackService = (function () {
             // login successful if there's json in the response
             var user = response.json();
             //console.log(user);
-            var userid = user.id;
+            var userid = user._id;
             var email = user.linkedin.email;
             if (userid) {
                 // if userid exists
