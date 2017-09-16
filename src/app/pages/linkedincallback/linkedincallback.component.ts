@@ -8,11 +8,11 @@ import 'rxjs/add/operator/catch';
 import { SocialcallbackService } from '../../_services/socialcallback.service';
 
 @Component({
-  selector: 'app-googlecallback',
-  templateUrl: './googlecallback.component.html',
-  styleUrls: ['./googlecallback.component.css']
+  selector: 'app-linkedincallback',
+  templateUrl: './linkedincallback.component.html',
+  styleUrls: ['./linkedincallback.component.css']
 })
-export class GooglecallbackComponent implements OnInit {
+export class LinkedincallbackComponent implements OnInit {
   public userid: string;
   public u: any;
 
@@ -20,11 +20,10 @@ export class GooglecallbackComponent implements OnInit {
               private socialcallbackService: SocialcallbackService) { }
 
   ngOnInit() {
-    this.googlecallbackfetchdata();
+    this.linkedincallbackfetchdata();
   }
-
-  googlecallbackfetchdata() {
-    this.socialcallbackService.googlecallback()
+  linkedincallbackfetchdata() {
+    this.socialcallbackService.linkedincallback()
         .subscribe(result => {
             if (result === true) {
                 // login successful

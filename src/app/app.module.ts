@@ -24,6 +24,7 @@ import { TwittercallbackComponent } from './pages/twittercallback/twittercallbac
 import { PrivacyPolicyComponent } from './pages/privacy-policy/privacy-policy.component';
 import { TermsOfServiceComponent } from './pages/terms-of-service/terms-of-service.component';
 import { GooglecallbackComponent } from './pages/googlecallback/googlecallback.component';
+import { LinkedincallbackComponent } from './pages/linkedincallback/linkedincallback.component';
 
 const appRoutes: Routes = [
   { path: 'home', component: HomeComponent },
@@ -35,6 +36,7 @@ const appRoutes: Routes = [
   { path: 'fbcallback', component: FbcallbackComponent },
   { path: 'twittercallback', component: TwittercallbackComponent },
   { path: 'googlecallback', component: GooglecallbackComponent },
+  { path: 'linkedincallback', component: LinkedincallbackComponent },
   { path: 'privacy-policy', component: PrivacyPolicyComponent },
   { path: 'terms-of-service', component: TermsOfServiceComponent },
   { path: '',   redirectTo: '/home', pathMatch: 'full' },
@@ -54,7 +56,8 @@ const appRoutes: Routes = [
     TwittercallbackComponent,
     PrivacyPolicyComponent,
     TermsOfServiceComponent,
-    GooglecallbackComponent
+    GooglecallbackComponent,
+    LinkedincallbackComponent
   ],
   imports: [
     RouterModule.forRoot(

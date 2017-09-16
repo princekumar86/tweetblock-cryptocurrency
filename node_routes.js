@@ -125,25 +125,49 @@ module.exports = function(app, passport) {
             res.send(req.user);
         });
 
-    // =====================================
-    // GOOGLE ROUTES =======================
-    // =====================================
-    // send to google to do the authentication
-    // profile gets us their basic information including their name
-    // email gets their emails
-    app.get('/auth/google', passport.authenticate('google', { scope : ['profile', 'email'] }));
-    
-    // the callback after google has authenticated the user
-    app.get('/auth/google/callback',
-            passport.authenticate('google', {
-                    successRedirect : '/googlecallback',
-                    failureRedirect : '/'
-    }));
+        // =====================================
+        // GOOGLE ROUTES =======================
+        // =====================================
+        // send to google to do the authentication
+        // profile gets us their basic information including their name
+        // email gets their emails
+        app.get('/auth/google', passport.authenticate('google', { scope : ['profile', 'email'] }));
+        
+        // the callback after google has authenticated the user
+        app.get('/auth/google/callback',
+                passport.authenticate('google', {
+                        successRedirect : '/googlecallback',
+                        failureRedirect : '/'
+        }));
 
-    // test - //
-    app.get('/check_google_correctly_loggenin', function(req, res) {
-        res.send(req.user);
-    });
+        // test - //
+        app.get('/check_google_correctly_loggenin', function(req, res) {
+            res.send(req.user);
+        });
+
+
+        // =====================================
+        // LINKEDIN ROUTES =======================
+        // =====================================
+        // send to google to do the authentication
+        // profile gets us their basic information including their name
+        // email gets their emails
+        app.get('/auth/linkedin',
+        passport.authenticate('linkedin', { scope: ['r_basicprofile', 'r_emailaddress'] }),
+        function(req, res){
+            // The request will be redirected to LinkedIn for authentication, so this
+            // function will not be called.
+        });
+
+        app.get('/auth/linkedin/callback',
+        passport.authenticate('linkedin', { failureRedirect: '/login' }),
+        function(req, res) {
+            res.redirect('/linkedincallback');
+        });
+        // test - //
+        app.get('/check_linkedin_correctly_loggenin', function(req, res) {
+            res.send(req.user);
+        });
     
 
 

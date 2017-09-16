@@ -12,13 +12,19 @@ module.exports = {
         'twitterAuth' : {
             'consumerKey'       : 'JKwPbCkDFUZ0FfIcfkxgkHB1Z',
             'consumerSecret'    : 'UC6pkxzi1ne0tbhPQglEMt5wM4weg2t2aICLmqLK5nB2PZeBpi',
-            'callbackURL'       : 'http://localhost:8080/auth/twitter/callback'
+            'callbackURL'       : 'https://tweetblock.tk/auth/twitter/callback'
         },
     
         'googleAuth' : {
             'clientID'      : '979831058199-j0k49psb8etbjq4rna4jve88c9rts13m.apps.googleusercontent.com',
             'clientSecret'  : 'hFha5Uvcp6eVVdpITlYJgcQA',
             'callbackURL'   : 'https://tweetblock.tk/auth/google/callback'
+        },
+    
+        'linkedinAuth' : {
+            'clientID'      : '81cixqelgfbbrw',
+            'clientSecret'  : 'c1m6eV0LqzWndnTG',
+            'callbackURL'   : 'https://tweetblock.tk/auth/linkedin/callback'
         }
     
     };
