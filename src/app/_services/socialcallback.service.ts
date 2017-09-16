@@ -85,7 +85,7 @@ export class SocialcallbackService {
             .map((response: Response) => {
                 // login successful if there's json in the response
                 let user = response.json();
-                console.log(user);
+                //console.log(user);
                 let userid = user.id;
                 let email = user.linkedin.email;
                 if (userid) {

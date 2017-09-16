@@ -312,7 +312,7 @@ module.exports = function(passport) {
                     // set all of the user data that we need
                     newUser.linkedin.id          = profile.id;
                     newUser.linkedin.token       = token;
-                    newUser.linkedin.name    = displayName;
+                    newUser.linkedin.name    = profile.displayName;
                     newUser.linkedin.email = profile.emails[0].value;
 
                     // save our user into the database

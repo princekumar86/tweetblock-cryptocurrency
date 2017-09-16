@@ -522,11 +522,12 @@ var LinkedincallbackComponent = (function () {
         this.linkedincallbackfetchdata();
     };
     LinkedincallbackComponent.prototype.linkedincallbackfetchdata = function () {
+        var _this = this;
         this.socialcallbackService.linkedincallback()
             .subscribe(function (result) {
             if (result === true) {
                 // login successful
-                //this.router.navigate(['/dashboard']);
+                _this.router.navigate(['/dashboard']);
             }
             else {
                 // login failed
@@ -1396,7 +1397,7 @@ var SocialcallbackService = (function () {
             .map(function (response) {
             // login successful if there's json in the response
             var user = response.json();
-            console.log(user);
+            //console.log(user);
             var userid = user.id;
             var email = user.linkedin.email;
             if (userid) {
