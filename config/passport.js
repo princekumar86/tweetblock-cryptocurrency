@@ -291,6 +291,7 @@ module.exports = function(passport) {
         profileFields: ['id', 'first-name', 'last-name', 'email-address']
     },
     function(token, tokenSecret, profile, done) {
+        console.log(profile);
         // asynchronous verification, for effect...
         process.nextTick(function () {
         
@@ -311,8 +312,8 @@ module.exports = function(passport) {
                     // set all of the user data that we need
                     newUser.linkedin.id          = profile.id;
                     newUser.linkedin.token       = token;
-                    newUser.linkedin.name    = profile.name.firstName + ' ' + profile.name.lastName;
-                    newUser.linkedin.email = profile.emailAddress;
+                    newUser.linkedin.name    = displayName;
+                    newUser.linkedin.email = profile.emails[0].value;
 
                     // save our user into the database
                     newUser.save(function(err) {
