@@ -293,11 +293,36 @@ module.exports = function(passport) {
     function(token, tokenSecret, profile, done) {
         // asynchronous verification, for effect...
         process.nextTick(function () {
-        // To keep the example simple, the user's LinkedIn profile is returned to
-        // represent the logged-in user.  In a typical application, you would want
-        // to associate the LinkedIn account with a user record in your database,
-        // and return that user instead.
-        return done(null, profile);
+        
+            User.findOne({ 'linkedin.id' : profile.id }, function(err, user) {
+
+                // if there is an error, stop everything and return that
+                // ie an error connecting to the database
+                if (err)
+                    return done(err);
+
+                // if the user is found then log them in
+                if (user) {
+                    return done(null, user); // user found, return that user
+                } else {
+                    // if there is no user, create them
+                    var newUser                 = new User();
+
+                    // set all of the user data that we need
+                    newUser.linkedin.id          = profile.id;
+                    newUser.linkedin.token       = token;
+                    newUser.linkedin.name    = profile.name.first-name + ' ' + profile.name.last-name;
+                    newUser.linkedin.email = profile.email-address;
+
+                    // save our user into the database
+                    newUser.save(function(err) {
+                        if (err)
+                            throw err;
+                        return done(null, newUser);
+                    });
+                }
+            });
+
         });
     }
     ));
