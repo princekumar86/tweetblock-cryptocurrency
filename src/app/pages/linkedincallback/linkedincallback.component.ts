@@ -27,7 +27,7 @@ export class LinkedincallbackComponent implements OnInit {
         .subscribe(result => {
             if (result === true) {
                 // login successful
-                this.router.navigate(['/dashboard']);
+                //this.router.navigate(['/dashboard']);
             } else {
                 // login failed
                 //this.error = 'Username or password is incorrect';
