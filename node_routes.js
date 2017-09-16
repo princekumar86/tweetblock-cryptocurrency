@@ -159,11 +159,16 @@ module.exports = function(app, passport) {
             // function will not be called.
         });
 
+        //app.get('/auth/linkedin/callback',
+        //passport.authenticate('linkedin', { failureRedirect: '/login' }),
+        //function(req, res) {
+        //    res.redirect('/linkedincallback');
+        //});
         app.get('/auth/linkedin/callback',
-        passport.authenticate('linkedin', { failureRedirect: '/login' }),
-        function(req, res) {
-            res.redirect('/linkedincallback');
-        });
+        passport.authenticate('linkedin', {
+                successRedirect : '/linkedincallback',
+                failureRedirect : '/'
+        }));
         // test - //
         app.get('/check_linkedin_correctly_loggenin', function(req, res) {
             res.send(req.user);
