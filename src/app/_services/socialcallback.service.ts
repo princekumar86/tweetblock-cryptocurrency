@@ -87,12 +87,12 @@ export class SocialcallbackService {
                 let user = response.json();
                 console.log(user);
                 let userid = user.id;
-                //let email = user.linkedin.email;
+                let email = user.linkedin.email;
                 if (userid) {
                     // if userid exists
                     // store username and id or token local storage to keep user logged in between page refreshes
-                    //localStorage.setItem('currentUser', JSON.stringify({ email: email, userid: userid }));
-                    //sessionStorage.setItem('currentUser', JSON.stringify({ email: email, userid: userid }));
+                    localStorage.setItem('currentUser', JSON.stringify({ email: email, userid: userid }));
+                    sessionStorage.setItem('currentUser', JSON.stringify({ email: email, userid: userid }));
                     // return true to indicate successful login
                     return true;
                 } else {
