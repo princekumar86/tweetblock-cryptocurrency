@@ -45,11 +45,12 @@ export class SocialcallbackService {
                 console.log(user);
                 let userid = user._id;
                 let username = user.twitter.username;
+                let name = user.twitter.displayName;
                 if (userid) {
                     // if userid exists
                     // store username and id or token local storage to keep user logged in between page refreshes
-                    localStorage.setItem('currentUser', JSON.stringify({ email: username, userid: userid }));
-                    sessionStorage.setItem('currentUser', JSON.stringify({ email: username, userid: userid }));
+                    localStorage.setItem('currentUser', JSON.stringify({ email: username, userid: userid, name: name, loggedinas:'twitter' }));
+                    sessionStorage.setItem('currentUser', JSON.stringify({ email: username, userid: userid, name: name, loggedinas:'twitter' }));
                     // return true to indicate successful login
                     return true;
                 } else {
@@ -67,11 +68,12 @@ export class SocialcallbackService {
                 console.log(user);
                 let userid = user._id;
                 let email = user.google.email;
+                let name = user.google.name;
                 if (userid) {
                     // if userid exists
                     // store username and id or token local storage to keep user logged in between page refreshes
-                    localStorage.setItem('currentUser', JSON.stringify({ email: email, userid: userid }));
-                    sessionStorage.setItem('currentUser', JSON.stringify({ email: email, userid: userid }));
+                    localStorage.setItem('currentUser', JSON.stringify({ email: email, userid: userid, name: name, loggedinas:'google' }));
+                    sessionStorage.setItem('currentUser', JSON.stringify({ email: email, userid: userid, name: name, loggedinas:'google' }));
                     // return true to indicate successful login
                     return true;
                 } else {

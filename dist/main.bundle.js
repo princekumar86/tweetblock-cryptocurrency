@@ -354,11 +354,12 @@ var FbcallbackComponent = (function () {
         this.fbcallbackfetchdata();
     };
     FbcallbackComponent.prototype.fbcallbackfetchdata = function () {
+        var _this = this;
         this.socialcallbackService.facebookcallback()
             .subscribe(function (result) {
             if (result === true) {
                 // login successful
-                //this.router.navigate(['/dashboard']);
+                _this.router.navigate(['/dashboard']);
             }
             else {
                 // login failed
@@ -420,11 +421,12 @@ var GooglecallbackComponent = (function () {
         this.googlecallbackfetchdata();
     };
     GooglecallbackComponent.prototype.googlecallbackfetchdata = function () {
+        var _this = this;
         this.socialcallbackService.googlecallback()
             .subscribe(function (result) {
             if (result === true) {
                 // login successful
-                //this.router.navigate(['/dashboard']);
+                _this.router.navigate(['/dashboard']);
             }
             else {
                 // login failed
@@ -520,11 +522,12 @@ var LinkedincallbackComponent = (function () {
         this.linkedincallbackfetchdata();
     };
     LinkedincallbackComponent.prototype.linkedincallbackfetchdata = function () {
+        var _this = this;
         this.socialcallbackService.linkedincallback()
             .subscribe(function (result) {
             if (result === true) {
                 // login successful
-                //this.router.navigate(['/dashboard']);
+                _this.router.navigate(['/dashboard']);
             }
             else {
                 // login failed
@@ -924,11 +927,12 @@ var TwittercallbackComponent = (function () {
         this.twittercallbackfetchdata();
     };
     TwittercallbackComponent.prototype.twittercallbackfetchdata = function () {
+        var _this = this;
         this.socialcallbackService.twittercallback()
             .subscribe(function (result) {
             if (result === true) {
                 // login successful
-                //this.router.navigate(['/dashboard']);
+                _this.router.navigate(['/dashboard']);
             }
             else {
                 // login failed
@@ -1085,7 +1089,7 @@ exports = module.exports = __webpack_require__(2)();
 
 
 // module
-exports.push([module.i, ".main-form-container {\r\n    max-width: 400px;\r\n    margin-top: 15vh;\r\n}", ""]);
+exports.push([module.i, ".main-form-container {\r\n    max-width: 400px;\r\n    margin-top: 15vh;\r\n}\r\n\r\n.fa-facebook, .fa-facebook-square {\r\n    color: #3b5998\r\n}\r\n.fa-twitter, .fa-twitter-square {\r\n    color: #00aced\r\n}\r\n.fa-google-plus, .fa-google-plus-square {\r\n    color: #dd4b39\r\n}\r\n.fa-linkedin, .fa-linkedin-square {\r\n    color: #007bb6\r\n}", ""]);
 
 // exports
 
@@ -1231,7 +1235,7 @@ module.exports = "<div class=\"container-fluid\">\r\n  <!-- Content here -->\r\n
 /***/ 200:
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"row no-gutters\"> <!-- top first half row -->\n  <div class=\"col-1 iconcolumns\">\n    <a href=\"\" routerLink=\"/dashboard\" class=\"iconactive\"><i class=\"fa fa-home fa-lg\"></i></a><br/>\n    <a href=\"\"><i class=\"fa fa-tachometer fa-lg\"></i></a><br/>\n    <a href=\"\"><i class=\"fa fa-line-chart fa-lg\"></i></a><br/>\n    <a href=\"\"><i class=\"fa fa-envelope-o fa-lg\"></i></a><br/>\n    <a href=\"\" routerLink=\"/settings\"><i class=\"fa fa-cogs fa-lg\"></i></a><br/>\n    <a href=\"\"><i class=\"fa fa-sliders fa-lg\"></i></a><br/>\n    <a href=\"\"><i class=\"fa fa-plus fa-lg\"></i></a><br/>\n  </div>\n  <div class=\"col-11\">\n    <div class=\"row no-gutters\">\n      <div class=\"col-xs-12 col-sm-6 col-md-3 dashboardcol\">\n        <div class=\"dashheading\">\n          <span class=\"mainheading\"><img src=\"assets/images/cryptoicons-sm/ethereum.png\" /> Ethereum</span>\n          <span class=\"float-right\"><i class=\"fa fa-bar-chart fa-lg\"></i></span>\n        </div>\n      </div>\n      <div class=\"col-xs-12 col-sm-6 col-md-3 dashboardcol\">\n        <div class=\"dashheading\">\n          <span class=\"mainheading\"><img src=\"assets/images/cryptoicons-sm/omisego.png\" /> OmiseGO</span>\n          <span class=\"float-right\"><i class=\"fa fa-bar-chart fa-lg\"></i></span>\n        </div>\n      </div>\n      <div class=\"col-xs-12 col-sm-6 col-md-3 dashboardcol\">\n        <div class=\"dashheading\">\n          <span class=\"mainheading\"><img src=\"assets/images/cryptoicons-sm/ripple.png\" /> Ripple</span>\n          <span class=\"float-right\"><i class=\"fa fa-bar-chart fa-lg\"></i></span>\n        </div>\n      </div>\n      <div class=\"col-xs-12 col-sm-6 col-md-3 dashboardcol\">\n          <div class=\"dashheading\">\n            <span class=\"mainheading\"><img src=\"assets/images/cryptoicons-sm/litecoin.png\" /> Litecoin</span>\n            <span class=\"float-right\"><i class=\"fa fa-bar-chart fa-lg\"></i></span>\n          </div>\n      </div>\n    </div>\n  </div>\n</div>\n<div class=\"row no-gutters\"> <!-- second half row -->\n  <div class=\"col-1 iconcolumns\">\n    \n  </div>\n  <div class=\"col-11\">\n    <div class=\"row no-gutters\">\n      <div class=\"col-xs-12 col-sm-6 col-md-3 dashboardcol\">\n        <div class=\"dashheading\">\n          <span class=\"mainheading\"><img src=\"assets/images/cryptoicons-sm/nem.png\" /> NEM</span>\n          <span class=\"float-right\"><i class=\"fa fa-bar-chart fa-lg\"></i></span>\n        </div>\n      </div>\n      <div class=\"col-xs-12 col-sm-6 col-md-3 dashboardcol\">\n        <div class=\"dashheading\">\n          <span class=\"mainheading\"><img src=\"assets/images/cryptoicons-sm/dash.png\" /> Dash</span>\n          <span class=\"float-right\"><i class=\"fa fa-bar-chart fa-lg\"></i></span>\n        </div>\n      </div>\n      <div class=\"col-xs-12 col-sm-6 col-md-3 dashboardcol\">\n        <div class=\"dashheading\">\n          <span class=\"mainheading\"><img src=\"assets/images/cryptoicons-sm/iota.png\" /> IOTA</span>\n          <span class=\"float-right\"><i class=\"fa fa-bar-chart fa-lg\"></i></span>\n        </div>\n      </div>\n      <div class=\"col-xs-12 col-sm-6 col-md-3 dashboardcol\">\n        <div class=\"dashheading\">\n          <span class=\"mainheading\"><img src=\"assets/images/cryptoicons-sm/monero.png\" /> Monero</span>\n          <span class=\"float-right\"><i class=\"fa fa-bar-chart fa-lg\"></i></span>\n        </div>\n      </div>\n    </div>\n  </div>\n</div>"
+module.exports = "<div class=\"row no-gutters\"> <!-- top first half row -->\n  <div class=\"col-1 iconcolumns\">\n    <a href=\"\" routerLink=\"/dashboard\" class=\"iconactive\"><i class=\"fa fa-home fa-lg\"></i></a><br/>\n    <a href=\"\"><i class=\"fa fa-tachometer fa-lg\"></i></a><br/>\n    <a href=\"\"><i class=\"fa fa-line-chart fa-lg\"></i></a><br/>\n    <a href=\"\"><i class=\"fa fa-envelope-o fa-lg\"></i></a><br/>\n    <a href=\"\" routerLink=\"/settings\"><i class=\"fa fa-cogs fa-lg\"></i></a><br/>\n    <a href=\"\" routerLink=\"/profile\"><i class=\"fa fa-user fa-lg\"></i></a><br/>\n    <a href=\"\"><i class=\"fa fa-plus fa-lg\"></i></a><br/>\n  </div>\n  <div class=\"col-11\">\n    <div class=\"row no-gutters\">\n      <div class=\"col-xs-12 col-sm-6 col-md-3 dashboardcol\">\n        <div class=\"dashheading\">\n          <span class=\"mainheading\"><img src=\"assets/images/cryptoicons-sm/ethereum.png\" /> Ethereum</span>\n          <span class=\"float-right\"><i class=\"fa fa-bar-chart fa-lg\"></i></span>\n        </div>\n      </div>\n      <div class=\"col-xs-12 col-sm-6 col-md-3 dashboardcol\">\n        <div class=\"dashheading\">\n          <span class=\"mainheading\"><img src=\"assets/images/cryptoicons-sm/omisego.png\" /> OmiseGO</span>\n          <span class=\"float-right\"><i class=\"fa fa-bar-chart fa-lg\"></i></span>\n        </div>\n      </div>\n      <div class=\"col-xs-12 col-sm-6 col-md-3 dashboardcol\">\n        <div class=\"dashheading\">\n          <span class=\"mainheading\"><img src=\"assets/images/cryptoicons-sm/ripple.png\" /> Ripple</span>\n          <span class=\"float-right\"><i class=\"fa fa-bar-chart fa-lg\"></i></span>\n        </div>\n      </div>\n      <div class=\"col-xs-12 col-sm-6 col-md-3 dashboardcol\">\n          <div class=\"dashheading\">\n            <span class=\"mainheading\"><img src=\"assets/images/cryptoicons-sm/litecoin.png\" /> Litecoin</span>\n            <span class=\"float-right\"><i class=\"fa fa-bar-chart fa-lg\"></i></span>\n          </div>\n      </div>\n    </div>\n  </div>\n</div>\n<div class=\"row no-gutters\"> <!-- second half row -->\n  <div class=\"col-1 iconcolumns\">\n    \n  </div>\n  <div class=\"col-11\">\n    <div class=\"row no-gutters\">\n      <div class=\"col-xs-12 col-sm-6 col-md-3 dashboardcol\">\n        <div class=\"dashheading\">\n          <span class=\"mainheading\"><img src=\"assets/images/cryptoicons-sm/nem.png\" /> NEM</span>\n          <span class=\"float-right\"><i class=\"fa fa-bar-chart fa-lg\"></i></span>\n        </div>\n      </div>\n      <div class=\"col-xs-12 col-sm-6 col-md-3 dashboardcol\">\n        <div class=\"dashheading\">\n          <span class=\"mainheading\"><img src=\"assets/images/cryptoicons-sm/dash.png\" /> Dash</span>\n          <span class=\"float-right\"><i class=\"fa fa-bar-chart fa-lg\"></i></span>\n        </div>\n      </div>\n      <div class=\"col-xs-12 col-sm-6 col-md-3 dashboardcol\">\n        <div class=\"dashheading\">\n          <span class=\"mainheading\"><img src=\"assets/images/cryptoicons-sm/iota.png\" /> IOTA</span>\n          <span class=\"float-right\"><i class=\"fa fa-bar-chart fa-lg\"></i></span>\n        </div>\n      </div>\n      <div class=\"col-xs-12 col-sm-6 col-md-3 dashboardcol\">\n        <div class=\"dashheading\">\n          <span class=\"mainheading\"><img src=\"assets/images/cryptoicons-sm/monero.png\" /> Monero</span>\n          <span class=\"float-right\"><i class=\"fa fa-bar-chart fa-lg\"></i></span>\n        </div>\n      </div>\n    </div>\n  </div>\n</div>"
 
 /***/ }),
 
@@ -1266,7 +1270,7 @@ module.exports = "<p>\n  linkedincallback !\n</p>\n\n<p>Loading ....    Please w
 /***/ 205:
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"container main-form-container\">\n  <h3 class=\"text-center jumbotron-heading\">Login</h3>\n  <form>\n    <div class=\"form-group row\">\n      <label for=\"inputEmail3\" class=\"col-sm-2 col-form-label\">Email</label>\n      <div class=\"col-sm-10\">\n        <input [(ngModel)]=\"user.email\" name=\"email\" type=\"email\" class=\"form-control\" id=\"email\" placeholder=\"Email\">\n      </div>\n    </div>\n    <div class=\"form-group row\">\n      <label for=\"inputPassword3\" class=\"col-sm-2 col-form-label\">Password</label>\n      <div class=\"col-sm-10\">\n        <input [(ngModel)]=\"user.password\" name=\"password\" type=\"password\" class=\"form-control\" id=\"password\" placeholder=\"Password\">\n      </div>\n    </div>\n    \n    <div class=\"form-group row\">\n      <div class=\"offset-sm-2 col-sm-10 text-center\">\n        <button (click)=\"login()\" type=\"submit\" class=\"btn btn-primary\">Login</button>\n      </div>\n    </div>\n    <div *ngIf=\"error\" class=\"alert alert-danger\">{{error}}</div>\n  </form>\n</div>"
+module.exports = "<div class=\"container main-form-container\">\n  <h3 class=\"text-center jumbotron-heading\">Login</h3>\n  <form>\n    <div class=\"form-group row\">\n      <label for=\"inputEmail3\" class=\"col-sm-2 col-form-label\">Email</label>\n      <div class=\"col-sm-10\">\n        <input [(ngModel)]=\"user.email\" name=\"email\" type=\"email\" class=\"form-control\" id=\"email\" placeholder=\"Email\">\n      </div>\n    </div>\n    <div class=\"form-group row\">\n      <label for=\"inputPassword3\" class=\"col-sm-2 col-form-label\">Password</label>\n      <div class=\"col-sm-10\">\n        <input [(ngModel)]=\"user.password\" name=\"password\" type=\"password\" class=\"form-control\" id=\"password\" placeholder=\"Password\">\n      </div>\n    </div>\n    \n    <div class=\"form-group row\">\n      <div class=\"offset-sm-2 col-sm-12 text-center\">\n        <button (click)=\"login()\" type=\"submit\" class=\"btn btn-primary\">Login</button>\n      </div>\n    </div>\n    <div *ngIf=\"error\" class=\"alert alert-danger\">{{error}}</div>\n  </form>\n  <p class=\"text-center\">\n    or Login using <br/>\n    <a href=\"/auth/twitter\"><i class=\"fa fa-twitter-square fa-2x\"></i></a>\n    <a href=\"/auth/facebook\"><i class=\"fa fa-facebook-square fa-2x\"></i></a>\n    <a href=\"/auth/linkedin\"><i class=\"fa fa-linkedin-square fa-2x\"></i></a>\n    <a href=\"/auth/google\"><i class=\"fa fa-google-plus-square fa-2x\"></i></a>\n</p>\n</div>"
 
 /***/ }),
 
@@ -1294,7 +1298,7 @@ module.exports = "<div class=\"container\">\n    \n        <div class=\"page-hea
 /***/ 209:
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"row no-gutters\"> <!-- top first half row -->\n  <div class=\"col-1 iconcolumns fullheight\">\n    <a href=\"\" routerLink=\"/dashboard\"><i class=\"fa fa-home fa-lg\"></i></a><br/>\n    <a href=\"\"><i class=\"fa fa-tachometer fa-lg\"></i></a><br/>\n    <a href=\"\"><i class=\"fa fa-line-chart fa-lg\"></i></a><br/>\n    <a href=\"\"><i class=\"fa fa-envelope-o fa-lg\"></i></a><br/>\n    <a href=\"\" class=\"iconactive\" routerLink=\"/settings\"><i class=\"fa fa-cogs fa-lg\"></i></a><br/>\n    <a href=\"\"><i class=\"fa fa-sliders fa-lg\"></i></a><br/>\n    <a href=\"\"><i class=\"fa fa-plus fa-lg\"></i></a><br/>\n  </div>\n  <div class=\"col-11\">\n      <div class=\"row\">\n        <div class=\"container\">\n          <p>&nbsp;</p>\n          <div class=\"col-md-6\">\n            <h6>Login using your twitter account to start getting feeds</h6>\n            <p>You will login to twitter app cryptoNews</p>\n            <p>\n                <a class=\"btn btn-social btn-twitter\">\n                  <i class=\"fa fa-twitter\"></i> Sign in with Twitter\n                </a>\n            </p>\n          </div>\n        </div>\n      </div>\n  </div>\n</div>"
+module.exports = "<div class=\"row no-gutters\"> <!-- top first half row -->\n  <div class=\"col-1 iconcolumns fullheight\">\n    <a href=\"\" routerLink=\"/dashboard\"><i class=\"fa fa-home fa-lg\"></i></a><br/>\n    <a href=\"\"><i class=\"fa fa-tachometer fa-lg\"></i></a><br/>\n    <a href=\"\"><i class=\"fa fa-line-chart fa-lg\"></i></a><br/>\n    <a href=\"\"><i class=\"fa fa-envelope-o fa-lg\"></i></a><br/>\n    <a href=\"\" class=\"iconactive\" routerLink=\"/settings\"><i class=\"fa fa-cogs fa-lg\"></i></a><br/>\n    <a href=\"\" routerLink=\"/settings\"><i class=\"fa fa-user fa-lg\"></i></a><br/>\n    <a href=\"\"><i class=\"fa fa-plus fa-lg\"></i></a><br/>\n  </div>\n  <div class=\"col-11\">\n      <div class=\"row\">\n        <div class=\"container\">\n          <p>&nbsp;</p>\n          <div class=\"col-md-6\">\n            <h6>Login using your twitter account to start getting feeds</h6>\n            <p>You will login to twitter app cryptoNews</p>\n            <p>\n                <a class=\"btn btn-social btn-twitter\">\n                  <i class=\"fa fa-twitter\"></i> Sign in with Twitter\n                </a>\n            </p>\n          </div>\n        </div>\n      </div>\n  </div>\n</div>"
 
 /***/ }),
 
@@ -1357,11 +1361,12 @@ var SocialcallbackService = (function () {
             console.log(user);
             var userid = user._id;
             var username = user.twitter.username;
+            var name = user.twitter.displayName;
             if (userid) {
                 // if userid exists
                 // store username and id or token local storage to keep user logged in between page refreshes
-                localStorage.setItem('currentUser', JSON.stringify({ email: username, userid: userid }));
-                sessionStorage.setItem('currentUser', JSON.stringify({ email: username, userid: userid }));
+                localStorage.setItem('currentUser', JSON.stringify({ email: username, userid: userid, name: name, loggedinas: 'twitter' }));
+                sessionStorage.setItem('currentUser', JSON.stringify({ email: username, userid: userid, name: name, loggedinas: 'twitter' }));
                 // return true to indicate successful login
                 return true;
             }
@@ -1379,11 +1384,12 @@ var SocialcallbackService = (function () {
             console.log(user);
             var userid = user._id;
             var email = user.google.email;
+            var name = user.google.name;
             if (userid) {
                 // if userid exists
                 // store username and id or token local storage to keep user logged in between page refreshes
-                localStorage.setItem('currentUser', JSON.stringify({ email: email, userid: userid }));
-                sessionStorage.setItem('currentUser', JSON.stringify({ email: email, userid: userid }));
+                localStorage.setItem('currentUser', JSON.stringify({ email: email, userid: userid, name: name, loggedinas: 'google' }));
+                sessionStorage.setItem('currentUser', JSON.stringify({ email: email, userid: userid, name: name, loggedinas: 'google' }));
                 // return true to indicate successful login
                 return true;
             }
