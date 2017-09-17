@@ -19,14 +19,15 @@ export class SocialcallbackService {
             .map((response: Response) => {
                 // login successful if there's json in the response
                 let user = response.json();
-                //console.log(user);
+                console.log(user);
                 let userid = user._id;
                 let email = user.facebook.email;
+                let name = user.facebook.name;
                 if (userid) {
                     // if userid exists
                     // store username and id or token local storage to keep user logged in between page refreshes
-                    localStorage.setItem('currentUser', JSON.stringify({ email: email, userid: userid }));
-                    sessionStorage.setItem('currentUser', JSON.stringify({ email: email, userid: userid }));
+                    localStorage.setItem('currentUser', JSON.stringify({ email: email, userid: userid, name: name, loggedinas:'facebook' }));
+                    sessionStorage.setItem('currentUser', JSON.stringify({ email: email, userid: userid, name: name, loggedinas:'facebook' }));
                     // return true to indicate successful login
                     return true;
                 } else {
@@ -41,7 +42,7 @@ export class SocialcallbackService {
             .map((response: Response) => {
                 // login successful if there's json in the response
                 let user = response.json();
-                //console.log(user);
+                console.log(user);
                 let userid = user._id;
                 let username = user.twitter.username;
                 if (userid) {
@@ -63,7 +64,7 @@ export class SocialcallbackService {
             .map((response: Response) => {
                 // login successful if there's json in the response
                 let user = response.json();
-                //console.log(user);
+                console.log(user);
                 let userid = user._id;
                 let email = user.google.email;
                 if (userid) {
@@ -85,14 +86,15 @@ export class SocialcallbackService {
             .map((response: Response) => {
                 // login successful if there's json in the response
                 let user = response.json();
-                //console.log(user);
+                console.log(user);
                 let userid = user._id;
                 let email = user.linkedin.email;
+                let name = user.linkedin.name;
                 if (userid) {
                     // if userid exists
                     // store username and id or token local storage to keep user logged in between page refreshes
-                    localStorage.setItem('currentUser', JSON.stringify({ email: email, userid: userid }));
-                    sessionStorage.setItem('currentUser', JSON.stringify({ email: email, userid: userid }));
+                    localStorage.setItem('currentUser', JSON.stringify({ email: email, userid: userid, name: name, loggedinas:'linkedin' }));
+                    sessionStorage.setItem('currentUser', JSON.stringify({ email: email, userid: userid, name: name, loggedinas:'linkedin' }));
                     // return true to indicate successful login
                     return true;
                 } else {

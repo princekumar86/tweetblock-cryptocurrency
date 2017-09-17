@@ -354,12 +354,11 @@ var FbcallbackComponent = (function () {
         this.fbcallbackfetchdata();
     };
     FbcallbackComponent.prototype.fbcallbackfetchdata = function () {
-        var _this = this;
         this.socialcallbackService.facebookcallback()
             .subscribe(function (result) {
             if (result === true) {
                 // login successful
-                _this.router.navigate(['/dashboard']);
+                //this.router.navigate(['/dashboard']);
             }
             else {
                 // login failed
@@ -421,12 +420,11 @@ var GooglecallbackComponent = (function () {
         this.googlecallbackfetchdata();
     };
     GooglecallbackComponent.prototype.googlecallbackfetchdata = function () {
-        var _this = this;
         this.socialcallbackService.googlecallback()
             .subscribe(function (result) {
             if (result === true) {
                 // login successful
-                _this.router.navigate(['/dashboard']);
+                //this.router.navigate(['/dashboard']);
             }
             else {
                 // login failed
@@ -522,12 +520,11 @@ var LinkedincallbackComponent = (function () {
         this.linkedincallbackfetchdata();
     };
     LinkedincallbackComponent.prototype.linkedincallbackfetchdata = function () {
-        var _this = this;
         this.socialcallbackService.linkedincallback()
             .subscribe(function (result) {
             if (result === true) {
                 // login successful
-                _this.router.navigate(['/dashboard']);
+                //this.router.navigate(['/dashboard']);
             }
             else {
                 // login failed
@@ -711,6 +708,8 @@ var ProfileComponent = (function () {
     function ProfileComponent() {
         this.userid = '';
         this.userEmail = '';
+        this.userName = '';
+        this.userLoggedInAs = '';
     }
     ProfileComponent.prototype.ngOnInit = function () {
         // get users details from sessionstorage or localStorage JSON and set user details
@@ -727,8 +726,10 @@ var ProfileComponent = (function () {
             // ACCESS DATA
             //console.log(parsedObject.item[0].Desc);
             console.log(parsedObject);
-            this.userid = parsedObject.userid._id;
+            this.userid = parsedObject.userid;
             this.userEmail = parsedObject.email;
+            this.userName = parsedObject.name;
+            this.userLoggedInAs = parsedObject.loggedinas;
         }
     };
     return ProfileComponent;
@@ -923,12 +924,11 @@ var TwittercallbackComponent = (function () {
         this.twittercallbackfetchdata();
     };
     TwittercallbackComponent.prototype.twittercallbackfetchdata = function () {
-        var _this = this;
         this.socialcallbackService.twittercallback()
             .subscribe(function (result) {
             if (result === true) {
                 // login successful
-                _this.router.navigate(['/dashboard']);
+                //this.router.navigate(['/dashboard']);
             }
             else {
                 // login failed
@@ -1287,7 +1287,7 @@ module.exports = "<p>\n  privacy-policy works!\n</p>\n"
 /***/ 208:
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"container\">\n    \n        <div class=\"page-header text-center\">\n            <h1><span class=\"fa fa-anchor\"></span> Profile</h1>\n            <a href=\"/logout\" class=\"btn btn-default btn-sm\">Logout</a>\n        </div>\n    \n        <div class=\"row\">\n    \n            <!-- LOCAL INFORMATION -->\n            <div class=\"col-sm-6\">\n                <div class=\"well\">\n                    <h3><span class=\"fa fa-user\"></span> Local</h3>\n    \n                        <p>\n                            <strong>id</strong>: {{userid}}<br>\n                            <strong>email</strong>: {{userEmail}}<br>\n                            <strong>password</strong>: ****\n                        </p>\n    \n                </div>\n            </div>\n    \n        </div>\n\n        <div class=\"col-md-6 col-md-offset-3\">\n            <h4>Customize your dashboard</h4>\n            <h5>Watch your preferred Crypto currency news Live</h5>\n            \n            <div>\n                <form>\n                    <div class=\"form-group row\">\n                        <label for=\"exampleSelect1\" class=\"col-sm-2 col-form-label\">1.</label>\n                        <div class=\"col-sm-10\">\n                            <select class=\"form-control\" id=\"exampleSelect1\">\n                                <option selected>Ethereum</option>\n                                <option>OmiseGO</option>\n                                <option>Ripple</option>\n                                <option>Litecoin</option>\n                                <option>NEM</option>\n                                <option>Dash</option>\n                                <option>IOTA</option>\n                                <option>Monero</option>\n                            </select>\n                        </div>\n                    </div>\n                    <div class=\"form-group row\">\n                            <label for=\"exampleSelect1\" class=\"col-sm-2 col-form-label\">2.</label>\n                            <div class=\"col-sm-10\">\n                                <select class=\"form-control\" id=\"exampleSelect1\">\n                                    <option>Ethereum</option>\n                                    <option selected>OmiseGO</option>\n                                    <option>Ripple</option>\n                                    <option>Litecoin</option>\n                                    <option>NEM</option>\n                                    <option>Dash</option>\n                                    <option>IOTA</option>\n                                    <option>Monero</option>\n                                </select>\n                            </div>\n                    </div>\n                    <div class=\"form-group row\">\n                            <label for=\"exampleSelect1\" class=\"col-sm-2 col-form-label\">3.</label>\n                            <div class=\"col-sm-10\">\n                                <select class=\"form-control\" id=\"exampleSelect1\">\n                                    <option>Ethereum</option>\n                                    <option>OmiseGO</option>\n                                    <option selected>Ripple</option>\n                                    <option>Litecoin</option>\n                                    <option>NEM</option>\n                                    <option>Dash</option>\n                                    <option>IOTA</option>\n                                    <option>Monero</option>\n                                </select>\n                            </div>\n                    </div>\n                    <div class=\"form-group row\">\n                            <label for=\"exampleSelect1\" class=\"col-sm-2 col-form-label\">4.</label>\n                            <div class=\"col-sm-10\">\n                                <select class=\"form-control\" id=\"exampleSelect1\">\n                                    <option>Ethereum</option>\n                                    <option>OmiseGO</option>\n                                    <option>Ripple</option>\n                                    <option selected>Litecoin</option>\n                                    <option>NEM</option>\n                                    <option>Dash</option>\n                                    <option>IOTA</option>\n                                    <option>Monero</option>\n                                </select>\n                            </div>\n                    </div>\n                    <div class=\"form-group row\">\n                            <label for=\"exampleSelect1\" class=\"col-sm-2 col-form-label\">5.</label>\n                            <div class=\"col-sm-10\">\n                                <select class=\"form-control\" id=\"exampleSelect1\">\n                                    <option>Ethereum</option>\n                                    <option>OmiseGO</option>\n                                    <option>Ripple</option>\n                                    <option>Litecoin</option>\n                                    <option selected>NEM</option>\n                                    <option>Dash</option>\n                                    <option>IOTA</option>\n                                    <option>Monero</option>\n                                </select>\n                            </div>\n                    </div>\n                    <div class=\"form-group row\">\n                            <label for=\"exampleSelect1\" class=\"col-sm-2 col-form-label\">6.</label>\n                            <div class=\"col-sm-10\">\n                                <select class=\"form-control\" id=\"exampleSelect1\">\n                                    <option>Ethereum</option>\n                                    <option>OmiseGO</option>\n                                    <option>Ripple</option>\n                                    <option>Litecoin</option>\n                                    <option>NEM</option>\n                                    <option selected>Dash</option>\n                                    <option>IOTA</option>\n                                    <option>Monero</option>\n                                </select>\n                            </div>\n                    </div>\n                    <div class=\"form-group row\">\n                            <label for=\"exampleSelect1\" class=\"col-sm-2 col-form-label\">7.</label>\n                            <div class=\"col-sm-10\">\n                                <select class=\"form-control\" id=\"exampleSelect1\">\n                                    <option>Ethereum</option>\n                                    <option>OmiseGO</option>\n                                    <option>Ripple</option>\n                                    <option>Litecoin</option>\n                                    <option>NEM</option>\n                                    <option>Dash</option>\n                                    <option selected>IOTA</option>\n                                    <option>Monero</option>\n                                </select>\n                            </div>\n                    </div>\n                    <div class=\"form-group row\">\n                            <label for=\"exampleSelect1\" class=\"col-sm-2 col-form-label\">8.</label>\n                            <div class=\"col-sm-10\">\n                                <select class=\"form-control\" id=\"exampleSelect1\">\n                                    <option>Ethereum</option>\n                                    <option>OmiseGO</option>\n                                    <option>Ripple</option>\n                                    <option>Litecoin</option>\n                                    <option>NEM</option>\n                                    <option>Dash</option>\n                                    <option>IOTA</option>\n                                    <option selected>Monero</option>\n                                </select>\n                            </div>\n                    </div>\n                    <button type=\"submit\" class=\"btn btn-primary\">Save preference</button>\n                </form>\n\n            </div>\n            <p><a [routerLink]=\"['/login']\">Logout</a></p>\n        </div>\n    \n    </div>"
+module.exports = "<div class=\"container\">\n    \n        <div class=\"page-header text-center\">\n            <h1><span class=\"fa fa-anchor\"></span> Profile</h1>\n            <a href=\"/logout\" class=\"btn btn-default btn-sm\">Logout</a>\n        </div>\n    \n        <div class=\"row\">\n    \n            <!-- LOCAL INFORMATION -->\n            <div class=\"col-sm-6\">\n                <div class=\"well\">\n                    <h3><span class=\"fa fa-user\"></span> Local</h3>\n    \n                        <p>\n                            <strong>id</strong>: {{userid}}<br>\n                            <strong>email</strong>: {{userEmail}}<br>\n                            <strong>password</strong>: - <br>\n                            <strong>Name</strong>: {{userName}}<br>\n                            <strong>Logged in As</strong>: {{userLoggedInAs}} user<br>\n                            <strong>Phone</strong>: - <br>\n                        </p>\n    \n                </div>\n            </div>\n    \n        </div>\n\n        <div class=\"col-md-6 col-md-offset-3\">\n            <h4>Customize your dashboard</h4>\n            <h5>Watch your preferred Crypto currency news Live</h5>\n            \n            <div>\n                <form>\n                    <div class=\"form-group row\">\n                        <label for=\"exampleSelect1\" class=\"col-sm-2 col-form-label\">1.</label>\n                        <div class=\"col-sm-10\">\n                            <select class=\"form-control\" id=\"exampleSelect1\">\n                                <option selected>Ethereum</option>\n                                <option>OmiseGO</option>\n                                <option>Ripple</option>\n                                <option>Litecoin</option>\n                                <option>NEM</option>\n                                <option>Dash</option>\n                                <option>IOTA</option>\n                                <option>Monero</option>\n                            </select>\n                        </div>\n                    </div>\n                    <div class=\"form-group row\">\n                            <label for=\"exampleSelect1\" class=\"col-sm-2 col-form-label\">2.</label>\n                            <div class=\"col-sm-10\">\n                                <select class=\"form-control\" id=\"exampleSelect1\">\n                                    <option>Ethereum</option>\n                                    <option selected>OmiseGO</option>\n                                    <option>Ripple</option>\n                                    <option>Litecoin</option>\n                                    <option>NEM</option>\n                                    <option>Dash</option>\n                                    <option>IOTA</option>\n                                    <option>Monero</option>\n                                </select>\n                            </div>\n                    </div>\n                    <div class=\"form-group row\">\n                            <label for=\"exampleSelect1\" class=\"col-sm-2 col-form-label\">3.</label>\n                            <div class=\"col-sm-10\">\n                                <select class=\"form-control\" id=\"exampleSelect1\">\n                                    <option>Ethereum</option>\n                                    <option>OmiseGO</option>\n                                    <option selected>Ripple</option>\n                                    <option>Litecoin</option>\n                                    <option>NEM</option>\n                                    <option>Dash</option>\n                                    <option>IOTA</option>\n                                    <option>Monero</option>\n                                </select>\n                            </div>\n                    </div>\n                    <div class=\"form-group row\">\n                            <label for=\"exampleSelect1\" class=\"col-sm-2 col-form-label\">4.</label>\n                            <div class=\"col-sm-10\">\n                                <select class=\"form-control\" id=\"exampleSelect1\">\n                                    <option>Ethereum</option>\n                                    <option>OmiseGO</option>\n                                    <option>Ripple</option>\n                                    <option selected>Litecoin</option>\n                                    <option>NEM</option>\n                                    <option>Dash</option>\n                                    <option>IOTA</option>\n                                    <option>Monero</option>\n                                </select>\n                            </div>\n                    </div>\n                    <div class=\"form-group row\">\n                            <label for=\"exampleSelect1\" class=\"col-sm-2 col-form-label\">5.</label>\n                            <div class=\"col-sm-10\">\n                                <select class=\"form-control\" id=\"exampleSelect1\">\n                                    <option>Ethereum</option>\n                                    <option>OmiseGO</option>\n                                    <option>Ripple</option>\n                                    <option>Litecoin</option>\n                                    <option selected>NEM</option>\n                                    <option>Dash</option>\n                                    <option>IOTA</option>\n                                    <option>Monero</option>\n                                </select>\n                            </div>\n                    </div>\n                    <div class=\"form-group row\">\n                            <label for=\"exampleSelect1\" class=\"col-sm-2 col-form-label\">6.</label>\n                            <div class=\"col-sm-10\">\n                                <select class=\"form-control\" id=\"exampleSelect1\">\n                                    <option>Ethereum</option>\n                                    <option>OmiseGO</option>\n                                    <option>Ripple</option>\n                                    <option>Litecoin</option>\n                                    <option>NEM</option>\n                                    <option selected>Dash</option>\n                                    <option>IOTA</option>\n                                    <option>Monero</option>\n                                </select>\n                            </div>\n                    </div>\n                    <div class=\"form-group row\">\n                            <label for=\"exampleSelect1\" class=\"col-sm-2 col-form-label\">7.</label>\n                            <div class=\"col-sm-10\">\n                                <select class=\"form-control\" id=\"exampleSelect1\">\n                                    <option>Ethereum</option>\n                                    <option>OmiseGO</option>\n                                    <option>Ripple</option>\n                                    <option>Litecoin</option>\n                                    <option>NEM</option>\n                                    <option>Dash</option>\n                                    <option selected>IOTA</option>\n                                    <option>Monero</option>\n                                </select>\n                            </div>\n                    </div>\n                    <div class=\"form-group row\">\n                            <label for=\"exampleSelect1\" class=\"col-sm-2 col-form-label\">8.</label>\n                            <div class=\"col-sm-10\">\n                                <select class=\"form-control\" id=\"exampleSelect1\">\n                                    <option>Ethereum</option>\n                                    <option>OmiseGO</option>\n                                    <option>Ripple</option>\n                                    <option>Litecoin</option>\n                                    <option>NEM</option>\n                                    <option>Dash</option>\n                                    <option>IOTA</option>\n                                    <option selected>Monero</option>\n                                </select>\n                            </div>\n                    </div>\n                    <button type=\"submit\" class=\"btn btn-primary\">Save preference</button>\n                </form>\n\n            </div>\n            <p><a [routerLink]=\"['/login']\">Logout</a></p>\n        </div>\n    \n    </div>"
 
 /***/ }),
 
@@ -1331,14 +1331,15 @@ var SocialcallbackService = (function () {
             .map(function (response) {
             // login successful if there's json in the response
             var user = response.json();
-            //console.log(user);
+            console.log(user);
             var userid = user._id;
             var email = user.facebook.email;
+            var name = user.facebook.name;
             if (userid) {
                 // if userid exists
                 // store username and id or token local storage to keep user logged in between page refreshes
-                localStorage.setItem('currentUser', JSON.stringify({ email: email, userid: userid }));
-                sessionStorage.setItem('currentUser', JSON.stringify({ email: email, userid: userid }));
+                localStorage.setItem('currentUser', JSON.stringify({ email: email, userid: userid, name: name, loggedinas: 'facebook' }));
+                sessionStorage.setItem('currentUser', JSON.stringify({ email: email, userid: userid, name: name, loggedinas: 'facebook' }));
                 // return true to indicate successful login
                 return true;
             }
@@ -1353,7 +1354,7 @@ var SocialcallbackService = (function () {
             .map(function (response) {
             // login successful if there's json in the response
             var user = response.json();
-            //console.log(user);
+            console.log(user);
             var userid = user._id;
             var username = user.twitter.username;
             if (userid) {
@@ -1375,7 +1376,7 @@ var SocialcallbackService = (function () {
             .map(function (response) {
             // login successful if there's json in the response
             var user = response.json();
-            //console.log(user);
+            console.log(user);
             var userid = user._id;
             var email = user.google.email;
             if (userid) {
@@ -1397,14 +1398,15 @@ var SocialcallbackService = (function () {
             .map(function (response) {
             // login successful if there's json in the response
             var user = response.json();
-            //console.log(user);
+            console.log(user);
             var userid = user._id;
             var email = user.linkedin.email;
+            var name = user.linkedin.name;
             if (userid) {
                 // if userid exists
                 // store username and id or token local storage to keep user logged in between page refreshes
-                localStorage.setItem('currentUser', JSON.stringify({ email: email, userid: userid }));
-                sessionStorage.setItem('currentUser', JSON.stringify({ email: email, userid: userid }));
+                localStorage.setItem('currentUser', JSON.stringify({ email: email, userid: userid, name: name, loggedinas: 'linkedin' }));
+                sessionStorage.setItem('currentUser', JSON.stringify({ email: email, userid: userid, name: name, loggedinas: 'linkedin' }));
                 // return true to indicate successful login
                 return true;
             }

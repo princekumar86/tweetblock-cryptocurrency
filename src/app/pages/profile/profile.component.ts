@@ -10,7 +10,9 @@ import { User } from '../../_models/user';
 export class ProfileComponent implements OnInit {
 
   userid: string = '';
-  userEmail: string ='';
+  userEmail: string = '';
+  userName: string = '';
+  userLoggedInAs: String = '';
   
   constructor() { }
   
@@ -30,9 +32,10 @@ export class ProfileComponent implements OnInit {
         // ACCESS DATA
         //console.log(parsedObject.item[0].Desc);
         console.log(parsedObject);
-        this.userid = parsedObject.userid._id;
+        this.userid = parsedObject.userid;
         this.userEmail = parsedObject.email;
-
+        this.userName = parsedObject.name;
+        this.userLoggedInAs = parsedObject.loggedinas;
       }
   }
 
