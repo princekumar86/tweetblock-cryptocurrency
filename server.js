@@ -10,6 +10,8 @@ var TwitterStrategy = require('passport-twitter').Strategy;
 var session = require('express-session');
 var mongoose = require('mongoose');
 var flash    = require('connect-flash');
+var Twitter = require('twitter'); // for twitter REST and Stream API
+var cors = require('cors');
 
 var configDB = require('./config/database.js');
 
@@ -17,7 +19,7 @@ var configDB = require('./config/database.js');
 mongoose.connect(configDB.url); // connect to our database
 
 // require('./config/passport')(passport); // pass passport for configuration
-
+app.use(cors());
 // set up our express application
 app.use(morgan('dev')); // log every request to the console
 app.use(cookieParser()); // read cookies (needed for auth)

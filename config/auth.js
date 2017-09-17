@@ -12,7 +12,7 @@ module.exports = {
         'twitterAuth' : {
             'consumerKey'       : 'JKwPbCkDFUZ0FfIcfkxgkHB1Z',
             'consumerSecret'    : 'UC6pkxzi1ne0tbhPQglEMt5wM4weg2t2aICLmqLK5nB2PZeBpi',
-            'callbackURL'       : 'http://localhost:8080/auth/twitter/callback'
+            'callbackURL'       : 'https://tweetblock.tk/auth/twitter/callback'
         },
     
         'googleAuth' : {
