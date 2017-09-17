@@ -1,0 +1,41 @@
+.fullheight {
+    height: 88vh;
+}
+.dashboardcol {
+    min-height: 45vh;
+    border-right: 1px solid #cecece;
+}
+.dashboardcol .dashheading {
+    text-align: center;
+    background-color: #f1f1f1;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-weight: bold;
+}
+.dashheading i {
+    padding-right: 10px;
+    color: #a4a4a4;
+}
+.iconcolumns a {
+    color: #cecece;
+    padding: 10px;
+    display: inline-block;
+}
+@media (max-width:550px){
+    .iconcolumns a {
+        padding: 10px 1px;
+    }
+}
+
+.iconcolumns a:hover {
+    color: #ffffff;
+}
+.iconcolumns a.iconactive {
+    color: #ffffff;
+}
+.iconcolumns {
+    background-color: #111111;
+}
+.col-1.iconcolumns {
+    max-width: 50px !important;
+}

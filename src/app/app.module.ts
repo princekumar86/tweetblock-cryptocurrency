@@ -32,7 +32,7 @@ const appRoutes: Routes = [
   { path: 'signup', component: SignupComponent },
   { path: 'settings', component: SettingsComponent },
   { path: 'dashboard', component: DashboardComponent, canActivate: [AuthGuard] },
-  { path: 'profile', component: ProfileComponent, canActivate: [AuthGuard]  },
+  { path: 'profile', component: ProfileComponent, canActivate: [AuthGuard] },
   { path: 'fbcallback', component: FbcallbackComponent },
   { path: 'twittercallback', component: TwittercallbackComponent },
   { path: 'googlecallback', component: GooglecallbackComponent },
