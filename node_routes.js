@@ -122,6 +122,7 @@ module.exports = function(app, passport) {
         }));
         // test - //
         app.get('/check_twitter_correctly_loggenin', function(req, res) {
+            //console.log(req.user);
             res.send(req.user);
         });
 

@@ -13,6 +13,7 @@ export class ProfileComponent implements OnInit {
   userEmail: string = '';
   userName: string = '';
   userLoggedInAs: String = '';
+  userToken: String = '';
   
   constructor() { }
   
@@ -36,6 +37,9 @@ export class ProfileComponent implements OnInit {
         this.userEmail = parsedObject.email;
         this.userName = parsedObject.name;
         this.userLoggedInAs = parsedObject.loggedinas;
+        if(parsedObject.token) {
+          this.userToken = parsedObject.token;
+        }
       }
   }
 

@@ -6,6 +6,8 @@ import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
   styleUrls: ['./dashboard.component.css']
 })
 export class DashboardComponent implements OnInit {
+  userEmail: string = '';
+  userToken:String ='';
   @Output() sendLoggedInEvent = new EventEmitter<boolean>();
 
   constructor() { }
@@ -25,6 +27,10 @@ export class DashboardComponent implements OnInit {
         // ACCESS DATA
         //console.log(parsedObject.item[0].Desc);
         console.log(parsedObject.email);
+        if(parsedObject.token) {
+          this.userEmail = parsedObject.email;
+          this.userToken = parsedObject.token;
+        }
         // changing Login / Logout tag in top bar
         this.sendLoggedInEvent.emit(true);
       }

@@ -7,6 +7,7 @@ import 'rxjs/add/operator/map'
 export class SocialcallbackService {
     public userid: string;
     public user:any;
+    public twitter_bearer_token:String;
  
     constructor(private http: Http) {
         // set token if saved in local storage
@@ -23,11 +24,12 @@ export class SocialcallbackService {
                 let userid = user._id;
                 let email = user.facebook.email;
                 let name = user.facebook.name;
+                let token = user.facebook.token;
                 if (userid) {
                     // if userid exists
                     // store username and id or token local storage to keep user logged in between page refreshes
-                    localStorage.setItem('currentUser', JSON.stringify({ email: email, userid: userid, name: name, loggedinas:'facebook' }));
-                    sessionStorage.setItem('currentUser', JSON.stringify({ email: email, userid: userid, name: name, loggedinas:'facebook' }));
+                    localStorage.setItem('currentUser', JSON.stringify({ email: email, userid: userid, name: name, loggedinas:'facebook', token: token }));
+                    sessionStorage.setItem('currentUser', JSON.stringify({ email: email, userid: userid, name: name, loggedinas:'facebook', token: token }));
                     // return true to indicate successful login
                     return true;
                 } else {
@@ -46,11 +48,12 @@ export class SocialcallbackService {
                 let userid = user._id;
                 let username = user.twitter.username;
                 let name = user.twitter.displayName;
+                let token = user.twitter.token;
                 if (userid) {
                     // if userid exists
                     // store username and id or token local storage to keep user logged in between page refreshes
-                    localStorage.setItem('currentUser', JSON.stringify({ email: username, userid: userid, name: name, loggedinas:'twitter' }));
-                    sessionStorage.setItem('currentUser', JSON.stringify({ email: username, userid: userid, name: name, loggedinas:'twitter' }));
+                    localStorage.setItem('currentUser', JSON.stringify({ email: username, userid: userid, name: name, loggedinas:'twitter', token: token }));
+                    sessionStorage.setItem('currentUser', JSON.stringify({ email: username, userid: userid, name: name, loggedinas:'twitter', token: token }));
                     // return true to indicate successful login
                     return true;
                 } else {
@@ -69,11 +72,12 @@ export class SocialcallbackService {
                 let userid = user._id;
                 let email = user.google.email;
                 let name = user.google.name;
+                let token = user.google.token;
                 if (userid) {
                     // if userid exists
                     // store username and id or token local storage to keep user logged in between page refreshes
-                    localStorage.setItem('currentUser', JSON.stringify({ email: email, userid: userid, name: name, loggedinas:'google' }));
-                    sessionStorage.setItem('currentUser', JSON.stringify({ email: email, userid: userid, name: name, loggedinas:'google' }));
+                    localStorage.setItem('currentUser', JSON.stringify({ email: email, userid: userid, name: name, loggedinas:'google', token: token }));
+                    sessionStorage.setItem('currentUser', JSON.stringify({ email: email, userid: userid, name: name, loggedinas:'google', token: token }));
                     // return true to indicate successful login
                     return true;
                 } else {
