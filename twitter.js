@@ -1,3 +1,5 @@
+const express = require('express');
+const router = express.Router();
 var Twitter = require('twitter');
 
 var client = new Twitter({
@@ -6,13 +8,23 @@ var client = new Twitter({
   access_token_key: '3249023658-l6zQYReg4o3rZ6dXEbxevEAdrFPU28vK2dNHux5',
   access_token_secret: 'WeatAwgCCEt739fZM8KFFrDK4pHchSpc19dWY1QWNnUAv'
 });
+  
+  //client.get('search/tweets', {q: 'node.js'}, function(error, tweets, response) {
+  //  console.log(tweets);
+  //});
 
-module.exports = {
-    seeResults: function (req, res) {
-        var query = req.url.match(/[^=]+$/)[0];
-        client.get('search/tweets', {q: query}, function(error, tweets, response) {
-            var status = tweets.statuses;
-            res.end(JSON.stringify(status));   
-        });
-    }
-}
+  router.get('/tweets', function(req, res, next) {
+    // https://dev.twitter.com/rest/reference/get/statuses/user_timeline
+    client.get('statuses/user_timeline', { screen_name: 'nodejs', count: 1 }, function(error, tweets, response) {
+      if (!error) {
+          console.log(tweets);
+        //res.status(200).render('index', { title: 'Express', tweets: tweets });
+      }
+      else {
+        console.log(error);
+        //res.status(500).json({ error: error });
+      }
+    });
+  });
+
+  module.exports = router;

@@ -57,6 +57,10 @@ app.use(express.static(path.join(__dirname, 'dist')));
 // API location
 app.use('/api', api);
 
+//Twiiter api calls and settings
+const t = require('./twitter');
+app.use('/t', t); 
+
 // Send all other requests to the Angular app
 app.get('*', (req, res) => {
     res.sendFile(path.join(__dirname, 'dist/index.html'));
