@@ -101,9 +101,10 @@ io.sockets.on('connection', function (socket) {
      
 });
 
-client.stream('statuses/filter', {track: 'javascript'}, function(stream) {
+//client.stream('statuses/filter', {follow: 'ethereum,OmiseGO,Ripple,Litecoin'}, function(stream) {
+client.stream('statuses/filter', {follow: '357312062, 2312333412,831847934534746114,1051053836,1393174363,2313671966,2338506822,3992601857,4736263474'}, function(stream) {
     stream.on('data', function(event) {
-      console.log(event && event.text);
+      //console.log(event && event.text);
       //streamHandler(stream,io);
       io.emit('message', event);
     });
@@ -112,3 +113,15 @@ client.stream('statuses/filter', {track: 'javascript'}, function(stream) {
       throw error;
     });
 });
+
+/* ALT+Z
+bitcoin 357312062
+Ethereum 2312333412
+OmiseGO 831847934534746114
+Ripple 1051053836
+Litecoin 1393174363
+NEM 2313671966
+Dashpay 2338506822
+iotatoken 3992601857
+LiskHQ 4736263474
+*/

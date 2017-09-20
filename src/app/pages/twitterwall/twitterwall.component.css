@@ -1,0 +1,26 @@
+.wall-container {
+    height: 60vh;
+    max-height: 60vh;
+    border: 1px solid #cecece;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+#twitter-feed img {
+    width: 32px;
+}
+#twitter-feed .t_screen_name {
+    font-size: 1em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+#twitter-feed .t_name {
+    background: rgb(32, 178, 170);
+}
+#twitter-feed .t_text {
+    margin-bottom: 5px;
+    padding: 5px;
+    font-size: 0.8em;
+}
+#twitter-feed .t_text:nth-child(odd){
+    background-color: rgb(238,238,238);
+}

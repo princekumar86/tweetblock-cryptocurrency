@@ -1034,9 +1034,10 @@ var TwitterwallComponent = (function () {
     TwitterwallComponent.prototype.ngOnInit = function () {
         var _this = this;
         this.connection = this._streamService.getTweets().subscribe(function (message) {
-            _this.messages.push(message);
-            console.log('hi' + message);
+            //this.messages.push(message);
+            _this.messages.unshift(message);
         });
+        //this.connection = this._streamService.getTweets().subscribe(result => this.tweet = result);
     };
     TwitterwallComponent.prototype.ngOnDestroy = function () {
         this.connection.unsubscribe();
@@ -1334,7 +1335,7 @@ exports = module.exports = __webpack_require__(2)();
 
 
 // module
-exports.push([module.i, "", ""]);
+exports.push([module.i, ".wall-container {\r\n    height: 60vh;\r\n    max-height: 60vh;\r\n    border: 1px solid #cecece;\r\n    overflow-y: scroll;\r\n    overflow-x: hidden;\r\n}\r\n#twitter-feed img {\r\n    width: 32px;\r\n}\r\n#twitter-feed .t_screen_name {\r\n    font-size: 1em;\r\n    font-weight: bold;\r\n    margin-bottom: 10px;\r\n}\r\n#twitter-feed .t_name {\r\n    background: rgb(32, 178, 170);\r\n}\r\n#twitter-feed .t_text {\r\n    margin-bottom: 5px;\r\n    padding: 5px;\r\n    font-size: 0.8em;\r\n}\r\n#twitter-feed .t_text:nth-child(odd){\r\n    background-color: rgb(238,238,238);\r\n}", ""]);
 
 // exports
 
@@ -1580,7 +1581,7 @@ module.exports = "<p>\n  twittercallback !\n</p>\n\n<p>Loading ....    Please wa
 /***/ 254:
 /***/ (function(module, exports) {
 
-module.exports = "<p>\n  twitterwall works!\n</p>\n\n<div *ngFor=\"let message of messages\">\n      {{message.text}}\n</div>"
+module.exports = "<p>\n  Twitter Wall !\n</p>\n<div class=\"wall-container\" id=\"twitter-feed\">\n  <div *ngFor=\"let message of messages\">\n    <span><img src=\"{{message.user.profile_image_url}}\" alt=\"photo\"/></span>\n    <span class=\"t_screen_name\">{{message.user.screen_name}}<i class=\"t_name\">({{message.user.name}})</i></span>\n    <span class=\"t_text\">{{message.text}}</span>\n  </div>\n</div>"
 
 /***/ }),
 
@@ -1718,7 +1719,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 var StreamtweetsService = (function () {
     function StreamtweetsService() {
-        this.url = 'http://localhost:8080';
+        this.url = 'https://tweetblock.tk/'; //'http://localhost:8080';  
     }
     StreamtweetsService.prototype.getTweets = function () {
         var _this = this;
