@@ -12,6 +12,7 @@ var mongoose = require('mongoose');
 var flash    = require('connect-flash');
 var Twitter = require('twitter'); // for twitter REST and Stream API
 var cors = require('cors');
+//streamHandler = require('./utils/streamHandler');
 
 var configDB = require('./config/database.js');
 
@@ -73,3 +74,41 @@ app.set('port', port);
 const server = http.createServer(app);
 
 server.listen(port, () => console.log(`Running on localhost:${port}`));
+
+// inlitialize twiiter config
+var client = new Twitter({
+    consumer_key: 'JKwPbCkDFUZ0FfIcfkxgkHB1Z',
+    consumer_secret: 'UC6pkxzi1ne0tbhPQglEMt5wM4weg2t2aICLmqLK5nB2PZeBpi',
+    access_token_key: '3249023658-l6zQYReg4o3rZ6dXEbxevEAdrFPU28vK2dNHux5',
+    access_token_secret: 'WeatAwgCCEt739fZM8KFFrDK4pHchSpc19dWY1QWNnUAv'
+  }); 
+// Initialize socket.io
+var io = require('socket.io').listen(server);
+
+// Set a stream listener for tweets matching tracking keywords
+//client.stream('statuses/filter',{ track: 'scotch_io, #scotchio'}, function(stream){
+  //streamHandler(stream,io);
+//});
+//Create web sockets connection.
+io.sockets.on('connection', function (socket) {
+    
+      //Code to run when socket.io is setup.
+     console.log('websocket client connected');
+     socket.on('message', function(msg){
+      //console.log('message: ' + msg);
+      io.emit('message', msg);
+    });
+     
+});
+
+client.stream('statuses/filter', {track: 'javascript'}, function(stream) {
+    stream.on('data', function(event) {
+      console.log(event && event.text);
+      //streamHandler(stream,io);
+      io.emit('message', event);
+    });
+   
+    stream.on('error', function(error) {
+      throw error;
+    });
+});

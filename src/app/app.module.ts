@@ -11,6 +11,7 @@ import { AuthGuard } from './_guards/auth.guard';
 import { AuthenticationService } from './_services/authentication.service';
 import { SocialcallbackService } from './_services/socialcallback.service';
 import { UserService } from './_services/user.service';
+import { StreamtweetsService } from './_services/streamtweets.service'
 
 import { DashboardComponent } from './pages/dashboard/dashboard.component';
 import { PageNotFoundComponent } from './pages/page-not-found/page-not-found.component';
@@ -25,6 +26,7 @@ import { PrivacyPolicyComponent } from './pages/privacy-policy/privacy-policy.co
 import { TermsOfServiceComponent } from './pages/terms-of-service/terms-of-service.component';
 import { GooglecallbackComponent } from './pages/googlecallback/googlecallback.component';
 import { LinkedincallbackComponent } from './pages/linkedincallback/linkedincallback.component';
+import { TwitterwallComponent } from './pages/twitterwall/twitterwall.component';
 
 const appRoutes: Routes = [
   { path: 'home', component: HomeComponent },
@@ -37,6 +39,7 @@ const appRoutes: Routes = [
   { path: 'twittercallback', component: TwittercallbackComponent },
   { path: 'googlecallback', component: GooglecallbackComponent },
   { path: 'linkedincallback', component: LinkedincallbackComponent },
+  { path: 'twitterwall', component: TwitterwallComponent },
   { path: 'privacy-policy', component: PrivacyPolicyComponent },
   { path: 'terms-of-service', component: TermsOfServiceComponent },
   { path: '',   redirectTo: '/home', pathMatch: 'full' },
@@ -57,7 +60,8 @@ const appRoutes: Routes = [
     PrivacyPolicyComponent,
     TermsOfServiceComponent,
     GooglecallbackComponent,
-    LinkedincallbackComponent
+    LinkedincallbackComponent,
+    TwitterwallComponent
   ],
   imports: [
     RouterModule.forRoot(
@@ -72,6 +76,7 @@ const appRoutes: Routes = [
     AuthGuard,
     AuthenticationService,
     SocialcallbackService,
+    StreamtweetsService,
     UserService,],
   bootstrap: [AppComponent]
 })
