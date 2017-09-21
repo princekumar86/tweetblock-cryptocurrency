@@ -3,7 +3,7 @@
 </p>
 <div class="wall-container" id="twitter-feed">
   <div *ngFor="let message of messages">
-    <span><img src="{{message.user.profile_image_url}}" alt="photo"/></span>
+    <span><img src="{{message.user.profile_image_url_https}}" alt="photo"/></span>
     <span class="t_screen_name">{{message.user.screen_name}}<i class="t_name">({{message.user.name}})</i></span>
     <span class="t_text">{{message.text}}</span>
   </div>

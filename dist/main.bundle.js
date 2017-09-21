@@ -1581,7 +1581,7 @@ module.exports = "<p>\n  twittercallback !\n</p>\n\n<p>Loading ....    Please wa
 /***/ 254:
 /***/ (function(module, exports) {
 
-module.exports = "<p>\n  Twitter Wall !\n</p>\n<div class=\"wall-container\" id=\"twitter-feed\">\n  <div *ngFor=\"let message of messages\">\n    <span><img src=\"{{message.user.profile_image_url}}\" alt=\"photo\"/></span>\n    <span class=\"t_screen_name\">{{message.user.screen_name}}<i class=\"t_name\">({{message.user.name}})</i></span>\n    <span class=\"t_text\">{{message.text}}</span>\n  </div>\n</div>"
+module.exports = "<p>\n  Twitter Wall !\n</p>\n<div class=\"wall-container\" id=\"twitter-feed\">\n  <div *ngFor=\"let message of messages\">\n    <span><img src=\"{{message.user.profile_image_url_https}}\" alt=\"photo\"/></span>\n    <span class=\"t_screen_name\">{{message.user.screen_name}}<i class=\"t_name\">({{message.user.name}})</i></span>\n    <span class=\"t_text\">{{message.text}}</span>\n  </div>\n</div>"
 
 /***/ }),
 
