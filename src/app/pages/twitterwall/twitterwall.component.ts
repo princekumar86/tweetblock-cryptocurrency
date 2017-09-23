@@ -17,6 +17,10 @@ export class TwitterwallComponent implements OnInit, OnDestroy {
   ngOnInit() {
     this.connection = this._streamService.getTweets().subscribe(message => {
       //this.messages.push(message);
+      var tempText = message['text'];
+      var exp = /(\b(https?|ftp|file):\/\/[-A-Z0-9+&@#\/%?=~_|!:,.;]*[-A-Z0-9+&@#\/%=~_|])/ig;
+      var modifiedText = tempText.replace(exp,"<a href='$1' target='_blank'>$1</a>");
+      message['text'] = modifiedText;
       this.messages.unshift(message);
     })
     //this.connection = this._streamService.getTweets().subscribe(result => this.tweet = result);
