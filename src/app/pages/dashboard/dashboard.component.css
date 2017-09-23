@@ -2,6 +2,9 @@
     min-height: 45vh;
     border-right: 1px solid #cecece;
 }
+.dashboardcol.all-crypto {
+    min-height: 90vh;
+}
 .dashboardcol .dashheading {
     text-align: center;
     background-color: #f1f1f1;
@@ -40,4 +43,16 @@
     font-size: 0.7em;
     background: #00BDDF;
     color: #000000;
+}
+.dashbody {
+    font-size: 0.7em;
+    height: 40vh;
+    max-height: 40vh;
+    border: 1px solid #cecece;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+.all-crypto .dashbody {
+    height: 85vh;
+    max-height: 85vh;
 }

@@ -1,16 +1,22 @@
-import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
+import { Component, OnInit, OnDestroy, Input, Output, EventEmitter } from '@angular/core';
+import { StreamtweetsService } from '../../_services/streamtweets.service';
 
 @Component({
   selector: 'app-dashboard',
   templateUrl: './dashboard.component.html',
   styleUrls: ['./dashboard.component.css']
 })
-export class DashboardComponent implements OnInit {
+export class DashboardComponent implements OnInit, OnDestroy {
   userEmail: string = '';
   userToken:String ='';
   @Output() sendLoggedInEvent = new EventEmitter<boolean>();
 
-  constructor() { }
+  messages = [];
+  connection;
+  message;
+  public tweet: any;
+
+  constructor(private _streamService:StreamtweetsService) { }
 
   ngOnInit() {
       if (localStorage.getItem('currentUser') === null) {
@@ -34,6 +40,22 @@ export class DashboardComponent implements OnInit {
         // changing Login / Logout tag in top bar
         this.sendLoggedInEvent.emit(true);
       }
+      ////////////////////////////////////////
+      //////////////  tweet feeding code  ///
+      ///////////////////////////////////////
+      this.connection = this._streamService.getTweets().subscribe(message => {
+        //this.messages.push(message);
+        var tempText = message['text'];
+        var exp = /(\b(https?|ftp|file):\/\/[-A-Z0-9+&@#\/%?=~_|!:,.;]*[-A-Z0-9+&@#\/%=~_|])/ig;
+        var modifiedText = tempText.replace(exp,"<a href='$1' target='_blank'>$1</a>");
+        message['text'] = modifiedText;
+        this.messages.unshift(message);
+      })
+      ///////////////////////////////////////
+  }
+
+  ngOnDestroy() {
+    this.connection.unsubscribe();
   }
 
 }

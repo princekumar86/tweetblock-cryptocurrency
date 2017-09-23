@@ -191,7 +191,7 @@ var _a;
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__services_authentication_service__ = __webpack_require__(33);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__services_socialcallback_service__ = __webpack_require__(25);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__services_user_service__ = __webpack_require__(127);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__services_streamtweets_service__ = __webpack_require__(75);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__services_streamtweets_service__ = __webpack_require__(46);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__pages_dashboard_dashboard_component__ = __webpack_require__(130);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__pages_page_not_found_page_not_found_component__ = __webpack_require__(136);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__pages_home_home_component__ = __webpack_require__(133);
@@ -306,6 +306,7 @@ AppModule = __decorate([
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__services_streamtweets_service__ = __webpack_require__(46);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return DashboardComponent; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -317,13 +318,17 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 
+
 var DashboardComponent = (function () {
-    function DashboardComponent() {
+    function DashboardComponent(_streamService) {
+        this._streamService = _streamService;
         this.userEmail = '';
         this.userToken = '';
         this.sendLoggedInEvent = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["F" /* EventEmitter */]();
+        this.messages = [];
     }
     DashboardComponent.prototype.ngOnInit = function () {
+        var _this = this;
         if (localStorage.getItem('currentUser') === null) {
             console.log('No local storage item');
             // do nothing
@@ -344,6 +349,21 @@ var DashboardComponent = (function () {
             // changing Login / Logout tag in top bar
             this.sendLoggedInEvent.emit(true);
         }
+        ////////////////////////////////////////
+        //////////////  tweet feeding code  ///
+        ///////////////////////////////////////
+        this.connection = this._streamService.getTweets().subscribe(function (message) {
+            //this.messages.push(message);
+            var tempText = message['text'];
+            var exp = /(\b(https?|ftp|file):\/\/[-A-Z0-9+&@#\/%?=~_|!:,.;]*[-A-Z0-9+&@#\/%=~_|])/ig;
+            var modifiedText = tempText.replace(exp, "<a href='$1' target='_blank'>$1</a>");
+            message['text'] = modifiedText;
+            _this.messages.unshift(message);
+        });
+        ///////////////////////////////////////
+    };
+    DashboardComponent.prototype.ngOnDestroy = function () {
+        this.connection.unsubscribe();
     };
     return DashboardComponent;
 }());
@@ -357,9 +377,10 @@ DashboardComponent = __decorate([
         template: __webpack_require__(241),
         styles: [__webpack_require__(215)]
     }),
-    __metadata("design:paramtypes", [])
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__services_streamtweets_service__["a" /* StreamtweetsService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__services_streamtweets_service__["a" /* StreamtweetsService */]) === "function" && _a || Object])
 ], DashboardComponent);
 
+var _a;
 //# sourceMappingURL=dashboard.component.js.map
 
 /***/ }),
@@ -1013,7 +1034,7 @@ var _a, _b, _c;
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__services_streamtweets_service__ = __webpack_require__(75);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__services_streamtweets_service__ = __webpack_require__(46);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return TwitterwallComponent; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -1105,7 +1126,7 @@ exports = module.exports = __webpack_require__(2)();
 
 
 // module
-exports.push([module.i, ".dashboardcol {\r\n    min-height: 45vh;\r\n    border-right: 1px solid #cecece;\r\n}\r\n.dashboardcol .dashheading {\r\n    text-align: center;\r\n    background-color: #f1f1f1;\r\n    padding-top: 5px;\r\n    padding-bottom: 5px;\r\n    font-weight: bold;\r\n}\r\n.dashheading i {\r\n    padding-right: 10px;\r\n    color: #a4a4a4;\r\n}\r\n.iconcolumns a {\r\n    color: #cecece;\r\n    padding: 10px;\r\n    display: inline-block;\r\n}\r\n@media (max-width:550px){\r\n    .iconcolumns a {\r\n        padding: 10px 1px;\r\n    }\r\n}\r\n\r\n.iconcolumns a:hover {\r\n    color: #ffffff;\r\n}\r\n.iconcolumns a.iconactive {\r\n    color: #ffffff;\r\n}\r\n.iconcolumns {\r\n    background-color: #111111;\r\n}\r\n.col-1.iconcolumns {\r\n    max-width: 50px !important;\r\n}\r\n.thinline {\r\n    font-size: 0.7em;\r\n    background: #00BDDF;\r\n    color: #000000;\r\n}", ""]);
+exports.push([module.i, ".dashboardcol {\r\n    min-height: 45vh;\r\n    border-right: 1px solid #cecece;\r\n}\r\n.dashboardcol.all-crypto {\r\n    min-height: 90vh;\r\n}\r\n.dashboardcol .dashheading {\r\n    text-align: center;\r\n    background-color: #f1f1f1;\r\n    padding-top: 5px;\r\n    padding-bottom: 5px;\r\n    font-weight: bold;\r\n}\r\n.dashheading i {\r\n    padding-right: 10px;\r\n    color: #a4a4a4;\r\n}\r\n.iconcolumns a {\r\n    color: #cecece;\r\n    padding: 10px;\r\n    display: inline-block;\r\n}\r\n@media (max-width:550px){\r\n    .iconcolumns a {\r\n        padding: 10px 1px;\r\n    }\r\n}\r\n\r\n.iconcolumns a:hover {\r\n    color: #ffffff;\r\n}\r\n.iconcolumns a.iconactive {\r\n    color: #ffffff;\r\n}\r\n.iconcolumns {\r\n    background-color: #111111;\r\n}\r\n.col-1.iconcolumns {\r\n    max-width: 50px !important;\r\n}\r\n.thinline {\r\n    font-size: 0.7em;\r\n    background: #00BDDF;\r\n    color: #000000;\r\n}\r\n.dashbody {\r\n    font-size: 0.7em;\r\n    height: 40vh;\r\n    max-height: 40vh;\r\n    border: 1px solid #cecece;\r\n    overflow-y: scroll;\r\n    overflow-x: hidden;\r\n}\r\n.all-crypto .dashbody {\r\n    height: 85vh;\r\n    max-height: 85vh;\r\n}", ""]);
 
 // exports
 
@@ -1359,7 +1380,7 @@ module.exports = "<div class=\"container-fluid\">\r\n  <!-- Content here -->\r\n
 /***/ 241:
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"row no-gutters\"> <!-- top first half row -->\n  <div class=\"col-1 iconcolumns\">\n    <a href=\"\" routerLink=\"/dashboard\" class=\"iconactive\"><i class=\"fa fa-home fa-lg\"></i></a><br/>\n    <a href=\"\" routerLink=\"/dashboard\"><i class=\"fa fa-tachometer fa-lg\"></i></a><br/>\n    <a href=\"\"><i class=\"fa fa-line-chart fa-lg\"></i></a><br/>\n    <a href=\"\"><i class=\"fa fa-envelope-o fa-lg\"></i></a><br/>\n    <a href=\"\" routerLink=\"/settings\"><i class=\"fa fa-cogs fa-lg\"></i></a><br/>\n    <a href=\"\" routerLink=\"/profile\"><i class=\"fa fa-user fa-lg\"></i></a><br/>\n    <a href=\"\"><i class=\"fa fa-plus fa-lg\"></i></a><br/>\n  </div>\n  <div class=\"col-11\">\n      <div class=\"thinline\"><span>user: {{userEmail}} ; token : {{userToken}}</span></div>\n    <div class=\"row no-gutters\">\n      <div class=\"col-xs-12 col-sm-6 col-md-3 dashboardcol\">\n        <div class=\"dashheading\">\n          <span class=\"mainheading\"><img src=\"assets/images/cryptoicons-sm/ethereum.png\" /> Ethereum</span>\n          <span class=\"float-right\"><i class=\"fa fa-bar-chart fa-lg\"></i></span>\n        </div>\n      </div>\n      <div class=\"col-xs-12 col-sm-6 col-md-3 dashboardcol\">\n        <div class=\"dashheading\">\n          <span class=\"mainheading\"><img src=\"assets/images/cryptoicons-sm/omisego.png\" /> OmiseGO</span>\n          <span class=\"float-right\"><i class=\"fa fa-bar-chart fa-lg\"></i></span>\n        </div>\n      </div>\n      <div class=\"col-xs-12 col-sm-6 col-md-3 dashboardcol\">\n        <div class=\"dashheading\">\n          <span class=\"mainheading\"><img src=\"assets/images/cryptoicons-sm/ripple.png\" /> Ripple</span>\n          <span class=\"float-right\"><i class=\"fa fa-bar-chart fa-lg\"></i></span>\n        </div>\n      </div>\n      <div class=\"col-xs-12 col-sm-6 col-md-3 dashboardcol\">\n          <div class=\"dashheading\">\n            <span class=\"mainheading\"><img src=\"assets/images/cryptoicons-sm/litecoin.png\" /> Litecoin</span>\n            <span class=\"float-right\"><i class=\"fa fa-bar-chart fa-lg\"></i></span>\n          </div>\n      </div>\n    </div>\n  </div>\n</div>\n<div class=\"row no-gutters\"> <!-- second half row -->\n  <div class=\"col-1 iconcolumns\">\n    \n  </div>\n  <div class=\"col-11\">\n    <div class=\"row no-gutters\">\n      <div class=\"col-xs-12 col-sm-6 col-md-3 dashboardcol\">\n        <div class=\"dashheading\">\n          <span class=\"mainheading\"><img src=\"assets/images/cryptoicons-sm/nem.png\" /> NEM</span>\n          <span class=\"float-right\"><i class=\"fa fa-bar-chart fa-lg\"></i></span>\n        </div>\n      </div>\n      <div class=\"col-xs-12 col-sm-6 col-md-3 dashboardcol\">\n        <div class=\"dashheading\">\n          <span class=\"mainheading\"><img src=\"assets/images/cryptoicons-sm/dash.png\" /> Dash</span>\n          <span class=\"float-right\"><i class=\"fa fa-bar-chart fa-lg\"></i></span>\n        </div>\n      </div>\n      <div class=\"col-xs-12 col-sm-6 col-md-3 dashboardcol\">\n        <div class=\"dashheading\">\n          <span class=\"mainheading\"><img src=\"assets/images/cryptoicons-sm/iota.png\" /> IOTA</span>\n          <span class=\"float-right\"><i class=\"fa fa-bar-chart fa-lg\"></i></span>\n        </div>\n      </div>\n      <div class=\"col-xs-12 col-sm-6 col-md-3 dashboardcol\">\n        <div class=\"dashheading\">\n          <span class=\"mainheading\"><img src=\"assets/images/cryptoicons-sm/monero.png\" /> Monero</span>\n          <span class=\"float-right\"><i class=\"fa fa-bar-chart fa-lg\"></i></span>\n        </div>\n      </div>\n    </div>\n  </div>\n</div>\n"
+module.exports = "<div class=\"row no-gutters\"> <!-- top first half row -->\n  <div class=\"col-1 iconcolumns\">\n    <a href=\"\" routerLink=\"/dashboard\" class=\"iconactive\"><i class=\"fa fa-home fa-lg\"></i></a><br/>\n    <a href=\"\" routerLink=\"/dashboard\"><i class=\"fa fa-tachometer fa-lg\"></i></a><br/>\n    <a href=\"\"><i class=\"fa fa-line-chart fa-lg\"></i></a><br/>\n    <a href=\"\"><i class=\"fa fa-envelope-o fa-lg\"></i></a><br/>\n    <a href=\"\" routerLink=\"/settings\"><i class=\"fa fa-cogs fa-lg\"></i></a><br/>\n    <a href=\"\" routerLink=\"/profile\"><i class=\"fa fa-user fa-lg\"></i></a><br/>\n    <a href=\"\"><i class=\"fa fa-plus fa-lg\"></i></a><br/>\n  </div>\n  <div class=\"col-11\">\n    <div class=\"row no-gutters\">\n      <div class=\"col-xs-12 col-sm-6 col-md-3\"> <!-- col 1 -->\n          <div class=\"row no-gutters\"> \n            <div class=\"col-xs-12 col-sm-12 col-md-12 dashboardcol\">\n              <div class=\"dashheading\">\n                <span class=\"mainheading\"><img src=\"assets/images/cryptoicons-sm/ethereum.png\" /> Ethereum</span>\n                <span class=\"float-right\"><i class=\"fa fa-bar-chart fa-lg\"></i></span>\n              </div>\n              <div class=\"dashbody\">\n                  <!-- tweet feed goes here --> \n              </div>\n            </div>\n            <!-- col first row 2 -->\n            <div class=\"col-xs-12 col-sm-12 col-md-12 dashboardcol\">\n                <div class=\"dashheading\">\n                  <span class=\"mainheading\"><img src=\"assets/images/cryptoicons-sm/dash.png\" /> Dash</span>\n                  <span class=\"float-right\"><i class=\"fa fa-bar-chart fa-lg\"></i></span>\n                </div>\n                <div class=\"dashbody\">\n                    <!-- tweet feed goes here --> \n                </div>\n            </div>\n        </div>\n      </div>\n      <div class=\"col-xs-12 col-sm-6 col-md-3\"> <!-- col 2 -->\n          <div class=\"row no-gutters\"> \n            <div class=\"col-xs-12 col-sm-12 col-md-12 dashboardcol\">\n              <div class=\"dashheading\">\n                <span class=\"mainheading\"><img src=\"assets/images/cryptoicons-sm/omisego.png\" /> OmiseGO</span>\n                <span class=\"float-right\"><i class=\"fa fa-bar-chart fa-lg\"></i></span>\n              </div>\n              <div class=\"dashbody\">\n                <!-- tweet feed goes here --> \n              </div>\n            </div>\n            <!-- col second row 2 -->\n            <div class=\"col-xs-12 col-sm-12 col-md-12 dashboardcol\">\n                <div class=\"dashheading\">\n                  <span class=\"mainheading\"><img src=\"assets/images/cryptoicons-sm/iota.png\" /> IOTA</span>\n                  <span class=\"float-right\"><i class=\"fa fa-bar-chart fa-lg\"></i></span>\n                </div>\n                <div class=\"dashbody\">\n                    <!-- tweet feed goes here --> \n                </div>\n            </div>\n          </div>\n      </div>\n      <div class=\"col-xs-12 col-sm-6 col-md-3\">\n          <div class=\"row no-gutters\"> \n            <div class=\"col-xs-12 col-sm-12 col-md-12 dashboardcol\">\n              <div class=\"dashheading\">\n                <span class=\"mainheading\"><img src=\"assets/images/cryptoicons-sm/ripple.png\" /> Ripple</span>\n                <span class=\"float-right\"><i class=\"fa fa-bar-chart fa-lg\"></i></span>\n              </div>\n              <div class=\"dashbody\">\n                <!-- tweet feed goes here --> \n              </div>\n            </div>\n            <!-- col third row 2 -->\n            <div class=\"col-xs-12 col-sm-12 col-md-12 dashboardcol\">\n                <div class=\"dashheading\">\n                  <span class=\"mainheading\"><img src=\"assets/images/cryptoicons-sm/monero.png\" /> Monero</span>\n                  <span class=\"float-right\"><i class=\"fa fa-bar-chart fa-lg\"></i></span>\n                </div>\n                <div class=\"dashbody\">\n                  <!-- tweet feed goes here --> \n                </div>\n              </div>\n            </div>\n      </div>\n      <div class=\"col-xs-12 col-sm-6 col-md-3 dashboardcol all-crypto\">\n          <div class=\"dashheading\">\n            <span class=\"mainheading\"> ALL CRYPTO COIN FEEDS</span>\n            <span class=\"float-right\"><i class=\"fa fa-bar-chart fa-lg\"></i></span>\n          </div>\n          <div class=\"dashbody\">\n            <div *ngFor=\"let message of messages\">\n              <span><img src=\"{{message.user.profile_image_url_https}}\" width=\"20px\" alt=\"photo\"/></span>\n              <span class=\"t_screen_name\">{{message.user.screen_name}}<i class=\"t_name\">({{message.user.name}})</i></span>\n              <span class=\"t_text\" [innerHTML]=\"message.text\"></span>\n            </div>\n        </div>\n      </div>\n    </div>\n  </div>\n</div>\n<div class=\"row no-gutters\"> <!-- second half row -->\n  <div class=\"col-1 iconcolumns\">\n    \n  </div>\n  <div class=\"col-11\">\n    <div class=\"row no-gutters\">\n\n    </div>\n  </div>\n</div>\n"
 
 /***/ }),
 
@@ -1696,7 +1717,7 @@ var _a;
 
 /***/ }),
 
-/***/ 75:
+/***/ 46:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1723,7 +1744,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 var StreamtweetsService = (function () {
     function StreamtweetsService() {
-        this.url = 'https://tweetblock.tk/'; //'http://localhost:8080';  
+        this.url = 'https://tweetblock.tk/'; // 'https://tweetblock.tk/'; //'http://localhost:8080';  
     }
     StreamtweetsService.prototype.getTweets = function () {
         var _this = this;
