@@ -122,7 +122,7 @@ Litecoin 1393174363
 NEM 2313671966
 Dashpay 2338506822
 iotatoken 3992601857
-monerocurrency 
+monerocurrency 2478439963
 LiskHQ 4736263474
 bitcoin 357312062
 eth_classic 759252279862104064
