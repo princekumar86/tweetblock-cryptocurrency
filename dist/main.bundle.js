@@ -1837,7 +1837,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 var StreamtweetsService = (function () {
     function StreamtweetsService() {
-        this.url = 'http://localhost:8080'; // 'https://tweetblock.tk/'; //'http://localhost:8080';  
+        this.url = 'https://tweetblock.tk/'; //'http://localhost:8080';  
     }
     StreamtweetsService.prototype.getTweets = function () {
         var _this = this;
