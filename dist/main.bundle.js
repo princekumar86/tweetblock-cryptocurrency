@@ -396,13 +396,11 @@ var DashboardComponent = (function () {
         //////////////  tweet feeding code  ///
         ///////////////////////////////////////
         this.connection = this._streamService.getTweets().subscribe(function (message) {
-            //this.messages.push(message);
             var tempText = message['text'];
             var exp = /(\b(https?|ftp|file):\/\/[-A-Z0-9+&@#\/%?=~_|!:,.;]*[-A-Z0-9+&@#\/%=~_|])/ig;
             var modifiedText = tempText.replace(exp, "<a href='$1' target='_blank'>$1</a>");
             message['text'] = modifiedText;
             _this.messages.unshift(message);
-            console.log(_this.messages);
         });
         ///////////////////////////////////////
     };
@@ -1170,7 +1168,7 @@ exports = module.exports = __webpack_require__(2)();
 
 
 // module
-exports.push([module.i, ".dashboardcol {\r\n    min-height: 45vh;\r\n    border-right: 1px solid #cecece;\r\n}\r\n.dashboardcol.all-crypto {\r\n    min-height: 90vh;\r\n}\r\n.dashboardcol .dashheading {\r\n    text-align: center;\r\n    background-color: #f1f1f1;\r\n    padding-top: 5px;\r\n    padding-bottom: 5px;\r\n    font-weight: bold;\r\n}\r\n.dashheading i {\r\n    padding-right: 10px;\r\n    color: #a4a4a4;\r\n}\r\n.iconcolumns a {\r\n    color: #cecece;\r\n    padding: 10px;\r\n    display: inline-block;\r\n}\r\n@media (max-width:550px){\r\n    .iconcolumns a {\r\n        padding: 10px 1px;\r\n    }\r\n}\r\n\r\n.iconcolumns a:hover {\r\n    color: #ffffff;\r\n}\r\n.iconcolumns a.iconactive {\r\n    color: #ffffff;\r\n}\r\n.iconcolumns {\r\n    background-color: #111111;\r\n}\r\n.col-1.iconcolumns {\r\n    max-width: 50px !important;\r\n}\r\n.thinline {\r\n    font-size: 0.7em;\r\n    background: #00BDDF;\r\n    color: #000000;\r\n}\r\n.dashbody {\r\n    font-size: 0.7em;\r\n    height: 40vh;\r\n    max-height: 40vh;\r\n    border: 1px solid #cecece;\r\n    overflow-y: scroll;\r\n    overflow-x: hidden;\r\n}\r\n.all-crypto .dashbody {\r\n    height: 85vh;\r\n    max-height: 85vh;\r\n}\r\n.searchText {\r\n    width: 100%;\r\n    font-size: 14px;\r\n    line-height: 0.5em;\r\n}", ""]);
+exports.push([module.i, ".dashboardcol {\r\n    min-height: 45vh;\r\n    border-right: 1px solid #cecece;\r\n}\r\n.dashboardcol.all-crypto {\r\n    min-height: 90vh;\r\n}\r\n.dashboardcol .dashheading {\r\n    text-align: center;\r\n    background-color: #f1f1f1;\r\n    padding-top: 5px;\r\n    padding-bottom: 5px;\r\n    font-weight: bold;\r\n}\r\n.dashheading i {\r\n    padding-right: 10px;\r\n    color: #a4a4a4;\r\n}\r\n.iconcolumns a {\r\n    color: #cecece;\r\n    padding: 10px;\r\n    display: inline-block;\r\n}\r\n@media (max-width:550px){\r\n    .iconcolumns a {\r\n        padding: 10px 1px;\r\n    }\r\n}\r\n\r\n.iconcolumns a:hover {\r\n    color: #ffffff;\r\n}\r\n.iconcolumns a.iconactive {\r\n    color: #ffffff;\r\n}\r\n.iconcolumns {\r\n    background-color: #111111;\r\n}\r\n.col-1.iconcolumns {\r\n    max-width: 50px !important;\r\n}\r\n.thinline {\r\n    font-size: 0.7em;\r\n    background: #00BDDF;\r\n    color: #000000;\r\n}\r\n.dashbody {\r\n    font-size: 0.7em;\r\n    height: 40vh;\r\n    max-height: 40vh;\r\n    border: 1px solid #cecece;\r\n    overflow-y: scroll;\r\n    overflow-x: hidden;\r\n}\r\n.all-crypto .dashbody {\r\n    height: 85vh;\r\n    max-height: 85vh;\r\n}\r\n.searchText {\r\n    width: 100%;\r\n    font-size: 14px;\r\n    line-height: 0.5em;\r\n}\r\n\r\n::-webkit-scrollbar {\r\n    width: 6px;\r\n}\r\n\r\n::-webkit-scrollbar-track {\r\n    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); \r\n    border-radius: 10px;\r\n}\r\n\r\n::-webkit-scrollbar-thumb {\r\n    border-radius: 10px;\r\n    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); \r\n}", ""]);
 
 // exports
 
