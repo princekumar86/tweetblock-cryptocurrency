@@ -6,7 +6,7 @@ import 'rxjs/add/operator/map'
 
 @Injectable()
 export class StreamtweetsService {
-  private url = 'https://tweetblock.tk/'; // 'https://tweetblock.tk/'; //'http://localhost:8080';  
+  private url = 'https://tweetblock.tk/'; //'http://localhost:8080';  
   private socket;
 
   constructor() { }

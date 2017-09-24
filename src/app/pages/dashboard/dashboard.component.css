@@ -56,3 +56,8 @@
     height: 85vh;
     max-height: 85vh;
 }
+.searchText {
+    width: 100%;
+    font-size: 14px;
+    line-height: 0.5em;
+}

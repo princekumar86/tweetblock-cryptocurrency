@@ -5,6 +5,7 @@ import { HttpModule } from '@angular/http';
 import { RouterModule, Routes } from '@angular/router';
 
 import { AppComponent } from './app.component';
+import { FilterPipe} from './filter.pipe';
 
 import { DataService } from './data.service';
 import { AuthGuard } from './_guards/auth.guard';
@@ -61,7 +62,8 @@ const appRoutes: Routes = [
     TermsOfServiceComponent,
     GooglecallbackComponent,
     LinkedincallbackComponent,
-    TwitterwallComponent
+    TwitterwallComponent,
+    FilterPipe 
   ],
   imports: [
     RouterModule.forRoot(

@@ -50,6 +50,7 @@ export class DashboardComponent implements OnInit, OnDestroy {
         var modifiedText = tempText.replace(exp,"<a href='$1' target='_blank'>$1</a>");
         message['text'] = modifiedText;
         this.messages.unshift(message);
+        console.log(this.messages);
       })
       ///////////////////////////////////////
   }
