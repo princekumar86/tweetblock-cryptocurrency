@@ -59,11 +59,31 @@ export class DashboardComponent implements OnInit, OnDestroy {
         // All coins show in wall
         this.messages.unshift(message);
         //// other coins show in respective div 
-        console.log(message['retweeted_status']['user']['id']);
+        
         // if(message['retweeted_status']['user']['id'] == 2312333412) {
         //   this.messages_Ethereum.unshift(message);
         // }
-        switch (message['retweeted_status']['user']['id']) {
+        var tempID = 1;
+          if('retweeted_status' in message){
+          //Retweeted
+          console.log(message['retweeted_status']['user']['id_str']);
+          console.log('condition retweeted');
+          //tempID  = message['retweeted_status']['user']['id'];
+          tempID  = message['retweeted_status']['user']['id_str'];
+
+        }else if('in_reply_to_status_id' in message) {
+          // in reply to
+          console.log(message['in_reply_to_user_id_str']); // in_reply_to_status_id // in_reply_to_user_id 
+          console.log('condition tweet reply');
+          //tempID = message['in_reply_to_status_id'];
+          tempID = message['in_reply_to_user_id_str'];
+        } else {
+          console.log(message['user']['id_str']);
+          console.log('condition 3rd, not RT & not R, normal tweet');
+          tempID  = message['user']['id_str'];
+        }
+
+        switch (tempID) {
           case (2312333412):
             this.messages_Ethereum.unshift(message);
             break;
