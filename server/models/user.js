@@ -33,7 +33,14 @@ var userSchema = mongoose.Schema({
         token       : String,
         email       : String,
         name        : String
-    }
+    },
+    age : String,
+    cryptopreference1 : String,
+    cryptopreference2 : String,
+    cryptopreference3 : String,
+    cryptopreference4 : String,
+    cryptopreference5 : String,
+    cryptopreference6 : String
 
 });
 
