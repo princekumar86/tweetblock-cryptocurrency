@@ -959,6 +959,8 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var SettingsComponent = (function () {
     function SettingsComponent(http) {
         this.http = http;
+        this.userid = '';
+        this.prefer_update_url = '/api/userupdatepreference/' + this.userid; //example user id 59e1b50416998f180c5c6238
         this.data = { cryptopreference1: 'your coin 1',
             cryptopreference2: 'your coin 2',
             cryptopreference3: 'your coin 3',
@@ -968,10 +970,29 @@ var SettingsComponent = (function () {
         };
     }
     SettingsComponent.prototype.ngOnInit = function () {
+        if (localStorage.getItem('currentUser') === null) {
+            console.log('No local storage item');
+            // do nothing
+        }
+        else {
+            console.log('local storage item found');
+            // READ STRING FROM LOCAL STORAGE
+            var retrievedObject = localStorage.getItem('currentUser');
+            // CONVERT STRING TO REGULAR JS OBJECT
+            var parsedObject = JSON.parse(retrievedObject);
+            // ACCESS DATA
+            //console.log(parsedObject.item[0].Desc);
+            console.log(parsedObject.email);
+            console.log(parsedObject.userid._id);
+            if (parsedObject.userid._id) {
+                this.userid = parsedObject.userid._id;
+                this.prefer_update_url = '/api/userupdatepreference/' + this.userid;
+            }
+        }
     };
     SettingsComponent.prototype.onSubmit = function () {
         console.log('onSubmit function called');
-        this.http.post('http://localhost:8080/api/userupdatepreference/59e1b50416998f180c5c6238', this.data)
+        this.http.post(this.prefer_update_url, this.data)
             .subscribe(
         // Successful responses call the first callback.
         function (data) { }, 
