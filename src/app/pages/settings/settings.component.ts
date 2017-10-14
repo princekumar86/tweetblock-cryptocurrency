@@ -45,12 +45,13 @@ export class SettingsComponent implements OnInit {
       //console.log(parsedObject.item[0].Desc);
       console.log(parsedObject.email);
       console.log(parsedObject.userid._id);
+      console.log(parsedObject.userid);
       if(parsedObject.userid._id) {
         this.UID = parsedObject.userid._id;
       } else if(parsedObject.userid) {
         this.UID = parsedObject.userid;
       }
-      if(parsedObject.userid._id) {
+      if(this.UID !== '') {
         this.userid = parsedObject.userid._id;
         this.prefer_update_url = '/api/userupdatepreference/'+this.UID;
         this.prefer_retrieve_url = '/api/userretrivepreference/'+this.UID;
