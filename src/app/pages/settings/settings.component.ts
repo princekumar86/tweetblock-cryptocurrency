@@ -9,13 +9,22 @@ import { HttpClient } from '@angular/common/http';
 })
 export class SettingsComponent implements OnInit {
   userid:String = '';
+  myData : any;
   prefer_update_url = '/api/userupdatepreference/'+this.userid; //example user id 59e1b50416998f180c5c6238
-  data = {cryptopreference1: 'your coin 1',
-          cryptopreference2: 'your coin 2',
-          cryptopreference3: 'your coin 3',
-          cryptopreference4: 'your coin 4',
-          cryptopreference5: 'your coin 5',
-          cryptopreference6: 'your coin 6',
+  prefer_retrieve_url = '/api/userretrivepreference/'+this.userid;
+  crypto1:String = 'default';
+  crypto2:String = 'default';
+  crypto3:String = 'default';
+  crypto4:String = 'default';
+  crypto5:String = 'default';
+  crypto6:String = 'default';
+
+  data = {cryptopreference1: this.crypto1,
+          cryptopreference2: this.crypto2,
+          cryptopreference3: this.crypto3,
+          cryptopreference4: this.crypto4,
+          cryptopreference5: this.crypto5,
+          cryptopreference6: this.crypto6,
           };
   constructor(private http: HttpClient) { }
 
@@ -38,12 +47,46 @@ export class SettingsComponent implements OnInit {
       if(parsedObject.userid._id) {
         this.userid = parsedObject.userid._id;
         this.prefer_update_url = '/api/userupdatepreference/'+this.userid;
+        this.prefer_retrieve_url = '/api/userretrivepreference/'+this.userid;
+        ///////////////////////////////////////////////////////////////////////////
+        interface UserResponse {
+          cryptopreference1: string;
+          cryptopreference2: string;
+          cryptopreference3: string;
+          cryptopreference4: string;
+          cryptopreference5: string;
+          cryptopreference6: string;
+        }
+
+        this.http.get<UserResponse>(this.prefer_retrieve_url)
+        .subscribe(
+          // Successful responses call the first callback.
+          data => { 
+            this.myData = data;
+            //console.log(data)
+            console.log(data.cryptopreference1);
+          this.data.cryptopreference1 = data.cryptopreference1;
+          this.data.cryptopreference2 = data.cryptopreference2;
+          this.data.cryptopreference3 = data.cryptopreference3;
+          this.data.cryptopreference4 = data.cryptopreference4;
+          this.data.cryptopreference5 = data.cryptopreference5;
+          this.data.cryptopreference6 = data.cryptopreference6;
+         },
+          // Errors will call this callback instead:
+          err => {
+            console.log('Something went wrong!');
+          }
+        );
+        //////////////////////////////////////////////////////////////////////////
+
       }
+      
     }
   }
 
   onSubmit() {
     console.log('onSubmit function called');
+    console.log(this.myData);
     this.http.post(this.prefer_update_url, this.data )
         .subscribe(
           // Successful responses call the first callback.

@@ -961,15 +961,23 @@ var SettingsComponent = (function () {
         this.http = http;
         this.userid = '';
         this.prefer_update_url = '/api/userupdatepreference/' + this.userid; //example user id 59e1b50416998f180c5c6238
-        this.data = { cryptopreference1: 'your coin 1',
-            cryptopreference2: 'your coin 2',
-            cryptopreference3: 'your coin 3',
-            cryptopreference4: 'your coin 4',
-            cryptopreference5: 'your coin 5',
-            cryptopreference6: 'your coin 6',
+        this.prefer_retrieve_url = '/api/userretrivepreference/' + this.userid;
+        this.crypto1 = 'default';
+        this.crypto2 = 'default';
+        this.crypto3 = 'default';
+        this.crypto4 = 'default';
+        this.crypto5 = 'default';
+        this.crypto6 = 'default';
+        this.data = { cryptopreference1: this.crypto1,
+            cryptopreference2: this.crypto2,
+            cryptopreference3: this.crypto3,
+            cryptopreference4: this.crypto4,
+            cryptopreference5: this.crypto5,
+            cryptopreference6: this.crypto6,
         };
     }
     SettingsComponent.prototype.ngOnInit = function () {
+        var _this = this;
         if (localStorage.getItem('currentUser') === null) {
             console.log('No local storage item');
             // do nothing
@@ -987,11 +995,32 @@ var SettingsComponent = (function () {
             if (parsedObject.userid._id) {
                 this.userid = parsedObject.userid._id;
                 this.prefer_update_url = '/api/userupdatepreference/' + this.userid;
+                this.prefer_retrieve_url = '/api/userretrivepreference/' + this.userid;
+                this.http.get(this.prefer_retrieve_url)
+                    .subscribe(
+                // Successful responses call the first callback.
+                function (data) {
+                    _this.myData = data;
+                    //console.log(data)
+                    console.log(data.cryptopreference1);
+                    _this.data.cryptopreference1 = data.cryptopreference1;
+                    _this.data.cryptopreference2 = data.cryptopreference2;
+                    _this.data.cryptopreference3 = data.cryptopreference3;
+                    _this.data.cryptopreference4 = data.cryptopreference4;
+                    _this.data.cryptopreference5 = data.cryptopreference5;
+                    _this.data.cryptopreference6 = data.cryptopreference6;
+                }, 
+                // Errors will call this callback instead:
+                function (err) {
+                    console.log('Something went wrong!');
+                });
+                //////////////////////////////////////////////////////////////////////////
             }
         }
     };
     SettingsComponent.prototype.onSubmit = function () {
         console.log('onSubmit function called');
+        console.log(this.myData);
         this.http.post(this.prefer_update_url, this.data)
             .subscribe(
         // Successful responses call the first callback.
@@ -1902,7 +1931,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 var StreamtweetsService = (function () {
     function StreamtweetsService() {
-        this.url = 'http://localhost:8080'; // 'https://tweetblock.tk/'; //'http://localhost:8080';  
+        this.url = 'https://tweetblock.tk/'; //'http://localhost:8080';  
     }
     StreamtweetsService.prototype.getTweets = function () {
         var _this = this;

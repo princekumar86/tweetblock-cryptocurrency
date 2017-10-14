@@ -49,6 +49,17 @@ router.post('/userupdatepreference/:id', (req, res) => {
     });
 
 
+}); 
+
+router.get('/userretrivepreference/:id', (req, res) => {
+    console.log('user Id passed is :', req.params.id);
+    // get a user with ID passed
+    User.findById(req.params.id, function(err, user) {
+        if (err) throw err;
+        res.send(user);
+    });
+
+
 });
 
 module.exports = router;
