@@ -1,6 +1,6 @@
 webpackJsonp([1,5],{
 
-/***/ 114:
+/***/ 118:
 /***/ (function(module, exports) {
 
 function webpackEmptyContext(req) {
@@ -9,20 +9,20 @@ function webpackEmptyContext(req) {
 webpackEmptyContext.keys = function() { return []; };
 webpackEmptyContext.resolve = webpackEmptyContext;
 module.exports = webpackEmptyContext;
-webpackEmptyContext.id = 114;
+webpackEmptyContext.id = 118;
 
 
 /***/ }),
 
-/***/ 115:
+/***/ 119:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_platform_browser_dynamic__ = __webpack_require__(125);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__app_app_module__ = __webpack_require__(129);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__environments_environment__ = __webpack_require__(145);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_platform_browser_dynamic__ = __webpack_require__(129);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__app_app_module__ = __webpack_require__(133);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__environments_environment__ = __webpack_require__(149);
 
 
 
@@ -35,12 +35,12 @@ __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__angular_platform_browser_dyna
 
 /***/ }),
 
-/***/ 126:
+/***/ 130:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__(16);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__(17);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AuthGuard; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -78,7 +78,7 @@ var _a;
 
 /***/ }),
 
-/***/ 127:
+/***/ 131:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -86,7 +86,7 @@ var _a;
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_http__ = __webpack_require__(10);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map__ = __webpack_require__(15);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__authentication_service__ = __webpack_require__(33);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__authentication_service__ = __webpack_require__(34);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return UserService; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -118,14 +118,14 @@ var _a, _b;
 
 /***/ }),
 
-/***/ 128:
+/***/ 132:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_jquery__ = __webpack_require__(233);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_jquery__ = __webpack_require__(237);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_jquery___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_jquery__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__data_service__ = __webpack_require__(76);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__data_service__ = __webpack_require__(77);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AppComponent; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -165,8 +165,8 @@ __decorate([
 AppComponent = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_14" /* Component */])({
         selector: 'app-root',
-        template: __webpack_require__(239),
-        styles: [__webpack_require__(214)]
+        template: __webpack_require__(243),
+        styles: [__webpack_require__(218)]
     }),
     __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_2__data_service__["a" /* DataService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__data_service__["a" /* DataService */]) === "function" && _a || Object])
 ], AppComponent);
@@ -176,37 +176,38 @@ var _a;
 
 /***/ }),
 
-/***/ 129:
+/***/ 133:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__ = __webpack_require__(24);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_forms__ = __webpack_require__(124);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_forms__ = __webpack_require__(128);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_http__ = __webpack_require__(10);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__angular_router__ = __webpack_require__(16);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__app_component__ = __webpack_require__(128);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__filter_pipe__ = __webpack_require__(130);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__data_service__ = __webpack_require__(76);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__guards_auth_guard__ = __webpack_require__(126);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__services_authentication_service__ = __webpack_require__(33);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__services_socialcallback_service__ = __webpack_require__(25);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__services_user_service__ = __webpack_require__(127);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__services_streamtweets_service__ = __webpack_require__(46);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__pages_dashboard_dashboard_component__ = __webpack_require__(131);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__pages_page_not_found_page_not_found_component__ = __webpack_require__(137);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__pages_home_home_component__ = __webpack_require__(134);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__pages_login_login_component__ = __webpack_require__(136);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__pages_signup_signup_component__ = __webpack_require__(141);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__pages_profile_profile_component__ = __webpack_require__(139);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__pages_settings_settings_component__ = __webpack_require__(140);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__pages_fbcallback_fbcallback_component__ = __webpack_require__(132);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__pages_twittercallback_twittercallback_component__ = __webpack_require__(143);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__pages_privacy_policy_privacy_policy_component__ = __webpack_require__(138);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_23__pages_terms_of_service_terms_of_service_component__ = __webpack_require__(142);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_24__pages_googlecallback_googlecallback_component__ = __webpack_require__(133);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_25__pages_linkedincallback_linkedincallback_component__ = __webpack_require__(135);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_26__pages_twitterwall_twitterwall_component__ = __webpack_require__(144);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__angular_router__ = __webpack_require__(17);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__angular_common_http__ = __webpack_require__(76);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__app_component__ = __webpack_require__(132);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__filter_pipe__ = __webpack_require__(134);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__data_service__ = __webpack_require__(77);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__guards_auth_guard__ = __webpack_require__(130);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__services_authentication_service__ = __webpack_require__(34);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__services_socialcallback_service__ = __webpack_require__(25);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__services_user_service__ = __webpack_require__(131);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__services_streamtweets_service__ = __webpack_require__(47);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__pages_dashboard_dashboard_component__ = __webpack_require__(135);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__pages_page_not_found_page_not_found_component__ = __webpack_require__(141);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__pages_home_home_component__ = __webpack_require__(138);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__pages_login_login_component__ = __webpack_require__(140);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__pages_signup_signup_component__ = __webpack_require__(145);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__pages_profile_profile_component__ = __webpack_require__(143);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__pages_settings_settings_component__ = __webpack_require__(144);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__pages_fbcallback_fbcallback_component__ = __webpack_require__(136);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__pages_twittercallback_twittercallback_component__ = __webpack_require__(147);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_23__pages_privacy_policy_privacy_policy_component__ = __webpack_require__(142);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_24__pages_terms_of_service_terms_of_service_component__ = __webpack_require__(146);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_25__pages_googlecallback_googlecallback_component__ = __webpack_require__(137);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_26__pages_linkedincallback_linkedincallback_component__ = __webpack_require__(139);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_27__pages_twitterwall_twitterwall_component__ = __webpack_require__(148);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AppModule; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -241,22 +242,23 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
+
 var appRoutes = [
-    { path: 'home', component: __WEBPACK_IMPORTED_MODULE_15__pages_home_home_component__["a" /* HomeComponent */] },
-    { path: 'login', component: __WEBPACK_IMPORTED_MODULE_16__pages_login_login_component__["a" /* LoginComponent */] },
-    { path: 'signup', component: __WEBPACK_IMPORTED_MODULE_17__pages_signup_signup_component__["a" /* SignupComponent */] },
-    { path: 'settings', component: __WEBPACK_IMPORTED_MODULE_19__pages_settings_settings_component__["a" /* SettingsComponent */] },
-    { path: 'dashboard', component: __WEBPACK_IMPORTED_MODULE_13__pages_dashboard_dashboard_component__["a" /* DashboardComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_8__guards_auth_guard__["a" /* AuthGuard */]] },
-    { path: 'profile', component: __WEBPACK_IMPORTED_MODULE_18__pages_profile_profile_component__["a" /* ProfileComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_8__guards_auth_guard__["a" /* AuthGuard */]] },
-    { path: 'fbcallback', component: __WEBPACK_IMPORTED_MODULE_20__pages_fbcallback_fbcallback_component__["a" /* FbcallbackComponent */] },
-    { path: 'twittercallback', component: __WEBPACK_IMPORTED_MODULE_21__pages_twittercallback_twittercallback_component__["a" /* TwittercallbackComponent */] },
-    { path: 'googlecallback', component: __WEBPACK_IMPORTED_MODULE_24__pages_googlecallback_googlecallback_component__["a" /* GooglecallbackComponent */] },
-    { path: 'linkedincallback', component: __WEBPACK_IMPORTED_MODULE_25__pages_linkedincallback_linkedincallback_component__["a" /* LinkedincallbackComponent */] },
-    { path: 'twitterwall', component: __WEBPACK_IMPORTED_MODULE_26__pages_twitterwall_twitterwall_component__["a" /* TwitterwallComponent */] },
-    { path: 'privacy-policy', component: __WEBPACK_IMPORTED_MODULE_22__pages_privacy_policy_privacy_policy_component__["a" /* PrivacyPolicyComponent */] },
-    { path: 'terms-of-service', component: __WEBPACK_IMPORTED_MODULE_23__pages_terms_of_service_terms_of_service_component__["a" /* TermsOfServiceComponent */] },
+    { path: 'home', component: __WEBPACK_IMPORTED_MODULE_16__pages_home_home_component__["a" /* HomeComponent */] },
+    { path: 'login', component: __WEBPACK_IMPORTED_MODULE_17__pages_login_login_component__["a" /* LoginComponent */] },
+    { path: 'signup', component: __WEBPACK_IMPORTED_MODULE_18__pages_signup_signup_component__["a" /* SignupComponent */] },
+    { path: 'settings', component: __WEBPACK_IMPORTED_MODULE_20__pages_settings_settings_component__["a" /* SettingsComponent */] },
+    { path: 'dashboard', component: __WEBPACK_IMPORTED_MODULE_14__pages_dashboard_dashboard_component__["a" /* DashboardComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_9__guards_auth_guard__["a" /* AuthGuard */]] },
+    { path: 'profile', component: __WEBPACK_IMPORTED_MODULE_19__pages_profile_profile_component__["a" /* ProfileComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_9__guards_auth_guard__["a" /* AuthGuard */]] },
+    { path: 'fbcallback', component: __WEBPACK_IMPORTED_MODULE_21__pages_fbcallback_fbcallback_component__["a" /* FbcallbackComponent */] },
+    { path: 'twittercallback', component: __WEBPACK_IMPORTED_MODULE_22__pages_twittercallback_twittercallback_component__["a" /* TwittercallbackComponent */] },
+    { path: 'googlecallback', component: __WEBPACK_IMPORTED_MODULE_25__pages_googlecallback_googlecallback_component__["a" /* GooglecallbackComponent */] },
+    { path: 'linkedincallback', component: __WEBPACK_IMPORTED_MODULE_26__pages_linkedincallback_linkedincallback_component__["a" /* LinkedincallbackComponent */] },
+    { path: 'twitterwall', component: __WEBPACK_IMPORTED_MODULE_27__pages_twitterwall_twitterwall_component__["a" /* TwitterwallComponent */] },
+    { path: 'privacy-policy', component: __WEBPACK_IMPORTED_MODULE_23__pages_privacy_policy_privacy_policy_component__["a" /* PrivacyPolicyComponent */] },
+    { path: 'terms-of-service', component: __WEBPACK_IMPORTED_MODULE_24__pages_terms_of_service_terms_of_service_component__["a" /* TermsOfServiceComponent */] },
     { path: '', redirectTo: '/home', pathMatch: 'full' },
-    { path: '*', component: __WEBPACK_IMPORTED_MODULE_14__pages_page_not_found_page_not_found_component__["a" /* PageNotFoundComponent */] }
+    { path: '*', component: __WEBPACK_IMPORTED_MODULE_15__pages_page_not_found_page_not_found_component__["a" /* PageNotFoundComponent */] }
 ];
 var AppModule = (function () {
     function AppModule() {
@@ -266,37 +268,38 @@ var AppModule = (function () {
 AppModule = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__angular_core__["b" /* NgModule */])({
         declarations: [
-            __WEBPACK_IMPORTED_MODULE_5__app_component__["a" /* AppComponent */],
-            __WEBPACK_IMPORTED_MODULE_13__pages_dashboard_dashboard_component__["a" /* DashboardComponent */],
-            __WEBPACK_IMPORTED_MODULE_14__pages_page_not_found_page_not_found_component__["a" /* PageNotFoundComponent */],
-            __WEBPACK_IMPORTED_MODULE_15__pages_home_home_component__["a" /* HomeComponent */],
-            __WEBPACK_IMPORTED_MODULE_16__pages_login_login_component__["a" /* LoginComponent */],
-            __WEBPACK_IMPORTED_MODULE_17__pages_signup_signup_component__["a" /* SignupComponent */],
-            __WEBPACK_IMPORTED_MODULE_18__pages_profile_profile_component__["a" /* ProfileComponent */],
-            __WEBPACK_IMPORTED_MODULE_19__pages_settings_settings_component__["a" /* SettingsComponent */],
-            __WEBPACK_IMPORTED_MODULE_20__pages_fbcallback_fbcallback_component__["a" /* FbcallbackComponent */],
-            __WEBPACK_IMPORTED_MODULE_21__pages_twittercallback_twittercallback_component__["a" /* TwittercallbackComponent */],
-            __WEBPACK_IMPORTED_MODULE_22__pages_privacy_policy_privacy_policy_component__["a" /* PrivacyPolicyComponent */],
-            __WEBPACK_IMPORTED_MODULE_23__pages_terms_of_service_terms_of_service_component__["a" /* TermsOfServiceComponent */],
-            __WEBPACK_IMPORTED_MODULE_24__pages_googlecallback_googlecallback_component__["a" /* GooglecallbackComponent */],
-            __WEBPACK_IMPORTED_MODULE_25__pages_linkedincallback_linkedincallback_component__["a" /* LinkedincallbackComponent */],
-            __WEBPACK_IMPORTED_MODULE_26__pages_twitterwall_twitterwall_component__["a" /* TwitterwallComponent */],
-            __WEBPACK_IMPORTED_MODULE_6__filter_pipe__["a" /* FilterPipe */]
+            __WEBPACK_IMPORTED_MODULE_6__app_component__["a" /* AppComponent */],
+            __WEBPACK_IMPORTED_MODULE_14__pages_dashboard_dashboard_component__["a" /* DashboardComponent */],
+            __WEBPACK_IMPORTED_MODULE_15__pages_page_not_found_page_not_found_component__["a" /* PageNotFoundComponent */],
+            __WEBPACK_IMPORTED_MODULE_16__pages_home_home_component__["a" /* HomeComponent */],
+            __WEBPACK_IMPORTED_MODULE_17__pages_login_login_component__["a" /* LoginComponent */],
+            __WEBPACK_IMPORTED_MODULE_18__pages_signup_signup_component__["a" /* SignupComponent */],
+            __WEBPACK_IMPORTED_MODULE_19__pages_profile_profile_component__["a" /* ProfileComponent */],
+            __WEBPACK_IMPORTED_MODULE_20__pages_settings_settings_component__["a" /* SettingsComponent */],
+            __WEBPACK_IMPORTED_MODULE_21__pages_fbcallback_fbcallback_component__["a" /* FbcallbackComponent */],
+            __WEBPACK_IMPORTED_MODULE_22__pages_twittercallback_twittercallback_component__["a" /* TwittercallbackComponent */],
+            __WEBPACK_IMPORTED_MODULE_23__pages_privacy_policy_privacy_policy_component__["a" /* PrivacyPolicyComponent */],
+            __WEBPACK_IMPORTED_MODULE_24__pages_terms_of_service_terms_of_service_component__["a" /* TermsOfServiceComponent */],
+            __WEBPACK_IMPORTED_MODULE_25__pages_googlecallback_googlecallback_component__["a" /* GooglecallbackComponent */],
+            __WEBPACK_IMPORTED_MODULE_26__pages_linkedincallback_linkedincallback_component__["a" /* LinkedincallbackComponent */],
+            __WEBPACK_IMPORTED_MODULE_27__pages_twitterwall_twitterwall_component__["a" /* TwitterwallComponent */],
+            __WEBPACK_IMPORTED_MODULE_7__filter_pipe__["a" /* FilterPipe */]
         ],
         imports: [
             __WEBPACK_IMPORTED_MODULE_4__angular_router__["a" /* RouterModule */].forRoot(appRoutes, { enableTracing: true } // <-- debugging purposes only
             ),
             __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__["a" /* BrowserModule */],
             __WEBPACK_IMPORTED_MODULE_2__angular_forms__["a" /* FormsModule */],
-            __WEBPACK_IMPORTED_MODULE_3__angular_http__["a" /* HttpModule */]
+            __WEBPACK_IMPORTED_MODULE_3__angular_http__["a" /* HttpModule */],
+            __WEBPACK_IMPORTED_MODULE_5__angular_common_http__["a" /* HttpClientModule */]
         ],
-        providers: [__WEBPACK_IMPORTED_MODULE_7__data_service__["a" /* DataService */],
-            __WEBPACK_IMPORTED_MODULE_8__guards_auth_guard__["a" /* AuthGuard */],
-            __WEBPACK_IMPORTED_MODULE_9__services_authentication_service__["a" /* AuthenticationService */],
-            __WEBPACK_IMPORTED_MODULE_10__services_socialcallback_service__["a" /* SocialcallbackService */],
-            __WEBPACK_IMPORTED_MODULE_12__services_streamtweets_service__["a" /* StreamtweetsService */],
-            __WEBPACK_IMPORTED_MODULE_11__services_user_service__["a" /* UserService */],],
-        bootstrap: [__WEBPACK_IMPORTED_MODULE_5__app_component__["a" /* AppComponent */]]
+        providers: [__WEBPACK_IMPORTED_MODULE_8__data_service__["a" /* DataService */],
+            __WEBPACK_IMPORTED_MODULE_9__guards_auth_guard__["a" /* AuthGuard */],
+            __WEBPACK_IMPORTED_MODULE_10__services_authentication_service__["a" /* AuthenticationService */],
+            __WEBPACK_IMPORTED_MODULE_11__services_socialcallback_service__["a" /* SocialcallbackService */],
+            __WEBPACK_IMPORTED_MODULE_13__services_streamtweets_service__["a" /* StreamtweetsService */],
+            __WEBPACK_IMPORTED_MODULE_12__services_user_service__["a" /* UserService */],],
+        bootstrap: [__WEBPACK_IMPORTED_MODULE_6__app_component__["a" /* AppComponent */]]
     })
 ], AppModule);
 
@@ -304,7 +307,7 @@ AppModule = __decorate([
 
 /***/ }),
 
-/***/ 130:
+/***/ 134:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -344,12 +347,12 @@ FilterPipe = __decorate([
 
 /***/ }),
 
-/***/ 131:
+/***/ 135:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__services_streamtweets_service__ = __webpack_require__(46);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__services_streamtweets_service__ = __webpack_require__(47);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return DashboardComponent; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -486,8 +489,8 @@ __decorate([
 DashboardComponent = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_14" /* Component */])({
         selector: 'app-dashboard',
-        template: __webpack_require__(240),
-        styles: [__webpack_require__(215)]
+        template: __webpack_require__(244),
+        styles: [__webpack_require__(219)]
     }),
     __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__services_streamtweets_service__["a" /* StreamtweetsService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__services_streamtweets_service__["a" /* StreamtweetsService */]) === "function" && _a || Object])
 ], DashboardComponent);
@@ -497,16 +500,16 @@ var _a;
 
 /***/ }),
 
-/***/ 132:
+/***/ 136:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__(16);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__(17);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_http__ = __webpack_require__(10);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_map__ = __webpack_require__(15);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_map___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_map__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rxjs_add_operator_catch__ = __webpack_require__(43);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rxjs_add_operator_catch__ = __webpack_require__(44);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rxjs_add_operator_catch___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_rxjs_add_operator_catch__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__services_socialcallback_service__ = __webpack_require__(25);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FbcallbackComponent; });
@@ -553,8 +556,8 @@ var FbcallbackComponent = (function () {
 FbcallbackComponent = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_14" /* Component */])({
         selector: 'app-fbcallback',
-        template: __webpack_require__(241),
-        styles: [__webpack_require__(216)]
+        template: __webpack_require__(245),
+        styles: [__webpack_require__(220)]
     }),
     __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_router__["b" /* Router */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_router__["b" /* Router */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__angular_http__["b" /* Http */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__angular_http__["b" /* Http */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_5__services_socialcallback_service__["a" /* SocialcallbackService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_5__services_socialcallback_service__["a" /* SocialcallbackService */]) === "function" && _c || Object])
 ], FbcallbackComponent);
@@ -564,16 +567,16 @@ var _a, _b, _c;
 
 /***/ }),
 
-/***/ 133:
+/***/ 137:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__(16);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__(17);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_http__ = __webpack_require__(10);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_map__ = __webpack_require__(15);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_map___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_map__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rxjs_add_operator_catch__ = __webpack_require__(43);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rxjs_add_operator_catch__ = __webpack_require__(44);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rxjs_add_operator_catch___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_rxjs_add_operator_catch__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__services_socialcallback_service__ = __webpack_require__(25);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return GooglecallbackComponent; });
@@ -620,8 +623,8 @@ var GooglecallbackComponent = (function () {
 GooglecallbackComponent = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_14" /* Component */])({
         selector: 'app-googlecallback',
-        template: __webpack_require__(242),
-        styles: [__webpack_require__(217)]
+        template: __webpack_require__(246),
+        styles: [__webpack_require__(221)]
     }),
     __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_router__["b" /* Router */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_router__["b" /* Router */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__angular_http__["b" /* Http */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__angular_http__["b" /* Http */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_5__services_socialcallback_service__["a" /* SocialcallbackService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_5__services_socialcallback_service__["a" /* SocialcallbackService */]) === "function" && _c || Object])
 ], GooglecallbackComponent);
@@ -631,7 +634,7 @@ var _a, _b, _c;
 
 /***/ }),
 
-/***/ 134:
+/***/ 138:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -655,8 +658,8 @@ var HomeComponent = (function () {
 HomeComponent = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_14" /* Component */])({
         selector: 'app-home',
-        template: __webpack_require__(243),
-        styles: [__webpack_require__(218)]
+        template: __webpack_require__(247),
+        styles: [__webpack_require__(222)]
     }),
     __metadata("design:paramtypes", [])
 ], HomeComponent);
@@ -665,16 +668,16 @@ HomeComponent = __decorate([
 
 /***/ }),
 
-/***/ 135:
+/***/ 139:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__(16);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__(17);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_http__ = __webpack_require__(10);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_map__ = __webpack_require__(15);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_map___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_map__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rxjs_add_operator_catch__ = __webpack_require__(43);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rxjs_add_operator_catch__ = __webpack_require__(44);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rxjs_add_operator_catch___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_rxjs_add_operator_catch__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__services_socialcallback_service__ = __webpack_require__(25);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return LinkedincallbackComponent; });
@@ -721,8 +724,8 @@ var LinkedincallbackComponent = (function () {
 LinkedincallbackComponent = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_14" /* Component */])({
         selector: 'app-linkedincallback',
-        template: __webpack_require__(244),
-        styles: [__webpack_require__(219)]
+        template: __webpack_require__(248),
+        styles: [__webpack_require__(223)]
     }),
     __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_router__["b" /* Router */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_router__["b" /* Router */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__angular_http__["b" /* Http */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__angular_http__["b" /* Http */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_5__services_socialcallback_service__["a" /* SocialcallbackService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_5__services_socialcallback_service__["a" /* SocialcallbackService */]) === "function" && _c || Object])
 ], LinkedincallbackComponent);
@@ -732,13 +735,13 @@ var _a, _b, _c;
 
 /***/ }),
 
-/***/ 136:
+/***/ 140:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__(16);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__services_authentication_service__ = __webpack_require__(33);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__(17);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__services_authentication_service__ = __webpack_require__(34);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return LoginComponent; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -788,8 +791,8 @@ var LoginComponent = (function () {
 LoginComponent = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_14" /* Component */])({
         selector: 'app-login',
-        template: __webpack_require__(245),
-        styles: [__webpack_require__(220)]
+        template: __webpack_require__(249),
+        styles: [__webpack_require__(224)]
     }),
     __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_router__["b" /* Router */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_router__["b" /* Router */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__services_authentication_service__["a" /* AuthenticationService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__services_authentication_service__["a" /* AuthenticationService */]) === "function" && _b || Object])
 ], LoginComponent);
@@ -799,7 +802,7 @@ var _a, _b;
 
 /***/ }),
 
-/***/ 137:
+/***/ 141:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -825,8 +828,8 @@ var PageNotFoundComponent = (function () {
 PageNotFoundComponent = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_14" /* Component */])({
         selector: 'app-page-not-found',
-        template: __webpack_require__(246),
-        styles: [__webpack_require__(221)]
+        template: __webpack_require__(250),
+        styles: [__webpack_require__(225)]
     }),
     __metadata("design:paramtypes", [])
 ], PageNotFoundComponent);
@@ -835,7 +838,7 @@ PageNotFoundComponent = __decorate([
 
 /***/ }),
 
-/***/ 138:
+/***/ 142:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -861,8 +864,8 @@ var PrivacyPolicyComponent = (function () {
 PrivacyPolicyComponent = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_14" /* Component */])({
         selector: 'app-privacy-policy',
-        template: __webpack_require__(247),
-        styles: [__webpack_require__(222)]
+        template: __webpack_require__(251),
+        styles: [__webpack_require__(226)]
     }),
     __metadata("design:paramtypes", [])
 ], PrivacyPolicyComponent);
@@ -871,7 +874,7 @@ PrivacyPolicyComponent = __decorate([
 
 /***/ }),
 
-/***/ 139:
+/***/ 143:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -925,8 +928,8 @@ var ProfileComponent = (function () {
 ProfileComponent = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_14" /* Component */])({
         selector: 'app-profile',
-        template: __webpack_require__(248),
-        styles: [__webpack_require__(223)]
+        template: __webpack_require__(252),
+        styles: [__webpack_require__(227)]
     }),
     __metadata("design:paramtypes", [])
 ], ProfileComponent);
@@ -935,11 +938,12 @@ ProfileComponent = __decorate([
 
 /***/ }),
 
-/***/ 140:
+/***/ 144:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_common_http__ = __webpack_require__(76);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SettingsComponent; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -951,33 +955,54 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 
+
 var SettingsComponent = (function () {
-    function SettingsComponent() {
+    function SettingsComponent(http) {
+        this.http = http;
+        this.data = { cryptopreference1: 'your coin 1',
+            cryptopreference2: 'your coin 2',
+            cryptopreference3: 'your coin 3',
+            cryptopreference4: 'your coin 4',
+            cryptopreference5: 'your coin 5',
+            cryptopreference6: 'your coin 6',
+        };
     }
     SettingsComponent.prototype.ngOnInit = function () {
+    };
+    SettingsComponent.prototype.onSubmit = function () {
+        console.log('onSubmit function called');
+        this.http.post('http://localhost:8080/api/userupdatepreference/59e1b50416998f180c5c6238', this.data)
+            .subscribe(
+        // Successful responses call the first callback.
+        function (data) { }, 
+        // Errors will call this callback instead:
+        function (err) {
+            console.log('Something went wrong!');
+        });
     };
     return SettingsComponent;
 }());
 SettingsComponent = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_14" /* Component */])({
         selector: 'app-settings',
-        template: __webpack_require__(249),
-        styles: [__webpack_require__(224)]
+        template: __webpack_require__(253),
+        styles: [__webpack_require__(228)]
     }),
-    __metadata("design:paramtypes", [])
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_common_http__["b" /* HttpClient */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_common_http__["b" /* HttpClient */]) === "function" && _a || Object])
 ], SettingsComponent);
 
+var _a;
 //# sourceMappingURL=settings.component.js.map
 
 /***/ }),
 
-/***/ 141:
+/***/ 145:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__(16);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__services_authentication_service__ = __webpack_require__(33);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__(17);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__services_authentication_service__ = __webpack_require__(34);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SignupComponent; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -1027,8 +1052,8 @@ var SignupComponent = (function () {
 SignupComponent = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_14" /* Component */])({
         selector: 'app-signup',
-        template: __webpack_require__(250),
-        styles: [__webpack_require__(225)]
+        template: __webpack_require__(254),
+        styles: [__webpack_require__(229)]
     }),
     __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_router__["b" /* Router */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_router__["b" /* Router */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__services_authentication_service__["a" /* AuthenticationService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__services_authentication_service__["a" /* AuthenticationService */]) === "function" && _b || Object])
 ], SignupComponent);
@@ -1038,7 +1063,7 @@ var _a, _b;
 
 /***/ }),
 
-/***/ 142:
+/***/ 146:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1064,8 +1089,8 @@ var TermsOfServiceComponent = (function () {
 TermsOfServiceComponent = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_14" /* Component */])({
         selector: 'app-terms-of-service',
-        template: __webpack_require__(251),
-        styles: [__webpack_require__(226)]
+        template: __webpack_require__(255),
+        styles: [__webpack_require__(230)]
     }),
     __metadata("design:paramtypes", [])
 ], TermsOfServiceComponent);
@@ -1074,16 +1099,16 @@ TermsOfServiceComponent = __decorate([
 
 /***/ }),
 
-/***/ 143:
+/***/ 147:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__(16);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__(17);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_http__ = __webpack_require__(10);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_map__ = __webpack_require__(15);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_map___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_map__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rxjs_add_operator_catch__ = __webpack_require__(43);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rxjs_add_operator_catch__ = __webpack_require__(44);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rxjs_add_operator_catch___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_rxjs_add_operator_catch__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__services_socialcallback_service__ = __webpack_require__(25);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return TwittercallbackComponent; });
@@ -1130,8 +1155,8 @@ var TwittercallbackComponent = (function () {
 TwittercallbackComponent = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_14" /* Component */])({
         selector: 'app-twittercallback',
-        template: __webpack_require__(252),
-        styles: [__webpack_require__(227)]
+        template: __webpack_require__(256),
+        styles: [__webpack_require__(231)]
     }),
     __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_router__["b" /* Router */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_router__["b" /* Router */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__angular_http__["b" /* Http */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__angular_http__["b" /* Http */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_5__services_socialcallback_service__["a" /* SocialcallbackService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_5__services_socialcallback_service__["a" /* SocialcallbackService */]) === "function" && _c || Object])
 ], TwittercallbackComponent);
@@ -1141,12 +1166,12 @@ var _a, _b, _c;
 
 /***/ }),
 
-/***/ 144:
+/***/ 148:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__services_streamtweets_service__ = __webpack_require__(46);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__services_streamtweets_service__ = __webpack_require__(47);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return TwitterwallComponent; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -1184,8 +1209,8 @@ var TwitterwallComponent = (function () {
 TwitterwallComponent = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_14" /* Component */])({
         selector: 'app-twiterwall',
-        template: __webpack_require__(253),
-        styles: [__webpack_require__(228)]
+        template: __webpack_require__(257),
+        styles: [__webpack_require__(232)]
     }),
     __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__services_streamtweets_service__["a" /* StreamtweetsService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__services_streamtweets_service__["a" /* StreamtweetsService */]) === "function" && _a || Object])
 ], TwitterwallComponent);
@@ -1195,7 +1220,7 @@ var _a;
 
 /***/ }),
 
-/***/ 145:
+/***/ 149:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1212,10 +1237,10 @@ var environment = {
 
 /***/ }),
 
-/***/ 214:
+/***/ 218:
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(2)();
+exports = module.exports = __webpack_require__(3)();
 // imports
 
 
@@ -1230,10 +1255,10 @@ module.exports = module.exports.toString();
 
 /***/ }),
 
-/***/ 215:
+/***/ 219:
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(2)();
+exports = module.exports = __webpack_require__(3)();
 // imports
 
 
@@ -1248,87 +1273,15 @@ module.exports = module.exports.toString();
 
 /***/ }),
 
-/***/ 216:
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__(2)();
-// imports
-
-
-// module
-exports.push([module.i, "", ""]);
-
-// exports
-
-
-/*** EXPORTS FROM exports-loader ***/
-module.exports = module.exports.toString();
-
-/***/ }),
-
-/***/ 217:
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__(2)();
-// imports
-
-
-// module
-exports.push([module.i, "", ""]);
-
-// exports
-
-
-/*** EXPORTS FROM exports-loader ***/
-module.exports = module.exports.toString();
-
-/***/ }),
-
-/***/ 218:
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__(2)();
-// imports
-
-
-// module
-exports.push([module.i, ".fa-facebook, .fa-facebook-square {\r\n    color: #3b5998\r\n}\r\n.fa-twitter, .fa-twitter-square {\r\n    color: #00aced\r\n}\r\n.fa-google-plus, .fa-google-plus-square {\r\n    color: #dd4b39\r\n}\r\n.fa-linkedin, .fa-linkedin-square {\r\n    color: #007bb6\r\n}", ""]);
-
-// exports
-
-
-/*** EXPORTS FROM exports-loader ***/
-module.exports = module.exports.toString();
-
-/***/ }),
-
-/***/ 219:
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__(2)();
-// imports
-
-
-// module
-exports.push([module.i, "", ""]);
-
-// exports
-
-
-/*** EXPORTS FROM exports-loader ***/
-module.exports = module.exports.toString();
-
-/***/ }),
-
 /***/ 220:
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(2)();
+exports = module.exports = __webpack_require__(3)();
 // imports
 
 
 // module
-exports.push([module.i, ".main-form-container {\r\n    max-width: 400px;\r\n    margin-top: 15vh;\r\n}\r\n\r\n.fa-facebook, .fa-facebook-square {\r\n    color: #3b5998\r\n}\r\n.fa-twitter, .fa-twitter-square {\r\n    color: #00aced\r\n}\r\n.fa-google-plus, .fa-google-plus-square {\r\n    color: #dd4b39\r\n}\r\n.fa-linkedin, .fa-linkedin-square {\r\n    color: #007bb6\r\n}", ""]);
+exports.push([module.i, "", ""]);
 
 // exports
 
@@ -1341,7 +1294,7 @@ module.exports = module.exports.toString();
 /***/ 221:
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(2)();
+exports = module.exports = __webpack_require__(3)();
 // imports
 
 
@@ -1359,7 +1312,25 @@ module.exports = module.exports.toString();
 /***/ 222:
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(2)();
+exports = module.exports = __webpack_require__(3)();
+// imports
+
+
+// module
+exports.push([module.i, ".fa-facebook, .fa-facebook-square {\r\n    color: #3b5998\r\n}\r\n.fa-twitter, .fa-twitter-square {\r\n    color: #00aced\r\n}\r\n.fa-google-plus, .fa-google-plus-square {\r\n    color: #dd4b39\r\n}\r\n.fa-linkedin, .fa-linkedin-square {\r\n    color: #007bb6\r\n}", ""]);
+
+// exports
+
+
+/*** EXPORTS FROM exports-loader ***/
+module.exports = module.exports.toString();
+
+/***/ }),
+
+/***/ 223:
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(3)();
 // imports
 
 
@@ -1374,33 +1345,15 @@ module.exports = module.exports.toString();
 
 /***/ }),
 
-/***/ 223:
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__(2)();
-// imports
-
-
-// module
-exports.push([module.i, ".fullheight {\r\n    height: 88vh;\r\n}\r\n.dashboardcol {\r\n    min-height: 45vh;\r\n    border-right: 1px solid #cecece;\r\n}\r\n.dashboardcol .dashheading {\r\n    text-align: center;\r\n    background-color: #f1f1f1;\r\n    padding-top: 5px;\r\n    padding-bottom: 5px;\r\n    font-weight: bold;\r\n}\r\n.dashheading i {\r\n    padding-right: 10px;\r\n    color: #a4a4a4;\r\n}\r\n.iconcolumns a {\r\n    color: #cecece;\r\n    padding: 10px;\r\n    display: inline-block;\r\n}\r\n@media (max-width:550px){\r\n    .iconcolumns a {\r\n        padding: 10px 1px;\r\n    }\r\n}\r\n\r\n.iconcolumns a:hover {\r\n    color: #ffffff;\r\n}\r\n.iconcolumns a.iconactive {\r\n    color: #ffffff;\r\n}\r\n.iconcolumns {\r\n    background-color: #111111;\r\n}\r\n.col-1.iconcolumns {\r\n    max-width: 50px !important;\r\n}", ""]);
-
-// exports
-
-
-/*** EXPORTS FROM exports-loader ***/
-module.exports = module.exports.toString();
-
-/***/ }),
-
 /***/ 224:
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(2)();
+exports = module.exports = __webpack_require__(3)();
 // imports
 
 
 // module
-exports.push([module.i, ".fullheight {\r\n    height: 88vh;\r\n}\r\n.dashboardcol {\r\n    min-height: 45vh;\r\n    border-right: 1px solid #cecece;\r\n}\r\n.dashboardcol .dashheading {\r\n    text-align: center;\r\n    background-color: #f1f1f1;\r\n    padding-top: 5px;\r\n    padding-bottom: 5px;\r\n    font-weight: bold;\r\n}\r\n.dashheading i {\r\n    padding-right: 10px;\r\n    color: #a4a4a4;\r\n}\r\n.iconcolumns a {\r\n    color: #cecece;\r\n    padding: 10px;\r\n    display: inline-block;\r\n}\r\n@media (max-width:550px){\r\n    .iconcolumns a {\r\n        padding: 10px 1px;\r\n    }\r\n}\r\n\r\n.iconcolumns a:hover {\r\n    color: #ffffff;\r\n}\r\n.iconcolumns a.iconactive {\r\n    color: #ffffff;\r\n}\r\n.iconcolumns {\r\n    background-color: #111111;\r\n}\r\n.col-1.iconcolumns {\r\n    max-width: 50px !important;\r\n}\r\n/* social buttons */\r\n.btn-twitter {\r\n    color: #fff !important;\r\n    background-color: #00aced;\r\n    border-color: rgba(0,0,0,0.2);\r\n}\r\n.btn-social {\r\n    position: relative;\r\n    padding-left: 44px;\r\n    text-align: left;\r\n    white-space: nowrap;\r\n    overflow: hidden;\r\n    text-overflow: ellipsis;\r\n}\r\n.btn-social :first-child {\r\n    position: absolute;\r\n    left: 0;\r\n    top: 0;\r\n    bottom: 0;\r\n    width: 32px;\r\n    line-height: 34px;\r\n    font-size: 1.6em;\r\n    text-align: center;\r\n    border-right: 1px solid rgba(0,0,0,0.2);\r\n}", ""]);
+exports.push([module.i, ".main-form-container {\r\n    max-width: 400px;\r\n    margin-top: 15vh;\r\n}\r\n\r\n.fa-facebook, .fa-facebook-square {\r\n    color: #3b5998\r\n}\r\n.fa-twitter, .fa-twitter-square {\r\n    color: #00aced\r\n}\r\n.fa-google-plus, .fa-google-plus-square {\r\n    color: #dd4b39\r\n}\r\n.fa-linkedin, .fa-linkedin-square {\r\n    color: #007bb6\r\n}", ""]);
 
 // exports
 
@@ -1413,12 +1366,12 @@ module.exports = module.exports.toString();
 /***/ 225:
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(2)();
+exports = module.exports = __webpack_require__(3)();
 // imports
 
 
 // module
-exports.push([module.i, ".main-form-container {\r\n    max-width: 400px;\r\n    margin-top: 15vh;\r\n}", ""]);
+exports.push([module.i, "", ""]);
 
 // exports
 
@@ -1431,7 +1384,7 @@ module.exports = module.exports.toString();
 /***/ 226:
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(2)();
+exports = module.exports = __webpack_require__(3)();
 // imports
 
 
@@ -1449,7 +1402,61 @@ module.exports = module.exports.toString();
 /***/ 227:
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(2)();
+exports = module.exports = __webpack_require__(3)();
+// imports
+
+
+// module
+exports.push([module.i, ".fullheight {\r\n    height: 88vh;\r\n}\r\n.dashboardcol {\r\n    min-height: 45vh;\r\n    border-right: 1px solid #cecece;\r\n}\r\n.dashboardcol .dashheading {\r\n    text-align: center;\r\n    background-color: #f1f1f1;\r\n    padding-top: 5px;\r\n    padding-bottom: 5px;\r\n    font-weight: bold;\r\n}\r\n.dashheading i {\r\n    padding-right: 10px;\r\n    color: #a4a4a4;\r\n}\r\n.iconcolumns a {\r\n    color: #cecece;\r\n    padding: 10px;\r\n    display: inline-block;\r\n}\r\n@media (max-width:550px){\r\n    .iconcolumns a {\r\n        padding: 10px 1px;\r\n    }\r\n}\r\n\r\n.iconcolumns a:hover {\r\n    color: #ffffff;\r\n}\r\n.iconcolumns a.iconactive {\r\n    color: #ffffff;\r\n}\r\n.iconcolumns {\r\n    background-color: #111111;\r\n}\r\n.col-1.iconcolumns {\r\n    max-width: 50px !important;\r\n}", ""]);
+
+// exports
+
+
+/*** EXPORTS FROM exports-loader ***/
+module.exports = module.exports.toString();
+
+/***/ }),
+
+/***/ 228:
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(3)();
+// imports
+
+
+// module
+exports.push([module.i, ".fullheight {\r\n    height: 88vh;\r\n}\r\n.dashboardcol {\r\n    min-height: 45vh;\r\n    border-right: 1px solid #cecece;\r\n}\r\n.dashboardcol .dashheading {\r\n    text-align: center;\r\n    background-color: #f1f1f1;\r\n    padding-top: 5px;\r\n    padding-bottom: 5px;\r\n    font-weight: bold;\r\n}\r\n.dashheading i {\r\n    padding-right: 10px;\r\n    color: #a4a4a4;\r\n}\r\n.iconcolumns a {\r\n    color: #cecece;\r\n    padding: 10px;\r\n    display: inline-block;\r\n}\r\n@media (max-width:550px){\r\n    .iconcolumns a {\r\n        padding: 10px 1px;\r\n    }\r\n}\r\n\r\n.iconcolumns a:hover {\r\n    color: #ffffff;\r\n}\r\n.iconcolumns a.iconactive {\r\n    color: #ffffff;\r\n}\r\n.iconcolumns {\r\n    background-color: #111111;\r\n}\r\n.col-1.iconcolumns {\r\n    max-width: 50px !important;\r\n}\r\n/* social buttons */\r\n.btn-twitter {\r\n    color: #fff !important;\r\n    background-color: #00aced;\r\n    border-color: rgba(0,0,0,0.2);\r\n}\r\n.btn-social {\r\n    position: relative;\r\n    padding-left: 44px;\r\n    text-align: left;\r\n    white-space: nowrap;\r\n    overflow: hidden;\r\n    text-overflow: ellipsis;\r\n}\r\n.btn-social :first-child {\r\n    position: absolute;\r\n    left: 0;\r\n    top: 0;\r\n    bottom: 0;\r\n    width: 32px;\r\n    line-height: 34px;\r\n    font-size: 1.6em;\r\n    text-align: center;\r\n    border-right: 1px solid rgba(0,0,0,0.2);\r\n}", ""]);
+
+// exports
+
+
+/*** EXPORTS FROM exports-loader ***/
+module.exports = module.exports.toString();
+
+/***/ }),
+
+/***/ 229:
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(3)();
+// imports
+
+
+// module
+exports.push([module.i, ".main-form-container {\r\n    max-width: 400px;\r\n    margin-top: 15vh;\r\n}", ""]);
+
+// exports
+
+
+/*** EXPORTS FROM exports-loader ***/
+module.exports = module.exports.toString();
+
+/***/ }),
+
+/***/ 230:
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(3)();
 // imports
 
 
@@ -1464,10 +1471,28 @@ module.exports = module.exports.toString();
 
 /***/ }),
 
-/***/ 228:
+/***/ 231:
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(2)();
+exports = module.exports = __webpack_require__(3)();
+// imports
+
+
+// module
+exports.push([module.i, "", ""]);
+
+// exports
+
+
+/*** EXPORTS FROM exports-loader ***/
+module.exports = module.exports.toString();
+
+/***/ }),
+
+/***/ 232:
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(3)();
 // imports
 
 
@@ -1482,80 +1507,52 @@ module.exports = module.exports.toString();
 
 /***/ }),
 
-/***/ 239:
+/***/ 243:
 /***/ (function(module, exports) {
 
 module.exports = "<div class=\"container-fluid\">\r\n  <!-- Content here -->\r\n  <nav class=\"navbar navbar-expand-lg navbar-dark\" style=\"background-color: #12132d;\">\r\n      <button class=\"navbar-toggler navbar-toggler-right\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarNavAltMarkup\" aria-controls=\"navbarNavAltMarkup\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">\r\n        <span class=\"navbar-toggler-icon\"></span>\r\n      </button>\r\n      <a class=\"navbar-brand\" href=\"#\"><img src=\"assets/images/tweetblock-logo.png\"/></a>\r\n      <div class=\"collapse navbar-collapse\" id=\"navbarNavAltMarkup\">\r\n        <div class=\"navbar-nav\">\r\n          <a class=\"nav-item nav-link active\" routerLink=\"/home\" routerLinkActive=\"active\">Home</a>\r\n          <a class=\"nav-item nav-link\" routerLink=\"/dashboard\" routerLinkActive=\"active\">Dashboard</a>\r\n          <a class=\"nav-item nav-link\" href=\"#\">About Us</a>\r\n          <a class=\"nav-item nav-link\" href=\"#\">Latest News</a>\r\n          <a class=\"nav-item nav-link\" href=\"#\">Blog</a>\r\n          <a class=\"nav-item nav-link\" routerLink=\"/profile\" routerLinkActive=\"active\">Profile</a>\r\n          <a class=\"nav-item nav-link\" routerLink=\"/settings\" routerLinkActive=\"active\">Settings</a>\r\n          <a class=\"nav-item nav-link\" routerLink=\"/twitterwall\" routerLinkActive=\"active\">Wall</a>\r\n          \r\n          \r\n        </div>\r\n      </div>\r\n\r\n      <form class=\"form-inline\">\r\n          <a class=\"navbar-brand\" routerLink=\"/login\"><span *ngIf=\"!userloggedIn;then content else other_content\">here is ignored</span></a>\r\n          <ng-template #content>Login</ng-template>\r\n          <ng-template #other_content>Logout</ng-template>\r\n        </form>\r\n    </nav>\r\n  <router-outlet></router-outlet>\r\n</div>\r\n"
 
 /***/ }),
 
-/***/ 240:
+/***/ 244:
 /***/ (function(module, exports) {
 
 module.exports = "<div class=\"row no-gutters\"> <!-- top first half row -->\r\n  <div class=\"col-1 iconcolumns\">\r\n    <a href=\"\" routerLink=\"/dashboard\" class=\"iconactive\"><i class=\"fa fa-home fa-lg\"></i></a><br/>\r\n    <a href=\"\" routerLink=\"/dashboard\"><i class=\"fa fa-tachometer fa-lg\"></i></a><br/>\r\n    <a href=\"\"><i class=\"fa fa-line-chart fa-lg\"></i></a><br/>\r\n    <a href=\"\"><i class=\"fa fa-envelope-o fa-lg\"></i></a><br/>\r\n    <a href=\"\" routerLink=\"/settings\"><i class=\"fa fa-cogs fa-lg\"></i></a><br/>\r\n    <a href=\"\" routerLink=\"/profile\"><i class=\"fa fa-user fa-lg\"></i></a><br/>\r\n    <a href=\"\"><i class=\"fa fa-plus fa-lg\"></i></a><br/>\r\n  </div>\r\n  <div class=\"col-11\">\r\n    <div class=\"row no-gutters\">\r\n      <div class=\"col-xs-12 col-sm-6 col-md-3\"> <!-- col 1 -->\r\n          <div class=\"row no-gutters\"> \r\n            <div class=\"col-xs-12 col-sm-12 col-md-12 dashboardcol\">\r\n              <div class=\"dashheading\">\r\n                <span class=\"mainheading\"><img src=\"assets/images/cryptoicons-sm/ethereum.png\" /> Ethereum</span>\r\n                <span class=\"float-right\"><i class=\"fa fa-bar-chart fa-lg\"></i></span>\r\n              </div>\r\n              <div class=\"dashbody\">\r\n                  <!-- tweet feed goes here --> \r\n                  <div *ngFor=\"let message of messages_Ethereum\">\r\n                    <span><img src=\"{{message.user.profile_image_url_https}}\" width=\"20px\" alt=\"photo\"/></span>\r\n                    <span class=\"t_screen_name\">{{message.user.screen_name}}<i class=\"t_name\">({{message.user.name}})</i></span>\r\n                    <span class=\"t_text\" [innerHTML]=\"message.text\"></span>\r\n                  </div>\r\n              </div>\r\n            </div>\r\n            <!-- col first row 2 -->\r\n            <div class=\"col-xs-12 col-sm-12 col-md-12 dashboardcol\">\r\n                <div class=\"dashheading\">\r\n                  <span class=\"mainheading\"><img src=\"assets/images/cryptoicons-sm/dash.png\" /> Dash</span>\r\n                  <span class=\"float-right\"><i class=\"fa fa-bar-chart fa-lg\"></i></span>\r\n                </div>\r\n                <div class=\"dashbody\">\r\n                    <!-- tweet feed goes here --> \r\n                    <div *ngFor=\"let message of messages_Dashpay\">\r\n                      <span><img src=\"{{message.user.profile_image_url_https}}\" width=\"20px\" alt=\"photo\"/></span>\r\n                      <span class=\"t_screen_name\">{{message.user.screen_name}}<i class=\"t_name\">({{message.user.name}})</i></span>\r\n                      <span class=\"t_text\" [innerHTML]=\"message.text\"></span>\r\n                    </div>\r\n                </div>\r\n            </div>\r\n        </div>\r\n      </div>\r\n      <div class=\"col-xs-12 col-sm-6 col-md-3\"> <!-- col 2 -->\r\n          <div class=\"row no-gutters\"> \r\n            <div class=\"col-xs-12 col-sm-12 col-md-12 dashboardcol\">\r\n              <div class=\"dashheading\">\r\n                <span class=\"mainheading\"><img src=\"assets/images/cryptoicons-sm/omisego.png\" /> OmiseGO</span>\r\n                <span class=\"float-right\"><i class=\"fa fa-bar-chart fa-lg\"></i></span>\r\n              </div>\r\n              <div class=\"dashbody\">\r\n                <!-- tweet feed goes here --> \r\n                <div *ngFor=\"let message of messages_OmiseGO\">\r\n                  <span><img src=\"{{message.user.profile_image_url_https}}\" width=\"20px\" alt=\"photo\"/></span>\r\n                  <span class=\"t_screen_name\">{{message.user.screen_name}}<i class=\"t_name\">({{message.user.name}})</i></span>\r\n                  <span class=\"t_text\" [innerHTML]=\"message.text\"></span>\r\n                </div>\r\n              </div>\r\n            </div>\r\n            <!-- col second row 2 -->\r\n            <div class=\"col-xs-12 col-sm-12 col-md-12 dashboardcol\">\r\n                <div class=\"dashheading\">\r\n                  <span class=\"mainheading\"><img src=\"assets/images/cryptoicons-sm/iota.png\" /> IOTA</span>\r\n                  <span class=\"float-right\"><i class=\"fa fa-bar-chart fa-lg\"></i></span>\r\n                </div>\r\n                <div class=\"dashbody\">\r\n                    <!-- tweet feed goes here --> \r\n                    <div *ngFor=\"let message of messages_iotatoken\">\r\n                      <span><img src=\"{{message.user.profile_image_url_https}}\" width=\"20px\" alt=\"photo\"/></span>\r\n                      <span class=\"t_screen_name\">{{message.user.screen_name}}<i class=\"t_name\">({{message.user.name}})</i></span>\r\n                      <span class=\"t_text\" [innerHTML]=\"message.text\"></span>\r\n                    </div>\r\n                </div>\r\n            </div>\r\n          </div>\r\n      </div>\r\n      <div class=\"col-xs-12 col-sm-6 col-md-3\">\r\n          <div class=\"row no-gutters\"> \r\n            <div class=\"col-xs-12 col-sm-12 col-md-12 dashboardcol\">\r\n              <div class=\"dashheading\">\r\n                <span class=\"mainheading\"><img src=\"assets/images/cryptoicons-sm/ripple.png\" /> Ripple</span>\r\n                <span class=\"float-right\"><i class=\"fa fa-bar-chart fa-lg\"></i></span>\r\n              </div>\r\n              <div class=\"dashbody\">\r\n                <!-- tweet feed goes here --> \r\n                <div *ngFor=\"let message of messages_Ripple\">\r\n                  <span><img src=\"{{message.user.profile_image_url_https}}\" width=\"20px\" alt=\"photo\"/></span>\r\n                  <span class=\"t_screen_name\">{{message.user.screen_name}}<i class=\"t_name\">({{message.user.name}})</i></span>\r\n                  <span class=\"t_text\" [innerHTML]=\"message.text\"></span>\r\n                </div>\r\n              </div>\r\n            </div>\r\n            <!-- col third row 2 -->\r\n            <div class=\"col-xs-12 col-sm-12 col-md-12 dashboardcol\">\r\n                <div class=\"dashheading\">\r\n                  <span class=\"mainheading\"><img src=\"assets/images/cryptoicons-sm/monero.png\" /> Monero</span>\r\n                  <span class=\"float-right\"><i class=\"fa fa-bar-chart fa-lg\"></i></span>\r\n                </div>\r\n                <div class=\"dashbody\">\r\n                  <!-- tweet feed goes here --> \r\n                  <div *ngFor=\"let message of messages_monerocurrency\">\r\n                    <span><img src=\"{{message.user.profile_image_url_https}}\" width=\"20px\" alt=\"photo\"/></span>\r\n                    <span class=\"t_screen_name\">{{message.user.screen_name}}<i class=\"t_name\">({{message.user.name}})</i></span>\r\n                    <span class=\"t_text\" [innerHTML]=\"message.text\"></span>\r\n                  </div>\r\n                </div>\r\n              </div>\r\n            </div>\r\n      </div>\r\n      <div class=\"col-xs-12 col-sm-6 col-md-3 dashboardcol all-crypto\">\r\n          <div class=\"dashheading\">\r\n            <span class=\"mainheading\"> ALL CRYPTO COIN FEEDS</span>\r\n            <span class=\"float-right\"><i class=\"fa fa-bar-chart fa-lg\"></i></span>\r\n          </div>\r\n          <div><input class=\"searchText\" [(ngModel)]=\"searchText\" placeholder=\"search ... \"></div>\r\n          <div class=\"dashbody\">\r\n            <div *ngFor=\"let message of messages | filter : searchText\">\r\n              <span><img src=\"{{message.user.profile_image_url_https}}\" width=\"20px\" alt=\"photo\"/></span>\r\n              <span class=\"t_screen_name\">{{message.user.screen_name}}<i class=\"t_name\">({{message.user.name}})</i></span>\r\n              <span class=\"t_text\" [innerHTML]=\"message.text\"></span>\r\n            </div>\r\n        </div>\r\n      </div>\r\n    </div>\r\n  </div>\r\n</div>\r\n<div class=\"row no-gutters\"> <!-- second half row -->\r\n  <div class=\"col-1 iconcolumns\">\r\n    \r\n  </div>\r\n  <div class=\"col-11\">\r\n    <div class=\"row no-gutters\">\r\n\r\n    </div>\r\n  </div>\r\n</div>\r\n"
 
 /***/ }),
 
-/***/ 241:
+/***/ 245:
 /***/ (function(module, exports) {
 
 module.exports = "<p>\r\n  fbcallback !\r\n</p>\r\n\r\n<p>Loading ....    Please wait ...</p>\r\n"
 
 /***/ }),
 
-/***/ 242:
+/***/ 246:
 /***/ (function(module, exports) {
 
 module.exports = "<p>\r\n  googlecallback !\r\n</p>\r\n\r\n<p>Loading ....    Please wait ...</p>"
 
 /***/ }),
 
-/***/ 243:
+/***/ 247:
 /***/ (function(module, exports) {
 
 module.exports = "<section class=\"jumbotron text-center\">\r\n    <div class=\"container\">\r\n      <h1 class=\"jumbotron-heading\">Tweet Block</h1>\r\n      <p class=\"lead text-muted\">Crypto Currency news from all around the world, \r\n        with latest tweets, posts, videos from various de facto channels.\r\n      </p>\r\n      <p>\r\n        <a  routerLink=\"/login\" class=\"btn btn-primary\">Login</a>\r\n        <a  routerLink=\"/signup\" class=\"btn btn-secondary\">Signup</a>\r\n      </p>\r\n      <p>\r\n          or Login using <br/>\r\n          <a href=\"/auth/twitter\"><i class=\"fa fa-twitter-square fa-2x\"></i></a>\r\n          <a href=\"/auth/facebook\"><i class=\"fa fa-facebook-square fa-2x\"></i></a>\r\n          <a href=\"/auth/linkedin\"><i class=\"fa fa-linkedin-square fa-2x\"></i></a>\r\n          <a href=\"/auth/google\"><i class=\"fa fa-google-plus-square fa-2x\"></i></a>\r\n      </p>\r\n    </div>\r\n  </section>\r\n\r\n  <div class=\"album text-muted\">\r\n      <div class=\"container\">\r\n\r\n        <div class=\"row\">\r\n          <div class=\"card\">\r\n            <img data-src=\"holder.js/100px280/thumb\" alt=\"Card image cap\">\r\n            <p class=\"card-text\">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>\r\n          </div>\r\n          <div class=\"card\">\r\n            <img data-src=\"holder.js/100px280/thumb\" alt=\"Card image cap\">\r\n            <p class=\"card-text\">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>\r\n          </div>\r\n          <div class=\"card\">\r\n            <img data-src=\"holder.js/100px280/thumb\" alt=\"Card image cap\">\r\n            <p class=\"card-text\">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>\r\n          </div>\r\n\r\n          <div class=\"card\">\r\n            <img data-src=\"holder.js/100px280/thumb\" alt=\"Card image cap\">\r\n            <p class=\"card-text\">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>\r\n          </div>\r\n          <div class=\"card\">\r\n            <img data-src=\"holder.js/100px280/thumb\" alt=\"Card image cap\">\r\n            <p class=\"card-text\">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>\r\n          </div>\r\n          <div class=\"card\">\r\n            <img data-src=\"holder.js/100px280/thumb\" alt=\"Card image cap\">\r\n            <p class=\"card-text\">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>\r\n          </div>\r\n\r\n          <div class=\"card\">\r\n            <img data-src=\"holder.js/100px280/thumb\" alt=\"Card image cap\">\r\n            <p class=\"card-text\">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>\r\n          </div>\r\n          <div class=\"card\">\r\n            <img data-src=\"holder.js/100px280/thumb\" alt=\"Card image cap\">\r\n            <p class=\"card-text\">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>\r\n          </div>\r\n          <div class=\"card\">\r\n            <img data-src=\"holder.js/100px280/thumb\" alt=\"Card image cap\">\r\n            <p class=\"card-text\">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>\r\n          </div>\r\n        </div>\r\n\r\n      </div>\r\n    </div>\r\n\r\n    <footer class=\"text-muted\">\r\n      <div class=\"container\">\r\n        <p class=\"float-right\">\r\n          <a href=\"#\">Back to top</a>\r\n        </p>\r\n        <p>you can customize dashboard for yourself!</p>\r\n        <p>New to tweetblock <a href=\"../../\">Visit the homepage</a> or read our <a href=\"../../tweetblock-guide/\">getting started guide</a>.</p>\r\n      </div>\r\n    </footer>\r\n    \r\n<br/>"
 
 /***/ }),
 
-/***/ 244:
+/***/ 248:
 /***/ (function(module, exports) {
 
 module.exports = "<p>\r\n  linkedincallback !\r\n</p>\r\n\r\n<p>Loading ....    Please wait ...</p>\r\n"
 
 /***/ }),
 
-/***/ 245:
-/***/ (function(module, exports) {
-
-module.exports = "<div class=\"container main-form-container\">\r\n  <h3 class=\"text-center jumbotron-heading\">Login</h3>\r\n  <form>\r\n    <div class=\"form-group row\">\r\n      <label for=\"inputEmail3\" class=\"col-sm-2 col-form-label\">Email</label>\r\n      <div class=\"col-sm-10\">\r\n        <input [(ngModel)]=\"user.email\" name=\"email\" type=\"email\" class=\"form-control\" id=\"email\" placeholder=\"Email\">\r\n      </div>\r\n    </div>\r\n    <div class=\"form-group row\">\r\n      <label for=\"inputPassword3\" class=\"col-sm-2 col-form-label\">Password</label>\r\n      <div class=\"col-sm-10\">\r\n        <input [(ngModel)]=\"user.password\" name=\"password\" type=\"password\" class=\"form-control\" id=\"password\" placeholder=\"Password\">\r\n      </div>\r\n    </div>\r\n    \r\n    <div class=\"form-group row\">\r\n      <div class=\"offset-sm-2 col-sm-12 text-center\">\r\n        <button (click)=\"login()\" type=\"submit\" class=\"btn btn-primary\">Login</button>\r\n      </div>\r\n    </div>\r\n    <div *ngIf=\"error\" class=\"alert alert-danger\">{{error}}</div>\r\n  </form>\r\n  <p class=\"text-center\">\r\n    or Login using <br/>\r\n    <a href=\"/auth/twitter\"><i class=\"fa fa-twitter-square fa-2x\"></i></a>\r\n    <a href=\"/auth/facebook\"><i class=\"fa fa-facebook-square fa-2x\"></i></a>\r\n    <a href=\"/auth/linkedin\"><i class=\"fa fa-linkedin-square fa-2x\"></i></a>\r\n    <a href=\"/auth/google\"><i class=\"fa fa-google-plus-square fa-2x\"></i></a>\r\n</p>\r\n</div>"
-
-/***/ }),
-
-/***/ 246:
-/***/ (function(module, exports) {
-
-module.exports = "<p>\r\n  page-not-found works!\r\n</p>\r\n"
-
-/***/ }),
-
-/***/ 247:
-/***/ (function(module, exports) {
-
-module.exports = "<p>\r\n  privacy-policy works!\r\n</p>\r\n"
-
-/***/ }),
-
-/***/ 248:
-/***/ (function(module, exports) {
-
-module.exports = "<div class=\"row no-gutters\"> <!-- top first half row -->\r\n    <div class=\"col-1 iconcolumns fullheight\">\r\n      <a href=\"\" routerLink=\"/dashboard\"><i class=\"fa fa-home fa-lg\"></i></a><br/>\r\n      <a href=\"\" routerLink=\"/dashboard\"><i class=\"fa fa-tachometer fa-lg\"></i></a><br/>\r\n      <a href=\"\"><i class=\"fa fa-line-chart fa-lg\"></i></a><br/>\r\n      <a href=\"\"><i class=\"fa fa-envelope-o fa-lg\"></i></a><br/>\r\n      <a href=\"\" class=\"iconactive\" routerLink=\"/settings\"><i class=\"fa fa-cogs fa-lg\"></i></a><br/>\r\n      <a href=\"\" routerLink=\"/profile\"><i class=\"fa fa-user fa-lg\"></i></a><br/>\r\n      <a href=\"\"><i class=\"fa fa-plus fa-lg\"></i></a><br/>\r\n    </div>\r\n    <div class=\"col-11\">\r\n        <div class=\"row\">\r\n          <div class=\"container\">\r\n    \r\n        <div class=\"page-header text-center\">\r\n            <h1><span class=\"fa fa-anchor\"></span> Profile</h1>\r\n            <a href=\"/logout\" class=\"btn btn-default btn-sm\">Logout</a>\r\n        </div>\r\n    \r\n        <div class=\"row\">\r\n    \r\n            <!-- LOCAL INFORMATION -->\r\n            <div class=\"col-sm-6\">\r\n                <div class=\"well\">\r\n                    <h3><span class=\"fa fa-user\"></span> Basic profile</h3>\r\n    \r\n                        <p>\r\n                            <strong>id</strong>: {{userid}}<br>\r\n                            <strong>email</strong>: {{userEmail}}<br>\r\n                            <strong>password</strong>: - <br>\r\n                            <strong>Name</strong>: {{userName}}<br>\r\n                            <strong>Logged in As</strong>: {{userLoggedInAs}} user<br>\r\n                            <strong>Token</strong>: {{userToken}}<br>\r\n                            <strong>Phone</strong>: - <br>\r\n                        </p>\r\n    \r\n                </div>\r\n            </div>\r\n    \r\n        </div>\r\n    </div>\r\n    </div>\r\n    </div>\r\n</div>\r\n"
-
-/***/ }),
-
 /***/ 249:
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"row no-gutters\"> <!-- top first half row -->\r\n  <div class=\"col-1 iconcolumns fullheight\">\r\n    <a href=\"\" routerLink=\"/dashboard\"><i class=\"fa fa-home fa-lg\"></i></a><br/>\r\n    <a href=\"\" routerLink=\"/dashboard\"><i class=\"fa fa-tachometer fa-lg\"></i></a><br/>\r\n    <a href=\"\"><i class=\"fa fa-line-chart fa-lg\"></i></a><br/>\r\n    <a href=\"\"><i class=\"fa fa-envelope-o fa-lg\"></i></a><br/>\r\n    <a href=\"\" class=\"iconactive\" routerLink=\"/settings\"><i class=\"fa fa-cogs fa-lg\"></i></a><br/>\r\n    <a href=\"\" routerLink=\"/profile\"><i class=\"fa fa-user fa-lg\"></i></a><br/>\r\n    <a href=\"\"><i class=\"fa fa-plus fa-lg\"></i></a><br/>\r\n  </div>\r\n  <div class=\"col-11\">\r\n      <div class=\"row\">\r\n        <div class=\"container\">\r\n          <p>&nbsp;</p>\r\n          <div class=\"col-md-5\">\r\n            <h6>Login using your twitter account to start getting feeds</h6>\r\n            <p>\r\n                <a class=\"btn btn-social btn-twitter\">\r\n                  <i class=\"fa fa-twitter\"></i> Sign in with Twitter\r\n                </a>\r\n            </p>\r\n          </div>\r\n\r\n          <div class=\"col-md-5 col-md-offset-3\">\r\n            <h5>Preferred Crypto currencies</h5>\r\n            \r\n            <div>\r\n                <form>\r\n                    <div class=\"form-group row\">\r\n                        <label for=\"exampleSelect1\" class=\"col-sm-2 col-form-label\">1.</label>\r\n                        <div class=\"col-sm-10\">\r\n                            <select class=\"form-control\" id=\"exampleSelect1\">\r\n                                <option selected>Ethereum</option>\r\n                                <option>OmiseGO</option>\r\n                                <option>Ripple</option>\r\n                                <option>Litecoin</option>\r\n                                <option>NEM</option>\r\n                                <option>Dash</option>\r\n                                <option>IOTA</option>\r\n                                <option>Monero</option>\r\n                            </select>\r\n                        </div>\r\n                    </div>\r\n                    <div class=\"form-group row\">\r\n                            <label for=\"exampleSelect1\" class=\"col-sm-2 col-form-label\">2.</label>\r\n                            <div class=\"col-sm-10\">\r\n                                <select class=\"form-control\" id=\"exampleSelect1\">\r\n                                    <option>Ethereum</option>\r\n                                    <option selected>OmiseGO</option>\r\n                                    <option>Ripple</option>\r\n                                    <option>Litecoin</option>\r\n                                    <option>NEM</option>\r\n                                    <option>Dash</option>\r\n                                    <option>IOTA</option>\r\n                                    <option>Monero</option>\r\n                                </select>\r\n                            </div>\r\n                    </div>\r\n                    <div class=\"form-group row\">\r\n                            <label for=\"exampleSelect1\" class=\"col-sm-2 col-form-label\">3.</label>\r\n                            <div class=\"col-sm-10\">\r\n                                <select class=\"form-control\" id=\"exampleSelect1\">\r\n                                    <option>Ethereum</option>\r\n                                    <option>OmiseGO</option>\r\n                                    <option selected>Ripple</option>\r\n                                    <option>Litecoin</option>\r\n                                    <option>NEM</option>\r\n                                    <option>Dash</option>\r\n                                    <option>IOTA</option>\r\n                                    <option>Monero</option>\r\n                                </select>\r\n                            </div>\r\n                    </div>\r\n                    <div class=\"form-group row\">\r\n                            <label for=\"exampleSelect1\" class=\"col-sm-2 col-form-label\">4.</label>\r\n                            <div class=\"col-sm-10\">\r\n                                <select class=\"form-control\" id=\"exampleSelect1\">\r\n                                    <option>Ethereum</option>\r\n                                    <option>OmiseGO</option>\r\n                                    <option>Ripple</option>\r\n                                    <option selected>Litecoin</option>\r\n                                    <option>NEM</option>\r\n                                    <option>Dash</option>\r\n                                    <option>IOTA</option>\r\n                                    <option>Monero</option>\r\n                                </select>\r\n                            </div>\r\n                    </div>\r\n                    <div class=\"form-group row\">\r\n                            <label for=\"exampleSelect1\" class=\"col-sm-2 col-form-label\">5.</label>\r\n                            <div class=\"col-sm-10\">\r\n                                <select class=\"form-control\" id=\"exampleSelect1\">\r\n                                    <option>Ethereum</option>\r\n                                    <option>OmiseGO</option>\r\n                                    <option>Ripple</option>\r\n                                    <option>Litecoin</option>\r\n                                    <option selected>NEM</option>\r\n                                    <option>Dash</option>\r\n                                    <option>IOTA</option>\r\n                                    <option>Monero</option>\r\n                                </select>\r\n                            </div>\r\n                    </div>\r\n                    <div class=\"form-group row\">\r\n                            <label for=\"exampleSelect1\" class=\"col-sm-2 col-form-label\">6.</label>\r\n                            <div class=\"col-sm-10\">\r\n                                <select class=\"form-control\" id=\"exampleSelect1\">\r\n                                    <option>Ethereum</option>\r\n                                    <option>OmiseGO</option>\r\n                                    <option>Ripple</option>\r\n                                    <option>Litecoin</option>\r\n                                    <option>NEM</option>\r\n                                    <option selected>Dash</option>\r\n                                    <option>IOTA</option>\r\n                                    <option>Monero</option>\r\n                                </select>\r\n                            </div>\r\n                    </div>\r\n                    <button type=\"submit\" class=\"btn btn-primary\">Save preference</button>\r\n                </form>\r\n\r\n            </div>\r\n            <p><a [routerLink]=\"['/login']\">Logout</a></p>\r\n        </div>\r\n        <div class=\"col-md-6 col-md-offset-3\">\r\n            \r\n        </div>\r\n\r\n        </div>\r\n      </div>\r\n  </div>\r\n</div>"
+module.exports = "<div class=\"container main-form-container\">\r\n  <h3 class=\"text-center jumbotron-heading\">Login</h3>\r\n  <form>\r\n    <div class=\"form-group row\">\r\n      <label for=\"inputEmail3\" class=\"col-sm-2 col-form-label\">Email</label>\r\n      <div class=\"col-sm-10\">\r\n        <input [(ngModel)]=\"user.email\" name=\"email\" type=\"email\" class=\"form-control\" id=\"email\" placeholder=\"Email\">\r\n      </div>\r\n    </div>\r\n    <div class=\"form-group row\">\r\n      <label for=\"inputPassword3\" class=\"col-sm-2 col-form-label\">Password</label>\r\n      <div class=\"col-sm-10\">\r\n        <input [(ngModel)]=\"user.password\" name=\"password\" type=\"password\" class=\"form-control\" id=\"password\" placeholder=\"Password\">\r\n      </div>\r\n    </div>\r\n    \r\n    <div class=\"form-group row\">\r\n      <div class=\"offset-sm-2 col-sm-12 text-center\">\r\n        <button (click)=\"login()\" type=\"submit\" class=\"btn btn-primary\">Login</button>\r\n      </div>\r\n    </div>\r\n    <div *ngIf=\"error\" class=\"alert alert-danger\">{{error}}</div>\r\n  </form>\r\n  <p class=\"text-center\">\r\n    or Login using <br/>\r\n    <a href=\"/auth/twitter\"><i class=\"fa fa-twitter-square fa-2x\"></i></a>\r\n    <a href=\"/auth/facebook\"><i class=\"fa fa-facebook-square fa-2x\"></i></a>\r\n    <a href=\"/auth/linkedin\"><i class=\"fa fa-linkedin-square fa-2x\"></i></a>\r\n    <a href=\"/auth/google\"><i class=\"fa fa-google-plus-square fa-2x\"></i></a>\r\n</p>\r\n</div>"
 
 /***/ }),
 
@@ -1697,47 +1694,75 @@ var _a;
 /***/ 250:
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"container main-form-container\">\r\n  <h3 class=\"text-center jumbotron-heading\">Register</h3>\r\n  <form>\r\n    <div class=\"form-group row\">\r\n      <label for=\"inputEmail3\" class=\"col-sm-2 col-form-label\">Email</label>\r\n      <div class=\"col-sm-10\">\r\n        <input [(ngModel)]=\"user.email\" type=\"email\" name=\"email\" class=\"form-control\"  id=\"email\" placeholder=\"Email\">\r\n      </div>\r\n    </div>\r\n    <div class=\"form-group row\">\r\n      <label for=\"inputPassword3\" class=\"col-sm-2 col-form-label\">Password</label>\r\n      <div class=\"col-sm-10\">\r\n        <input [(ngModel)]=\"user.password\" type=\"password\" name=\"password\" class=\"form-control\" id=\"password\" placeholder=\"Password\">\r\n      </div>\r\n    </div>\r\n    \r\n    <div class=\"form-group row\">\r\n      <div class=\"offset-sm-2 col-sm-10 text-center\">\r\n        <button (click)=\"register()\" type=\"submit\" class=\"btn btn-primary\">Signup</button>\r\n      </div>\r\n    </div>\r\n    <div *ngIf=\"error\" class=\"alert alert-danger\">{{error}}</div>\r\n  </form>\r\n  </div>"
+module.exports = "<p>\r\n  page-not-found works!\r\n</p>\r\n"
 
 /***/ }),
 
 /***/ 251:
 /***/ (function(module, exports) {
 
-module.exports = "<p>\r\n  terms-of-service works!\r\n</p>\r\n"
+module.exports = "<p>\r\n  privacy-policy works!\r\n</p>\r\n"
 
 /***/ }),
 
 /***/ 252:
 /***/ (function(module, exports) {
 
-module.exports = "<p>\r\n  twittercallback !\r\n</p>\r\n\r\n<p>Loading ....    Please wait ...</p>"
+module.exports = "<div class=\"row no-gutters\"> <!-- top first half row -->\r\n    <div class=\"col-1 iconcolumns fullheight\">\r\n      <a href=\"\" routerLink=\"/dashboard\"><i class=\"fa fa-home fa-lg\"></i></a><br/>\r\n      <a href=\"\" routerLink=\"/dashboard\"><i class=\"fa fa-tachometer fa-lg\"></i></a><br/>\r\n      <a href=\"\"><i class=\"fa fa-line-chart fa-lg\"></i></a><br/>\r\n      <a href=\"\"><i class=\"fa fa-envelope-o fa-lg\"></i></a><br/>\r\n      <a href=\"\" class=\"iconactive\" routerLink=\"/settings\"><i class=\"fa fa-cogs fa-lg\"></i></a><br/>\r\n      <a href=\"\" routerLink=\"/profile\"><i class=\"fa fa-user fa-lg\"></i></a><br/>\r\n      <a href=\"\"><i class=\"fa fa-plus fa-lg\"></i></a><br/>\r\n    </div>\r\n    <div class=\"col-11\">\r\n        <div class=\"row\">\r\n          <div class=\"container\">\r\n    \r\n        <div class=\"page-header text-center\">\r\n            <h1><span class=\"fa fa-anchor\"></span> Profile</h1>\r\n            <a href=\"/logout\" class=\"btn btn-default btn-sm\">Logout</a>\r\n        </div>\r\n    \r\n        <div class=\"row\">\r\n    \r\n            <!-- LOCAL INFORMATION -->\r\n            <div class=\"col-sm-6\">\r\n                <div class=\"well\">\r\n                    <h3><span class=\"fa fa-user\"></span> Basic profile</h3>\r\n    \r\n                        <p>\r\n                            <strong>id</strong>: {{userid}}<br>\r\n                            <strong>email</strong>: {{userEmail}}<br>\r\n                            <strong>password</strong>: - <br>\r\n                            <strong>Name</strong>: {{userName}}<br>\r\n                            <strong>Logged in As</strong>: {{userLoggedInAs}} user<br>\r\n                            <strong>Token</strong>: {{userToken}}<br>\r\n                            <strong>Phone</strong>: - <br>\r\n                        </p>\r\n    \r\n                </div>\r\n            </div>\r\n    \r\n        </div>\r\n    </div>\r\n    </div>\r\n    </div>\r\n</div>\r\n"
 
 /***/ }),
 
 /***/ 253:
 /***/ (function(module, exports) {
 
+module.exports = "<div class=\"row no-gutters\"> <!-- top first half row -->\r\n  <div class=\"col-1 iconcolumns fullheight\">\r\n    <a href=\"\" routerLink=\"/dashboard\"><i class=\"fa fa-home fa-lg\"></i></a><br/>\r\n    <a href=\"\" routerLink=\"/dashboard\"><i class=\"fa fa-tachometer fa-lg\"></i></a><br/>\r\n    <a href=\"\"><i class=\"fa fa-line-chart fa-lg\"></i></a><br/>\r\n    <a href=\"\"><i class=\"fa fa-envelope-o fa-lg\"></i></a><br/>\r\n    <a href=\"\" class=\"iconactive\" routerLink=\"/settings\"><i class=\"fa fa-cogs fa-lg\"></i></a><br/>\r\n    <a href=\"\" routerLink=\"/profile\"><i class=\"fa fa-user fa-lg\"></i></a><br/>\r\n    <a href=\"\"><i class=\"fa fa-plus fa-lg\"></i></a><br/>\r\n  </div>\r\n  <div class=\"col-11\">\r\n      <div class=\"row\">\r\n        <div class=\"container\">\r\n          <p>&nbsp;</p>\r\n          <div class=\"col-md-5\">\r\n            <h6>Login using your twitter account to start getting feeds</h6>\r\n            <p>\r\n                <a class=\"btn btn-social btn-twitter\">\r\n                  <i class=\"fa fa-twitter\"></i> Sign in with Twitter\r\n                </a>\r\n            </p>\r\n          </div>\r\n\r\n          <div class=\"col-md-5 col-md-offset-3\">\r\n            <h5>Preferred Crypto currencies</h5>\r\n            \r\n            <div>\r\n                <form (ngSubmit)=\"onSubmit()\" #heroForm=\"ngForm\">\r\n                    <div class=\"form-group row\">\r\n                        <input type=\"text\" placeholder=\"1\" name=\"cryptopreference1\" [(ngModel)]=\"data.cryptopreference1\"><br><br>\r\n                        <input type=\"text\" placeholder=\"2\" name=\"cryptopreference2\" [(ngModel)]=\"data.cryptopreference2\"><br><br>\r\n                        <input type=\"text\" placeholder=\"3\" name=\"cryptopreference3\" [(ngModel)]=\"data.cryptopreference3\"><br><br>\r\n                        <input type=\"text\" placeholder=\"4\" name=\"cryptopreference4\" [(ngModel)]=\"data.cryptopreference4\"><br><br>\r\n                        <input type=\"text\" placeholder=\"5\" name=\"cryptopreference5\" [(ngModel)]=\"data.cryptopreference5\"><br><br>\r\n                        <input type=\"text\" placeholder=\"6\" name=\"cryptopreference6\" [(ngModel)]=\"data.cryptopreference6\"><br><br>\r\n                    </div>\r\n                    <div class=\"form-group row\">\r\n                        <label for=\"exampleSelect1\" class=\"col-sm-2 col-form-label\">1.</label>\r\n                        <div class=\"col-sm-10\">\r\n                            <select class=\"form-control\" id=\"exampleSelect1\">\r\n                                <option selected>Ethereum</option>\r\n                                <option>OmiseGO</option>\r\n                                <option>Ripple</option>\r\n                                <option>Litecoin</option>\r\n                                <option>NEM</option>\r\n                                <option>Dash</option>\r\n                                <option>IOTA</option>\r\n                                <option>Monero</option>\r\n                            </select>\r\n                        </div>\r\n                    </div>\r\n                    <div class=\"form-group row\">\r\n                            <label for=\"exampleSelect1\" class=\"col-sm-2 col-form-label\">2.</label>\r\n                            <div class=\"col-sm-10\">\r\n                                <select class=\"form-control\" id=\"exampleSelect1\">\r\n                                    <option>Ethereum</option>\r\n                                    <option selected>OmiseGO</option>\r\n                                    <option>Ripple</option>\r\n                                    <option>Litecoin</option>\r\n                                    <option>NEM</option>\r\n                                    <option>Dash</option>\r\n                                    <option>IOTA</option>\r\n                                    <option>Monero</option>\r\n                                </select>\r\n                            </div>\r\n                    </div>\r\n                    <div class=\"form-group row\">\r\n                            <label for=\"exampleSelect1\" class=\"col-sm-2 col-form-label\">3.</label>\r\n                            <div class=\"col-sm-10\">\r\n                                <select class=\"form-control\" id=\"exampleSelect1\">\r\n                                    <option>Ethereum</option>\r\n                                    <option>OmiseGO</option>\r\n                                    <option selected>Ripple</option>\r\n                                    <option>Litecoin</option>\r\n                                    <option>NEM</option>\r\n                                    <option>Dash</option>\r\n                                    <option>IOTA</option>\r\n                                    <option>Monero</option>\r\n                                </select>\r\n                            </div>\r\n                    </div>\r\n                    <div class=\"form-group row\">\r\n                            <label for=\"exampleSelect1\" class=\"col-sm-2 col-form-label\">4.</label>\r\n                            <div class=\"col-sm-10\">\r\n                                <select class=\"form-control\" id=\"exampleSelect1\">\r\n                                    <option>Ethereum</option>\r\n                                    <option>OmiseGO</option>\r\n                                    <option>Ripple</option>\r\n                                    <option selected>Litecoin</option>\r\n                                    <option>NEM</option>\r\n                                    <option>Dash</option>\r\n                                    <option>IOTA</option>\r\n                                    <option>Monero</option>\r\n                                </select>\r\n                            </div>\r\n                    </div>\r\n                    <div class=\"form-group row\">\r\n                            <label for=\"exampleSelect1\" class=\"col-sm-2 col-form-label\">5.</label>\r\n                            <div class=\"col-sm-10\">\r\n                                <select class=\"form-control\" id=\"exampleSelect1\">\r\n                                    <option>Ethereum</option>\r\n                                    <option>OmiseGO</option>\r\n                                    <option>Ripple</option>\r\n                                    <option>Litecoin</option>\r\n                                    <option selected>NEM</option>\r\n                                    <option>Dash</option>\r\n                                    <option>IOTA</option>\r\n                                    <option>Monero</option>\r\n                                </select>\r\n                            </div>\r\n                    </div>\r\n                    <div class=\"form-group row\">\r\n                            <label for=\"exampleSelect1\" class=\"col-sm-2 col-form-label\">6.</label>\r\n                            <div class=\"col-sm-10\">\r\n                                <select class=\"form-control\" id=\"exampleSelect1\">\r\n                                    <option>Ethereum</option>\r\n                                    <option>OmiseGO</option>\r\n                                    <option>Ripple</option>\r\n                                    <option>Litecoin</option>\r\n                                    <option>NEM</option>\r\n                                    <option selected>Dash</option>\r\n                                    <option>IOTA</option>\r\n                                    <option>Monero</option>\r\n                                </select>\r\n                            </div>\r\n                    </div>\r\n                    <button type=\"submit\" class=\"btn btn-primary\">Save preference</button>\r\n                </form>\r\n\r\n            </div>\r\n            <p><a [routerLink]=\"['/login']\">Logout</a></p>\r\n        </div>\r\n        <div class=\"col-md-6 col-md-offset-3\">\r\n            \r\n        </div>\r\n\r\n        </div>\r\n      </div>\r\n  </div>\r\n</div>"
+
+/***/ }),
+
+/***/ 254:
+/***/ (function(module, exports) {
+
+module.exports = "<div class=\"container main-form-container\">\r\n  <h3 class=\"text-center jumbotron-heading\">Register</h3>\r\n  <form>\r\n    <div class=\"form-group row\">\r\n      <label for=\"inputEmail3\" class=\"col-sm-2 col-form-label\">Email</label>\r\n      <div class=\"col-sm-10\">\r\n        <input [(ngModel)]=\"user.email\" type=\"email\" name=\"email\" class=\"form-control\"  id=\"email\" placeholder=\"Email\">\r\n      </div>\r\n    </div>\r\n    <div class=\"form-group row\">\r\n      <label for=\"inputPassword3\" class=\"col-sm-2 col-form-label\">Password</label>\r\n      <div class=\"col-sm-10\">\r\n        <input [(ngModel)]=\"user.password\" type=\"password\" name=\"password\" class=\"form-control\" id=\"password\" placeholder=\"Password\">\r\n      </div>\r\n    </div>\r\n    \r\n    <div class=\"form-group row\">\r\n      <div class=\"offset-sm-2 col-sm-10 text-center\">\r\n        <button (click)=\"register()\" type=\"submit\" class=\"btn btn-primary\">Signup</button>\r\n      </div>\r\n    </div>\r\n    <div *ngIf=\"error\" class=\"alert alert-danger\">{{error}}</div>\r\n  </form>\r\n  </div>"
+
+/***/ }),
+
+/***/ 255:
+/***/ (function(module, exports) {
+
+module.exports = "<p>\r\n  terms-of-service works!\r\n</p>\r\n"
+
+/***/ }),
+
+/***/ 256:
+/***/ (function(module, exports) {
+
+module.exports = "<p>\r\n  twittercallback !\r\n</p>\r\n\r\n<p>Loading ....    Please wait ...</p>"
+
+/***/ }),
+
+/***/ 257:
+/***/ (function(module, exports) {
+
 module.exports = "<p>\r\n  Twitter Wall !\r\n</p>\r\n<div class=\"wall-container\" id=\"twitter-feed\">\r\n  <div *ngFor=\"let message of messages\">\r\n    <span><img src=\"{{message.user.profile_image_url_https}}\" alt=\"photo\"/></span>\r\n    <span class=\"t_screen_name\">{{message.user.screen_name}}<i class=\"t_name\">({{message.user.name}})</i></span>\r\n    <span class=\"t_text\" [innerHTML]=\"message.text\"></span>\r\n  </div>\r\n</div>"
 
 /***/ }),
 
-/***/ 290:
+/***/ 291:
 /***/ (function(module, exports) {
 
 /* (ignored) */
 
 /***/ }),
 
-/***/ 292:
+/***/ 293:
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(115);
+module.exports = __webpack_require__(119);
 
 
 /***/ }),
 
-/***/ 33:
+/***/ 34:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1829,14 +1854,14 @@ var _a;
 
 /***/ }),
 
-/***/ 46:
+/***/ 47:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_Observable__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_Observable__ = __webpack_require__(2);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_Observable___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_rxjs_Observable__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_socket_io_client__ = __webpack_require__(281);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_socket_io_client__ = __webpack_require__(282);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_socket_io_client___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_socket_io_client__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_map__ = __webpack_require__(15);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_map___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_map__);
@@ -1884,7 +1909,7 @@ StreamtweetsService = __decorate([
 
 /***/ }),
 
-/***/ 76:
+/***/ 77:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1926,5 +1951,5 @@ var _a;
 
 /***/ })
 
-},[292]);
+},[293]);
 //# sourceMappingURL=main.bundle.js.map

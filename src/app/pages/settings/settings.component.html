@@ -25,7 +25,15 @@
             <h5>Preferred Crypto currencies</h5>
             
             <div>
-                <form>
+                <form (ngSubmit)="onSubmit()" #heroForm="ngForm">
+                    <div class="form-group row">
+                        <input type="text" placeholder="1" name="cryptopreference1" [(ngModel)]="data.cryptopreference1"><br><br>
+                        <input type="text" placeholder="2" name="cryptopreference2" [(ngModel)]="data.cryptopreference2"><br><br>
+                        <input type="text" placeholder="3" name="cryptopreference3" [(ngModel)]="data.cryptopreference3"><br><br>
+                        <input type="text" placeholder="4" name="cryptopreference4" [(ngModel)]="data.cryptopreference4"><br><br>
+                        <input type="text" placeholder="5" name="cryptopreference5" [(ngModel)]="data.cryptopreference5"><br><br>
+                        <input type="text" placeholder="6" name="cryptopreference6" [(ngModel)]="data.cryptopreference6"><br><br>
+                    </div>
                     <div class="form-group row">
                         <label for="exampleSelect1" class="col-sm-2 col-form-label">1.</label>
                         <div class="col-sm-10">
