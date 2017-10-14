@@ -9,9 +9,10 @@ import { HttpClient } from '@angular/common/http';
 })
 export class SettingsComponent implements OnInit {
   userid:String = '';
-  myData : any;
-  prefer_update_url = '/api/userupdatepreference/'+this.userid; //example user id 59e1b50416998f180c5c6238
-  prefer_retrieve_url = '/api/userretrivepreference/'+this.userid;
+  //myData : any;
+  UID:String = '';
+  prefer_update_url = '/api/userupdatepreference/'+this.UID; //example user id 59e1b50416998f180c5c6238
+  prefer_retrieve_url = '/api/userretrivepreference/'+this.UID;
   crypto1:String = 'default';
   crypto2:String = 'default';
   crypto3:String = 'default';
@@ -45,9 +46,14 @@ export class SettingsComponent implements OnInit {
       console.log(parsedObject.email);
       console.log(parsedObject.userid._id);
       if(parsedObject.userid._id) {
+        this.UID = parsedObject.userid._id;
+      } else if(parsedObject.userid) {
+        this.UID = parsedObject.userid;
+      }
+      if(parsedObject.userid._id) {
         this.userid = parsedObject.userid._id;
-        this.prefer_update_url = '/api/userupdatepreference/'+this.userid;
-        this.prefer_retrieve_url = '/api/userretrivepreference/'+this.userid;
+        this.prefer_update_url = '/api/userupdatepreference/'+this.UID;
+        this.prefer_retrieve_url = '/api/userretrivepreference/'+this.UID;
         ///////////////////////////////////////////////////////////////////////////
         interface UserResponse {
           cryptopreference1: string;
@@ -62,7 +68,7 @@ export class SettingsComponent implements OnInit {
         .subscribe(
           // Successful responses call the first callback.
           data => { 
-            this.myData = data;
+           // this.myData = data;
             //console.log(data)
             console.log(data.cryptopreference1);
           this.data.cryptopreference1 = data.cryptopreference1;
@@ -86,7 +92,7 @@ export class SettingsComponent implements OnInit {
 
   onSubmit() {
     console.log('onSubmit function called');
-    console.log(this.myData);
+    //console.log(this.myData);
     this.http.post(this.prefer_update_url, this.data )
         .subscribe(
           // Successful responses call the first callback.
