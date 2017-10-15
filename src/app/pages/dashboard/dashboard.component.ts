@@ -14,12 +14,12 @@ export class DashboardComponent implements OnInit, OnDestroy {
   userToken:String ='';
   UID:String = '';
   prefer_retrieve_url = '/api/userretrivepreference/'+this.UID;
-  crypto1 = { name: 'loading...', logourl: '', id: ''};
-  crypto2 = { name: 'loading...', logourl: '', id: ''};
-  crypto3 = { name: 'loading...', logourl: '', id: ''};
-  crypto4 = { name: 'loading...', logourl: '', id: ''};
-  crypto5 = { name: 'loading...', logourl: '', id: ''};
-  crypto6 = { name: 'loading...', logourl: '', id: ''};
+  crypto1 = { name: 'loading...', logourl: '', id: 1 };
+  crypto2 = { name: 'loading...', logourl: '', id: 1 };
+  crypto3 = { name: 'loading...', logourl: '', id: 1 };
+  crypto4 = { name: 'loading...', logourl: '', id: 1 };
+  crypto5 = { name: 'loading...', logourl: '', id: 1 };
+  crypto6 = { name: 'loading...', logourl: '', id: 1 };
 
   @Output() sendLoggedInEvent = new EventEmitter<boolean>();
 
@@ -27,7 +27,13 @@ export class DashboardComponent implements OnInit, OnDestroy {
   connection;
   message;
   public tweet: any;
-  messages_Ethereum = []; // 2312333412
+  messages_crypto1 = [];
+  messages_crypto2 = [];
+  messages_crypto3 = [];
+  messages_crypto4 = [];
+  messages_crypto5 = [];
+  messages_crypto6 = []; 
+  messages_Ethereum = [];// 2312333412
   messages_OmiseGO = []; // 831847934534746114
   messages_Ripple = []; //  1051053836
   messages_Litecoin = []; //  1393174363
@@ -148,16 +154,21 @@ export class DashboardComponent implements OnInit, OnDestroy {
               console.log(this.coins);
             this.crypto1.name = this.coins[0][data.cryptopreference1]['name']; //data.cryptopreference1;
             this.crypto1.logourl = this.coins[0][data.cryptopreference1]['logourl'];
+            this.crypto1.id = this.coins[0][data.cryptopreference1]['id'];
             this.crypto2.name = this.coins[0][data.cryptopreference2]['name'];
             this.crypto2.logourl = this.coins[0][data.cryptopreference2]['logourl'];
+            this.crypto2.id = this.coins[0][data.cryptopreference2]['id'];
             this.crypto3.name = this.coins[0][data.cryptopreference3]['name'];
             this.crypto3.logourl = this.coins[0][data.cryptopreference3]['logourl'];
+            this.crypto3.id = this.coins[0][data.cryptopreference3]['id'];
             this.crypto4.name = this.coins[0][data.cryptopreference4]['name'];
             this.crypto4.logourl = this.coins[0][data.cryptopreference4]['logourl'];
+            this.crypto4.id = this.coins[0][data.cryptopreference4]['id'];
             this.crypto5.name = this.coins[0][data.cryptopreference5]['name'];
             this.crypto5.logourl = this.coins[0][data.cryptopreference5]['logourl'];
             this.crypto6.name = this.coins[0][data.cryptopreference6]['name'];
             this.crypto6.logourl = this.coins[0][data.cryptopreference6]['logourl'];
+            this.crypto6.id = this.coins[0][data.cryptopreference6]['id'];
 
             console.log("this.crypto1 is "+ this.crypto1.name );
            },
@@ -211,60 +222,77 @@ export class DashboardComponent implements OnInit, OnDestroy {
           console.log('condition 3rd, not RT & not R, normal tweet');
           tempID  = message['user']['id_str'];
         }
-
+        /////////////////////////////////////
+        if(this.crypto1.id == tempID) {
+          this.messages_crypto1.unshift(message);
+        }else if(this.crypto2.id == tempID) {
+          this.messages_crypto2.unshift(message);
+        }else if(this.crypto3.id == tempID){
+          this.messages_crypto3.unshift(message);
+        }else if(this.crypto4.id == tempID){
+          this.messages_crypto4.unshift(message);
+        }else if(this.crypto5.id == tempID){
+          this.messages_crypto5.unshift(message);
+        }else if(this.crypto6.id == tempID){
+          this.messages_crypto6.unshift(message);
+        }
+        //////////////////////////////////////
         switch (tempID) {
           case (2312333412):
-            this.messages_Ethereum.unshift(message);
+            this.messages_Ethereum.unshift(message); //1
             break;
           case (831847934534746114):
-            this.messages_OmiseGO.unshift(message);
+            this.messages_OmiseGO.unshift(message);  //2
             break;
           case (1051053836):
-            this.messages_Ripple.unshift(message);
+            this.messages_Ripple.unshift(message);   //3
             break;
           case (1393174363):
-            this.messages_Litecoin.unshift(message);
+            this.messages_Litecoin.unshift(message); //4
             break;
           case (2313671966):
-            this.messages_NEM.unshift(message);
+            this.messages_NEM.unshift(message);      //5
             break;
           case (2338506822):
-            this.messages_Dashpay.unshift(message);
+            this.messages_Dashpay.unshift(message);  //6
             break;
           case (3992601857):
-            this.messages_iotatoken.unshift(message);
+            this.messages_iotatoken.unshift(message);  //7
             break;
           case (2478439963):
-            this.messages_monerocurrency.unshift(message);
+            this.messages_monerocurrency.unshift(message); //8
             break;
           case (4736263474):
-            this.messages_LiskHQ.unshift(message);
+            this.messages_LiskHQ.unshift(message);  //9
             break;
           case (357312062):
-            this.messages_bitcoin.unshift(message);
+            this.messages_bitcoin.unshift(message);  //10
             break;
           case (759252279862104064):
-            this.messages_eth_classic.unshift(message);
+            this.messages_eth_classic.unshift(message); //11
             break;
           case (2592325530):
-            this.messages_NEO_Blockchain.unshift(message);
+            this.messages_NEO_Blockchain.unshift(message);  //12
             break;
           case (711438260354953216):
-            this.messages_bitconnect.unshift(message);
+            this.messages_bitconnect.unshift(message); //13
             break;
           case (773009781644677120):
-            this.messages_QtumOfficial.unshift(message);
+            this.messages_QtumOfficial.unshift(message); //14
             break;
           case (734688391942524928):
-            this.messages_stratisplatform.unshift(message);
+            this.messages_stratisplatform.unshift(message);  //15
             break;
           case (2893133450):
-            this.messages_Tether_to.unshift(message);
+            this.messages_Tether_to.unshift(message);  //16
             break;
           case (4633094778):
-            this.messages_zcashco.unshift(message);
+            this.messages_zcashco.unshift(message);   //17
             break;
           case (707515829798182912):
+            this.messages_wavesplatform.unshift(message);  //18
+            break;
+          case (1):
             this.messages_wavesplatform.unshift(message);
             break;
   
