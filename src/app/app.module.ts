@@ -4,6 +4,7 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { RouterModule, Routes } from '@angular/router';
 import {HttpClientModule} from '@angular/common/http';
+import { NguiAutoCompleteModule } from '@ngui/auto-complete';
 
 import { AppComponent } from './app.component';
 import { FilterPipe} from './filter.pipe';
@@ -74,7 +75,8 @@ const appRoutes: Routes = [
     BrowserModule,
     FormsModule,
     HttpModule,
-    HttpClientModule
+    HttpClientModule,
+    NguiAutoCompleteModule
   ],
   providers: [DataService, 
     AuthGuard,
