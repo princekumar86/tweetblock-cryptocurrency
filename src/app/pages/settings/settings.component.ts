@@ -14,12 +14,12 @@ export class SettingsComponent implements OnInit {
   UID:String = '';
   prefer_update_url = '/api/userupdatepreference/'+this.UID; //example user id 59e1b50416998f180c5c6238
   prefer_retrieve_url = '/api/userretrivepreference/'+this.UID;
-  crypto1:String = 'default';
-  crypto2:String = 'default';
-  crypto3:String = 'default';
-  crypto4:String = 'default';
-  crypto5:String = 'default';
-  crypto6:String = 'default';
+  crypto1:String = 'Loading...';
+  crypto2:String = 'Loading...';
+  crypto3:String = 'Loading...';
+  crypto4:String = 'Loading...';
+  crypto5:String = 'Loading...';
+  crypto6:String = 'Loading...';
 
   data = {cryptopreference1: this.crypto1,
           cryptopreference2: this.crypto2,

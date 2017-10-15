@@ -1,5 +1,7 @@
 import { Component, OnInit, OnDestroy, Input, Output, EventEmitter } from '@angular/core';
 import { StreamtweetsService } from '../../_services/streamtweets.service';
+import { HttpClient } from '@angular/common/http';
+import { COINS } from '../../_models/coins';
 
 @Component({
   selector: 'app-dashboard',
@@ -7,8 +9,18 @@ import { StreamtweetsService } from '../../_services/streamtweets.service';
   styleUrls: ['./dashboard.component.css']
 })
 export class DashboardComponent implements OnInit, OnDestroy {
+  coins = COINS;
   userEmail: string = '';
   userToken:String ='';
+  UID:String = '';
+  prefer_retrieve_url = '/api/userretrivepreference/'+this.UID;
+  crypto1 = { name: 'loading...', logourl: '', id: ''};
+  crypto2 = { name: 'loading...', logourl: '', id: ''};
+  crypto3 = { name: 'loading...', logourl: '', id: ''};
+  crypto4 = { name: 'loading...', logourl: '', id: ''};
+  crypto5 = { name: 'loading...', logourl: '', id: ''};
+  crypto6 = { name: 'loading...', logourl: '', id: ''};
+
   @Output() sendLoggedInEvent = new EventEmitter<boolean>();
 
   messages = [];
@@ -24,7 +36,7 @@ export class DashboardComponent implements OnInit, OnDestroy {
   messages_iotatoken = []; //  3992601857
   messages_monerocurrency = []; //  2478439963
 
-  constructor(private _streamService:StreamtweetsService) { }
+  constructor(private _streamService:StreamtweetsService, private http: HttpClient) { }
 
   ngOnInit() {
       if (localStorage.getItem('currentUser') === null) {
@@ -41,6 +53,56 @@ export class DashboardComponent implements OnInit, OnDestroy {
         // ACCESS DATA
         //console.log(parsedObject.item[0].Desc);
         console.log(parsedObject.email);
+        console.log(parsedObject.userid._id);
+        console.log(parsedObject.userid);
+        if(parsedObject.userid._id) {
+          this.UID = parsedObject.userid._id;
+        } else if(parsedObject.userid) {
+          this.UID = parsedObject.userid;
+        }
+        if(this.UID !== '') {
+          this.prefer_retrieve_url = '/api/userretrivepreference/'+this.UID;
+          ///////////////////////////////////////////////////////////////////////////
+          interface UserResponse {
+            cryptopreference1: string;
+            cryptopreference2: string;
+            cryptopreference3: string;
+            cryptopreference4: string;
+            cryptopreference5: string;
+            cryptopreference6: string;
+          }
+  
+          this.http.get<UserResponse>(this.prefer_retrieve_url)
+          .subscribe(
+            // Successful responses call the first callback.
+            data => { 
+              //console.log(data)
+              console.log(data.cryptopreference1);
+              console.log(this.coins);
+            this.crypto1.name = this.coins[0][data.cryptopreference1]['name']; //data.cryptopreference1;
+            this.crypto1.logourl = this.coins[0][data.cryptopreference1]['logourl'];
+            this.crypto2.name = this.coins[0][data.cryptopreference2]['name'];
+            this.crypto2.logourl = this.coins[0][data.cryptopreference2]['logourl'];
+            this.crypto3.name = this.coins[0][data.cryptopreference3]['name'];
+            this.crypto3.logourl = this.coins[0][data.cryptopreference3]['logourl'];
+            this.crypto4.name = this.coins[0][data.cryptopreference4]['name'];
+            this.crypto4.logourl = this.coins[0][data.cryptopreference4]['logourl'];
+            this.crypto5.name = this.coins[0][data.cryptopreference5]['name'];
+            this.crypto5.logourl = this.coins[0][data.cryptopreference5]['logourl'];
+            this.crypto6.name = this.coins[0][data.cryptopreference6]['name'];
+            this.crypto6.logourl = this.coins[0][data.cryptopreference6]['logourl'];
+
+            console.log("this.crypto1 is "+ this.crypto1.name );
+           },
+            // Errors will call this callback instead:
+            err => {
+              console.log('Something went wrong!');
+            }
+          );
+          //////////////////////////////////////////////////////////////////////////
+  
+        }
+        /////////////////////////
         if(parsedObject.token) {
           this.userEmail = parsedObject.email;
           this.userToken = parsedObject.token;
