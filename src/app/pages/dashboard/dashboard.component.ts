@@ -35,6 +35,73 @@ export class DashboardComponent implements OnInit, OnDestroy {
   messages_Dashpay = []; //  2338506822
   messages_iotatoken = []; //  3992601857
   messages_monerocurrency = []; //  2478439963
+  messages_LiskHQ = [];
+  messages_bitcoin = [];
+  messages_eth_classic = [];
+  messages_NEO_Blockchain = [];
+  messages_bitconnect = [];
+  messages_QtumOfficial = [];
+  messages_stratisplatform = [];
+  messages_Tether_to = [];
+  messages_zcashco = [];
+  messages_wavesplatform = [];
+  messages_ArkEcosystem = [];
+  messages_steemit = [];
+  messages_maidsafe = [];
+  messages_Bytecoin_BCN = [];
+  messages_golemproject = [];
+  messages_EOS_io = [];
+  messages_decredproject = [];
+  messages_AttentionToken = [];
+  messages_Veritaseuminc = [];
+  messages_bitshares = [];
+  messages_AugurProject = [];
+  messages_tenxwallet = [];
+  messages_StellarOrg = [];
+  messages_KomodoPlatform = [];
+  messages_Mkt_Hcash = [];
+  messages__pivx = [];
+  messages_NxsEarth = [];
+  messages_metalpaysme = [];
+  messages_factom = [];
+  messages_iconominet = [];
+  messages_DigixGlobal = [];
+  messages_ByteballOrg = [];
+  messages_SiaTechHQ = [];
+  messages_civickey = [];
+  messages_DigiByteCoin = [];
+  messages_BitPopulous = [];
+  messages_BitcoinDark = [];
+  messages_gnosisPM = [];
+  messages_ArdorPlatform = [];
+  messages_SingularDTV = [];
+  messages_gamecredits = [];
+  messages_0xProject = [];
+  messages_The_Blocknet = [];
+  messages_dogecoin = [];
+  messages_syscoin = [];
+  messages_FunFairTech = [];
+  messages_LykkeCity = [];
+  messages_aetrnty = [];
+  messages_BancorNetwork = [];
+  messages_monaco_card = [];
+  vergecurrency = [];
+  messages_ethstatus = [];
+  messages_binance_2017 = [];
+  messages_gas = [];
+  messages_bitdealuk = [];
+  messages_edgelessproject = [];
+  messages_IO_Coin = [];
+  messages_NxtCommunity = [];
+  messages_bitquence = [];
+  messages_RiseVisionTeam = [];
+  messages_ParticlProject = [];
+  messages_ubiqsmart = [];
+  messages_firstcoin = [];
+  messages_AragonProject = [];
+  messages_wingsplatform = [];
+  messages_NAVCoin = [];
+  
 
   constructor(private _streamService:StreamtweetsService, private http: HttpClient) { }
 
@@ -169,6 +236,36 @@ export class DashboardComponent implements OnInit, OnDestroy {
             break;
           case (2478439963):
             this.messages_monerocurrency.unshift(message);
+            break;
+          case (4736263474):
+            this.messages_LiskHQ.unshift(message);
+            break;
+          case (357312062):
+            this.messages_bitcoin.unshift(message);
+            break;
+          case (759252279862104064):
+            this.messages_eth_classic.unshift(message);
+            break;
+          case (2592325530):
+            this.messages_NEO_Blockchain.unshift(message);
+            break;
+          case (711438260354953216):
+            this.messages_bitconnect.unshift(message);
+            break;
+          case (773009781644677120):
+            this.messages_QtumOfficial.unshift(message);
+            break;
+          case (734688391942524928):
+            this.messages_stratisplatform.unshift(message);
+            break;
+          case (2893133450):
+            this.messages_Tether_to.unshift(message);
+            break;
+          case (4633094778):
+            this.messages_zcashco.unshift(message);
+            break;
+          case (707515829798182912):
+            this.messages_wavesplatform.unshift(message);
             break;
   
           default:

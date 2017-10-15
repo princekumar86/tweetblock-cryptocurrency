@@ -781,6 +781,72 @@ var DashboardComponent = (function () {
         this.messages_Dashpay = []; //  2338506822
         this.messages_iotatoken = []; //  3992601857
         this.messages_monerocurrency = []; //  2478439963
+        this.messages_LiskHQ = [];
+        this.messages_bitcoin = [];
+        this.messages_eth_classic = [];
+        this.messages_NEO_Blockchain = [];
+        this.messages_bitconnect = [];
+        this.messages_QtumOfficial = [];
+        this.messages_stratisplatform = [];
+        this.messages_Tether_to = [];
+        this.messages_zcashco = [];
+        this.messages_wavesplatform = [];
+        this.messages_ArkEcosystem = [];
+        this.messages_steemit = [];
+        this.messages_maidsafe = [];
+        this.messages_Bytecoin_BCN = [];
+        this.messages_golemproject = [];
+        this.messages_EOS_io = [];
+        this.messages_decredproject = [];
+        this.messages_AttentionToken = [];
+        this.messages_Veritaseuminc = [];
+        this.messages_bitshares = [];
+        this.messages_AugurProject = [];
+        this.messages_tenxwallet = [];
+        this.messages_StellarOrg = [];
+        this.messages_KomodoPlatform = [];
+        this.messages_Mkt_Hcash = [];
+        this.messages__pivx = [];
+        this.messages_NxsEarth = [];
+        this.messages_metalpaysme = [];
+        this.messages_factom = [];
+        this.messages_iconominet = [];
+        this.messages_DigixGlobal = [];
+        this.messages_ByteballOrg = [];
+        this.messages_SiaTechHQ = [];
+        this.messages_civickey = [];
+        this.messages_DigiByteCoin = [];
+        this.messages_BitPopulous = [];
+        this.messages_BitcoinDark = [];
+        this.messages_gnosisPM = [];
+        this.messages_ArdorPlatform = [];
+        this.messages_SingularDTV = [];
+        this.messages_gamecredits = [];
+        this.messages_0xProject = [];
+        this.messages_The_Blocknet = [];
+        this.messages_dogecoin = [];
+        this.messages_syscoin = [];
+        this.messages_FunFairTech = [];
+        this.messages_LykkeCity = [];
+        this.messages_aetrnty = [];
+        this.messages_BancorNetwork = [];
+        this.messages_monaco_card = [];
+        this.vergecurrency = [];
+        this.messages_ethstatus = [];
+        this.messages_binance_2017 = [];
+        this.messages_gas = [];
+        this.messages_bitdealuk = [];
+        this.messages_edgelessproject = [];
+        this.messages_IO_Coin = [];
+        this.messages_NxtCommunity = [];
+        this.messages_bitquence = [];
+        this.messages_RiseVisionTeam = [];
+        this.messages_ParticlProject = [];
+        this.messages_ubiqsmart = [];
+        this.messages_firstcoin = [];
+        this.messages_AragonProject = [];
+        this.messages_wingsplatform = [];
+        this.messages_NAVCoin = [];
     }
     DashboardComponent.prototype.ngOnInit = function () {
         var _this = this;
@@ -900,6 +966,36 @@ var DashboardComponent = (function () {
                     break;
                 case (2478439963):
                     _this.messages_monerocurrency.unshift(message);
+                    break;
+                case (4736263474):
+                    _this.messages_LiskHQ.unshift(message);
+                    break;
+                case (357312062):
+                    _this.messages_bitcoin.unshift(message);
+                    break;
+                case (759252279862104064):
+                    _this.messages_eth_classic.unshift(message);
+                    break;
+                case (2592325530):
+                    _this.messages_NEO_Blockchain.unshift(message);
+                    break;
+                case (711438260354953216):
+                    _this.messages_bitconnect.unshift(message);
+                    break;
+                case (773009781644677120):
+                    _this.messages_QtumOfficial.unshift(message);
+                    break;
+                case (734688391942524928):
+                    _this.messages_stratisplatform.unshift(message);
+                    break;
+                case (2893133450):
+                    _this.messages_Tether_to.unshift(message);
+                    break;
+                case (4633094778):
+                    _this.messages_zcashco.unshift(message);
+                    break;
+                case (707515829798182912):
+                    _this.messages_wavesplatform.unshift(message);
                     break;
                 default:
                     // this.messages_Ethereum.unshift(message);
@@ -2016,7 +2112,7 @@ module.exports = "<div class=\"container-fluid\">\r\n  <!-- Content here -->\r\n
 /***/ 250:
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"row no-gutters\"> <!-- top first half row -->\r\n  <div class=\"col-1 iconcolumns\">\r\n    <a href=\"\" routerLink=\"/dashboard\" class=\"iconactive\"><i class=\"fa fa-home fa-lg\"></i></a><br/>\r\n    <a href=\"\" routerLink=\"/dashboard\"><i class=\"fa fa-tachometer fa-lg\"></i></a><br/>\r\n    <a href=\"\"><i class=\"fa fa-line-chart fa-lg\"></i></a><br/>\r\n    <a href=\"\"><i class=\"fa fa-envelope-o fa-lg\"></i></a><br/>\r\n    <a href=\"\" routerLink=\"/settings\"><i class=\"fa fa-cogs fa-lg\"></i></a><br/>\r\n    <a href=\"\" routerLink=\"/profile\"><i class=\"fa fa-user fa-lg\"></i></a><br/>\r\n    <a href=\"\"><i class=\"fa fa-plus fa-lg\"></i></a><br/>\r\n  </div>\r\n  <div class=\"col-11\">\r\n    <div class=\"row no-gutters\">\r\n      <div class=\"col-xs-12 col-sm-6 col-md-3\"> <!-- col 1 -->\r\n          <div class=\"row no-gutters\"> \r\n            <div class=\"col-xs-12 col-sm-12 col-md-12 dashboardcol\">\r\n              <div class=\"dashheading\">\r\n                <span class=\"mainheading\"><img src=\"{{crypto1.logourl}}\" /> {{crypto1.name}}</span>\r\n                <span class=\"float-right\"><i class=\"fa fa-bar-chart fa-lg\"></i></span>\r\n              </div>\r\n              <div class=\"dashbody\">\r\n                  <!-- tweet feed goes here --> \r\n                  <div *ngFor=\"let message of messages_Ethereum\">\r\n                    <span><img src=\"{{message.user.profile_image_url_https}}\" width=\"20px\" alt=\"photo\"/></span>\r\n                    <span class=\"t_screen_name\">{{message.user.screen_name}}<i class=\"t_name\">({{message.user.name}})</i></span>\r\n                    <span class=\"t_text\" [innerHTML]=\"message.text\"></span>\r\n                  </div>\r\n              </div>\r\n            </div>\r\n            <!-- col first row 2 -->\r\n            <div class=\"col-xs-12 col-sm-12 col-md-12 dashboardcol\">\r\n                <div class=\"dashheading\">\r\n                  <span class=\"mainheading\"><img src=\"{{crypto2.logourl}}\" /> {{crypto2.name}}</span>\r\n                  <span class=\"float-right\"><i class=\"fa fa-bar-chart fa-lg\"></i></span>\r\n                </div>\r\n                <div class=\"dashbody\">\r\n                    <!-- tweet feed goes here --> \r\n                    <div *ngFor=\"let message of messages_Dashpay\">\r\n                      <span><img src=\"{{message.user.profile_image_url_https}}\" width=\"20px\" alt=\"photo\"/></span>\r\n                      <span class=\"t_screen_name\">{{message.user.screen_name}}<i class=\"t_name\">({{message.user.name}})</i></span>\r\n                      <span class=\"t_text\" [innerHTML]=\"message.text\"></span>\r\n                    </div>\r\n                </div>\r\n            </div>\r\n        </div>\r\n      </div>\r\n      <div class=\"col-xs-12 col-sm-6 col-md-3\"> <!-- col 2 -->\r\n          <div class=\"row no-gutters\"> \r\n            <div class=\"col-xs-12 col-sm-12 col-md-12 dashboardcol\">\r\n              <div class=\"dashheading\">\r\n                <span class=\"mainheading\"><img src=\"{{crypto3.logourl}}\" /> {{crypto3.name}}</span>\r\n                <span class=\"float-right\"><i class=\"fa fa-bar-chart fa-lg\"></i></span>\r\n              </div>\r\n              <div class=\"dashbody\">\r\n                <!-- tweet feed goes here --> \r\n                <div *ngFor=\"let message of messages_OmiseGO\">\r\n                  <span><img src=\"{{message.user.profile_image_url_https}}\" width=\"20px\" alt=\"photo\"/></span>\r\n                  <span class=\"t_screen_name\">{{message.user.screen_name}}<i class=\"t_name\">({{message.user.name}})</i></span>\r\n                  <span class=\"t_text\" [innerHTML]=\"message.text\"></span>\r\n                </div>\r\n              </div>\r\n            </div>\r\n            <!-- col second row 2 -->\r\n            <div class=\"col-xs-12 col-sm-12 col-md-12 dashboardcol\">\r\n                <div class=\"dashheading\">\r\n                  <span class=\"mainheading\"><img src=\"{{crypto4.logourl}}\" /> {{crypto4.name}}</span>\r\n                  <span class=\"float-right\"><i class=\"fa fa-bar-chart fa-lg\"></i></span>\r\n                </div>\r\n                <div class=\"dashbody\">\r\n                    <!-- tweet feed goes here --> \r\n                    <div *ngFor=\"let message of messages_iotatoken\">\r\n                      <span><img src=\"{{message.user.profile_image_url_https}}\" width=\"20px\" alt=\"photo\"/></span>\r\n                      <span class=\"t_screen_name\">{{message.user.screen_name}}<i class=\"t_name\">({{message.user.name}})</i></span>\r\n                      <span class=\"t_text\" [innerHTML]=\"message.text\"></span>\r\n                    </div>\r\n                </div>\r\n            </div>\r\n          </div>\r\n      </div>\r\n      <div class=\"col-xs-12 col-sm-6 col-md-3\">\r\n          <div class=\"row no-gutters\"> \r\n            <div class=\"col-xs-12 col-sm-12 col-md-12 dashboardcol\">\r\n              <div class=\"dashheading\">\r\n                <span class=\"mainheading\"><img src=\"{{crypto5.logourl}}\" /> {{crypto5.name}}</span>\r\n                <span class=\"float-right\"><i class=\"fa fa-bar-chart fa-lg\"></i></span>\r\n              </div>\r\n              <div class=\"dashbody\">\r\n                <!-- tweet feed goes here --> \r\n                <div *ngFor=\"let message of messages_Ripple\">\r\n                  <span><img src=\"{{message.user.profile_image_url_https}}\" width=\"20px\" alt=\"photo\"/></span>\r\n                  <span class=\"t_screen_name\">{{message.user.screen_name}}<i class=\"t_name\">({{message.user.name}})</i></span>\r\n                  <span class=\"t_text\" [innerHTML]=\"message.text\"></span>\r\n                </div>\r\n              </div>\r\n            </div>\r\n            <!-- col third row 2 -->\r\n            <div class=\"col-xs-12 col-sm-12 col-md-12 dashboardcol\">\r\n                <div class=\"dashheading\">\r\n                  <span class=\"mainheading\"><img src=\"{{crypto6.logourl}}\" /> {{crypto6.name}}</span>\r\n                  <span class=\"float-right\"><i class=\"fa fa-bar-chart fa-lg\"></i></span>\r\n                </div>\r\n                <div class=\"dashbody\">\r\n                  <!-- tweet feed goes here --> \r\n                  <div *ngFor=\"let message of messages_monerocurrency\">\r\n                    <span><img src=\"{{message.user.profile_image_url_https}}\" width=\"20px\" alt=\"photo\"/></span>\r\n                    <span class=\"t_screen_name\">{{message.user.screen_name}}<i class=\"t_name\">({{message.user.name}})</i></span>\r\n                    <span class=\"t_text\" [innerHTML]=\"message.text\"></span>\r\n                  </div>\r\n                </div>\r\n              </div>\r\n            </div>\r\n      </div>\r\n      <div class=\"col-xs-12 col-sm-6 col-md-3 dashboardcol all-crypto\">\r\n          <div class=\"dashheading\">\r\n            <span class=\"mainheading\"> ALL CRYPTO COIN FEEDS</span>\r\n            <span class=\"float-right\"><i class=\"fa fa-bar-chart fa-lg\"></i></span>\r\n          </div>\r\n          <div><input class=\"searchText\" [(ngModel)]=\"searchText\" placeholder=\"search ... \"></div>\r\n          <div class=\"dashbody\">\r\n            <div *ngFor=\"let message of messages | filter : searchText\">\r\n              <span><img src=\"{{message.user.profile_image_url_https}}\" width=\"20px\" alt=\"photo\"/></span>\r\n              <span class=\"t_screen_name\">{{message.user.screen_name}}<i class=\"t_name\">({{message.user.name}})</i></span>\r\n              <span class=\"t_text\" [innerHTML]=\"message.text\"></span>\r\n            </div>\r\n        </div>\r\n      </div>\r\n    </div>\r\n  </div>\r\n</div>\r\n<div class=\"row no-gutters\"> <!-- second half row -->\r\n  <div class=\"col-1 iconcolumns\">\r\n    \r\n  </div>\r\n  <div class=\"col-11\">\r\n    <div class=\"row no-gutters\">\r\n\r\n    </div>\r\n  </div>\r\n</div>\r\n"
+module.exports = "<div class=\"row no-gutters\"> <!-- top first half row -->\r\n  <div class=\"col-1 iconcolumns\">\r\n    <a href=\"\" routerLink=\"/dashboard\" class=\"iconactive\"><i class=\"fa fa-home fa-lg\"></i></a><br/>\r\n    <a href=\"\" routerLink=\"/dashboard\"><i class=\"fa fa-tachometer fa-lg\"></i></a><br/>\r\n    <a href=\"\"><i class=\"fa fa-line-chart fa-lg\"></i></a><br/>\r\n    <a href=\"\"><i class=\"fa fa-envelope-o fa-lg\"></i></a><br/>\r\n    <a href=\"\" routerLink=\"/settings\"><i class=\"fa fa-cogs fa-lg\"></i></a><br/>\r\n    <a href=\"\" routerLink=\"/profile\"><i class=\"fa fa-user fa-lg\"></i></a><br/>\r\n    <a href=\"\"><i class=\"fa fa-plus fa-lg\"></i></a><br/>\r\n  </div>\r\n  <div class=\"col-11\">\r\n    <div class=\"row no-gutters\">\r\n      <div class=\"col-xs-12 col-sm-6 col-md-3\"> <!-- col 1 -->\r\n          <div class=\"row no-gutters\"> \r\n            <div class=\"col-xs-12 col-sm-12 col-md-12 dashboardcol\">\r\n              <div class=\"dashheading\">\r\n                <span class=\"mainheading\"><img src=\"{{crypto1.logourl}}\" /> {{crypto1.name}}</span>\r\n                <span class=\"float-right\"><i class=\"fa fa-bar-chart fa-lg\"></i></span>\r\n              </div>\r\n              <div class=\"dashbody\">\r\n                  <!-- tweet feed goes here --> \r\n                  <div *ngFor=\"let message of messages_QtumOfficial\">\r\n                    <span><img src=\"{{message.user.profile_image_url_https}}\" width=\"20px\" alt=\"photo\"/></span>\r\n                    <span class=\"t_screen_name\">{{message.user.screen_name}}<i class=\"t_name\">({{message.user.name}})</i></span>\r\n                    <span class=\"t_text\" [innerHTML]=\"message.text\"></span>\r\n                  </div>\r\n              </div>\r\n            </div>\r\n            <!-- col first row 2 -->\r\n            <div class=\"col-xs-12 col-sm-12 col-md-12 dashboardcol\">\r\n                <div class=\"dashheading\">\r\n                  <span class=\"mainheading\"><img src=\"{{crypto2.logourl}}\" /> {{crypto2.name}}</span>\r\n                  <span class=\"float-right\"><i class=\"fa fa-bar-chart fa-lg\"></i></span>\r\n                </div>\r\n                <div class=\"dashbody\">\r\n                    <!-- tweet feed goes here --> \r\n                    <div *ngFor=\"let message of messages_Dashpay\">\r\n                      <span><img src=\"{{message.user.profile_image_url_https}}\" width=\"20px\" alt=\"photo\"/></span>\r\n                      <span class=\"t_screen_name\">{{message.user.screen_name}}<i class=\"t_name\">({{message.user.name}})</i></span>\r\n                      <span class=\"t_text\" [innerHTML]=\"message.text\"></span>\r\n                    </div>\r\n                </div>\r\n            </div>\r\n        </div>\r\n      </div>\r\n      <div class=\"col-xs-12 col-sm-6 col-md-3\"> <!-- col 2 -->\r\n          <div class=\"row no-gutters\"> \r\n            <div class=\"col-xs-12 col-sm-12 col-md-12 dashboardcol\">\r\n              <div class=\"dashheading\">\r\n                <span class=\"mainheading\"><img src=\"{{crypto3.logourl}}\" /> {{crypto3.name}}</span>\r\n                <span class=\"float-right\"><i class=\"fa fa-bar-chart fa-lg\"></i></span>\r\n              </div>\r\n              <div class=\"dashbody\">\r\n                <!-- tweet feed goes here --> \r\n                <div *ngFor=\"let message of messages_OmiseGO\">\r\n                  <span><img src=\"{{message.user.profile_image_url_https}}\" width=\"20px\" alt=\"photo\"/></span>\r\n                  <span class=\"t_screen_name\">{{message.user.screen_name}}<i class=\"t_name\">({{message.user.name}})</i></span>\r\n                  <span class=\"t_text\" [innerHTML]=\"message.text\"></span>\r\n                </div>\r\n              </div>\r\n            </div>\r\n            <!-- col second row 2 -->\r\n            <div class=\"col-xs-12 col-sm-12 col-md-12 dashboardcol\">\r\n                <div class=\"dashheading\">\r\n                  <span class=\"mainheading\"><img src=\"{{crypto4.logourl}}\" /> {{crypto4.name}}</span>\r\n                  <span class=\"float-right\"><i class=\"fa fa-bar-chart fa-lg\"></i></span>\r\n                </div>\r\n                <div class=\"dashbody\">\r\n                    <!-- tweet feed goes here --> \r\n                    <div *ngFor=\"let message of messages_iotatoken\">\r\n                      <span><img src=\"{{message.user.profile_image_url_https}}\" width=\"20px\" alt=\"photo\"/></span>\r\n                      <span class=\"t_screen_name\">{{message.user.screen_name}}<i class=\"t_name\">({{message.user.name}})</i></span>\r\n                      <span class=\"t_text\" [innerHTML]=\"message.text\"></span>\r\n                    </div>\r\n                </div>\r\n            </div>\r\n          </div>\r\n      </div>\r\n      <div class=\"col-xs-12 col-sm-6 col-md-3\">\r\n          <div class=\"row no-gutters\"> \r\n            <div class=\"col-xs-12 col-sm-12 col-md-12 dashboardcol\">\r\n              <div class=\"dashheading\">\r\n                <span class=\"mainheading\"><img src=\"{{crypto5.logourl}}\" /> {{crypto5.name}}</span>\r\n                <span class=\"float-right\"><i class=\"fa fa-bar-chart fa-lg\"></i></span>\r\n              </div>\r\n              <div class=\"dashbody\">\r\n                <!-- tweet feed goes here --> \r\n                <div *ngFor=\"let message of messages_Ripple\">\r\n                  <span><img src=\"{{message.user.profile_image_url_https}}\" width=\"20px\" alt=\"photo\"/></span>\r\n                  <span class=\"t_screen_name\">{{message.user.screen_name}}<i class=\"t_name\">({{message.user.name}})</i></span>\r\n                  <span class=\"t_text\" [innerHTML]=\"message.text\"></span>\r\n                </div>\r\n              </div>\r\n            </div>\r\n            <!-- col third row 2 -->\r\n            <div class=\"col-xs-12 col-sm-12 col-md-12 dashboardcol\">\r\n                <div class=\"dashheading\">\r\n                  <span class=\"mainheading\"><img src=\"{{crypto6.logourl}}\" /> {{crypto6.name}}</span>\r\n                  <span class=\"float-right\"><i class=\"fa fa-bar-chart fa-lg\"></i></span>\r\n                </div>\r\n                <div class=\"dashbody\">\r\n                  <!-- tweet feed goes here --> \r\n                  <div *ngFor=\"let message of messages_monerocurrency\">\r\n                    <span><img src=\"{{message.user.profile_image_url_https}}\" width=\"20px\" alt=\"photo\"/></span>\r\n                    <span class=\"t_screen_name\">{{message.user.screen_name}}<i class=\"t_name\">({{message.user.name}})</i></span>\r\n                    <span class=\"t_text\" [innerHTML]=\"message.text\"></span>\r\n                  </div>\r\n                </div>\r\n              </div>\r\n            </div>\r\n      </div>\r\n      <div class=\"col-xs-12 col-sm-6 col-md-3 dashboardcol all-crypto\">\r\n          <div class=\"dashheading\">\r\n            <span class=\"mainheading\"> ALL CRYPTO COIN FEEDS</span>\r\n            <span class=\"float-right\"><i class=\"fa fa-bar-chart fa-lg\"></i></span>\r\n          </div>\r\n          <div><input class=\"searchText\" [(ngModel)]=\"searchText\" placeholder=\"search ... \"></div>\r\n          <div class=\"dashbody\">\r\n            <div *ngFor=\"let message of messages | filter : searchText\">\r\n              <span><img src=\"{{message.user.profile_image_url_https}}\" width=\"20px\" alt=\"photo\"/></span>\r\n              <span class=\"t_screen_name\">{{message.user.screen_name}}<i class=\"t_name\">({{message.user.name}})</i></span>\r\n              <span class=\"t_text\" [innerHTML]=\"message.text\"></span>\r\n            </div>\r\n        </div>\r\n      </div>\r\n    </div>\r\n  </div>\r\n</div>\r\n<div class=\"row no-gutters\"> <!-- second half row -->\r\n  <div class=\"col-1 iconcolumns\">\r\n    \r\n  </div>\r\n  <div class=\"col-11\">\r\n    <div class=\"row no-gutters\">\r\n\r\n    </div>\r\n  </div>\r\n</div>\r\n"
 
 /***/ }),
 
