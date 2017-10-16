@@ -14,12 +14,12 @@ export class DashboardComponent implements OnInit, OnDestroy {
   userToken:String ='';
   UID:String = '';
   prefer_retrieve_url = '/api/userretrivepreference/'+this.UID;
-  crypto1 = { name: 'loading...', logourl: '', id: 1 };
-  crypto2 = { name: 'loading...', logourl: '', id: 1 };
-  crypto3 = { name: 'loading...', logourl: '', id: 1 };
-  crypto4 = { name: 'loading...', logourl: '', id: 1 };
-  crypto5 = { name: 'loading...', logourl: '', id: 1 };
-  crypto6 = { name: 'loading...', logourl: '', id: 1 };
+  crypto1 = { name: 'loading...', logourl: '', id: 1, handle: '', handleurl: '' };
+  crypto2 = { name: 'loading...', logourl: '', id: 1, handle: '', handleurl: '' };
+  crypto3 = { name: 'loading...', logourl: '', id: 1, handle: '', handleurl: '' };
+  crypto4 = { name: 'loading...', logourl: '', id: 1, handle: '', handleurl: '' };
+  crypto5 = { name: 'loading...', logourl: '', id: 1, handle: '', handleurl: '' };
+  crypto6 = { name: 'loading...', logourl: '', id: 1, handle: '', handleurl: '' };
 
   @Output() sendLoggedInEvent = new EventEmitter<boolean>();
 
@@ -155,20 +155,33 @@ export class DashboardComponent implements OnInit, OnDestroy {
             this.crypto1.name = this.coins[0][data.cryptopreference1]['name']; //data.cryptopreference1;
             this.crypto1.logourl = this.coins[0][data.cryptopreference1]['logourl'];
             this.crypto1.id = this.coins[0][data.cryptopreference1]['id'];
+            this.crypto1.handle = this.coins[0][data.cryptopreference1]['handle'];
+            this.crypto1.handleurl = this.coins[0][data.cryptopreference1]['handleurl'];
             this.crypto2.name = this.coins[0][data.cryptopreference2]['name'];
             this.crypto2.logourl = this.coins[0][data.cryptopreference2]['logourl'];
             this.crypto2.id = this.coins[0][data.cryptopreference2]['id'];
+            this.crypto2.handle = this.coins[0][data.cryptopreference2]['handle'];
+            this.crypto2.handleurl = this.coins[0][data.cryptopreference2]['handleurl'];
             this.crypto3.name = this.coins[0][data.cryptopreference3]['name'];
             this.crypto3.logourl = this.coins[0][data.cryptopreference3]['logourl'];
             this.crypto3.id = this.coins[0][data.cryptopreference3]['id'];
+            this.crypto3.handle = this.coins[0][data.cryptopreference3]['handle'];
+            this.crypto3.handleurl = this.coins[0][data.cryptopreference3]['handleurl'];
             this.crypto4.name = this.coins[0][data.cryptopreference4]['name'];
             this.crypto4.logourl = this.coins[0][data.cryptopreference4]['logourl'];
             this.crypto4.id = this.coins[0][data.cryptopreference4]['id'];
+            this.crypto4.handle = this.coins[0][data.cryptopreference4]['handle'];
+            this.crypto4.handleurl = this.coins[0][data.cryptopreference4]['handleurl'];
             this.crypto5.name = this.coins[0][data.cryptopreference5]['name'];
             this.crypto5.logourl = this.coins[0][data.cryptopreference5]['logourl'];
+            this.crypto5.handle = this.coins[0][data.cryptopreference5]['handle'];
+            this.crypto5.handleurl = this.coins[0][data.cryptopreference5]['handleurl'];
+            this.crypto5.id = this.coins[0][data.cryptopreference5]['id'];
             this.crypto6.name = this.coins[0][data.cryptopreference6]['name'];
             this.crypto6.logourl = this.coins[0][data.cryptopreference6]['logourl'];
             this.crypto6.id = this.coins[0][data.cryptopreference6]['id'];
+            this.crypto6.handle = this.coins[0][data.cryptopreference6]['handle'];
+            this.crypto6.handleurl = this.coins[0][data.cryptopreference6]['handleurl'];
 
             console.log("this.crypto1 is "+ this.crypto1.name );
            },

@@ -3,372 +3,520 @@ export const COINS= [
     "Ethereum": {
            name: "Ethereum",
            id :"2312333412",
-           logourl: "assets/images/cryptoicons-sm/ethereum.png"
+           logourl: "assets/images/cryptoicons-sm/ethereum.png",
+           handle : "@ethereumproject",
+           handleurl: "https://twitter.com/ethereumproject"
           },
     "OmiseGO": {
            name: "OmiseGO",
            id :"831847934534746114",
-           logourl: "assets/images/cryptoicons-sm/omisego.png"
+           logourl: "assets/images/cryptoicons-sm/omisego.png",
+           handle : "@omise_go",
+           handleurl: "https://twitter.com/omise_go"
           },
     "Ripple": {
            name: "Ripple",
            id :"1051053836",
-           logourl: "assets/images/cryptoicons-sm/ripple.png"
+           logourl: "assets/images/cryptoicons-sm/ripple.png",
+           handle : "@Ripple",
+           handleurl: "https://twitter.com/Ripple"
           },
     "Litecoin": {
            name: "Litecoin",
            id :"1393174363",
-           logourl: "assets/images/cryptoicons-sm/litecoin.png"
+           logourl: "assets/images/cryptoicons-sm/litecoin.png",
+           handle : "@LitecoinProject",
+           handleurl: "https://twitter.com/LitecoinProject"
           },
     "NEM": {
            name: "NEM",
            id :"2313671966",
-           logourl: "assets/images/cryptoicons-sm/nem.png"
+           logourl: "assets/images/cryptoicons-sm/nem.png",
+           handle : "@NEMofficial",
+           handleurl: "https://twitter.com/NEMofficial"
           },
-    "Dashpay": {
-           name: "Dashpay",
+    "Dash": {
+           name: "Dash",
            id :"2338506822",
-           logourl: "assets/images/cryptoicons-sm/dash.png"
+           logourl: "assets/images/cryptoicons-sm/dash.png",
+           handle : "@Dashpay",
+           handleurl: "https://twitter.com/Dashpay"
           },
-    "iotatoken": {
-           name: "iotatoken",
+    "IOTA": {
+           name: "IOTA",
            id :"3992601857",
-           logourl: "assets/images/cryptoicons-sm/iota.png"
+           logourl: "assets/images/cryptoicons-sm/iota.png",
+           handle : "@iotatoken",
+           handleurl: "https://twitter.com/iotatoken"
           },
-    "monerocurrency": {
-           name: "monerocurrency",
+    "Monero": {
+           name: "Monero",
            id :"2478439963",
-           logourl: "assets/images/cryptoicons-sm/monero.png"
+           logourl: "assets/images/cryptoicons-sm/monero.png",
+           handle : "@monerocurrency",
+           handleurl: "https://twitter.com/monerocurrency"
           },
-    "LiskHQ": {
-           name: "LiskHQ",
+    "Lisk": {
+           name: "Lisk",
            id :"4736263474",
-           logourl: ""
+           logourl: "",
+           handle : "@LiskHQ",
+           handleurl: "https://twitter.com/LiskHQ"
           },
-    "bitcoin": {
-           name: "bitcoin",
+    "Bitcoin": {
+           name: "Bitcoin",
            id :"357312062",
-           logourl: ""
+           logourl: "",
+           handle : "@Bitcoin",
+           handleurl: "https://twitter.com/Bitcoin"
           },
-    "eth_classic": {
-           name: "eth_classic",
+    "EthereumClassic": {
+           name: "EthereumClassic",
            id :"759252279862104064",
-           logourl: ""
+           logourl: "",
+           handle : "@eth_classic",
+           handleurl: "https://twitter.com/eth_classic"
           },
-    "NEO_Blockchain": {
-           name: "NEO_Blockchain",
+    "NEO": {
+           name: "NEO",
            id :"2592325530",
-           logourl: ""
+           logourl: "",
+           handle : "@NEO_Blockchain",
+           handleurl: "https://twitter.com/NEO_Blockchain"
           },
-    "bitconnect": {
-           name: "bitconnect",
+    "BitConnect": {
+           name: "BitConnect",
            id :"711438260354953216",
-           logourl: ""
+           logourl: "",
+           handle : "@bitconnect",
+           handleurl: "https://twitter.com/bitconnect"
           },
-    "QtumOfficial": {
-           name: "QtumOfficial",
+    "Qtum": {
+           name: "Qtum",
            id :"773009781644677120",
-           logourl: ""
+           logourl: "",
+           handle : "@QtumOfficial",
+           handleurl: "https://twitter.com/QtumOfficial"
           },
-    "stratisplatform": {
-           name: "stratisplatform",
+    "stratis": {
+           name: "stratis",
            id :"734688391942524928",
-           logourl: ""
+           logourl: "",
+           handle : "@stratisplatform",
+           handleurl: "https://twitter.com/stratisplatform"
           },
-    "Tether_to": {
-           name: "Tether_to",
+    "Tether": {
+           name: "Tether",
            id :"2893133450",
-           logourl: ""
+           logourl: "",
+           handle : "@Tether_to",
+           handleurl: "https://twitter.com/Tether_to"
           },
-    "zcashco": {
-           name: "zcashco",
+    "Zcash": {
+           name: "Zcash",
            id :"4633094778",
-           logourl: ""
+           logourl: "",
+           handle : "@zcashco",
+           handleurl: "https://twitter.com/zcashco"
           },
-    "wavesplatform": {
-           name: "wavesplatform",
+    "Waves": {
+           name: "Waves",
            id :"707515829798182912",
-           logourl: ""
+           logourl: "",
+           handle : "@wavesplatform",
+           handleurl: "https://twitter.com/wavesplatform"
           },
-    "ArkEcosystem": {
+    "Ark": {
            name: "ArkEcosystem",
            id :"774791455680434176",
-           logourl: ""
+           logourl: "",
+           handle : "@ArkEcosystem",
+           handleurl: "https://twitter.com/ArkEcosystem"
           },
-    "steemit": {
-           name: "steemit",
+    "Steem": {
+           name: "Steem",
            id :"711030662728437760",
-           logourl: ""
+           logourl: "",
+           handle : "@steemit",
+           handleurl: "https://twitter.com/steemit"
           },
-    "maidsafe": {
-           name: "maidsafe",
+    "MaidSafeCoin": {
+           name: "MaidSafeCoin",
            id :"1322660676",
-           logourl: ""
+           logourl: "",
+           handle : "@maidsafe",
+           handleurl: "https://twitter.com/maidsafe"
           },
-    "Bytecoin_BCN": {
-           name: "Bytecoin_BCN",
+    "Bytecoin": {
+           name: "Bytecoin",
            id :"2510084300",
-           logourl: ""
+           logourl: "",
+           handle : "@Bytecoin_BCN",
+           handleurl: "https://twitter.com/Bytecoin_BCN"
           },
-    "golemproject": {
-           name: "golemproject",
+    "Golem": {
+           name: "Golem",
            id :"4053977488",
-           logourl: ""
+           logourl: "",
+           handle : "@golemproject",
+           handleurl: "https://twitter.com/golemproject"
           },
-    "EOS_io": {
-           name: "EOS_io",
+    "EOS": {
+           name: "EOS",
            id :"862675563693125632",
-           logourl: ""
+           logourl: "",
+           handle : "@EOS_io",
+           handleurl: "https://twitter.com/EOS_io"
           },
-    "decredproject": {
-           name: "decredproject",
+    "Decred": {
+           name: "Decred",
            id :"2349043879",
-           logourl: ""
+           logourl: "",
+           handle : "@decredproject",
+           handleurl: "https://twitter.com/decredproject"
           },
-    "AttentionToken": {
-           name: "AttentionToken",
+    "Attentiontoken": {
+           name: "Attentiontoken",
            id :"841424245938769920",
-           logourl: ""
+           logourl: "",
+           handle : "@Attention",
+           handleurl: "https://twitter.com/AttentionToken"
           },
-    "Veritaseuminc": {
-           name: "Veritaseuminc",
+    "Veritaseum": {
+           name: "Veritaseum",
            id :"2571393578",
-           logourl: ""
+           logourl: "",
+           handle : "@Veritaseuminc",
+           handleurl: "https://twitter.com/Veritaseuminc"
           },
-    "bitshares": {
-           name: "bitshares",
+    "BitShares": {
+           name: "BitShares",
            id :"503238457",
-           logourl: ""
+           logourl: "",
+           handle : "@bitshares",
+           handleurl: "https://twitter.com/bitshares"
           },
-    "AugurProject": {
-           name: "AugurProject",
+    "Augur": {
+           name: "Augur",
            id :"2895317462",
-           logourl: ""
+           logourl: "",
+           handle : "@AugurProject",
+           handleurl: "https://twitter.com/AugurProject"
           },
-    "tenxwallet": {
-           name: "tenxwallet",
+    "TenX": {
+           name: "TenX",
            id :"4585412124",
-           logourl: ""
+           logourl: "",
+           handle : "@tenxwallet",
+           handleurl: "https://twitter.com/tenxwallet"
           },
-    "StellarOrg": {
-           name: "StellarOrg",
+    "StellarLumens": {
+           name: "StellarLumens",
            id :"2460502890",
-           logourl: ""
+           logourl: "",
+           handle : "@StellarOrg",
+           handleurl: "https://twitter.com/StellarOrg"
           },
-    "KomodoPlatform": {
-           name: "KomodoPlatform",
+    "Komodo": {
+           name: "Komodo",
            id :"769457743807844352",
-           logourl: ""
+           logourl: "",
+           handle : "@KomodoPlatform",
+           handleurl: "https://twitter.com/KomodoPlatform"
           },
-    "Mkt_Hcash": {
-           name: "Mkt_Hcash",
+    "Hshare": {
+           name: "Hshare",
            id :"877078771366453248",
-           logourl: ""
+           logourl: "",
+           handle : "@Mkt_Hcash",
+           handleurl: "https://twitter.com/Mkt_Hcash"
           },
-    "_pivx": {
-           name: "_pivx",
+    "PIVX": {
+           name: "PIVX",
            id :"4020178512",
-           logourl: ""
+           logourl: "",
+           handle : "@_pivx",
+           handleurl: "https://twitter.com/_pivx"
           },
-    "NxsEarth": {
-           name: "NxsEarth",
+    "Nexus": {
+           name: "Nexus",
            id :"2575764354",
-           logourl: ""
+           logourl: "",
+           handle : "@NxsEarth",
+           handleurl: "https://twitter.com/NxsEarth"
           },
-    "metalpaysme": {
-           name: "metalpaysme",
+    "Metal": {
+           name: "Metal",
            id :"3111739836",
-           logourl: ""
+           logourl: "",
+           handle : "@metalpaysme",
+           handleurl: "https://twitter.com/metalpaysme"
           },
-    "factom": {
-           name: "factom",
+    "Factom": {
+           name: "Factom",
            id :"2804855658",
-           logourl: ""
+           logourl: "",
+           handle : "@factom",
+           handleurl: "https://twitter.com/factom"
           },
     "iconominet": {
            name: "iconominet",
            id :"725253338640617472",
-           logourl: ""
+           logourl: "",
+           handle : "",
+           handleurl: ""
           },
     "DigixGlobal": {
            name: "DigixGlobal",
            id :"2925093697",
-           logourl: ""
+           logourl: "",
+           handle : "",
+           handleurl: ""
           },
     "ByteballOrg": {
            name: "ByteballOrg",
            id :"773447880564731904",
-           logourl: ""
+           logourl: "",
+           handle : "",
+           handleurl: ""
           },
     "SiaTechHQ": {
            name: "SiaTechHQ",
            id :"3351041295",
-           logourl: ""
+           logourl: "",
+           handle : "",
+           handleurl: ""
           },
     "civickey": {
            name: "civickey",
            id :"4711101020",
-           logourl: ""
+           logourl: "",
+           handle : "",
+           handleurl: ""
           },
     "DigiByteCoin": {
            name: "DigiByteCoin",
            id :"2266631022",
-           logourl: ""
+           logourl: "",
+           handle : "",
+           handleurl: ""
           },
     "BitPopulous": {
            name: "BitPopulous",
            id :"808032684270354433",
-           logourl: ""
+           logourl: "",
+           handle : "",
+           handleurl: ""
           },
     "BitcoinDark": {
            name: "BitcoinDark",
            id :"2611894398",
-           logourl: ""
+           logourl: "",
+           handle : "",
+           handleurl: ""
           },
     "gnosisPM": {
            name: "gnosisPM",
            id :"3448833448",
-           logourl: ""
+           logourl: "",
+           handle : "",
+           handleurl: ""
           },
     "ArdorPlatform": {
            name: "ArdorPlatform",
            id :"744075632997470208",
-           logourl: ""
+           logourl: "",
+           handle : "",
+           handleurl: ""
           },
     "SingularDTV": {
            name: "SingularDTV",
            id :"736586614797783040",
-           logourl: ""
+           logourl: "",
+           handle : "",
+           handleurl: ""
           },
     "gamecredits": {
            name: "gamecredits",
            id :"3094365867",
-           logourl: ""
+           logourl: "",
+           handle : "",
+           handleurl: ""
           },
     "0xProject": {
            name: "0xProject",
            id :"826699259441328128",
-           logourl: ""
+           logourl: "",
+           handle : "",
+           handleurl: ""
           },
     "The_Blocknet": {
            name: "The_Blocknet",
            id :"2842476639",
-           logourl: ""
+           logourl: "",
+           handle : "",
+           handleurl: ""
           },
     "dogecoin": {
            name: "dogecoin",
            id :"2235729541",
-           logourl: ""
+           logourl: "",
+           handle : "",
+           handleurl: ""
           },
     "syscoin": {
            name: "syscoin",
            id :"119060937",
-           logourl: ""
+           logourl: "",
+           handle : "",
+           handleurl: ""
           },
     "FunFairTech": {
            name: "FunFairTech",
            id :"871853588540248064",
-           logourl: ""
+           logourl: "",
+           handle : "",
+           handleurl: ""
           },
     "LykkeCity": {
            name: "LykkeCity",
            id :"3741781096",
-           logourl: ""
+           logourl: "",
+           handle : "",
+           handleurl: ""
           },
     "aetrnty": {
            name: "aetrnty",
            id :"760049490187386880",
-           logourl: ""
+           logourl: "",
+           handle : "",
+           handleurl: ""
           },
     "BancorNetwork": {
            name: "BancorNetwork",
            id :"816646997356777472",
-           logourl: ""
+           logourl: "",
+           handle : "",
+           handleurl: ""
           },
     "monaco_card": {
            name: "monaco_card",
            id :"864347902029709314",
-           logourl: ""
+           logourl: "",
+           handle : "",
+           handleurl: ""
           },
     "vergecurrency": {
            name: "vergecurrency",
            id :"4826209539",
-           logourl: ""
+           logourl: "",
+           handle : "",
+           handleurl: ""
           },
     "ethstatus": {
            name: "ethstatus",
            id :"774689518767181828",
-           logourl: ""
+           logourl: "",
+           handle : "",
+           handleurl: ""
           },
     "binance_2017": {
            name: "binance_2017",
            id :"877807935493033984",
-           logourl: ""
+           logourl: "",
+           handle : "",
+           handleurl: ""
           },
     "gas": {
            name: "gas",
            id :"X",
-           logourl: ""
+           logourl: "",
+           handle : "",
+           handleurl: ""
           },
     "bitdealuk": {
            name: "bitdealuk",
            id :"877429242128023552",
-           logourl: ""
+           logourl: "",
+           handle : "",
+           handleurl: ""
           },
     "edgelessproject": {
            name: "edgelessproject",
            id :"805450407078203392",
-           logourl: ""
+           logourl: "",
+           handle : "",
+           handleurl: ""
           },
     "IO_Coin": {
            name: "IO_Coin",
            id :"2648931079",
-           logourl: ""
+           logourl: "",
+           handle : "",
+           handleurl: ""
           },
     "NxtCommunity": {
            name: "NxtCommunity",
            id :"2243862290",
-           logourl: ""
+           logourl: "",
+           handle : "",
+           handleurl: ""
           },
     "bitquence": {
            name: "bitquence",
            id :"862007728956485632",
-           logourl: ""
+           logourl: "",
+           handle : "",
+           handleurl: ""
           },
     "RiseVisionTeam": {
            name: "RiseVisionTeam",
            id :"723270672986845184",
-           logourl: ""
+           logourl: "",
+           handle : "",
+           handleurl: ""
           },
     "ParticlProject": {
            name: "ParticlProject",
            id :"835194759178244096",
-           logourl: ""
+           logourl: "",
+           handle : "",
+           handleurl: ""
           },
     "ubiqsmart": {
            name: "ubiqsmart",
            id :"2917040642",
-           logourl: ""
+           logourl: "",
+           handle : "",
+           handleurl: ""
           },
     "firstcoin": {
            name: "firstcoin",
            id :"X",
-           logourl: ""
+           logourl: "",
+           handle : "",
+           handleurl: ""
           },
     "AragonProject": {
            name: "AragonProject",
            id :"828668619986964480",
-           logourl: ""
+           logourl: "",
+           handle : "",
+           handleurl: ""
           },
     "wingsplatform": {
            name: "wingsplatform",
            id :"732169766450954240",
-           logourl: ""
+           logourl: "",
+           handle : "",
+           handleurl: ""
           },
     "NAVCoin": {
            name: "NAVCoin",
            id :"2532881881",
-           logourl: ""
+           logourl: "",
+           handle : "",
+           handleurl: ""
           }
     }
     ];

@@ -30,6 +30,7 @@ import { TermsOfServiceComponent } from './pages/terms-of-service/terms-of-servi
 import { GooglecallbackComponent } from './pages/googlecallback/googlecallback.component';
 import { LinkedincallbackComponent } from './pages/linkedincallback/linkedincallback.component';
 import { TwitterwallComponent } from './pages/twitterwall/twitterwall.component';
+import { EventsComponent } from './pages/events/events.component';
 
 const appRoutes: Routes = [
   { path: 'home', component: HomeComponent },
@@ -38,6 +39,7 @@ const appRoutes: Routes = [
   { path: 'settings', component: SettingsComponent, canActivate: [AuthGuard] },
   { path: 'dashboard', component: DashboardComponent, canActivate: [AuthGuard] },
   { path: 'profile', component: ProfileComponent, canActivate: [AuthGuard] },
+  { path: 'events', component: EventsComponent, canActivate: [AuthGuard] },
   { path: 'fbcallback', component: FbcallbackComponent },
   { path: 'twittercallback', component: TwittercallbackComponent },
   { path: 'googlecallback', component: GooglecallbackComponent },
@@ -65,7 +67,8 @@ const appRoutes: Routes = [
     GooglecallbackComponent,
     LinkedincallbackComponent,
     TwitterwallComponent,
-    FilterPipe 
+    FilterPipe,
+    EventsComponent 
   ],
   imports: [
     RouterModule.forRoot(

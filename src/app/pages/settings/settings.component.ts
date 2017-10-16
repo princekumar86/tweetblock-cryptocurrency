@@ -8,7 +8,16 @@ import { HttpClient } from '@angular/common/http';
   styleUrls: ['./settings.component.css']
 })
 export class SettingsComponent implements OnInit {
-  arrayOfCoins = ['Ethereum', 'OmiseGO', 'Ripple', 'Litecoin', 'NEM', 'Dashpay', 'iotatoken', 'monerocurrency', 'LiskHQ', 'bitcoin', 'eth_classic', 'NEO_Blockchain', 'bitconnect', 'QtumOfficial', 'stratisplatform', 'Tether_to', 'zcashco', 'wavesplatform', 'ArkEcosystem', 'steemit', 'maidsafe', 'Bytecoin_BCN', 'golemproject', 'EOS_io', 'decredproject', 'AttentionToken', 'Veritaseuminc', 'bitshares', 'AugurProject', 'tenxwallet', 'StellarOrg', 'KomodoPlatform', 'Mkt_Hcash', '_pivx', 'NxsEarth', 'metalpaysme', 'factom', 'iconominet', 'DigixGlobal', 'ByteballOrg', 'SiaTechHQ', 'civickey', 'DigiByteCoin', 'BitPopulous', 'BitcoinDark', 'gnosisPM', 'ArdorPlatform', 'SingularDTV', 'gamecredits', '0xProject', 'The_Blocknet', 'dogecoin', 'syscoin', 'FunFairTech', 'LykkeCity', 'aetrnty', 'BancorNetwork', 'monaco_card', 'vergecurrency', 'ethstatus', 'binance_2017', 'gas', 'bitdealuk', 'edgelessproject', 'IO_Coin', 'NxtCommunity', 'bitquence', 'RiseVisionTeam', 'ParticlProject', 'ubiqsmart', 'firstcoin', 'AragonProject', 'wingsplatform', 'NAVCoin'];
+  arrayOfCoins = ['Ethereum', 'OmiseGO', 'Ripple', 'Litecoin', 'NEM', 'Dash', 'IOTA', 'Monero', 
+  'Lisk', 'Bitcoin', 'EthereumClassic', 'NEO', 'BitConnect', 'Qtum', 'Stratis', 'Tether', 'Zcash', 
+  'Waves', 'Ark', 'Steem', 'MaidSafeCoin', 'Bytecoin', 'Golem', 'EOS', 'Decred', 
+  'Attentiontoken', 'Veritaseum', 'BitShares', 'Augur', 'TenX', 'StellarLumens', 'Komodo', 
+  'Hshare', 'PIVX', 'Nexus', 'Metal', 'Factom', 'iconominet', 'DigixGlobal', 'ByteballOrg', 
+  'SiaTechHQ', 'civickey', 'DigiByteCoin', 'BitPopulous', 'BitcoinDark', 'gnosisPM', 'ArdorPlatform', 
+  'SingularDTV', 'gamecredits', '0xProject', 'The_Blocknet', 'dogecoin', 'syscoin', 'FunFairTech', 
+  'LykkeCity', 'aetrnty', 'BancorNetwork', 'monaco_card', 'vergecurrency', 'ethstatus', 'binance_2017', 
+  'gas', 'bitdealuk', 'edgelessproject', 'IO_Coin', 'NxtCommunity', 'bitquence', 'RiseVisionTeam', 
+  'ParticlProject', 'ubiqsmart', 'firstcoin', 'AragonProject', 'wingsplatform', 'NAVCoin'];
   userid:String = '';
   //myData : any;
   UID:String = '';
