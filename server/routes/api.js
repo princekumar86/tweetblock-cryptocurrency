@@ -3,6 +3,7 @@ const express = require('express');
 const router = express.Router();
 // load up the user model
 var User = require('../../server/models/user');
+var Tweet = require('../../server/models/tweet');
 
 router.get('/userstest', (req, res) => {
     // get all the users
@@ -61,5 +62,21 @@ router.get('/userretrivepreference/:id', (req, res) => {
 
 
 });
+
+// test work for last 24 hour tweets for passed ids in post args
+router.get('/last24hourtweets/:cryptoid', (req, res) => {
+    // get all the tweets for this id
+    Tweet.find({ "field1json.entities.user_mentions.id_str" : req.params.cryptoid })
+        .sort({ "field1json.timestamp_ms" : "descending"})
+        .limit(3)
+        .exec(function(err, result){ 
+            res.send(result);
+         });
+});
+
+// This code is working reference from mongo shell or robomongo
+//db.getCollection('tweets').find({ "field1json.timestamp_ms": { $gt: "1508232669089"} })
+// with limit 5
+//db.getCollection('tweets').find({ "field1json.timestamp_ms": { $gt: "1508232669089"} }).limit( 5 )
 
 module.exports = router;
