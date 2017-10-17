@@ -70,7 +70,7 @@ router.get('/last24hourtweets/:cryptoid', (req, res) => {
         .sort({ "field1json.timestamp_ms" : "descending"})
         .limit(3)
         .exec(function(err, result){ 
-            res.send(result);
+            res.json(result);
          });
 });
 

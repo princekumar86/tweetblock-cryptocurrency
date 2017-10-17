@@ -14,6 +14,7 @@ export class DashboardComponent implements OnInit, OnDestroy {
   userToken:String ='';
   UID:String = '';
   prefer_retrieve_url = '/api/userretrivepreference/'+this.UID;
+  load_old_tweets_url = '/api/last24hourtweets/';
   crypto1 = { name: 'loading...', logourl: '', id: 1, handle: '', handleurl: '' };
   crypto2 = { name: 'loading...', logourl: '', id: 1, handle: '', handleurl: '' };
   crypto3 = { name: 'loading...', logourl: '', id: 1, handle: '', handleurl: '' };
@@ -27,12 +28,19 @@ export class DashboardComponent implements OnInit, OnDestroy {
   connection;
   message;
   public tweet: any;
+  public result: any; 
   messages_crypto1 = [];
   messages_crypto2 = [];
   messages_crypto3 = [];
   messages_crypto4 = [];
   messages_crypto5 = [];
   messages_crypto6 = []; 
+  messages_old_crypto1 = [];
+  messages_old_crypto2 = [];
+  messages_old_crypto3 = [];
+  messages_old_crypto4 = [];
+  messages_old_crypto5 = [];
+  messages_old_crypto6 = [];
   messages_Ethereum = [];// 2312333412
   messages_OmiseGO = []; // 831847934534746114
   messages_Ripple = []; //  1051053836
@@ -184,6 +192,7 @@ export class DashboardComponent implements OnInit, OnDestroy {
             this.crypto6.handleurl = this.coins[0][data.cryptopreference6]['handleurl'];
 
             console.log("this.crypto1 is "+ this.crypto1.name );
+            this.loadOldTweets();
            },
             // Errors will call this callback instead:
             err => {
@@ -191,7 +200,8 @@ export class DashboardComponent implements OnInit, OnDestroy {
             }
           );
           //////////////////////////////////////////////////////////////////////////
-  
+
+          ///////////////////////////////////////////////////////////////////////////
         }
         /////////////////////////
         if(parsedObject.token) {
@@ -328,6 +338,77 @@ export class DashboardComponent implements OnInit, OnDestroy {
 
   ngOnDestroy() {
     this.connection.unsubscribe();
+  }
+
+  loadOldTweets() {
+    console.log('entering loadOldTweets function...');
+    // First box load with its old tweets
+    var tempURL = this.load_old_tweets_url+this.crypto1.id;
+    this.http.get(tempURL)
+    .subscribe(res => {
+      this.result = res; //console.log(res); //this.posts = res;
+      console.log(this.result);
+      console.log(this.result[0].field1json);
+      this.messages_old_crypto1.unshift(this.result[0].field1json);
+      this.messages_old_crypto1.unshift(this.result[1].field1json);
+      this.messages_old_crypto1.unshift(this.result[2].field1json);
+    });
+    // Second box load with its old tweets
+    var tempURL = this.load_old_tweets_url+this.crypto2.id;
+    this.http.get(tempURL)
+    .subscribe(res => {
+      this.result = res; //console.log(res); //this.posts = res;
+      console.log(this.result);
+      console.log(this.result[0].field1json);
+      this.messages_old_crypto2.unshift(this.result[0].field1json);
+      this.messages_old_crypto2.unshift(this.result[1].field1json);
+      this.messages_old_crypto2.unshift(this.result[2].field1json);
+    });
+    // Third box load with its old tweets
+    var tempURL = this.load_old_tweets_url+this.crypto3.id;
+    this.http.get(tempURL)
+    .subscribe(res => {
+      this.result = res; //console.log(res); //this.posts = res;
+      console.log(this.result);
+      console.log(this.result[0].field1json);
+      this.messages_old_crypto3.unshift(this.result[0].field1json);
+      this.messages_old_crypto3.unshift(this.result[1].field1json);
+      this.messages_old_crypto3.unshift(this.result[2].field1json);
+    });
+    // Fourth box load with its old tweets
+    var tempURL = this.load_old_tweets_url+this.crypto4.id;
+    this.http.get(tempURL)
+    .subscribe(res => {
+      this.result = res; //console.log(res); //this.posts = res;
+      console.log(this.result);
+      console.log(this.result[0].field1json);
+      this.messages_old_crypto4.unshift(this.result[0].field1json);
+      this.messages_old_crypto4.unshift(this.result[1].field1json);
+      this.messages_old_crypto4.unshift(this.result[2].field1json);
+    });
+    // Fifth box load with its old tweets
+    var tempURL = this.load_old_tweets_url+this.crypto5.id;
+    this.http.get(tempURL)
+    .subscribe(res => {
+      this.result = res; //console.log(res); //this.posts = res;
+      console.log(this.result);
+      console.log(this.result[0].field1json);
+      this.messages_old_crypto5.unshift(this.result[0].field1json);
+      this.messages_old_crypto5.unshift(this.result[1].field1json);
+      this.messages_old_crypto5.unshift(this.result[2].field1json);
+    });
+    // Sixth box load with its old tweets
+    var tempURL = this.load_old_tweets_url+this.crypto6.id;
+    this.http.get(tempURL)
+    .subscribe(res => {
+      this.result = res; //console.log(res); //this.posts = res;
+      console.log(this.result);
+      console.log(this.result[0].field1json);
+      this.messages_old_crypto6.unshift(this.result[0].field1json);
+      this.messages_old_crypto6.unshift(this.result[1].field1json);
+      this.messages_old_crypto6.unshift(this.result[2].field1json);
+    });
+
   }
 
 }

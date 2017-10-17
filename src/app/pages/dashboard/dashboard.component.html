@@ -28,6 +28,13 @@
                     <span class="t_screen_name">{{message.user.screen_name}}<i class="t_name">({{message.user.name}})</i></span>
                     <span class="t_text" [innerHTML]="message.text"></span>
                   </div>
+                  <!-- old feeds load here -->
+                  <div class="oldfeeds">old feeds below</div>
+                  <div *ngFor="let message of messages_old_crypto1">
+                    <span><img src="{{message.user.profile_image_url_https}}" width="20px" alt="photo"/></span>
+                    <span class="t_screen_name">{{message.user.screen_name}}<i class="t_name">({{message.user.name}})</i></span>
+                    <span class="t_text" [innerHTML]="message.text"></span>
+                  </div>
               </div>
             </div>
             <!-- col first row 2 -->
@@ -42,12 +49,19 @@
                   <span class="percentage-change">%.</span>
                 </div>
                 <div class="dashbody">
-                    <!-- tweet feed goes here --> 
-                    <div *ngFor="let message of messages_crypto2">
-                      <span><img src="{{message.user.profile_image_url_https}}" width="20px" alt="photo"/></span>
-                      <span class="t_screen_name">{{message.user.screen_name}}<i class="t_name">({{message.user.name}})</i></span>
-                      <span class="t_text" [innerHTML]="message.text"></span>
-                    </div>
+                  <!-- tweet feed goes here --> 
+                  <div *ngFor="let message of messages_crypto2">
+                    <span><img src="{{message.user.profile_image_url_https}}" width="20px" alt="photo"/></span>
+                    <span class="t_screen_name">{{message.user.screen_name}}<i class="t_name">({{message.user.name}})</i></span>
+                    <span class="t_text" [innerHTML]="message.text"></span>
+                  </div>
+                  <!-- old feeds load here -->
+                  <div class="oldfeeds">old feeds below</div>
+                  <div *ngFor="let message of messages_old_crypto2">
+                    <span><img src="{{message.user.profile_image_url_https}}" width="20px" alt="photo"/></span>
+                    <span class="t_screen_name">{{message.user.screen_name}}<i class="t_name">({{message.user.name}})</i></span>
+                    <span class="t_text" [innerHTML]="message.text"></span>
+                  </div>
                 </div>
             </div>
         </div>
@@ -71,6 +85,13 @@
                   <span class="t_screen_name">{{message.user.screen_name}}<i class="t_name">({{message.user.name}})</i></span>
                   <span class="t_text" [innerHTML]="message.text"></span>
                 </div>
+                <!-- old feeds load here -->
+                <div class="oldfeeds">old feeds below</div>
+                <div *ngFor="let message of messages_old_crypto3">
+                  <span><img src="{{message.user.profile_image_url_https}}" width="20px" alt="photo"/></span>
+                  <span class="t_screen_name">{{message.user.screen_name}}<i class="t_name">({{message.user.name}})</i></span>
+                  <span class="t_text" [innerHTML]="message.text"></span>
+                </div>
               </div>
             </div>
             <!-- col second row 2 -->
@@ -85,12 +106,19 @@
                   <span class="percentage-change">%.</span>
                 </div>
                 <div class="dashbody">
-                    <!-- tweet feed goes here --> 
-                    <div *ngFor="let message of messages_crypto4">
-                      <span><img src="{{message.user.profile_image_url_https}}" width="20px" alt="photo"/></span>
-                      <span class="t_screen_name">{{message.user.screen_name}}<i class="t_name">({{message.user.name}})</i></span>
-                      <span class="t_text" [innerHTML]="message.text"></span>
-                    </div>
+                  <!-- tweet feed goes here --> 
+                  <div *ngFor="let message of messages_crypto4">
+                    <span><img src="{{message.user.profile_image_url_https}}" width="20px" alt="photo"/></span>
+                    <span class="t_screen_name">{{message.user.screen_name}}<i class="t_name">({{message.user.name}})</i></span>
+                    <span class="t_text" [innerHTML]="message.text"></span>
+                  </div>
+                  <!-- old feeds load here -->
+                  <div class="oldfeeds">old feeds below</div>
+                  <div *ngFor="let message of messages_old_crypto4">
+                    <span><img src="{{message.user.profile_image_url_https}}" width="20px" alt="photo"/></span>
+                    <span class="t_screen_name">{{message.user.screen_name}}<i class="t_name">({{message.user.name}})</i></span>
+                    <span class="t_text" [innerHTML]="message.text"></span>
+                  </div>
                 </div>
             </div>
           </div>
@@ -114,6 +142,13 @@
                   <span class="t_screen_name">{{message.user.screen_name}}<i class="t_name">({{message.user.name}})</i></span>
                   <span class="t_text" [innerHTML]="message.text"></span>
                 </div>
+                <!-- old feeds load here -->
+                <div class="oldfeeds">old feeds below</div>
+                <div *ngFor="let message of messages_old_crypto5">
+                  <span><img src="{{message.user.profile_image_url_https}}" width="20px" alt="photo"/></span>
+                  <span class="t_screen_name">{{message.user.screen_name}}<i class="t_name">({{message.user.name}})</i></span>
+                  <span class="t_text" [innerHTML]="message.text"></span>
+                </div>
               </div>
             </div>
             <!-- col third row 2 -->
@@ -130,6 +165,13 @@
                 <div class="dashbody">
                   <!-- tweet feed goes here --> 
                   <div *ngFor="let message of messages_crypto6">
+                    <span><img src="{{message.user.profile_image_url_https}}" width="20px" alt="photo"/></span>
+                    <span class="t_screen_name">{{message.user.screen_name}}<i class="t_name">({{message.user.name}})</i></span>
+                    <span class="t_text" [innerHTML]="message.text"></span>
+                  </div>
+                  <!-- old feeds load here -->
+                  <div class="oldfeeds">old feeds below</div>
+                  <div *ngFor="let message of messages_old_crypto6">
                     <span><img src="{{message.user.profile_image_url_https}}" width="20px" alt="photo"/></span>
                     <span class="t_screen_name">{{message.user.screen_name}}<i class="t_name">({{message.user.name}})</i></span>
                     <span class="t_text" [innerHTML]="message.text"></span>
