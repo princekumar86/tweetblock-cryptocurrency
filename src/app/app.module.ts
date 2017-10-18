@@ -6,6 +6,7 @@ import { RouterModule, Routes } from '@angular/router';
 import {HttpClientModule} from '@angular/common/http';
 import { NguiAutoCompleteModule } from '@ngui/auto-complete';
 import {TimeAgoPipe} from 'time-ago-pipe';
+import { InfiniteScrollModule } from 'ngx-infinite-scroll';
 
 import { AppComponent } from './app.component';
 import { FilterPipe} from './filter.pipe';
@@ -81,7 +82,8 @@ const appRoutes: Routes = [
     FormsModule,
     HttpModule,
     HttpClientModule,
-    NguiAutoCompleteModule
+    NguiAutoCompleteModule,
+    InfiniteScrollModule 
   ],
   providers: [DataService, 
     AuthGuard,

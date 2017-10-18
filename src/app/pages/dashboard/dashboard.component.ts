@@ -349,6 +349,8 @@ export class DashboardComponent implements OnInit, OnDestroy {
       this.result = res; //console.log(res); //this.posts = res;
       console.log(this.result);
       console.log(this.result[0].field1json);
+      this.messages_old_crypto1.unshift(this.result[4].field1json);
+      this.messages_old_crypto1.unshift(this.result[3].field1json);
       this.messages_old_crypto1.unshift(this.result[2].field1json);
       this.messages_old_crypto1.unshift(this.result[1].field1json);
       this.messages_old_crypto1.unshift(this.result[0].field1json);
@@ -360,6 +362,8 @@ export class DashboardComponent implements OnInit, OnDestroy {
       this.result = res; //console.log(res); //this.posts = res;
       console.log(this.result);
       console.log(this.result[0].field1json);
+      this.messages_old_crypto2.unshift(this.result[4].field1json);
+      this.messages_old_crypto2.unshift(this.result[3].field1json);
       this.messages_old_crypto2.unshift(this.result[2].field1json);
       this.messages_old_crypto2.unshift(this.result[1].field1json);
       this.messages_old_crypto2.unshift(this.result[0].field1json);
@@ -371,6 +375,8 @@ export class DashboardComponent implements OnInit, OnDestroy {
       this.result = res; //console.log(res); //this.posts = res;
       console.log(this.result);
       console.log(this.result[0].field1json);
+      this.messages_old_crypto3.unshift(this.result[4].field1json);
+      this.messages_old_crypto3.unshift(this.result[3].field1json);
       this.messages_old_crypto3.unshift(this.result[2].field1json);
       this.messages_old_crypto3.unshift(this.result[1].field1json);
       this.messages_old_crypto3.unshift(this.result[0].field1json);
@@ -382,6 +388,8 @@ export class DashboardComponent implements OnInit, OnDestroy {
       this.result = res; //console.log(res); //this.posts = res;
       console.log(this.result);
       console.log(this.result[0].field1json);
+      this.messages_old_crypto4.unshift(this.result[4].field1json);
+      this.messages_old_crypto4.unshift(this.result[3].field1json);
       this.messages_old_crypto4.unshift(this.result[2].field1json);
       this.messages_old_crypto4.unshift(this.result[1].field1json);
       this.messages_old_crypto4.unshift(this.result[0].field1json);
@@ -393,6 +401,8 @@ export class DashboardComponent implements OnInit, OnDestroy {
       this.result = res; //console.log(res); //this.posts = res;
       console.log(this.result);
       console.log(this.result[0].field1json);
+      this.messages_old_crypto5.unshift(this.result[4].field1json);
+      this.messages_old_crypto5.unshift(this.result[3].field1json);
       this.messages_old_crypto5.unshift(this.result[2].field1json);
       this.messages_old_crypto5.unshift(this.result[1].field1json);
       this.messages_old_crypto5.unshift(this.result[0].field1json);
@@ -404,11 +414,32 @@ export class DashboardComponent implements OnInit, OnDestroy {
       this.result = res; //console.log(res); //this.posts = res;
       console.log(this.result);
       console.log(this.result[0].field1json);
+      this.messages_old_crypto6.unshift(this.result[4].field1json);
+      this.messages_old_crypto6.unshift(this.result[3].field1json);
       this.messages_old_crypto6.unshift(this.result[2].field1json);
       this.messages_old_crypto6.unshift(this.result[1].field1json);
       this.messages_old_crypto6.unshift(this.result[0].field1json);
     });
 
+  }
+
+  onScroll1() { //dashbody
+    console.log('1 scrolled!!')
+  }
+  onScroll2() { //dashbody
+    console.log('2 scrolled!!')
+  }
+  onScroll3() { //dashbody
+    console.log('3 scrolled!!')
+  }
+  onScroll4() { //dashbody
+    console.log('4 scrolled!!')
+  }
+  onScroll5() { //dashbody
+    console.log('5 scrolled!!')
+  }
+  onScroll6() { //dashbody
+    console.log('6 scrolled!!')
   }
 
 }

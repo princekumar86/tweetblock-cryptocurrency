@@ -21,7 +21,11 @@
                 <span class="float-right"><i class="fa fa-search"></i></span>
                 <span class="percentage-change">%.</span>
               </div>
-              <div class="dashbody">
+              <div class="dashbody" infiniteScroll
+              [infiniteScrollDistance]="1"
+              [infiniteScrollThrottle]="300"
+              (scrolled)="onScroll1()"
+              [scrollWindow]="false">
                   <!-- tweet feed goes here --> 
                   <div *ngFor="let message of messages_crypto1">
                     <span><img src="{{message.user.profile_image_url_https}}" width="20px" alt="photo"/></span>
@@ -50,7 +54,11 @@
                   <span class="float-right"><i class="fa fa-search"></i></span>
                   <span class="percentage-change">%.</span>
                 </div>
-                <div class="dashbody">
+                <div class="dashbody" infiniteScroll
+                [infiniteScrollDistance]="1"
+                [infiniteScrollThrottle]="300"
+                (scrolled)="onScroll2()"
+                [scrollWindow]="false">
                   <!-- tweet feed goes here --> 
                   <div *ngFor="let message of messages_crypto2">
                     <span><img src="{{message.user.profile_image_url_https}}" width="20px" alt="photo"/></span>
@@ -82,7 +90,11 @@
                 <span class="float-right"><i class="fa fa-search"></i></span>
                 <span class="percentage-change">%.</span>
               </div>
-              <div class="dashbody">
+              <div class="dashbody" infiniteScroll
+              [infiniteScrollDistance]="1"
+              [infiniteScrollThrottle]="300"
+              (scrolled)="onScroll3()"
+              [scrollWindow]="false">
                 <!-- tweet feed goes here --> 
                 <div *ngFor="let message of messages_crypto3">
                   <span><img src="{{message.user.profile_image_url_https}}" width="20px" alt="photo"/></span>
@@ -111,7 +123,11 @@
                   <span class="float-right"><i class="fa fa-search"></i></span>
                   <span class="percentage-change">%.</span>
                 </div>
-                <div class="dashbody">
+                <div class="dashbody" infiniteScroll
+                [infiniteScrollDistance]="1"
+                [infiniteScrollThrottle]="300"
+                (scrolled)="onScroll4()"
+                [scrollWindow]="false">
                   <!-- tweet feed goes here --> 
                   <div *ngFor="let message of messages_crypto4">
                     <span><img src="{{message.user.profile_image_url_https}}" width="20px" alt="photo"/></span>
@@ -143,7 +159,11 @@
                 <span class="float-right"><i class="fa fa-search"></i></span>
                 <span class="percentage-change">%.</span>
               </div>
-              <div class="dashbody">
+              <div class="dashbody" infiniteScroll
+              [infiniteScrollDistance]="1"
+              [infiniteScrollThrottle]="300"
+              (scrolled)="onScroll5()"
+              [scrollWindow]="false">
                 <!-- tweet feed goes here --> 
                 <div *ngFor="let message of messages_crypto5">
                   <span><img src="{{message.user.profile_image_url_https}}" width="20px" alt="photo"/></span>
@@ -172,7 +192,11 @@
                   <span class="float-right"><i class="fa fa-search"></i></span>
                   <span class="percentage-change">%.</span>
                 </div>
-                <div class="dashbody">
+                <div class="dashbody" infiniteScroll
+                [infiniteScrollDistance]="1"
+                [infiniteScrollThrottle]="300"
+                (scrolled)="onScroll6()"
+                [scrollWindow]="false">
                   <!-- tweet feed goes here --> 
                   <div *ngFor="let message of messages_crypto6">
                     <span><img src="{{message.user.profile_image_url_https}}" width="20px" alt="photo"/></span>

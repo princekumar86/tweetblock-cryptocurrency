@@ -68,7 +68,7 @@ router.get('/last24hourtweets/:cryptoid', (req, res) => {
     // get all the tweets for this id
     Tweet.find({ "field1json.entities.user_mentions.id_str" : req.params.cryptoid })
         .sort({ "field1json.timestamp_ms" : "descending"})
-        .limit(3)
+        .limit(5)
         .exec(function(err, result){ 
             res.json(result);
          });
