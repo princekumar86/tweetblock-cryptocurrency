@@ -5,6 +5,7 @@ import { HttpModule } from '@angular/http';
 import { RouterModule, Routes } from '@angular/router';
 import {HttpClientModule} from '@angular/common/http';
 import { NguiAutoCompleteModule } from '@ngui/auto-complete';
+import {TimeAgoPipe} from 'time-ago-pipe';
 
 import { AppComponent } from './app.component';
 import { FilterPipe} from './filter.pipe';
@@ -68,6 +69,7 @@ const appRoutes: Routes = [
     LinkedincallbackComponent,
     TwitterwallComponent,
     FilterPipe,
+    TimeAgoPipe,
     EventsComponent 
   ],
   imports: [

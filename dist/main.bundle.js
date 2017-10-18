@@ -719,29 +719,31 @@ var _a;
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__angular_common_http__ = __webpack_require__(47);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__ngui_auto_complete__ = __webpack_require__(156);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__ngui_auto_complete___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6__ngui_auto_complete__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__app_component__ = __webpack_require__(136);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__filter_pipe__ = __webpack_require__(138);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__data_service__ = __webpack_require__(80);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__guards_auth_guard__ = __webpack_require__(133);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__services_authentication_service__ = __webpack_require__(34);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__services_socialcallback_service__ = __webpack_require__(26);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__services_user_service__ = __webpack_require__(135);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__services_streamtweets_service__ = __webpack_require__(49);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__pages_dashboard_dashboard_component__ = __webpack_require__(139);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__pages_page_not_found_page_not_found_component__ = __webpack_require__(146);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__pages_home_home_component__ = __webpack_require__(143);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__pages_login_login_component__ = __webpack_require__(145);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__pages_signup_signup_component__ = __webpack_require__(150);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__pages_profile_profile_component__ = __webpack_require__(148);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__pages_settings_settings_component__ = __webpack_require__(149);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__pages_fbcallback_fbcallback_component__ = __webpack_require__(141);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_23__pages_twittercallback_twittercallback_component__ = __webpack_require__(152);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_24__pages_privacy_policy_privacy_policy_component__ = __webpack_require__(147);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_25__pages_terms_of_service_terms_of_service_component__ = __webpack_require__(151);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_26__pages_googlecallback_googlecallback_component__ = __webpack_require__(142);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_27__pages_linkedincallback_linkedincallback_component__ = __webpack_require__(144);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_28__pages_twitterwall_twitterwall_component__ = __webpack_require__(153);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_29__pages_events_events_component__ = __webpack_require__(140);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_time_ago_pipe__ = __webpack_require__(294);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_time_ago_pipe___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_7_time_ago_pipe__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__app_component__ = __webpack_require__(136);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__filter_pipe__ = __webpack_require__(138);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__data_service__ = __webpack_require__(80);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__guards_auth_guard__ = __webpack_require__(133);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__services_authentication_service__ = __webpack_require__(34);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__services_socialcallback_service__ = __webpack_require__(26);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__services_user_service__ = __webpack_require__(135);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__services_streamtweets_service__ = __webpack_require__(49);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__pages_dashboard_dashboard_component__ = __webpack_require__(139);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__pages_page_not_found_page_not_found_component__ = __webpack_require__(146);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__pages_home_home_component__ = __webpack_require__(143);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__pages_login_login_component__ = __webpack_require__(145);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__pages_signup_signup_component__ = __webpack_require__(150);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__pages_profile_profile_component__ = __webpack_require__(148);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__pages_settings_settings_component__ = __webpack_require__(149);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_23__pages_fbcallback_fbcallback_component__ = __webpack_require__(141);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_24__pages_twittercallback_twittercallback_component__ = __webpack_require__(152);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_25__pages_privacy_policy_privacy_policy_component__ = __webpack_require__(147);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_26__pages_terms_of_service_terms_of_service_component__ = __webpack_require__(151);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_27__pages_googlecallback_googlecallback_component__ = __webpack_require__(142);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_28__pages_linkedincallback_linkedincallback_component__ = __webpack_require__(144);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_29__pages_twitterwall_twitterwall_component__ = __webpack_require__(153);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_30__pages_events_events_component__ = __webpack_require__(140);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AppModule; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -779,23 +781,24 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
+
 var appRoutes = [
-    { path: 'home', component: __WEBPACK_IMPORTED_MODULE_17__pages_home_home_component__["a" /* HomeComponent */] },
-    { path: 'login', component: __WEBPACK_IMPORTED_MODULE_18__pages_login_login_component__["a" /* LoginComponent */] },
-    { path: 'signup', component: __WEBPACK_IMPORTED_MODULE_19__pages_signup_signup_component__["a" /* SignupComponent */] },
-    { path: 'settings', component: __WEBPACK_IMPORTED_MODULE_21__pages_settings_settings_component__["a" /* SettingsComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_10__guards_auth_guard__["a" /* AuthGuard */]] },
-    { path: 'dashboard', component: __WEBPACK_IMPORTED_MODULE_15__pages_dashboard_dashboard_component__["a" /* DashboardComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_10__guards_auth_guard__["a" /* AuthGuard */]] },
-    { path: 'profile', component: __WEBPACK_IMPORTED_MODULE_20__pages_profile_profile_component__["a" /* ProfileComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_10__guards_auth_guard__["a" /* AuthGuard */]] },
-    { path: 'events', component: __WEBPACK_IMPORTED_MODULE_29__pages_events_events_component__["a" /* EventsComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_10__guards_auth_guard__["a" /* AuthGuard */]] },
-    { path: 'fbcallback', component: __WEBPACK_IMPORTED_MODULE_22__pages_fbcallback_fbcallback_component__["a" /* FbcallbackComponent */] },
-    { path: 'twittercallback', component: __WEBPACK_IMPORTED_MODULE_23__pages_twittercallback_twittercallback_component__["a" /* TwittercallbackComponent */] },
-    { path: 'googlecallback', component: __WEBPACK_IMPORTED_MODULE_26__pages_googlecallback_googlecallback_component__["a" /* GooglecallbackComponent */] },
-    { path: 'linkedincallback', component: __WEBPACK_IMPORTED_MODULE_27__pages_linkedincallback_linkedincallback_component__["a" /* LinkedincallbackComponent */] },
-    { path: 'twitterwall', component: __WEBPACK_IMPORTED_MODULE_28__pages_twitterwall_twitterwall_component__["a" /* TwitterwallComponent */] },
-    { path: 'privacy-policy', component: __WEBPACK_IMPORTED_MODULE_24__pages_privacy_policy_privacy_policy_component__["a" /* PrivacyPolicyComponent */] },
-    { path: 'terms-of-service', component: __WEBPACK_IMPORTED_MODULE_25__pages_terms_of_service_terms_of_service_component__["a" /* TermsOfServiceComponent */] },
+    { path: 'home', component: __WEBPACK_IMPORTED_MODULE_18__pages_home_home_component__["a" /* HomeComponent */] },
+    { path: 'login', component: __WEBPACK_IMPORTED_MODULE_19__pages_login_login_component__["a" /* LoginComponent */] },
+    { path: 'signup', component: __WEBPACK_IMPORTED_MODULE_20__pages_signup_signup_component__["a" /* SignupComponent */] },
+    { path: 'settings', component: __WEBPACK_IMPORTED_MODULE_22__pages_settings_settings_component__["a" /* SettingsComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_11__guards_auth_guard__["a" /* AuthGuard */]] },
+    { path: 'dashboard', component: __WEBPACK_IMPORTED_MODULE_16__pages_dashboard_dashboard_component__["a" /* DashboardComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_11__guards_auth_guard__["a" /* AuthGuard */]] },
+    { path: 'profile', component: __WEBPACK_IMPORTED_MODULE_21__pages_profile_profile_component__["a" /* ProfileComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_11__guards_auth_guard__["a" /* AuthGuard */]] },
+    { path: 'events', component: __WEBPACK_IMPORTED_MODULE_30__pages_events_events_component__["a" /* EventsComponent */], canActivate: [__WEBPACK_IMPORTED_MODULE_11__guards_auth_guard__["a" /* AuthGuard */]] },
+    { path: 'fbcallback', component: __WEBPACK_IMPORTED_MODULE_23__pages_fbcallback_fbcallback_component__["a" /* FbcallbackComponent */] },
+    { path: 'twittercallback', component: __WEBPACK_IMPORTED_MODULE_24__pages_twittercallback_twittercallback_component__["a" /* TwittercallbackComponent */] },
+    { path: 'googlecallback', component: __WEBPACK_IMPORTED_MODULE_27__pages_googlecallback_googlecallback_component__["a" /* GooglecallbackComponent */] },
+    { path: 'linkedincallback', component: __WEBPACK_IMPORTED_MODULE_28__pages_linkedincallback_linkedincallback_component__["a" /* LinkedincallbackComponent */] },
+    { path: 'twitterwall', component: __WEBPACK_IMPORTED_MODULE_29__pages_twitterwall_twitterwall_component__["a" /* TwitterwallComponent */] },
+    { path: 'privacy-policy', component: __WEBPACK_IMPORTED_MODULE_25__pages_privacy_policy_privacy_policy_component__["a" /* PrivacyPolicyComponent */] },
+    { path: 'terms-of-service', component: __WEBPACK_IMPORTED_MODULE_26__pages_terms_of_service_terms_of_service_component__["a" /* TermsOfServiceComponent */] },
     { path: '', redirectTo: '/home', pathMatch: 'full' },
-    { path: '*', component: __WEBPACK_IMPORTED_MODULE_16__pages_page_not_found_page_not_found_component__["a" /* PageNotFoundComponent */] }
+    { path: '*', component: __WEBPACK_IMPORTED_MODULE_17__pages_page_not_found_page_not_found_component__["a" /* PageNotFoundComponent */] }
 ];
 var AppModule = (function () {
     function AppModule() {
@@ -805,23 +808,24 @@ var AppModule = (function () {
 AppModule = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__angular_core__["NgModule"])({
         declarations: [
-            __WEBPACK_IMPORTED_MODULE_7__app_component__["a" /* AppComponent */],
-            __WEBPACK_IMPORTED_MODULE_15__pages_dashboard_dashboard_component__["a" /* DashboardComponent */],
-            __WEBPACK_IMPORTED_MODULE_16__pages_page_not_found_page_not_found_component__["a" /* PageNotFoundComponent */],
-            __WEBPACK_IMPORTED_MODULE_17__pages_home_home_component__["a" /* HomeComponent */],
-            __WEBPACK_IMPORTED_MODULE_18__pages_login_login_component__["a" /* LoginComponent */],
-            __WEBPACK_IMPORTED_MODULE_19__pages_signup_signup_component__["a" /* SignupComponent */],
-            __WEBPACK_IMPORTED_MODULE_20__pages_profile_profile_component__["a" /* ProfileComponent */],
-            __WEBPACK_IMPORTED_MODULE_21__pages_settings_settings_component__["a" /* SettingsComponent */],
-            __WEBPACK_IMPORTED_MODULE_22__pages_fbcallback_fbcallback_component__["a" /* FbcallbackComponent */],
-            __WEBPACK_IMPORTED_MODULE_23__pages_twittercallback_twittercallback_component__["a" /* TwittercallbackComponent */],
-            __WEBPACK_IMPORTED_MODULE_24__pages_privacy_policy_privacy_policy_component__["a" /* PrivacyPolicyComponent */],
-            __WEBPACK_IMPORTED_MODULE_25__pages_terms_of_service_terms_of_service_component__["a" /* TermsOfServiceComponent */],
-            __WEBPACK_IMPORTED_MODULE_26__pages_googlecallback_googlecallback_component__["a" /* GooglecallbackComponent */],
-            __WEBPACK_IMPORTED_MODULE_27__pages_linkedincallback_linkedincallback_component__["a" /* LinkedincallbackComponent */],
-            __WEBPACK_IMPORTED_MODULE_28__pages_twitterwall_twitterwall_component__["a" /* TwitterwallComponent */],
-            __WEBPACK_IMPORTED_MODULE_8__filter_pipe__["a" /* FilterPipe */],
-            __WEBPACK_IMPORTED_MODULE_29__pages_events_events_component__["a" /* EventsComponent */]
+            __WEBPACK_IMPORTED_MODULE_8__app_component__["a" /* AppComponent */],
+            __WEBPACK_IMPORTED_MODULE_16__pages_dashboard_dashboard_component__["a" /* DashboardComponent */],
+            __WEBPACK_IMPORTED_MODULE_17__pages_page_not_found_page_not_found_component__["a" /* PageNotFoundComponent */],
+            __WEBPACK_IMPORTED_MODULE_18__pages_home_home_component__["a" /* HomeComponent */],
+            __WEBPACK_IMPORTED_MODULE_19__pages_login_login_component__["a" /* LoginComponent */],
+            __WEBPACK_IMPORTED_MODULE_20__pages_signup_signup_component__["a" /* SignupComponent */],
+            __WEBPACK_IMPORTED_MODULE_21__pages_profile_profile_component__["a" /* ProfileComponent */],
+            __WEBPACK_IMPORTED_MODULE_22__pages_settings_settings_component__["a" /* SettingsComponent */],
+            __WEBPACK_IMPORTED_MODULE_23__pages_fbcallback_fbcallback_component__["a" /* FbcallbackComponent */],
+            __WEBPACK_IMPORTED_MODULE_24__pages_twittercallback_twittercallback_component__["a" /* TwittercallbackComponent */],
+            __WEBPACK_IMPORTED_MODULE_25__pages_privacy_policy_privacy_policy_component__["a" /* PrivacyPolicyComponent */],
+            __WEBPACK_IMPORTED_MODULE_26__pages_terms_of_service_terms_of_service_component__["a" /* TermsOfServiceComponent */],
+            __WEBPACK_IMPORTED_MODULE_27__pages_googlecallback_googlecallback_component__["a" /* GooglecallbackComponent */],
+            __WEBPACK_IMPORTED_MODULE_28__pages_linkedincallback_linkedincallback_component__["a" /* LinkedincallbackComponent */],
+            __WEBPACK_IMPORTED_MODULE_29__pages_twitterwall_twitterwall_component__["a" /* TwitterwallComponent */],
+            __WEBPACK_IMPORTED_MODULE_9__filter_pipe__["a" /* FilterPipe */],
+            __WEBPACK_IMPORTED_MODULE_7_time_ago_pipe__["TimeAgoPipe"],
+            __WEBPACK_IMPORTED_MODULE_30__pages_events_events_component__["a" /* EventsComponent */]
         ],
         imports: [
             __WEBPACK_IMPORTED_MODULE_4__angular_router__["a" /* RouterModule */].forRoot(appRoutes, { enableTracing: true } // <-- debugging purposes only
@@ -832,13 +836,13 @@ AppModule = __decorate([
             __WEBPACK_IMPORTED_MODULE_5__angular_common_http__["a" /* HttpClientModule */],
             __WEBPACK_IMPORTED_MODULE_6__ngui_auto_complete__["NguiAutoCompleteModule"]
         ],
-        providers: [__WEBPACK_IMPORTED_MODULE_9__data_service__["a" /* DataService */],
-            __WEBPACK_IMPORTED_MODULE_10__guards_auth_guard__["a" /* AuthGuard */],
-            __WEBPACK_IMPORTED_MODULE_11__services_authentication_service__["a" /* AuthenticationService */],
-            __WEBPACK_IMPORTED_MODULE_12__services_socialcallback_service__["a" /* SocialcallbackService */],
-            __WEBPACK_IMPORTED_MODULE_14__services_streamtweets_service__["a" /* StreamtweetsService */],
-            __WEBPACK_IMPORTED_MODULE_13__services_user_service__["a" /* UserService */],],
-        bootstrap: [__WEBPACK_IMPORTED_MODULE_7__app_component__["a" /* AppComponent */]]
+        providers: [__WEBPACK_IMPORTED_MODULE_10__data_service__["a" /* DataService */],
+            __WEBPACK_IMPORTED_MODULE_11__guards_auth_guard__["a" /* AuthGuard */],
+            __WEBPACK_IMPORTED_MODULE_12__services_authentication_service__["a" /* AuthenticationService */],
+            __WEBPACK_IMPORTED_MODULE_13__services_socialcallback_service__["a" /* SocialcallbackService */],
+            __WEBPACK_IMPORTED_MODULE_15__services_streamtweets_service__["a" /* StreamtweetsService */],
+            __WEBPACK_IMPORTED_MODULE_14__services_user_service__["a" /* UserService */],],
+        bootstrap: [__WEBPACK_IMPORTED_MODULE_8__app_component__["a" /* AppComponent */]]
     })
 ], AppModule);
 
@@ -1233,9 +1237,9 @@ var DashboardComponent = (function () {
             _this.result = res; //console.log(res); //this.posts = res;
             console.log(_this.result);
             console.log(_this.result[0].field1json);
-            _this.messages_old_crypto1.unshift(_this.result[0].field1json);
-            _this.messages_old_crypto1.unshift(_this.result[1].field1json);
             _this.messages_old_crypto1.unshift(_this.result[2].field1json);
+            _this.messages_old_crypto1.unshift(_this.result[1].field1json);
+            _this.messages_old_crypto1.unshift(_this.result[0].field1json);
         });
         // Second box load with its old tweets
         var tempURL = this.load_old_tweets_url + this.crypto2.id;
@@ -1244,9 +1248,9 @@ var DashboardComponent = (function () {
             _this.result = res; //console.log(res); //this.posts = res;
             console.log(_this.result);
             console.log(_this.result[0].field1json);
-            _this.messages_old_crypto2.unshift(_this.result[0].field1json);
-            _this.messages_old_crypto2.unshift(_this.result[1].field1json);
             _this.messages_old_crypto2.unshift(_this.result[2].field1json);
+            _this.messages_old_crypto2.unshift(_this.result[1].field1json);
+            _this.messages_old_crypto2.unshift(_this.result[0].field1json);
         });
         // Third box load with its old tweets
         var tempURL = this.load_old_tweets_url + this.crypto3.id;
@@ -1255,9 +1259,9 @@ var DashboardComponent = (function () {
             _this.result = res; //console.log(res); //this.posts = res;
             console.log(_this.result);
             console.log(_this.result[0].field1json);
-            _this.messages_old_crypto3.unshift(_this.result[0].field1json);
-            _this.messages_old_crypto3.unshift(_this.result[1].field1json);
             _this.messages_old_crypto3.unshift(_this.result[2].field1json);
+            _this.messages_old_crypto3.unshift(_this.result[1].field1json);
+            _this.messages_old_crypto3.unshift(_this.result[0].field1json);
         });
         // Fourth box load with its old tweets
         var tempURL = this.load_old_tweets_url + this.crypto4.id;
@@ -1266,9 +1270,9 @@ var DashboardComponent = (function () {
             _this.result = res; //console.log(res); //this.posts = res;
             console.log(_this.result);
             console.log(_this.result[0].field1json);
-            _this.messages_old_crypto4.unshift(_this.result[0].field1json);
-            _this.messages_old_crypto4.unshift(_this.result[1].field1json);
             _this.messages_old_crypto4.unshift(_this.result[2].field1json);
+            _this.messages_old_crypto4.unshift(_this.result[1].field1json);
+            _this.messages_old_crypto4.unshift(_this.result[0].field1json);
         });
         // Fifth box load with its old tweets
         var tempURL = this.load_old_tweets_url + this.crypto5.id;
@@ -1277,9 +1281,9 @@ var DashboardComponent = (function () {
             _this.result = res; //console.log(res); //this.posts = res;
             console.log(_this.result);
             console.log(_this.result[0].field1json);
-            _this.messages_old_crypto5.unshift(_this.result[0].field1json);
-            _this.messages_old_crypto5.unshift(_this.result[1].field1json);
             _this.messages_old_crypto5.unshift(_this.result[2].field1json);
+            _this.messages_old_crypto5.unshift(_this.result[1].field1json);
+            _this.messages_old_crypto5.unshift(_this.result[0].field1json);
         });
         // Sixth box load with its old tweets
         var tempURL = this.load_old_tweets_url + this.crypto6.id;
@@ -1288,9 +1292,9 @@ var DashboardComponent = (function () {
             _this.result = res; //console.log(res); //this.posts = res;
             console.log(_this.result);
             console.log(_this.result[0].field1json);
-            _this.messages_old_crypto6.unshift(_this.result[0].field1json);
-            _this.messages_old_crypto6.unshift(_this.result[1].field1json);
             _this.messages_old_crypto6.unshift(_this.result[2].field1json);
+            _this.messages_old_crypto6.unshift(_this.result[1].field1json);
+            _this.messages_old_crypto6.unshift(_this.result[0].field1json);
         });
     };
     return DashboardComponent;
@@ -2453,7 +2457,7 @@ module.exports = "<div class=\"container-fluid\">\r\n  <!-- Content here -->\r\n
 /***/ 252:
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"row no-gutters\"> <!-- top first half row -->\r\n  <div class=\"col-1 iconcolumns\">\r\n    <a href=\"\" routerLink=\"/dashboard\" class=\"iconactive\"><i class=\"fa fa-home fa-lg\"></i></a><br/>\r\n    <a href=\"\"><i class=\"fa fa-line-chart fa-lg\"></i></a><br/>\r\n    <a href=\"\" routerLink=\"/events\"><i class=\"fa fa-calendar fa-lg\"></i></a><br/>\r\n    <a href=\"\"><i class=\"fa fa-envelope-o fa-lg\"></i></a><br/>\r\n    <a href=\"\" routerLink=\"/settings\"><i class=\"fa fa-cogs fa-lg\"></i></a><br/>\r\n    <a href=\"\" routerLink=\"/profile\"><i class=\"fa fa-user fa-lg\"></i></a><br/>\r\n  </div>\r\n  <div class=\"col-11\">\r\n    <div class=\"row no-gutters\">\r\n      <div class=\"col-xs-12 col-sm-6 col-md-3\"> <!-- col 1 -->\r\n          <div class=\"row no-gutters\"> \r\n            <div class=\"col-xs-12 col-sm-12 col-md-12 dashboardcol\">\r\n              <div class=\"dashheading\">\r\n                <span class=\"mainheading\"><img src=\"{{crypto1.logourl}}\" /> {{crypto1.name}}\r\n                  <a class=\"handlelink\" target=\"_blank\" href=\"{{crypto1.handleurl}}\">{{crypto1.handle}}</a>\r\n                </span>\r\n                <span class=\"float-right\"><i class=\"fa fa-ellipsis-v\"></i></span>\r\n                <span class=\"float-right\"><i class=\"fa fa-filter\"></i></span>\r\n                <span class=\"float-right\"><i class=\"fa fa-search\"></i></span>\r\n                <span class=\"percentage-change\">%.</span>\r\n              </div>\r\n              <div class=\"dashbody\">\r\n                  <!-- tweet feed goes here --> \r\n                  <div *ngFor=\"let message of messages_crypto1\">\r\n                    <span><img src=\"{{message.user.profile_image_url_https}}\" width=\"20px\" alt=\"photo\"/></span>\r\n                    <span class=\"t_screen_name\">{{message.user.screen_name}}<i class=\"t_name\">({{message.user.name}})</i></span>\r\n                    <span class=\"t_text\" [innerHTML]=\"message.text\"></span>\r\n                  </div>\r\n                  <!-- old feeds load here -->\r\n                  <div class=\"oldfeeds\">old feeds below</div>\r\n                  <div *ngFor=\"let message of messages_old_crypto1\">\r\n                    <span><img src=\"{{message.user.profile_image_url_https}}\" width=\"20px\" alt=\"photo\"/></span>\r\n                    <span class=\"t_screen_name\">{{message.user.screen_name}}<i class=\"t_name\">({{message.user.name}})</i></span>\r\n                    <span class=\"t_text\" [innerHTML]=\"message.text\"></span>\r\n                  </div>\r\n              </div>\r\n            </div>\r\n            <!-- col first row 2 -->\r\n            <div class=\"col-xs-12 col-sm-12 col-md-12 dashboardcol\">\r\n                <div class=\"dashheading\">\r\n                  <span class=\"mainheading\"><img src=\"{{crypto2.logourl}}\" /> {{crypto2.name}}\r\n                    <a class=\"handlelink\" target=\"_blank\" href=\"{{crypto2.handleurl}}\">{{crypto2.handle}}</a>\r\n                  </span>\r\n                  <span class=\"float-right\"><i class=\"fa fa-ellipsis-v\"></i></span>\r\n                  <span class=\"float-right\"><i class=\"fa fa-filter\"></i></span>\r\n                  <span class=\"float-right\"><i class=\"fa fa-search\"></i></span>\r\n                  <span class=\"percentage-change\">%.</span>\r\n                </div>\r\n                <div class=\"dashbody\">\r\n                  <!-- tweet feed goes here --> \r\n                  <div *ngFor=\"let message of messages_crypto2\">\r\n                    <span><img src=\"{{message.user.profile_image_url_https}}\" width=\"20px\" alt=\"photo\"/></span>\r\n                    <span class=\"t_screen_name\">{{message.user.screen_name}}<i class=\"t_name\">({{message.user.name}})</i></span>\r\n                    <span class=\"t_text\" [innerHTML]=\"message.text\"></span>\r\n                  </div>\r\n                  <!-- old feeds load here -->\r\n                  <div class=\"oldfeeds\">old feeds below</div>\r\n                  <div *ngFor=\"let message of messages_old_crypto2\">\r\n                    <span><img src=\"{{message.user.profile_image_url_https}}\" width=\"20px\" alt=\"photo\"/></span>\r\n                    <span class=\"t_screen_name\">{{message.user.screen_name}}<i class=\"t_name\">({{message.user.name}})</i></span>\r\n                    <span class=\"t_text\" [innerHTML]=\"message.text\"></span>\r\n                  </div>\r\n                </div>\r\n            </div>\r\n        </div>\r\n      </div>\r\n      <div class=\"col-xs-12 col-sm-6 col-md-3\"> <!-- col 2 -->\r\n          <div class=\"row no-gutters\"> \r\n            <div class=\"col-xs-12 col-sm-12 col-md-12 dashboardcol\">\r\n              <div class=\"dashheading\">\r\n                <span class=\"mainheading\"><img src=\"{{crypto3.logourl}}\" /> {{crypto3.name}}\r\n                  <a class=\"handlelink\" target=\"_blank\" href=\"{{crypto3.handleurl}}\">{{crypto3.handle}}</a>\r\n                </span>\r\n                <span class=\"float-right\"><i class=\"fa fa-ellipsis-v\"></i></span>\r\n                <span class=\"float-right\"><i class=\"fa fa-filter\"></i></span>\r\n                <span class=\"float-right\"><i class=\"fa fa-search\"></i></span>\r\n                <span class=\"percentage-change\">%.</span>\r\n              </div>\r\n              <div class=\"dashbody\">\r\n                <!-- tweet feed goes here --> \r\n                <div *ngFor=\"let message of messages_crypto3\">\r\n                  <span><img src=\"{{message.user.profile_image_url_https}}\" width=\"20px\" alt=\"photo\"/></span>\r\n                  <span class=\"t_screen_name\">{{message.user.screen_name}}<i class=\"t_name\">({{message.user.name}})</i></span>\r\n                  <span class=\"t_text\" [innerHTML]=\"message.text\"></span>\r\n                </div>\r\n                <!-- old feeds load here -->\r\n                <div class=\"oldfeeds\">old feeds below</div>\r\n                <div *ngFor=\"let message of messages_old_crypto3\">\r\n                  <span><img src=\"{{message.user.profile_image_url_https}}\" width=\"20px\" alt=\"photo\"/></span>\r\n                  <span class=\"t_screen_name\">{{message.user.screen_name}}<i class=\"t_name\">({{message.user.name}})</i></span>\r\n                  <span class=\"t_text\" [innerHTML]=\"message.text\"></span>\r\n                </div>\r\n              </div>\r\n            </div>\r\n            <!-- col second row 2 -->\r\n            <div class=\"col-xs-12 col-sm-12 col-md-12 dashboardcol\">\r\n                <div class=\"dashheading\">\r\n                  <span class=\"mainheading\"><img src=\"{{crypto4.logourl}}\" /> {{crypto4.name}}\r\n                    <a class=\"handlelink\" target=\"_blank\" href=\"{{crypto4.handleurl}}\">{{crypto4.handle}}</a>\r\n                  </span>\r\n                  <span class=\"float-right\"><i class=\"fa fa-ellipsis-v\"></i></span>\r\n                  <span class=\"float-right\"><i class=\"fa fa-filter\"></i></span>\r\n                  <span class=\"float-right\"><i class=\"fa fa-search\"></i></span>\r\n                  <span class=\"percentage-change\">%.</span>\r\n                </div>\r\n                <div class=\"dashbody\">\r\n                  <!-- tweet feed goes here --> \r\n                  <div *ngFor=\"let message of messages_crypto4\">\r\n                    <span><img src=\"{{message.user.profile_image_url_https}}\" width=\"20px\" alt=\"photo\"/></span>\r\n                    <span class=\"t_screen_name\">{{message.user.screen_name}}<i class=\"t_name\">({{message.user.name}})</i></span>\r\n                    <span class=\"t_text\" [innerHTML]=\"message.text\"></span>\r\n                  </div>\r\n                  <!-- old feeds load here -->\r\n                  <div class=\"oldfeeds\">old feeds below</div>\r\n                  <div *ngFor=\"let message of messages_old_crypto4\">\r\n                    <span><img src=\"{{message.user.profile_image_url_https}}\" width=\"20px\" alt=\"photo\"/></span>\r\n                    <span class=\"t_screen_name\">{{message.user.screen_name}}<i class=\"t_name\">({{message.user.name}})</i></span>\r\n                    <span class=\"t_text\" [innerHTML]=\"message.text\"></span>\r\n                  </div>\r\n                </div>\r\n            </div>\r\n          </div>\r\n      </div>\r\n      <div class=\"col-xs-12 col-sm-6 col-md-3\">\r\n          <div class=\"row no-gutters\"> \r\n            <div class=\"col-xs-12 col-sm-12 col-md-12 dashboardcol\">\r\n              <div class=\"dashheading\">\r\n                <span class=\"mainheading\"><img src=\"{{crypto5.logourl}}\" /> {{crypto5.name}}\r\n                  <a class=\"handlelink\" target=\"_blank\" href=\"{{crypto5.handleurl}}\">{{crypto5.handle}}</a>\r\n                </span>\r\n                <span class=\"float-right\"><i class=\"fa fa-ellipsis-v\"></i></span>\r\n                <span class=\"float-right\"><i class=\"fa fa-filter\"></i></span>\r\n                <span class=\"float-right\"><i class=\"fa fa-search\"></i></span>\r\n                <span class=\"percentage-change\">%.</span>\r\n              </div>\r\n              <div class=\"dashbody\">\r\n                <!-- tweet feed goes here --> \r\n                <div *ngFor=\"let message of messages_crypto5\">\r\n                  <span><img src=\"{{message.user.profile_image_url_https}}\" width=\"20px\" alt=\"photo\"/></span>\r\n                  <span class=\"t_screen_name\">{{message.user.screen_name}}<i class=\"t_name\">({{message.user.name}})</i></span>\r\n                  <span class=\"t_text\" [innerHTML]=\"message.text\"></span>\r\n                </div>\r\n                <!-- old feeds load here -->\r\n                <div class=\"oldfeeds\">old feeds below</div>\r\n                <div *ngFor=\"let message of messages_old_crypto5\">\r\n                  <span><img src=\"{{message.user.profile_image_url_https}}\" width=\"20px\" alt=\"photo\"/></span>\r\n                  <span class=\"t_screen_name\">{{message.user.screen_name}}<i class=\"t_name\">({{message.user.name}})</i></span>\r\n                  <span class=\"t_text\" [innerHTML]=\"message.text\"></span>\r\n                </div>\r\n              </div>\r\n            </div>\r\n            <!-- col third row 2 -->\r\n            <div class=\"col-xs-12 col-sm-12 col-md-12 dashboardcol\">\r\n                <div class=\"dashheading\">\r\n                  <span class=\"mainheading\"><img src=\"{{crypto6.logourl}}\" /> {{crypto6.name}}\r\n                    <a class=\"handlelink\" target=\"_blank\" href=\"{{crypto6.handleurl}}\">{{crypto6.handle}}</a>\r\n                  </span>\r\n                  <span class=\"float-right\"><i class=\"fa fa-ellipsis-v\"></i></span>\r\n                  <span class=\"float-right\"><i class=\"fa fa-filter\"></i></span>\r\n                  <span class=\"float-right\"><i class=\"fa fa-search\"></i></span>\r\n                  <span class=\"percentage-change\">%.</span>\r\n                </div>\r\n                <div class=\"dashbody\">\r\n                  <!-- tweet feed goes here --> \r\n                  <div *ngFor=\"let message of messages_crypto6\">\r\n                    <span><img src=\"{{message.user.profile_image_url_https}}\" width=\"20px\" alt=\"photo\"/></span>\r\n                    <span class=\"t_screen_name\">{{message.user.screen_name}}<i class=\"t_name\">({{message.user.name}})</i></span>\r\n                    <span class=\"t_text\" [innerHTML]=\"message.text\"></span>\r\n                  </div>\r\n                  <!-- old feeds load here -->\r\n                  <div class=\"oldfeeds\">old feeds below</div>\r\n                  <div *ngFor=\"let message of messages_old_crypto6\">\r\n                    <span><img src=\"{{message.user.profile_image_url_https}}\" width=\"20px\" alt=\"photo\"/></span>\r\n                    <span class=\"t_screen_name\">{{message.user.screen_name}}<i class=\"t_name\">({{message.user.name}})</i></span>\r\n                    <span class=\"t_text\" [innerHTML]=\"message.text\"></span>\r\n                  </div>\r\n                </div>\r\n              </div>\r\n            </div>\r\n      </div>\r\n      <div class=\"col-xs-12 col-sm-6 col-md-3 dashboardcol all-crypto\">\r\n          <div class=\"dashheading\">\r\n            <span class=\"mainheading\"> Live Feed</span>\r\n            <span class=\"float-right\"><i class=\"fa fa-ellipsis-v\"></i></span>\r\n            <span class=\"float-right\"><i class=\"fa fa-filter\"></i></span>\r\n            <span class=\"float-right\"><i class=\"fa fa-search\"></i></span>\r\n          </div>\r\n          <div><input class=\"searchText\" [(ngModel)]=\"searchText\" placeholder=\"search ... \"></div>\r\n          <div class=\"dashbody\">\r\n            <div *ngFor=\"let message of messages | filter : searchText\">\r\n              <span><img src=\"{{message.user.profile_image_url_https}}\" width=\"20px\" alt=\"photo\"/></span>\r\n              <span class=\"t_screen_name\">{{message.user.screen_name}}<i class=\"t_name\">({{message.user.name}})</i></span>\r\n              <span class=\"t_text\" [innerHTML]=\"message.text\"></span>\r\n            </div>\r\n        </div>\r\n      </div>\r\n    </div>\r\n  </div>\r\n</div>\r\n<div class=\"row no-gutters\"> <!-- second half row -->\r\n  <div class=\"col-1 iconcolumns\">\r\n    \r\n  </div>\r\n  <div class=\"col-11\">\r\n    <div class=\"row no-gutters\">\r\n\r\n    </div>\r\n  </div>\r\n</div>\r\n"
+module.exports = "<div class=\"row no-gutters\"> <!-- top first half row -->\r\n  <div class=\"col-1 iconcolumns\">\r\n    <a href=\"\" routerLink=\"/dashboard\" class=\"iconactive\"><i class=\"fa fa-home fa-lg\"></i></a><br/>\r\n    <a href=\"\"><i class=\"fa fa-line-chart fa-lg\"></i></a><br/>\r\n    <a href=\"\" routerLink=\"/events\"><i class=\"fa fa-calendar fa-lg\"></i></a><br/>\r\n    <a href=\"\"><i class=\"fa fa-envelope-o fa-lg\"></i></a><br/>\r\n    <a href=\"\" routerLink=\"/settings\"><i class=\"fa fa-cogs fa-lg\"></i></a><br/>\r\n    <a href=\"\" routerLink=\"/profile\"><i class=\"fa fa-user fa-lg\"></i></a><br/>\r\n  </div>\r\n  <div class=\"col-11\">\r\n    <div class=\"row no-gutters\">\r\n      <div class=\"col-xs-12 col-sm-6 col-md-3\"> <!-- col 1 -->\r\n          <div class=\"row no-gutters\"> \r\n            <div class=\"col-xs-12 col-sm-12 col-md-12 dashboardcol\">\r\n              <div class=\"dashheading\">\r\n                <span class=\"mainheading\"><img src=\"{{crypto1.logourl}}\" /> {{crypto1.name}}\r\n                  <a class=\"handlelink\" target=\"_blank\" href=\"{{crypto1.handleurl}}\">{{crypto1.handle}}</a>\r\n                </span>\r\n                <span class=\"float-right\"><i class=\"fa fa-ellipsis-v\"></i></span>\r\n                <span class=\"float-right\"><i class=\"fa fa-filter\"></i></span>\r\n                <span class=\"float-right\"><i class=\"fa fa-search\"></i></span>\r\n                <span class=\"percentage-change\">%.</span>\r\n              </div>\r\n              <div class=\"dashbody\">\r\n                  <!-- tweet feed goes here --> \r\n                  <div *ngFor=\"let message of messages_crypto1\">\r\n                    <span><img src=\"{{message.user.profile_image_url_https}}\" width=\"20px\" alt=\"photo\"/></span>\r\n                    <span class=\"t_screen_name\">{{message.user.screen_name}}<i class=\"t_name\">({{message.user.name}})</i></span>\r\n                    <span class=\"float-right\">{{message.created_at | timeAgo}}</span><br/>\r\n                    <span class=\"t_text\" [innerHTML]=\"message.text\"></span>\r\n                  </div>\r\n                  <!-- old feeds load here -->\r\n                  <div class=\"oldfeeds\">old feeds below</div>\r\n                  <div *ngFor=\"let message of messages_old_crypto1\">\r\n                    <span><img src=\"{{message.user.profile_image_url_https}}\" width=\"20px\" alt=\"photo\"/></span>\r\n                    <span class=\"t_screen_name\">{{message.user.screen_name}}<i class=\"t_name\">({{message.user.name}})</i></span>\r\n                    <span class=\"float-right\">{{message.created_at | timeAgo}}</span><br/>\r\n                    <span class=\"t_text\" [innerHTML]=\"message.text\"></span>\r\n                  </div>\r\n              </div>\r\n            </div>\r\n            <!-- col first row 2 -->\r\n            <div class=\"col-xs-12 col-sm-12 col-md-12 dashboardcol\">\r\n                <div class=\"dashheading\">\r\n                  <span class=\"mainheading\"><img src=\"{{crypto2.logourl}}\" /> {{crypto2.name}}\r\n                    <a class=\"handlelink\" target=\"_blank\" href=\"{{crypto2.handleurl}}\">{{crypto2.handle}}</a>\r\n                  </span>\r\n                  <span class=\"float-right\"><i class=\"fa fa-ellipsis-v\"></i></span>\r\n                  <span class=\"float-right\"><i class=\"fa fa-filter\"></i></span>\r\n                  <span class=\"float-right\"><i class=\"fa fa-search\"></i></span>\r\n                  <span class=\"percentage-change\">%.</span>\r\n                </div>\r\n                <div class=\"dashbody\">\r\n                  <!-- tweet feed goes here --> \r\n                  <div *ngFor=\"let message of messages_crypto2\">\r\n                    <span><img src=\"{{message.user.profile_image_url_https}}\" width=\"20px\" alt=\"photo\"/></span>\r\n                    <span class=\"t_screen_name\">{{message.user.screen_name}}<i class=\"t_name\">({{message.user.name}})</i></span>\r\n                    <span class=\"float-right\">{{message.created_at | timeAgo}}</span><br/>\r\n                    <span class=\"t_text\" [innerHTML]=\"message.text\"></span>\r\n                  </div>\r\n                  <!-- old feeds load here -->\r\n                  <div class=\"oldfeeds\">old feeds below</div>\r\n                  <div *ngFor=\"let message of messages_old_crypto2\">\r\n                    <span><img src=\"{{message.user.profile_image_url_https}}\" width=\"20px\" alt=\"photo\"/></span>\r\n                    <span class=\"t_screen_name\">{{message.user.screen_name}}<i class=\"t_name\">({{message.user.name}})</i></span>\r\n                    <span class=\"float-right\">{{message.created_at | timeAgo}}</span><br/>\r\n                    <span class=\"t_text\" [innerHTML]=\"message.text\"></span>\r\n                  </div>\r\n                </div>\r\n            </div>\r\n        </div>\r\n      </div>\r\n      <div class=\"col-xs-12 col-sm-6 col-md-3\"> <!-- col 2 -->\r\n          <div class=\"row no-gutters\"> \r\n            <div class=\"col-xs-12 col-sm-12 col-md-12 dashboardcol\">\r\n              <div class=\"dashheading\">\r\n                <span class=\"mainheading\"><img src=\"{{crypto3.logourl}}\" /> {{crypto3.name}}\r\n                  <a class=\"handlelink\" target=\"_blank\" href=\"{{crypto3.handleurl}}\">{{crypto3.handle}}</a>\r\n                </span>\r\n                <span class=\"float-right\"><i class=\"fa fa-ellipsis-v\"></i></span>\r\n                <span class=\"float-right\"><i class=\"fa fa-filter\"></i></span>\r\n                <span class=\"float-right\"><i class=\"fa fa-search\"></i></span>\r\n                <span class=\"percentage-change\">%.</span>\r\n              </div>\r\n              <div class=\"dashbody\">\r\n                <!-- tweet feed goes here --> \r\n                <div *ngFor=\"let message of messages_crypto3\">\r\n                  <span><img src=\"{{message.user.profile_image_url_https}}\" width=\"20px\" alt=\"photo\"/></span>\r\n                  <span class=\"t_screen_name\">{{message.user.screen_name}}<i class=\"t_name\">({{message.user.name}})</i></span>\r\n                  <span class=\"float-right\">{{message.created_at | timeAgo}}</span><br/>\r\n                  <span class=\"t_text\" [innerHTML]=\"message.text\"></span>\r\n                </div>\r\n                <!-- old feeds load here -->\r\n                <div class=\"oldfeeds\">old feeds below</div>\r\n                <div *ngFor=\"let message of messages_old_crypto3\">\r\n                  <span><img src=\"{{message.user.profile_image_url_https}}\" width=\"20px\" alt=\"photo\"/></span>\r\n                  <span class=\"t_screen_name\">{{message.user.screen_name}}<i class=\"t_name\">({{message.user.name}})</i></span>\r\n                  <span class=\"float-right\">{{message.created_at | timeAgo}}</span><br/>\r\n                  <span class=\"t_text\" [innerHTML]=\"message.text\"></span>\r\n                </div>\r\n              </div>\r\n            </div>\r\n            <!-- col second row 2 -->\r\n            <div class=\"col-xs-12 col-sm-12 col-md-12 dashboardcol\">\r\n                <div class=\"dashheading\">\r\n                  <span class=\"mainheading\"><img src=\"{{crypto4.logourl}}\" /> {{crypto4.name}}\r\n                    <a class=\"handlelink\" target=\"_blank\" href=\"{{crypto4.handleurl}}\">{{crypto4.handle}}</a>\r\n                  </span>\r\n                  <span class=\"float-right\"><i class=\"fa fa-ellipsis-v\"></i></span>\r\n                  <span class=\"float-right\"><i class=\"fa fa-filter\"></i></span>\r\n                  <span class=\"float-right\"><i class=\"fa fa-search\"></i></span>\r\n                  <span class=\"percentage-change\">%.</span>\r\n                </div>\r\n                <div class=\"dashbody\">\r\n                  <!-- tweet feed goes here --> \r\n                  <div *ngFor=\"let message of messages_crypto4\">\r\n                    <span><img src=\"{{message.user.profile_image_url_https}}\" width=\"20px\" alt=\"photo\"/></span>\r\n                    <span class=\"t_screen_name\">{{message.user.screen_name}}<i class=\"t_name\">({{message.user.name}})</i></span>\r\n                    <span class=\"float-right\">{{message.created_at | timeAgo}}</span><br/>\r\n                    <span class=\"t_text\" [innerHTML]=\"message.text\"></span>\r\n                  </div>\r\n                  <!-- old feeds load here -->\r\n                  <div class=\"oldfeeds\">old feeds below</div>\r\n                  <div *ngFor=\"let message of messages_old_crypto4\">\r\n                    <span><img src=\"{{message.user.profile_image_url_https}}\" width=\"20px\" alt=\"photo\"/></span>\r\n                    <span class=\"t_screen_name\">{{message.user.screen_name}}<i class=\"t_name\">({{message.user.name}})</i></span>\r\n                    <span class=\"float-right\">{{message.created_at | timeAgo}}</span><br/>\r\n                    <span class=\"t_text\" [innerHTML]=\"message.text\"></span>\r\n                  </div>\r\n                </div>\r\n            </div>\r\n          </div>\r\n      </div>\r\n      <div class=\"col-xs-12 col-sm-6 col-md-3\">\r\n          <div class=\"row no-gutters\"> \r\n            <div class=\"col-xs-12 col-sm-12 col-md-12 dashboardcol\">\r\n              <div class=\"dashheading\">\r\n                <span class=\"mainheading\"><img src=\"{{crypto5.logourl}}\" /> {{crypto5.name}}\r\n                  <a class=\"handlelink\" target=\"_blank\" href=\"{{crypto5.handleurl}}\">{{crypto5.handle}}</a>\r\n                </span>\r\n                <span class=\"float-right\"><i class=\"fa fa-ellipsis-v\"></i></span>\r\n                <span class=\"float-right\"><i class=\"fa fa-filter\"></i></span>\r\n                <span class=\"float-right\"><i class=\"fa fa-search\"></i></span>\r\n                <span class=\"percentage-change\">%.</span>\r\n              </div>\r\n              <div class=\"dashbody\">\r\n                <!-- tweet feed goes here --> \r\n                <div *ngFor=\"let message of messages_crypto5\">\r\n                  <span><img src=\"{{message.user.profile_image_url_https}}\" width=\"20px\" alt=\"photo\"/></span>\r\n                  <span class=\"t_screen_name\">{{message.user.screen_name}}<i class=\"t_name\">({{message.user.name}})</i></span>\r\n                  <span class=\"float-right\">{{message.created_at | timeAgo}}</span><br/>\r\n                  <span class=\"t_text\" [innerHTML]=\"message.text\"></span>\r\n                </div>\r\n                <!-- old feeds load here -->\r\n                <div class=\"oldfeeds\">old feeds below</div>\r\n                <div *ngFor=\"let message of messages_old_crypto5\">\r\n                  <span><img src=\"{{message.user.profile_image_url_https}}\" width=\"20px\" alt=\"photo\"/></span>\r\n                  <span class=\"t_screen_name\">{{message.user.screen_name}}<i class=\"t_name\">({{message.user.name}})</i></span>\r\n                  <span class=\"float-right\">{{message.created_at | timeAgo}}</span><br/>\r\n                  <span class=\"t_text\" [innerHTML]=\"message.text\"></span>\r\n                </div>\r\n              </div>\r\n            </div>\r\n            <!-- col third row 2 -->\r\n            <div class=\"col-xs-12 col-sm-12 col-md-12 dashboardcol\">\r\n                <div class=\"dashheading\">\r\n                  <span class=\"mainheading\"><img src=\"{{crypto6.logourl}}\" /> {{crypto6.name}}\r\n                    <a class=\"handlelink\" target=\"_blank\" href=\"{{crypto6.handleurl}}\">{{crypto6.handle}}</a>\r\n                  </span>\r\n                  <span class=\"float-right\"><i class=\"fa fa-ellipsis-v\"></i></span>\r\n                  <span class=\"float-right\"><i class=\"fa fa-filter\"></i></span>\r\n                  <span class=\"float-right\"><i class=\"fa fa-search\"></i></span>\r\n                  <span class=\"percentage-change\">%.</span>\r\n                </div>\r\n                <div class=\"dashbody\">\r\n                  <!-- tweet feed goes here --> \r\n                  <div *ngFor=\"let message of messages_crypto6\">\r\n                    <span><img src=\"{{message.user.profile_image_url_https}}\" width=\"20px\" alt=\"photo\"/></span>\r\n                    <span class=\"t_screen_name\">{{message.user.screen_name}}<i class=\"t_name\">({{message.user.name}})</i></span>\r\n                    <span class=\"float-right\">{{message.created_at | timeAgo}}</span><br/>\r\n                    <span class=\"t_text\" [innerHTML]=\"message.text\"></span>\r\n                  </div>\r\n                  <!-- old feeds load here -->\r\n                  <div class=\"oldfeeds\">old feeds below</div>\r\n                  <div *ngFor=\"let message of messages_old_crypto6\">\r\n                    <span><img src=\"{{message.user.profile_image_url_https}}\" width=\"20px\" alt=\"photo\"/></span>\r\n                    <span class=\"t_screen_name\">{{message.user.screen_name}}<i class=\"t_name\">({{message.user.name}})</i></span>\r\n                    <span class=\"float-right\">{{message.created_at | timeAgo}}</span><br/>\r\n                    <span class=\"t_text\" [innerHTML]=\"message.text\"></span>\r\n                  </div>\r\n                </div>\r\n              </div>\r\n            </div>\r\n      </div>\r\n      <div class=\"col-xs-12 col-sm-6 col-md-3 dashboardcol all-crypto\">\r\n          <div class=\"dashheading\">\r\n            <span class=\"mainheading\"> Live Feed</span>\r\n            <span class=\"float-right\"><i class=\"fa fa-ellipsis-v\"></i></span>\r\n            <span class=\"float-right\"><i class=\"fa fa-filter\"></i></span>\r\n            <span class=\"float-right\"><i class=\"fa fa-search\"></i></span>\r\n          </div>\r\n          <div><input class=\"searchText\" [(ngModel)]=\"searchText\" placeholder=\"search ... \"></div>\r\n          <div class=\"dashbody\">\r\n            <div *ngFor=\"let message of messages | filter : searchText\">\r\n              <span><img src=\"{{message.user.profile_image_url_https}}\" width=\"20px\" alt=\"photo\"/></span>\r\n              <span class=\"t_screen_name\">{{message.user.screen_name}}<i class=\"t_name\">({{message.user.name}})</i></span>\r\n              <span class=\"float-right\">{{message.created_at | timeAgo}}</span><br/>\r\n              <span class=\"t_text\" [innerHTML]=\"message.text\"></span>\r\n            </div>\r\n        </div>\r\n      </div>\r\n    </div>\r\n  </div>\r\n</div>\r\n<div class=\"row no-gutters\"> <!-- second half row -->\r\n  <div class=\"col-1 iconcolumns\">\r\n    \r\n  </div>\r\n  <div class=\"col-11\">\r\n    <div class=\"row no-gutters\">\r\n\r\n    </div>\r\n  </div>\r\n</div>\r\n"
 
 /***/ }),
 
@@ -2690,14 +2694,14 @@ module.exports = "<p>\r\n  Twitter Wall !\r\n</p>\r\n<div class=\"wall-container
 
 /***/ }),
 
-/***/ 300:
+/***/ 301:
 /***/ (function(module, exports) {
 
 /* (ignored) */
 
 /***/ }),
 
-/***/ 302:
+/***/ 303:
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__(123);
@@ -2894,5 +2898,5 @@ var _a;
 
 /***/ })
 
-},[302]);
+},[303]);
 //# sourceMappingURL=main.bundle.js.map

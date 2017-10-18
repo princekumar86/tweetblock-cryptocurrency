@@ -349,9 +349,9 @@ export class DashboardComponent implements OnInit, OnDestroy {
       this.result = res; //console.log(res); //this.posts = res;
       console.log(this.result);
       console.log(this.result[0].field1json);
-      this.messages_old_crypto1.unshift(this.result[0].field1json);
-      this.messages_old_crypto1.unshift(this.result[1].field1json);
       this.messages_old_crypto1.unshift(this.result[2].field1json);
+      this.messages_old_crypto1.unshift(this.result[1].field1json);
+      this.messages_old_crypto1.unshift(this.result[0].field1json);
     });
     // Second box load with its old tweets
     var tempURL = this.load_old_tweets_url+this.crypto2.id;
@@ -360,9 +360,9 @@ export class DashboardComponent implements OnInit, OnDestroy {
       this.result = res; //console.log(res); //this.posts = res;
       console.log(this.result);
       console.log(this.result[0].field1json);
-      this.messages_old_crypto2.unshift(this.result[0].field1json);
-      this.messages_old_crypto2.unshift(this.result[1].field1json);
       this.messages_old_crypto2.unshift(this.result[2].field1json);
+      this.messages_old_crypto2.unshift(this.result[1].field1json);
+      this.messages_old_crypto2.unshift(this.result[0].field1json);
     });
     // Third box load with its old tweets
     var tempURL = this.load_old_tweets_url+this.crypto3.id;
@@ -371,9 +371,9 @@ export class DashboardComponent implements OnInit, OnDestroy {
       this.result = res; //console.log(res); //this.posts = res;
       console.log(this.result);
       console.log(this.result[0].field1json);
-      this.messages_old_crypto3.unshift(this.result[0].field1json);
-      this.messages_old_crypto3.unshift(this.result[1].field1json);
       this.messages_old_crypto3.unshift(this.result[2].field1json);
+      this.messages_old_crypto3.unshift(this.result[1].field1json);
+      this.messages_old_crypto3.unshift(this.result[0].field1json);
     });
     // Fourth box load with its old tweets
     var tempURL = this.load_old_tweets_url+this.crypto4.id;
@@ -382,9 +382,9 @@ export class DashboardComponent implements OnInit, OnDestroy {
       this.result = res; //console.log(res); //this.posts = res;
       console.log(this.result);
       console.log(this.result[0].field1json);
-      this.messages_old_crypto4.unshift(this.result[0].field1json);
-      this.messages_old_crypto4.unshift(this.result[1].field1json);
       this.messages_old_crypto4.unshift(this.result[2].field1json);
+      this.messages_old_crypto4.unshift(this.result[1].field1json);
+      this.messages_old_crypto4.unshift(this.result[0].field1json);
     });
     // Fifth box load with its old tweets
     var tempURL = this.load_old_tweets_url+this.crypto5.id;
@@ -393,9 +393,9 @@ export class DashboardComponent implements OnInit, OnDestroy {
       this.result = res; //console.log(res); //this.posts = res;
       console.log(this.result);
       console.log(this.result[0].field1json);
-      this.messages_old_crypto5.unshift(this.result[0].field1json);
-      this.messages_old_crypto5.unshift(this.result[1].field1json);
       this.messages_old_crypto5.unshift(this.result[2].field1json);
+      this.messages_old_crypto5.unshift(this.result[1].field1json);
+      this.messages_old_crypto5.unshift(this.result[0].field1json);
     });
     // Sixth box load with its old tweets
     var tempURL = this.load_old_tweets_url+this.crypto6.id;
@@ -404,9 +404,9 @@ export class DashboardComponent implements OnInit, OnDestroy {
       this.result = res; //console.log(res); //this.posts = res;
       console.log(this.result);
       console.log(this.result[0].field1json);
-      this.messages_old_crypto6.unshift(this.result[0].field1json);
-      this.messages_old_crypto6.unshift(this.result[1].field1json);
       this.messages_old_crypto6.unshift(this.result[2].field1json);
+      this.messages_old_crypto6.unshift(this.result[1].field1json);
+      this.messages_old_crypto6.unshift(this.result[0].field1json);
     });
 
   }

@@ -46,6 +46,7 @@
     "popper.js": "^1.11.0",
     "rxjs": "^5.1.0",
     "socket.io": "^2.0.3",
+    "time-ago-pipe": "^1.2.1",
     "twitter": "^1.7.1",
     "zone.js": "^0.8.4"
   },
