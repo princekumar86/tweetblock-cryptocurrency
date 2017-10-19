@@ -112,3 +112,7 @@
     white-space: nowrap;
     overflow: hidden;
   }
+.t_screen_name a {
+    color: #cecece;
+    font-size: 0.9em;
+}
