@@ -116,6 +116,12 @@ export class DashboardComponent implements OnInit, OnDestroy {
   messages_wingsplatform = [];
   messages_NAVCoin = [];
   
+  loading1:Boolean = false;
+  loading2:Boolean = false;
+  loading3:Boolean = false;
+  loading4:Boolean = false;
+  loading5:Boolean = false;
+  loading6:Boolean = false;
 
   constructor(private _streamService:StreamtweetsService, private http: HttpClient) { }
 
@@ -349,6 +355,7 @@ export class DashboardComponent implements OnInit, OnDestroy {
       this.result = res; //console.log(res); //this.posts = res;
       console.log(this.result);
       console.log(this.result[0].field1json);
+      this.messages_old_crypto1.unshift(this.result[5].field1json);
       this.messages_old_crypto1.unshift(this.result[4].field1json);
       this.messages_old_crypto1.unshift(this.result[3].field1json);
       this.messages_old_crypto1.unshift(this.result[2].field1json);
@@ -362,6 +369,7 @@ export class DashboardComponent implements OnInit, OnDestroy {
       this.result = res; //console.log(res); //this.posts = res;
       console.log(this.result);
       console.log(this.result[0].field1json);
+      this.messages_old_crypto2.unshift(this.result[5].field1json);
       this.messages_old_crypto2.unshift(this.result[4].field1json);
       this.messages_old_crypto2.unshift(this.result[3].field1json);
       this.messages_old_crypto2.unshift(this.result[2].field1json);
@@ -375,6 +383,7 @@ export class DashboardComponent implements OnInit, OnDestroy {
       this.result = res; //console.log(res); //this.posts = res;
       console.log(this.result);
       console.log(this.result[0].field1json);
+      this.messages_old_crypto3.unshift(this.result[5].field1json);
       this.messages_old_crypto3.unshift(this.result[4].field1json);
       this.messages_old_crypto3.unshift(this.result[3].field1json);
       this.messages_old_crypto3.unshift(this.result[2].field1json);
@@ -388,6 +397,7 @@ export class DashboardComponent implements OnInit, OnDestroy {
       this.result = res; //console.log(res); //this.posts = res;
       console.log(this.result);
       console.log(this.result[0].field1json);
+      this.messages_old_crypto4.unshift(this.result[5].field1json);
       this.messages_old_crypto4.unshift(this.result[4].field1json);
       this.messages_old_crypto4.unshift(this.result[3].field1json);
       this.messages_old_crypto4.unshift(this.result[2].field1json);
@@ -401,6 +411,7 @@ export class DashboardComponent implements OnInit, OnDestroy {
       this.result = res; //console.log(res); //this.posts = res;
       console.log(this.result);
       console.log(this.result[0].field1json);
+      this.messages_old_crypto5.unshift(this.result[5].field1json);
       this.messages_old_crypto5.unshift(this.result[4].field1json);
       this.messages_old_crypto5.unshift(this.result[3].field1json);
       this.messages_old_crypto5.unshift(this.result[2].field1json);
@@ -414,6 +425,7 @@ export class DashboardComponent implements OnInit, OnDestroy {
       this.result = res; //console.log(res); //this.posts = res;
       console.log(this.result);
       console.log(this.result[0].field1json);
+      this.messages_old_crypto6.unshift(this.result[5].field1json);
       this.messages_old_crypto6.unshift(this.result[4].field1json);
       this.messages_old_crypto6.unshift(this.result[3].field1json);
       this.messages_old_crypto6.unshift(this.result[2].field1json);
@@ -424,22 +436,28 @@ export class DashboardComponent implements OnInit, OnDestroy {
   }
 
   onScroll1() { //dashbody
-    console.log('1 scrolled!!')
+    console.log('1 scrolled!!');
+    this.loading1 = true;
   }
   onScroll2() { //dashbody
-    console.log('2 scrolled!!')
+    console.log('2 scrolled!!');
+    this.loading2 = true;
   }
   onScroll3() { //dashbody
-    console.log('3 scrolled!!')
+    console.log('3 scrolled!!');
+    this.loading3 = true;
   }
   onScroll4() { //dashbody
-    console.log('4 scrolled!!')
+    console.log('4 scrolled!!');
+    this.loading4 = true;
   }
   onScroll5() { //dashbody
-    console.log('5 scrolled!!')
+    console.log('5 scrolled!!');
+    this.loading5 = true;
   }
   onScroll6() { //dashbody
-    console.log('6 scrolled!!')
+    console.log('6 scrolled!!');
+    this.loading6 = true;
   }
 
 }
