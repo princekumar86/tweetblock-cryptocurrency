@@ -7,9 +7,7 @@
 }
 .dashboardcol .dashheading {
     background-color: #f1f1f1;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    padding-left: 8px;
+    padding-left: 4px;
     font-weight: bold;
 }
 .dashheading i {
@@ -82,7 +80,35 @@
 .handlelink {
     color: #cecece;
     font-size: 12px;
+    padding-top: 3px;
+    max-width: 88px;
+    display: block;
+    float: left;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.hname {
+    max-width: 100px;
+    display: block;
+    float: left;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.hlogo {
+    padding-top: 4px;
+}
+.dashbody {
+    clear: both;
+}
+.float-left {
+    float: left;
 }
 .oldfeeds {
     font-size: 8px;
 }
+.ellipsis {
+    text-overflow: ellipsis;
+    /* Required for text-overflow to do anything */
+    white-space: nowrap;
+    overflow: hidden;
+  }
