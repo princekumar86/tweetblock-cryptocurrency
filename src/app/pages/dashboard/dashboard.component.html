@@ -261,7 +261,7 @@
           </div>
           <div><input class="searchText" [(ngModel)]="searchText" placeholder="search ... "></div>
           <div class="dashbody" infiniteScroll
-          [infiniteScrollDistance]="1"
+          [infiniteScrollDistance]="2"
           [infiniteScrollThrottle]="300"
           (scrolled)="onScrollall()"
           [scrollWindow]="false">
@@ -274,7 +274,7 @@
               <span class="t_text" [innerHTML]="message.text"></span>
             </div>
             <!-- old feeds load here -->
-            <div *ngFor="let message of messages_old_crypto1">
+            <div *ngFor="let message of messages_old_cryptoall">
               <span><img src="{{message.user.profile_image_url_https}}" width="20px" alt="photo"/></span>
               <span class="t_screen_name"><i class="t_name">{{message.user.name}}</i>
                 <a href="https://twitter.com/{{message.user.screen_name}}">@{{message.user.screen_name}}</a>

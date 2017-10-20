@@ -55,8 +55,8 @@
     overflow-x: hidden;
 }
 .all-crypto .dashbody {
-    height: 80vh;
-    max-height: 80vh;
+    height: 82vh;
+    max-height: 82vh;
 }
 .searchText {
     width: 100%;
@@ -118,5 +118,5 @@
 }
 .loadinggif {
     text-align: center;
-    padding: 10px 0;
+    padding: 8px 0 16px 0;
 }

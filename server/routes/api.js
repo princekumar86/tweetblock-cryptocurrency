@@ -63,11 +63,22 @@ router.get('/userretrivepreference/:id', (req, res) => {
 
 });
 
-
+// load 15 tweets by default in LIVE FEED
 router.get('/last24hourtweets/allcrypto', (req, res) => {
     // get all the tweets for this id
     Tweet.find({})
         .sort({ "field1json.timestamp_ms" : "descending"})
+        .limit(15)
+        .exec(function(err, result){ 
+            res.json(result);
+         });
+});
+// load another 15 tweets in LIVE FEED
+router.get('/last24hourtweets/15/:increamentval/allcrypto', (req, res) => {
+    // get all the tweets for this id
+    Tweet.find({})
+        .sort({ "field1json.timestamp_ms" : "descending"})
+        .skip(Number(req.params.increamentval))
         .limit(15)
         .exec(function(err, result){ 
             res.json(result);
@@ -84,10 +95,11 @@ router.get('/last24hourtweets/:cryptoid', (req, res) => {
          });
 });
 // another fifteen tweets, // load after 15 upto 30 tweets
-router.get('/last24hourtweets/15-30/:cryptoid', (req, res) => {
+router.get('/last24hourtweets/15/:increamentval/:cryptoid', (req, res) => {
     // get all the tweets for this id
     Tweet.find({ "field1json.entities.user_mentions.id_str" : req.params.cryptoid })
         .sort({ "field1json.timestamp_ms" : "descending"})
+        .skip(Number(req.params.increamentval))
         .limit(15)
         .exec(function(err, result){ 
             res.json(result);

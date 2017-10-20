@@ -29,6 +29,13 @@ export class DashboardComponent implements OnInit, OnDestroy {
   message;
   public tweet: any;
   public result: any; 
+  scrolled1: number = 0;
+  scrolled2: number = 0;
+  scrolled3: number = 0;
+  scrolled4: number = 0;
+  scrolled5: number = 0;
+  scrolled6: number = 0;
+  scrolledall: number = 0;
   messages_crypto1 = [];
   messages_crypto2 = [];
   messages_crypto3 = [];
@@ -354,165 +361,61 @@ export class DashboardComponent implements OnInit, OnDestroy {
     var tempURL = this.load_old_tweets_url+this.crypto1.id;
     this.http.get(tempURL)
     .subscribe(res => {
-      this.result = res; //console.log(res); //this.posts = res;
-      //console.log(this.result);
-      //console.log(this.result[0].field1json);
+      this.result = res;
       for (let res of this.result) { 
         this.messages_old_crypto1.push(res.field1json);
       }
-      // this.messages_old_crypto1.unshift(this.result[14].field1json);
-      // this.messages_old_crypto1.unshift(this.result[13].field1json);
-      // this.messages_old_crypto1.unshift(this.result[12].field1json);
-      // this.messages_old_crypto1.unshift(this.result[11].field1json);
-      // this.messages_old_crypto1.unshift(this.result[10].field1json);
-      // this.messages_old_crypto1.unshift(this.result[9].field1json);
-      // this.messages_old_crypto1.unshift(this.result[8].field1json);
-      // this.messages_old_crypto1.unshift(this.result[7].field1json);
-      // this.messages_old_crypto1.unshift(this.result[6].field1json);
-      // this.messages_old_crypto1.unshift(this.result[5].field1json);
-      // this.messages_old_crypto1.unshift(this.result[4].field1json);
-      // this.messages_old_crypto1.unshift(this.result[3].field1json);
-      // this.messages_old_crypto1.unshift(this.result[2].field1json);
-      // this.messages_old_crypto1.unshift(this.result[1].field1json);
-      // this.messages_old_crypto1.unshift(this.result[0].field1json);
     });
     // Second box load with its old tweets
     var tempURL = this.load_old_tweets_url+this.crypto2.id;
     this.http.get(tempURL)
     .subscribe(res => {
-      this.result = res; //console.log(res); //this.posts = res;
-      //console.log(this.result);
-      //console.log(this.result[0].field1json);
+      this.result = res; 
       for (let res of this.result) { 
         this.messages_old_crypto2.push(res.field1json);
       }
-      // this.messages_old_crypto2.unshift(this.result[14].field1json);
-      // this.messages_old_crypto2.unshift(this.result[13].field1json);
-      // this.messages_old_crypto2.unshift(this.result[12].field1json);
-      // this.messages_old_crypto2.unshift(this.result[11].field1json);
-      // this.messages_old_crypto2.unshift(this.result[10].field1json);
-      // this.messages_old_crypto2.unshift(this.result[9].field1json);
-      // this.messages_old_crypto2.unshift(this.result[8].field1json);
-      // this.messages_old_crypto2.unshift(this.result[7].field1json);
-      // this.messages_old_crypto2.unshift(this.result[6].field1json);
-      // this.messages_old_crypto2.unshift(this.result[5].field1json);
-      // this.messages_old_crypto2.unshift(this.result[4].field1json);
-      // this.messages_old_crypto2.unshift(this.result[3].field1json);
-      // this.messages_old_crypto2.unshift(this.result[2].field1json);
-      // this.messages_old_crypto2.unshift(this.result[1].field1json);
-      // this.messages_old_crypto2.unshift(this.result[0].field1json);
     });
     // Third box load with its old tweets
     var tempURL = this.load_old_tweets_url+this.crypto3.id;
     this.http.get(tempURL)
     .subscribe(res => {
-      this.result = res; //console.log(res); //this.posts = res;
-      //console.log(this.result);
-      //console.log(this.result[0].field1json);
+      this.result = res;
       for (let res of this.result) { 
         this.messages_old_crypto3.push(res.field1json);
       }
-      // this.messages_old_crypto3.unshift(this.result[14].field1json);
-      // this.messages_old_crypto3.unshift(this.result[13].field1json);
-      // this.messages_old_crypto3.unshift(this.result[12].field1json);
-      // this.messages_old_crypto3.unshift(this.result[11].field1json);
-      // this.messages_old_crypto3.unshift(this.result[10].field1json);
-      // this.messages_old_crypto3.unshift(this.result[9].field1json);
-      // this.messages_old_crypto3.unshift(this.result[8].field1json);
-      // this.messages_old_crypto3.unshift(this.result[7].field1json);
-      // this.messages_old_crypto3.unshift(this.result[6].field1json);
-      // this.messages_old_crypto3.unshift(this.result[5].field1json);
-      // this.messages_old_crypto3.unshift(this.result[4].field1json);
-      // this.messages_old_crypto3.unshift(this.result[3].field1json);
-      // this.messages_old_crypto3.unshift(this.result[2].field1json);
-      // this.messages_old_crypto3.unshift(this.result[1].field1json);
-      // this.messages_old_crypto3.unshift(this.result[0].field1json);
     });
     // Fourth box load with its old tweets
     var tempURL = this.load_old_tweets_url+this.crypto4.id;
     this.http.get(tempURL)
     .subscribe(res => {
-      this.result = res; //console.log(res); //this.posts = res;
-      //console.log(this.result);
-      //console.log(this.result[0].field1json);
+      this.result = res;
       for (let res of this.result) { 
         this.messages_old_crypto4.push(res.field1json);
       }
-      // this.messages_old_crypto4.unshift(this.result[14].field1json);
-      // this.messages_old_crypto4.unshift(this.result[13].field1json);
-      // this.messages_old_crypto4.unshift(this.result[12].field1json);
-      // this.messages_old_crypto4.unshift(this.result[11].field1json);
-      // this.messages_old_crypto4.unshift(this.result[10].field1json);
-      // this.messages_old_crypto4.unshift(this.result[9].field1json);
-      // this.messages_old_crypto4.unshift(this.result[8].field1json);
-      // this.messages_old_crypto4.unshift(this.result[7].field1json);
-      // this.messages_old_crypto4.unshift(this.result[6].field1json);
-      // this.messages_old_crypto4.unshift(this.result[5].field1json);
-      // this.messages_old_crypto4.unshift(this.result[4].field1json);
-      // this.messages_old_crypto4.unshift(this.result[3].field1json);
-      // this.messages_old_crypto4.unshift(this.result[2].field1json);
-      // this.messages_old_crypto4.unshift(this.result[1].field1json);
-      // this.messages_old_crypto4.unshift(this.result[0].field1json);
     });
     // Fifth box load with its old tweets
     var tempURL = this.load_old_tweets_url+this.crypto5.id;
     this.http.get(tempURL)
     .subscribe(res => {
-      this.result = res; //console.log(res); //this.posts = res;
-      //console.log(this.result);
-      //console.log(this.result[0].field1json);
+      this.result = res;
       for (let res of this.result) { 
         this.messages_old_crypto5.push(res.field1json);
       }
-      // this.messages_old_crypto5.unshift(this.result[14].field1json);
-      // this.messages_old_crypto5.unshift(this.result[13].field1json);
-      // this.messages_old_crypto5.unshift(this.result[12].field1json);
-      // this.messages_old_crypto5.unshift(this.result[11].field1json);
-      // this.messages_old_crypto5.unshift(this.result[10].field1json);
-      // this.messages_old_crypto5.unshift(this.result[9].field1json);
-      // this.messages_old_crypto5.unshift(this.result[8].field1json);
-      // this.messages_old_crypto5.unshift(this.result[7].field1json);
-      // this.messages_old_crypto5.unshift(this.result[6].field1json);
-      // this.messages_old_crypto5.unshift(this.result[5].field1json);
-      // this.messages_old_crypto5.unshift(this.result[4].field1json);
-      // this.messages_old_crypto5.unshift(this.result[3].field1json);
-      // this.messages_old_crypto5.unshift(this.result[2].field1json);
-      // this.messages_old_crypto5.unshift(this.result[1].field1json);
-      // this.messages_old_crypto5.unshift(this.result[0].field1json);
     });
     // Sixth box load with its old tweets
     var tempURL = this.load_old_tweets_url+this.crypto6.id;
     this.http.get(tempURL)
     .subscribe(res => {
-      this.result = res; //console.log(res); //this.posts = res;
-      //console.log(this.result);
-      //console.log(this.result[0].field1json);
+      this.result = res; 
       for (let res of this.result) { 
         this.messages_old_crypto6.push(res.field1json);
       }
-      // this.messages_old_crypto6.unshift(this.result[14].field1json);
-      // this.messages_old_crypto6.unshift(this.result[13].field1json);
-      // this.messages_old_crypto6.unshift(this.result[12].field1json);
-      // this.messages_old_crypto6.unshift(this.result[11].field1json);
-      // this.messages_old_crypto6.unshift(this.result[10].field1json);
-      // this.messages_old_crypto6.unshift(this.result[9].field1json);
-      // this.messages_old_crypto6.unshift(this.result[8].field1json);
-      // this.messages_old_crypto6.unshift(this.result[7].field1json);
-      // this.messages_old_crypto6.unshift(this.result[6].field1json);
-      // this.messages_old_crypto6.unshift(this.result[5].field1json);
-      // this.messages_old_crypto6.unshift(this.result[4].field1json);
-      // this.messages_old_crypto6.unshift(this.result[3].field1json);
-      // this.messages_old_crypto6.unshift(this.result[2].field1json);
-      // this.messages_old_crypto6.unshift(this.result[1].field1json);
-      // this.messages_old_crypto6.unshift(this.result[0].field1json);
     });
-    // Sixth box load with its old tweets
+    // Live Feed box load with its old tweets
     var tempURL = this.load_old_tweets_url+'allcrypto';
     this.http.get(tempURL)
     .subscribe(res => {
-      this.result = res; //console.log(res); //this.posts = res;
-      //console.log(this.result);
-      //console.log(this.result[0].field1json);
+      this.result = res;
       for (let res of this.result) { 
         this.messages_old_cryptoall.push(res.field1json);
       }
@@ -520,33 +423,161 @@ export class DashboardComponent implements OnInit, OnDestroy {
 
   }
 
-  onScroll1() { //dashbody
-    console.log('1 scrolled!!');
-    this.loading1 = true;
+  onScroll1() {
+    //loadanother15OldTweets
+    if(this.loading1 == false) {
+      this.loading1 = true;
+      console.log('1 scrolled!!');
+      this.scrolled1 = this.scrolled1 + 15;
+      setTimeout(() => 
+      {
+        var tempURL = this.load_old_tweets_url+'15/'+this.scrolled1+'/'+this.crypto1.id;
+        console.log(tempURL);
+        this.http.get(tempURL)
+        .subscribe(res => {
+          this.result = res; 
+          for (let res of this.result) { 
+            this.messages_old_crypto1.push(res.field1json);
+          }
+          this.loading1 = false;
+        });
+      },
+      4000);
+    }
+    //////////////////////
   }
   onScroll2() { //dashbody
-    console.log('2 scrolled!!');
-    this.loading2 = true;
+    //loadanother15OldTweets
+    if(this.loading2 == false) {
+      this.loading2 = true;
+      console.log('2 scrolled!!');
+      this.scrolled2 = this.scrolled2 + 15;
+      setTimeout(() => 
+      {
+        var tempURL = this.load_old_tweets_url+'15/'+this.scrolled2+'/'+this.crypto2.id;
+        console.log(tempURL);
+        this.http.get(tempURL)
+        .subscribe(res => {
+          this.result = res; 
+          for (let res of this.result) { 
+            this.messages_old_crypto2.push(res.field1json);
+          }
+          this.loading2 = false;
+        });
+      },
+      4000);
+    }
   }
-  onScroll3() { //dashbody
-    console.log('3 scrolled!!');
-    this.loading3 = true;
+  onScroll3() {
+    //loadanother15OldTweets
+    if(this.loading3 == false) {
+      this.loading3 = true;
+      console.log('3 scrolled!!');
+      this.scrolled3 = this.scrolled3 + 15;
+      setTimeout(() => 
+      {
+        var tempURL = this.load_old_tweets_url+'15/'+this.scrolled3+'/'+this.crypto3.id;
+        console.log(tempURL);
+        this.http.get(tempURL)
+        .subscribe(res => {
+          this.result = res; 
+          for (let res of this.result) { 
+            this.messages_old_crypto3.push(res.field1json);
+          }
+          this.loading3 = false;
+        });
+      },
+      4000);
+    }
   }
   onScroll4() { //dashbody
-    console.log('4 scrolled!!');
-    this.loading4 = true;
+    //loadanother15OldTweets
+    if(this.loading4 == false) {
+      this.loading4 = true;
+      console.log('4 scrolled!!');
+      this.scrolled4 = this.scrolled4 + 15;
+        setTimeout(() => 
+        {
+        var tempURL = this.load_old_tweets_url+'15/'+this.scrolled4+'/'+this.crypto4.id;
+        console.log(tempURL);
+        this.http.get(tempURL)
+        .subscribe(res => {
+          this.result = res; 
+          for (let res of this.result) { 
+            this.messages_old_crypto4.push(res.field1json);
+          }
+          this.loading4 = false;
+        });
+      },
+      4000);
+    } 
   }
   onScroll5() { //dashbody
-    console.log('5 scrolled!!');
-    this.loading5 = true;
+    //loadanother15OldTweets
+    if(this.loading5 == false) {
+      this.loading5 = true;
+      console.log('5 scrolled!!');
+      this.scrolled5 = this.scrolled5 + 15;
+        setTimeout(() => 
+        {
+        var tempURL = this.load_old_tweets_url+'15/'+this.scrolled5+'/'+this.crypto5.id;
+        console.log(tempURL);
+        this.http.get(tempURL)
+        .subscribe(res => {
+          this.result = res; 
+          for (let res of this.result) { 
+            this.messages_old_crypto5.push(res.field1json);
+          }
+          this.loading5 = false;
+        });
+      },
+      4000);
+    } 
   }
   onScroll6() { //dashbody
-    console.log('6 scrolled!!');
-    this.loading6 = true;
+    //loadanother15OldTweets
+    if(this.loading6 == false) {
+      this.loading6 = true;
+      console.log('6 scrolled!!');
+      this.scrolled6 = this.scrolled6 + 15;
+        setTimeout(() => 
+        {
+        var tempURL = this.load_old_tweets_url+'15/'+this.scrolled6+'/'+this.crypto6.id;
+        console.log(tempURL);
+        this.http.get(tempURL)
+        .subscribe(res => {
+          this.result = res; 
+          for (let res of this.result) { 
+            this.messages_old_crypto6.push(res.field1json);
+          }
+          this.loading6 = false;
+        });
+      },
+      4000);
+    } 
   }
   onScrollall() { //dashbody
-    console.log('all scrolled!!');
-    this.loadingall = true;
+    //loadanother15OldTweets
+    if(this.loadingall == false) {
+      this.loadingall = true;
+      this.scrolledall = this.scrolledall + 15;
+      console.log('all scrolled!!');
+      setTimeout(() => 
+      {
+        var tempURL = this.load_old_tweets_url+'15/'+this.scrolledall+'/allcrypto';
+        console.log(tempURL);
+        this.http.get(tempURL)
+        .subscribe(res => {
+          this.result = res; 
+          for (let res of this.result) { 
+            this.messages_old_cryptoall.push(res.field1json);
+          }
+          this.loadingall = false;
+        });
+      },
+      4000);
+    }
+    
   }
 
 }
