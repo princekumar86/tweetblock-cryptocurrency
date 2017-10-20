@@ -63,6 +63,16 @@ router.get('/userretrivepreference/:id', (req, res) => {
 
 });
 
+
+router.get('/last24hourtweets/allcrypto', (req, res) => {
+    // get all the tweets for this id
+    Tweet.find({})
+        .sort({ "field1json.timestamp_ms" : "descending"})
+        .limit(15)
+        .exec(function(err, result){ 
+            res.json(result);
+         });
+});
 // test work for last 24 hour tweets for passed ids in post args
 router.get('/last24hourtweets/:cryptoid', (req, res) => {
     // get all the tweets for this id

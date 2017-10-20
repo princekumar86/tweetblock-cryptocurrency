@@ -260,7 +260,11 @@
             <span class="float-right"><i class="fa fa-search"></i></span>
           </div>
           <div><input class="searchText" [(ngModel)]="searchText" placeholder="search ... "></div>
-          <div class="dashbody">
+          <div class="dashbody" infiniteScroll
+          [infiniteScrollDistance]="1"
+          [infiniteScrollThrottle]="300"
+          (scrolled)="onScrollall()"
+          [scrollWindow]="false">
             <div *ngFor="let message of messages | filter : searchText">
               <span><img src="{{message.user.profile_image_url_https}}" width="20px" alt="photo"/></span>
               <span class="t_screen_name"><i class="t_name">{{message.user.name}}</i>
@@ -269,6 +273,16 @@
               <span class="float-right">{{message.created_at | timeAgo}}</span><br/>
               <span class="t_text" [innerHTML]="message.text"></span>
             </div>
+            <!-- old feeds load here -->
+            <div *ngFor="let message of messages_old_crypto1">
+              <span><img src="{{message.user.profile_image_url_https}}" width="20px" alt="photo"/></span>
+              <span class="t_screen_name"><i class="t_name">{{message.user.name}}</i>
+                <a href="https://twitter.com/{{message.user.screen_name}}">@{{message.user.screen_name}}</a>
+              </span>
+              <span class="float-right">{{message.created_at | timeAgo}}</span><br/>
+              <span class="t_text" [innerHTML]="message.text"></span>
+            </div>
+            <div class="loadinggif" *ngIf="loadingall"><img src="assets/images/loading.gif" alt="loading" /></div>
         </div>
       </div>
     </div>

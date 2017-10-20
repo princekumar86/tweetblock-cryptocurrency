@@ -41,6 +41,7 @@ export class DashboardComponent implements OnInit, OnDestroy {
   messages_old_crypto4 = [];
   messages_old_crypto5 = [];
   messages_old_crypto6 = [];
+  messages_old_cryptoall = [];
   messages_Ethereum = [];// 2312333412
   messages_OmiseGO = []; // 831847934534746114
   messages_Ripple = []; //  1051053836
@@ -122,6 +123,7 @@ export class DashboardComponent implements OnInit, OnDestroy {
   loading4:Boolean = false;
   loading5:Boolean = false;
   loading6:Boolean = false;
+  loadingall:Boolean = false;
 
   constructor(private _streamService:StreamtweetsService, private http: HttpClient) { }
 
@@ -504,6 +506,17 @@ export class DashboardComponent implements OnInit, OnDestroy {
       // this.messages_old_crypto6.unshift(this.result[1].field1json);
       // this.messages_old_crypto6.unshift(this.result[0].field1json);
     });
+    // Sixth box load with its old tweets
+    var tempURL = this.load_old_tweets_url+'allcrypto';
+    this.http.get(tempURL)
+    .subscribe(res => {
+      this.result = res; //console.log(res); //this.posts = res;
+      //console.log(this.result);
+      //console.log(this.result[0].field1json);
+      for (let res of this.result) { 
+        this.messages_old_cryptoall.push(res.field1json);
+      }
+    });
 
   }
 
@@ -530,6 +543,10 @@ export class DashboardComponent implements OnInit, OnDestroy {
   onScroll6() { //dashbody
     console.log('6 scrolled!!');
     this.loading6 = true;
+  }
+  onScrollall() { //dashbody
+    console.log('all scrolled!!');
+    this.loadingall = true;
   }
 
 }
