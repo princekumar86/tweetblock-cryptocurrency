@@ -21,6 +21,18 @@ export class DashboardComponent implements OnInit, OnDestroy {
   crypto4 = { name: 'loading...', logourl: '', id: 1, handle: '', handleurl: '' };
   crypto5 = { name: 'loading...', logourl: '', id: 1, handle: '', handleurl: '' };
   crypto6 = { name: 'loading...', logourl: '', id: 1, handle: '', handleurl: '' };
+  crypto1_change_24h = "";
+  crypto1_change_24h_type = "black";
+  crypto2_change_24h = "";
+  crypto2_change_24h_type = "black";
+  crypto3_change_24h = "";
+  crypto3_change_24h_type = "black";
+  crypto4_change_24h = "";
+  crypto4_change_24h_type = "black";
+  crypto5_change_24h = "";
+  crypto5_change_24h_type = "black";
+  crypto6_change_24h = "";
+  crypto6_change_24h_type = "black";
 
   @Output() sendLoggedInEvent = new EventEmitter<boolean>();
 
@@ -348,11 +360,44 @@ export class DashboardComponent implements OnInit, OnDestroy {
           // messages_monerocurrency = []; //  2478439963
 
       })
-      ///////////////////////////////////////
+      //////////////////////
+      this.loadPercentChange();
+      //////////////////////
   }
 
   ngOnDestroy() {
     this.connection.unsubscribe();
+  }
+
+  loadPercentChange(){
+    // load from https://api.coinmarketcap.com/v1/ticker/
+    var tempURL = "https://api.coinmarketcap.com/v1/ticker/";
+    this.http.get(tempURL)
+    .subscribe(res => {
+      this.result = res;
+      //console.log(this.result);
+      for (let res of this.result) { 
+         if(res.name == this.crypto1.name) {
+          this.crypto1_change_24h = res.percent_change_24h+'%';
+          this.crypto1_change_24h_type = (Number(res.percent_change_24h)>0 ? "green": "red");
+         }else if(res.name == this.crypto2.name) {
+          this.crypto2_change_24h = res.percent_change_24h+'%';
+          this.crypto2_change_24h_type = (Number(res.percent_change_24h)>0 ? "green": "red");
+         }else if(res.name == this.crypto3.name) {
+          this.crypto3_change_24h = res.percent_change_24h+'%';
+          this.crypto3_change_24h_type = (Number(res.percent_change_24h)>0 ? "green": "red");
+         }else if(res.name == this.crypto4.name) {
+          this.crypto4_change_24h = res.percent_change_24h+'%';
+          this.crypto4_change_24h_type = (Number(res.percent_change_24h)>0 ? "green": "red");
+         }else if(res.name == this.crypto5.name) {
+          this.crypto5_change_24h = res.percent_change_24h+'%';
+          this.crypto5_change_24h_type = (Number(res.percent_change_24h)>0 ? "green": "red");
+         }else if(res.name == this.crypto6.name) {
+          this.crypto6_change_24h = res.percent_change_24h+'%';
+          this.crypto6_change_24h_type = (Number(res.percent_change_24h)>0 ? "green": "red");
+         }
+      }
+    });
   }
 
   loadOldTweets() {
