@@ -68,7 +68,17 @@ router.get('/last24hourtweets/:cryptoid', (req, res) => {
     // get all the tweets for this id
     Tweet.find({ "field1json.entities.user_mentions.id_str" : req.params.cryptoid })
         .sort({ "field1json.timestamp_ms" : "descending"})
-        .limit(6)
+        .limit(15)
+        .exec(function(err, result){ 
+            res.json(result);
+         });
+});
+// another fifteen tweets, // load after 15 upto 30 tweets
+router.get('/last24hourtweets/15-30/:cryptoid', (req, res) => {
+    // get all the tweets for this id
+    Tweet.find({ "field1json.entities.user_mentions.id_str" : req.params.cryptoid })
+        .sort({ "field1json.timestamp_ms" : "descending"})
+        .limit(15)
         .exec(function(err, result){ 
             res.json(result);
          });
