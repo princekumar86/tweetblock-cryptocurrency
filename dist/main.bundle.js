@@ -1135,6 +1135,9 @@ var DashboardComponent = (function () {
             var exp = /(\b(https?|ftp|file):\/\/[-A-Z0-9+&@#\/%?=~_|!:,.;]*[-A-Z0-9+&@#\/%=~_|])/ig;
             var modifiedText = tempText.replace(exp, "<a href='$1' target='_blank'>$1</a>");
             message['text'] = modifiedText;
+            // remove RT from begining of the text
+            var modifiedText2 = modifiedText.replace(/^(RT\s)/, "");
+            message['text'] = modifiedText2;
             // All coins show in wall
             _this.messages.unshift(message);
             //// other coins show in respective div 
@@ -1314,6 +1317,13 @@ var DashboardComponent = (function () {
             _this.result = res;
             for (var _i = 0, _a = _this.result; _i < _a.length; _i++) {
                 var res_2 = _a[_i];
+                var tempText = res_2.field1json['text'];
+                var exp = /(\b(https?|ftp|file):\/\/[-A-Z0-9+&@#\/%?=~_|!:,.;]*[-A-Z0-9+&@#\/%=~_|])/ig;
+                var modifiedText = tempText.replace(exp, "<a href='$1' target='_blank'>$1</a>");
+                res_2.field1json['text'] = modifiedText;
+                // remove RT from begining of the text
+                var modifiedText2 = modifiedText.replace(/^(RT\s)/, "");
+                res_2.field1json['text'] = modifiedText2;
                 _this.messages_old_crypto1.push(res_2.field1json);
             }
         });
@@ -1324,6 +1334,13 @@ var DashboardComponent = (function () {
             _this.result = res;
             for (var _i = 0, _a = _this.result; _i < _a.length; _i++) {
                 var res_3 = _a[_i];
+                var tempText = res_3.field1json['text'];
+                var exp = /(\b(https?|ftp|file):\/\/[-A-Z0-9+&@#\/%?=~_|!:,.;]*[-A-Z0-9+&@#\/%=~_|])/ig;
+                var modifiedText = tempText.replace(exp, "<a href='$1' target='_blank'>$1</a>");
+                res_3.field1json['text'] = modifiedText;
+                // remove RT from begining of the text
+                var modifiedText2 = modifiedText.replace(/^(RT\s)/, "");
+                res_3.field1json['text'] = modifiedText2;
                 _this.messages_old_crypto2.push(res_3.field1json);
             }
         });
@@ -1334,6 +1351,13 @@ var DashboardComponent = (function () {
             _this.result = res;
             for (var _i = 0, _a = _this.result; _i < _a.length; _i++) {
                 var res_4 = _a[_i];
+                var tempText = res_4.field1json['text'];
+                var exp = /(\b(https?|ftp|file):\/\/[-A-Z0-9+&@#\/%?=~_|!:,.;]*[-A-Z0-9+&@#\/%=~_|])/ig;
+                var modifiedText = tempText.replace(exp, "<a href='$1' target='_blank'>$1</a>");
+                res_4.field1json['text'] = modifiedText;
+                // remove RT from begining of the text
+                var modifiedText2 = modifiedText.replace(/^(RT\s)/, "");
+                res_4.field1json['text'] = modifiedText2;
                 _this.messages_old_crypto3.push(res_4.field1json);
             }
         });
@@ -1344,6 +1368,13 @@ var DashboardComponent = (function () {
             _this.result = res;
             for (var _i = 0, _a = _this.result; _i < _a.length; _i++) {
                 var res_5 = _a[_i];
+                var tempText = res_5.field1json['text'];
+                var exp = /(\b(https?|ftp|file):\/\/[-A-Z0-9+&@#\/%?=~_|!:,.;]*[-A-Z0-9+&@#\/%=~_|])/ig;
+                var modifiedText = tempText.replace(exp, "<a href='$1' target='_blank'>$1</a>");
+                res_5.field1json['text'] = modifiedText;
+                // remove RT from begining of the text
+                var modifiedText2 = modifiedText.replace(/^(RT\s)/, "");
+                res_5.field1json['text'] = modifiedText2;
                 _this.messages_old_crypto4.push(res_5.field1json);
             }
         });
@@ -1354,6 +1385,13 @@ var DashboardComponent = (function () {
             _this.result = res;
             for (var _i = 0, _a = _this.result; _i < _a.length; _i++) {
                 var res_6 = _a[_i];
+                var tempText = res_6.field1json['text'];
+                var exp = /(\b(https?|ftp|file):\/\/[-A-Z0-9+&@#\/%?=~_|!:,.;]*[-A-Z0-9+&@#\/%=~_|])/ig;
+                var modifiedText = tempText.replace(exp, "<a href='$1' target='_blank'>$1</a>");
+                res_6.field1json['text'] = modifiedText;
+                // remove RT from begining of the text
+                var modifiedText2 = modifiedText.replace(/^(RT\s)/, "");
+                res_6.field1json['text'] = modifiedText2;
                 _this.messages_old_crypto5.push(res_6.field1json);
             }
         });
@@ -1364,6 +1402,13 @@ var DashboardComponent = (function () {
             _this.result = res;
             for (var _i = 0, _a = _this.result; _i < _a.length; _i++) {
                 var res_7 = _a[_i];
+                var tempText = res_7.field1json['text'];
+                var exp = /(\b(https?|ftp|file):\/\/[-A-Z0-9+&@#\/%?=~_|!:,.;]*[-A-Z0-9+&@#\/%=~_|])/ig;
+                var modifiedText = tempText.replace(exp, "<a href='$1' target='_blank'>$1</a>");
+                res_7.field1json['text'] = modifiedText;
+                // remove RT from begining of the text
+                var modifiedText2 = modifiedText.replace(/^(RT\s)/, "");
+                res_7.field1json['text'] = modifiedText2;
                 _this.messages_old_crypto6.push(res_7.field1json);
             }
         });
@@ -1374,6 +1419,13 @@ var DashboardComponent = (function () {
             _this.result = res;
             for (var _i = 0, _a = _this.result; _i < _a.length; _i++) {
                 var res_8 = _a[_i];
+                var tempText = res_8.field1json['text'];
+                var exp = /(\b(https?|ftp|file):\/\/[-A-Z0-9+&@#\/%?=~_|!:,.;]*[-A-Z0-9+&@#\/%=~_|])/ig;
+                var modifiedText = tempText.replace(exp, "<a href='$1' target='_blank'>$1</a>");
+                res_8.field1json['text'] = modifiedText;
+                // remove RT from begining of the text
+                var modifiedText2 = modifiedText.replace(/^(RT\s)/, "");
+                res_8.field1json['text'] = modifiedText2;
                 _this.messages_old_cryptoall.push(res_8.field1json);
             }
         });

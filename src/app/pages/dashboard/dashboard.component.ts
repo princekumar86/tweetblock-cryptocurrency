@@ -246,6 +246,9 @@ export class DashboardComponent implements OnInit, OnDestroy {
         var exp = /(\b(https?|ftp|file):\/\/[-A-Z0-9+&@#\/%?=~_|!:,.;]*[-A-Z0-9+&@#\/%=~_|])/ig;
         var modifiedText = tempText.replace(exp,"<a href='$1' target='_blank'>$1</a>");
         message['text'] = modifiedText;
+        // remove RT from begining of the text
+        var modifiedText2 = modifiedText.replace(/^(RT\s)/,"");
+        message['text'] = modifiedText2;
         // All coins show in wall
         this.messages.unshift(message);
         //// other coins show in respective div 
@@ -415,7 +418,14 @@ export class DashboardComponent implements OnInit, OnDestroy {
     this.http.get(tempURL)
     .subscribe(res => {
       this.result = res;
-      for (let res of this.result) { 
+      for (let res of this.result) {
+        var tempText = res.field1json['text'];
+        var exp = /(\b(https?|ftp|file):\/\/[-A-Z0-9+&@#\/%?=~_|!:,.;]*[-A-Z0-9+&@#\/%=~_|])/ig;
+        var modifiedText = tempText.replace(exp,"<a href='$1' target='_blank'>$1</a>");
+        res.field1json['text'] = modifiedText;
+        // remove RT from begining of the text
+        var modifiedText2 = modifiedText.replace(/^(RT\s)/,"");
+        res.field1json['text'] = modifiedText2;
         this.messages_old_crypto1.push(res.field1json);
       }
     });
@@ -425,6 +435,13 @@ export class DashboardComponent implements OnInit, OnDestroy {
     .subscribe(res => {
       this.result = res; 
       for (let res of this.result) { 
+        var tempText = res.field1json['text'];
+        var exp = /(\b(https?|ftp|file):\/\/[-A-Z0-9+&@#\/%?=~_|!:,.;]*[-A-Z0-9+&@#\/%=~_|])/ig;
+        var modifiedText = tempText.replace(exp,"<a href='$1' target='_blank'>$1</a>");
+        res.field1json['text'] = modifiedText;
+        // remove RT from begining of the text
+        var modifiedText2 = modifiedText.replace(/^(RT\s)/,"");
+        res.field1json['text'] = modifiedText2;
         this.messages_old_crypto2.push(res.field1json);
       }
     });
@@ -434,6 +451,13 @@ export class DashboardComponent implements OnInit, OnDestroy {
     .subscribe(res => {
       this.result = res;
       for (let res of this.result) { 
+        var tempText = res.field1json['text'];
+        var exp = /(\b(https?|ftp|file):\/\/[-A-Z0-9+&@#\/%?=~_|!:,.;]*[-A-Z0-9+&@#\/%=~_|])/ig;
+        var modifiedText = tempText.replace(exp,"<a href='$1' target='_blank'>$1</a>");
+        res.field1json['text'] = modifiedText;
+        // remove RT from begining of the text
+        var modifiedText2 = modifiedText.replace(/^(RT\s)/,"");
+        res.field1json['text'] = modifiedText2;
         this.messages_old_crypto3.push(res.field1json);
       }
     });
@@ -443,6 +467,13 @@ export class DashboardComponent implements OnInit, OnDestroy {
     .subscribe(res => {
       this.result = res;
       for (let res of this.result) { 
+        var tempText = res.field1json['text'];
+        var exp = /(\b(https?|ftp|file):\/\/[-A-Z0-9+&@#\/%?=~_|!:,.;]*[-A-Z0-9+&@#\/%=~_|])/ig;
+        var modifiedText = tempText.replace(exp,"<a href='$1' target='_blank'>$1</a>");
+        res.field1json['text'] = modifiedText;
+        // remove RT from begining of the text
+        var modifiedText2 = modifiedText.replace(/^(RT\s)/,"");
+        res.field1json['text'] = modifiedText2;
         this.messages_old_crypto4.push(res.field1json);
       }
     });
@@ -452,6 +483,13 @@ export class DashboardComponent implements OnInit, OnDestroy {
     .subscribe(res => {
       this.result = res;
       for (let res of this.result) { 
+        var tempText = res.field1json['text'];
+        var exp = /(\b(https?|ftp|file):\/\/[-A-Z0-9+&@#\/%?=~_|!:,.;]*[-A-Z0-9+&@#\/%=~_|])/ig;
+        var modifiedText = tempText.replace(exp,"<a href='$1' target='_blank'>$1</a>");
+        res.field1json['text'] = modifiedText;
+        // remove RT from begining of the text
+        var modifiedText2 = modifiedText.replace(/^(RT\s)/,"");
+        res.field1json['text'] = modifiedText2;
         this.messages_old_crypto5.push(res.field1json);
       }
     });
@@ -461,6 +499,13 @@ export class DashboardComponent implements OnInit, OnDestroy {
     .subscribe(res => {
       this.result = res; 
       for (let res of this.result) { 
+        var tempText = res.field1json['text'];
+        var exp = /(\b(https?|ftp|file):\/\/[-A-Z0-9+&@#\/%?=~_|!:,.;]*[-A-Z0-9+&@#\/%=~_|])/ig;
+        var modifiedText = tempText.replace(exp,"<a href='$1' target='_blank'>$1</a>");
+        res.field1json['text'] = modifiedText;
+        // remove RT from begining of the text
+        var modifiedText2 = modifiedText.replace(/^(RT\s)/,"");
+        res.field1json['text'] = modifiedText2;
         this.messages_old_crypto6.push(res.field1json);
       }
     });
@@ -470,6 +515,13 @@ export class DashboardComponent implements OnInit, OnDestroy {
     .subscribe(res => {
       this.result = res;
       for (let res of this.result) { 
+        var tempText = res.field1json['text'];
+        var exp = /(\b(https?|ftp|file):\/\/[-A-Z0-9+&@#\/%?=~_|!:,.;]*[-A-Z0-9+&@#\/%=~_|])/ig;
+        var modifiedText = tempText.replace(exp,"<a href='$1' target='_blank'>$1</a>");
+        res.field1json['text'] = modifiedText;
+        // remove RT from begining of the text
+        var modifiedText2 = modifiedText.replace(/^(RT\s)/,"");
+        res.field1json['text'] = modifiedText2;
         this.messages_old_cryptoall.push(res.field1json);
       }
     });
