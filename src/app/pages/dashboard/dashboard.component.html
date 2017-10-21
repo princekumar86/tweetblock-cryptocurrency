@@ -306,7 +306,7 @@
               </span>
             </div>
             <!-- old feeds load here -->
-            <div *ngFor="let message of messages_old_cryptoall">
+            <div *ngFor="let message of messages_old_cryptoall | filter : searchText">
               <span><img src="{{message.user.profile_image_url_https}}" width="20px" alt="photo"/></span>
               <span class="t_screen_name"><i class="t_name">{{message.user.name}}</i>
                 <a target="_blank" href="https://twitter.com/{{message.user.screen_name}}">@{{message.user.screen_name}}</a>
