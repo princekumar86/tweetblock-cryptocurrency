@@ -125,7 +125,8 @@ client.stream('statuses/filter', {follow: '2312333412,831847934534746114,1051053
     });
    
     stream.on('error', function(error) {
-      throw error;
+      //throw error;
+      console.log("error connecting twitter stream, no internet "+error);
     });
 });
 

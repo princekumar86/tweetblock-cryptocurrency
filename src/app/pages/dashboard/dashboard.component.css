@@ -129,3 +129,41 @@
 .black {
     color: black;
 }
+.dashheading .dropdown-toggle::after {
+    display: none !important;
+}
+
+.btn-sdmenu {
+    padding: 0 0 0 8px;
+    background: #fff;
+}
+.btn-sdmenu.btn:focus {
+    outline: 0;
+    box-shadow: none;
+}
+.btn-sdmenu.btn:hover {
+    outline: 0;
+    box-shadow: 0 0 0 3px rgba(0,123,255,.25);
+}
+.btn-sdgroup .dropdown-menu {
+    padding: 0;
+    min-width: 7rem;
+}
+.btn-sdgroup .dropdown-item {
+    font-size: 12px;
+    font-weight: bold !important;
+    padding: 4px 10px;
+}
+.dropdown-item label {
+    margin-bottom: 0;
+    width: 100%;
+}
+.timeago {
+    color: #a4a4a4;
+    padding-left: 4px;
+    font-size: 10px;
+}
+.t_type {
+    font-weight: bold;
+    font-size: 10px;
+}

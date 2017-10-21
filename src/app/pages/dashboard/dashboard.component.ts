@@ -369,8 +369,16 @@ export class DashboardComponent implements OnInit, OnDestroy {
     this.connection.unsubscribe();
   }
 
+  rdo1Change(evt) {
+    var target = evt.target;
+    if (target.checked && target.id =="rdo-cr1-1") {
+      console.log("Text only checked");
+    }else if (target.checked && target.id =="rdo-cr1-2") {
+      console.log("Image+Text checked");
+    }
+  }
+
   loadPercentChange(){
-    // load from https://api.coinmarketcap.com/v1/ticker/
     var tempURL = "https://api.coinmarketcap.com/v1/ticker/";
     this.http.get(tempURL)
     .subscribe(res => {
