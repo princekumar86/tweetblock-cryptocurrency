@@ -25,7 +25,7 @@
                       </button>
                       <div class="dropdown-menu dropdown-menu-right">
                           <button class="dropdown-item" type="button"><label class="lbl-rdo-cr1"><input type="radio" (change)="rdo1Change($event)" name="rdo-cr1" id="rdo-cr1-1" checked/>&nbsp;Text only</label></button>
-                          <button class="dropdown-item" type="button"><label class="lbl-rdo-cr2"><input type="radio" (change)="rdo1Change($event)" name="rdo-cr1" id="rdo-cr1-2"/>&nbsp;Image + Text</label></button>
+                          <button class="dropdown-item" type="button"><label class="lbl-rdo-cr1"><input type="radio" (change)="rdo1Change($event)" name="rdo-cr1" id="rdo-cr1-2"/>&nbsp;Image + Text</label></button>
                         </div>
                     </div>
                 </span>
@@ -55,7 +55,12 @@
                     <span class="t_screen_name"><i class="t_name">{{message.user.name}}</i>
                       <a target="_blank" href="https://twitter.com/{{message.user.screen_name}}">@{{message.user.screen_name}}</a>
                     </span>
-                    <span class="float-right">{{message.created_at | timeAgo}}</span><br/>
+                    <span class="float-right timeago">{{message.created_at | timeAgo}}</span>
+                    <span class="float-right t_type" *ngIf="message.retweeted_status?.user?.id_str?.length > 0"><i class="fa fa-retweet" aria-hidden="true"></i></span>
+                    <span class="float-right t_type" *ngIf="message.in_reply_to_user_id_str?.length > 0">@{{message.in_reply_to_screen_name}}</span>
+                    <span class="float-right t_type" *ngIf="message.retweeted_status?.user?.id_str == undefined && 
+                                                        message.in_reply_to_user_id_str == undefined">OFFICIAL</span>
+                    <br/>
                     <span class="t_text" [innerHTML]="message.text"></span>
                     <span *ngIf="message?.entities?.media">
                       <img src="{{message.entities.media.media_url_https}}" alt="t-img" width="100px" height="auto" />
@@ -67,7 +72,12 @@
                     <span class="t_screen_name"><i class="t_name">{{message.user.name}}</i>
                       <a target="_blank" href="https://twitter.com/{{message.user.screen_name}}">@{{message.user.screen_name}}</a>
                     </span>
-                    <span class="float-right">{{message.created_at | timeAgo}}</span><br/>
+                    <span class="float-right timeago">{{message.created_at | timeAgo}}</span>
+                    <span class="float-right t_type" *ngIf="message.retweeted_status?.user?.id_str?.length > 0"><i class="fa fa-retweet" aria-hidden="true"></i></span>
+                    <span class="float-right t_type" *ngIf="message.in_reply_to_user_id_str?.length > 0">@{{message.in_reply_to_screen_name}}</span>
+                    <span class="float-right t_type" *ngIf="message.retweeted_status?.user?.id_str == undefined && 
+                                                        message.in_reply_to_user_id_str == undefined">OFFICIAL</span>
+                    <br/>
                     <span class="t_text" [innerHTML]="message.text"></span>
                   </div>
                   <div class="loadinggif" *ngIf="loading1"><img src="assets/images/loading.gif" alt="loading" /></div>
@@ -81,8 +91,29 @@
                     <span class="hname float-left">{{crypto2.name}}</span>
                     <a class="handlelink" target="_blank" href="{{crypto2.handleurl}}">{{crypto2.handle}}</a>
                   </span>
-                  <span class="float-right"><i class="fa fa-ellipsis-v"></i></span>
-                  <span class="float-right"><i class="fa fa-filter"></i></span>
+                  <span class="float-right">
+                    <div class="btn-group btn-sdgroup">
+                      <button type="button" class="btn btn-sdmenu dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="fa fa-ellipsis-v"></i>
+                      </button>
+                      <div class="dropdown-menu dropdown-menu-right">
+                          <button class="dropdown-item" type="button"><label class="lbl-rdo-cr2"><input type="radio" (change)="rdo1Change($event)" name="rdo-cr2" id="rdo-cr2-1" checked/>&nbsp;Text only</label></button>
+                          <button class="dropdown-item" type="button"><label class="lbl-rdo-cr2"><input type="radio" (change)="rdo1Change($event)" name="rdo-cr2" id="rdo-cr2-2"/>&nbsp;Image + Text</label></button>
+                        </div>
+                    </div>
+                </span>
+                <span class="float-right">
+                    <div class="btn-group btn-sdgroup">
+                      <button type="button" class="btn btn-sdmenu dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          <i class="fa fa-filter"></i>
+                      </button>
+                      <div class="dropdown-menu dropdown-menu-right">
+                          <button class="dropdown-item" type="button"><input type="checkbox" checked/>&nbsp;Retweets</button>
+                          <button class="dropdown-item" type="button"><input type="checkbox" checked/>&nbsp;@Replies</button>
+                          <button class="dropdown-item" type="button"><input type="checkbox" checked/>&nbsp;Official tweets</button>
+                        </div>
+                    </div>
+                </span>
                   <span class="float-right"><i class="fa fa-search"></i></span>
                   <span class="percentage-change {{crypto2_change_24h_type}}">{{crypto2_change_24h}}</span>
                 </div>
@@ -97,7 +128,12 @@
                     <span class="t_screen_name"><i class="t_name">{{message.user.name}}</i>
                       <a target="_blank" href="https://twitter.com/{{message.user.screen_name}}">@{{message.user.screen_name}}</a>
                     </span>
-                    <span class="float-right">{{message.created_at | timeAgo}}</span><br/>
+                    <span class="float-right timeago">{{message.created_at | timeAgo}}</span>
+                    <span class="float-right t_type" *ngIf="message.retweeted_status?.user?.id_str?.length > 0"><i class="fa fa-retweet" aria-hidden="true"></i></span>
+                    <span class="float-right t_type" *ngIf="message.in_reply_to_user_id_str?.length > 0">@{{message.in_reply_to_screen_name}}</span>
+                    <span class="float-right t_type" *ngIf="message.retweeted_status?.user?.id_str == undefined && 
+                                                        message.in_reply_to_user_id_str == undefined">OFFICIAL</span>
+                    <br/>
                     <span class="t_text" [innerHTML]="message.text"></span>
                   </div>
                   <!-- old feeds load here -->
@@ -106,7 +142,12 @@
                     <span class="t_screen_name"><i class="t_name">{{message.user.name}}</i>
                       <a target="_blank" href="https://twitter.com/{{message.user.screen_name}}">@{{message.user.screen_name}}</a>
                     </span>
-                    <span class="float-right">{{message.created_at | timeAgo}}</span><br/>
+                    <span class="float-right timeago">{{message.created_at | timeAgo}}</span>
+                    <span class="float-right t_type" *ngIf="message.retweeted_status?.user?.id_str?.length > 0"><i class="fa fa-retweet" aria-hidden="true"></i></span>
+                    <span class="float-right t_type" *ngIf="message.in_reply_to_user_id_str?.length > 0">@{{message.in_reply_to_screen_name}}</span>
+                    <span class="float-right t_type" *ngIf="message.retweeted_status?.user?.id_str == undefined && 
+                                                        message.in_reply_to_user_id_str == undefined">OFFICIAL</span>
+                    <br/>
                     <span class="t_text" [innerHTML]="message.text"></span>
                   </div>
                   <div class="loadinggif" *ngIf="loading2"><img src="assets/images/loading.gif" alt="loading" /></div>
@@ -123,8 +164,29 @@
                   <span class="hname float-left">{{crypto3.name}}</span>
                   <a class="handlelink" target="_blank" href="{{crypto3.handleurl}}">{{crypto3.handle}}</a>
                 </span>
-                <span class="float-right"><i class="fa fa-ellipsis-v"></i></span>
-                <span class="float-right"><i class="fa fa-filter"></i></span>
+                <span class="float-right">
+                  <div class="btn-group btn-sdgroup">
+                    <button type="button" class="btn btn-sdmenu dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <i class="fa fa-ellipsis-v"></i>
+                    </button>
+                    <div class="dropdown-menu dropdown-menu-right">
+                        <button class="dropdown-item" type="button"><label class="lbl-rdo-cr3"><input type="radio" (change)="rdo1Change($event)" name="rdo-cr3" id="rdo-cr3-1" checked/>&nbsp;Text only</label></button>
+                        <button class="dropdown-item" type="button"><label class="lbl-rdo-cr3"><input type="radio" (change)="rdo1Change($event)" name="rdo-cr3" id="rdo-cr3-2"/>&nbsp;Image + Text</label></button>
+                      </div>
+                  </div>
+              </span>
+              <span class="float-right">
+                  <div class="btn-group btn-sdgroup">
+                    <button type="button" class="btn btn-sdmenu dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="fa fa-filter"></i>
+                    </button>
+                    <div class="dropdown-menu dropdown-menu-right">
+                        <button class="dropdown-item" type="button"><input type="checkbox" checked/>&nbsp;Retweets</button>
+                        <button class="dropdown-item" type="button"><input type="checkbox" checked/>&nbsp;@Replies</button>
+                        <button class="dropdown-item" type="button"><input type="checkbox" checked/>&nbsp;Official tweets</button>
+                      </div>
+                  </div>
+              </span>
                 <span class="float-right"><i class="fa fa-search"></i></span>
                 <span class="percentage-change {{crypto3_change_24h_type}}">{{crypto3_change_24h}}</span>
               </div>
@@ -139,7 +201,12 @@
                   <span class="t_screen_name"><i class="t_name">{{message.user.name}}</i>
                     <a target="_blank" href="https://twitter.com/{{message.user.screen_name}}">@{{message.user.screen_name}}</a>
                   </span>
-                  <span class="float-right">{{message.created_at | timeAgo}}</span><br/>
+                  <span class="float-right timeago">{{message.created_at | timeAgo}}</span>
+                  <span class="float-right t_type" *ngIf="message.retweeted_status?.user?.id_str?.length > 0"><i class="fa fa-retweet" aria-hidden="true"></i></span>
+                  <span class="float-right t_type" *ngIf="message.in_reply_to_user_id_str?.length > 0">@{{message.in_reply_to_screen_name}}</span>
+                  <span class="float-right t_type" *ngIf="message.retweeted_status?.user?.id_str == undefined && 
+                                                      message.in_reply_to_user_id_str == undefined">OFFICIAL</span>
+                  <br/>
                   <span class="t_text" [innerHTML]="message.text"></span>
                 </div>
                 <!-- old feeds load here -->
@@ -148,7 +215,12 @@
                   <span class="t_screen_name"><i class="t_name">{{message.user.name}}</i>
                     <a target="_blank" href="https://twitter.com/{{message.user.screen_name}}">@{{message.user.screen_name}}</a>
                   </span>
-                  <span class="float-right">{{message.created_at | timeAgo}}</span><br/>
+                  <span class="float-right timeago">{{message.created_at | timeAgo}}</span>
+                  <span class="float-right t_type" *ngIf="message.retweeted_status?.user?.id_str?.length > 0"><i class="fa fa-retweet" aria-hidden="true"></i></span>
+                  <span class="float-right t_type" *ngIf="message.in_reply_to_user_id_str?.length > 0">@{{message.in_reply_to_screen_name}}</span>
+                  <span class="float-right t_type" *ngIf="message.retweeted_status?.user?.id_str == undefined && 
+                                                      message.in_reply_to_user_id_str == undefined">OFFICIAL</span>
+                  <br/>
                   <span class="t_text" [innerHTML]="message.text"></span>
                 </div>
                 <div class="loadinggif" *ngIf="loading3"><img src="assets/images/loading.gif" alt="loading" /></div>
@@ -162,8 +234,29 @@
                       <span class="hname float-left">{{crypto4.name}}</span>
                     <a class="handlelink" target="_blank" href="{{crypto4.handleurl}}">{{crypto4.handle}}</a>
                   </span>
-                  <span class="float-right"><i class="fa fa-ellipsis-v"></i></span>
-                  <span class="float-right"><i class="fa fa-filter"></i></span>
+                  <span class="float-right">
+                    <div class="btn-group btn-sdgroup">
+                      <button type="button" class="btn btn-sdmenu dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="fa fa-ellipsis-v"></i>
+                      </button>
+                      <div class="dropdown-menu dropdown-menu-right">
+                          <button class="dropdown-item" type="button"><label class="lbl-rdo-cr4"><input type="radio" (change)="rdo1Change($event)" name="rdo-cr4" id="rdo-cr4-1" checked/>&nbsp;Text only</label></button>
+                          <button class="dropdown-item" type="button"><label class="lbl-rdo-cr4"><input type="radio" (change)="rdo1Change($event)" name="rdo-cr4" id="rdo-cr4-2"/>&nbsp;Image + Text</label></button>
+                        </div>
+                    </div>
+                </span>
+                <span class="float-right">
+                    <div class="btn-group btn-sdgroup">
+                      <button type="button" class="btn btn-sdmenu dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          <i class="fa fa-filter"></i>
+                      </button>
+                      <div class="dropdown-menu dropdown-menu-right">
+                          <button class="dropdown-item" type="button"><input type="checkbox" checked/>&nbsp;Retweets</button>
+                          <button class="dropdown-item" type="button"><input type="checkbox" checked/>&nbsp;@Replies</button>
+                          <button class="dropdown-item" type="button"><input type="checkbox" checked/>&nbsp;Official tweets</button>
+                        </div>
+                    </div>
+                </span>
                   <span class="float-right"><i class="fa fa-search"></i></span>
                   <span class="percentage-change {{crypto4_change_24h_type}}">{{crypto4_change_24h}}</span>
                 </div>
@@ -178,7 +271,12 @@
                     <span class="t_screen_name"><i class="t_name">{{message.user.name}}</i>
                       <a target="_blank" href="https://twitter.com/{{message.user.screen_name}}">@{{message.user.screen_name}}</a>
                     </span>
-                    <span class="float-right">{{message.created_at | timeAgo}}</span><br/>
+                    <span class="float-right timeago">{{message.created_at | timeAgo}}</span>
+                    <span class="float-right t_type" *ngIf="message.retweeted_status?.user?.id_str?.length > 0"><i class="fa fa-retweet" aria-hidden="true"></i></span>
+                    <span class="float-right t_type" *ngIf="message.in_reply_to_user_id_str?.length > 0">@{{message.in_reply_to_screen_name}}</span>
+                    <span class="float-right t_type" *ngIf="message.retweeted_status?.user?.id_str == undefined && 
+                                                        message.in_reply_to_user_id_str == undefined">OFFICIAL</span>
+                    <br/>
                     <span class="t_text" [innerHTML]="message.text"></span>
                   </div>
                   <!-- old feeds load here -->
@@ -187,7 +285,12 @@
                     <span class="t_screen_name"><i class="t_name">{{message.user.name}}</i>
                       <a target="_blank" href="https://twitter.com/{{message.user.screen_name}}">@{{message.user.screen_name}}</a>
                     </span>
-                    <span class="float-right">{{message.created_at | timeAgo}}</span><br/>
+                    <span class="float-right timeago">{{message.created_at | timeAgo}}</span>
+                    <span class="float-right t_type" *ngIf="message.retweeted_status?.user?.id_str?.length > 0"><i class="fa fa-retweet" aria-hidden="true"></i></span>
+                    <span class="float-right t_type" *ngIf="message.in_reply_to_user_id_str?.length > 0">@{{message.in_reply_to_screen_name}}</span>
+                    <span class="float-right t_type" *ngIf="message.retweeted_status?.user?.id_str == undefined && 
+                                                        message.in_reply_to_user_id_str == undefined">OFFICIAL</span>
+                    <br/>
                     <span class="t_text" [innerHTML]="message.text"></span>
                   </div>
                   <div class="loadinggif" *ngIf="loading4"><img src="assets/images/loading.gif" alt="loading" /></div>
@@ -204,8 +307,29 @@
                     <span class="hname float-left">{{crypto5.name}}</span>
                   <a class="handlelink" target="_blank" href="{{crypto5.handleurl}}">{{crypto5.handle}}</a>
                 </span>
-                <span class="float-right"><i class="fa fa-ellipsis-v"></i></span>
-                <span class="float-right"><i class="fa fa-filter"></i></span>
+                <span class="float-right">
+                  <div class="btn-group btn-sdgroup">
+                    <button type="button" class="btn btn-sdmenu dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <i class="fa fa-ellipsis-v"></i>
+                    </button>
+                    <div class="dropdown-menu dropdown-menu-right">
+                        <button class="dropdown-item" type="button"><label class="lbl-rdo-cr5"><input type="radio" (change)="rdo1Change($event)" name="rdo-cr5" id="rdo-cr5-1" checked/>&nbsp;Text only</label></button>
+                        <button class="dropdown-item" type="button"><label class="lbl-rdo-cr5"><input type="radio" (change)="rdo1Change($event)" name="rdo-cr5" id="rdo-cr5-2"/>&nbsp;Image + Text</label></button>
+                      </div>
+                  </div>
+              </span>
+              <span class="float-right">
+                  <div class="btn-group btn-sdgroup">
+                    <button type="button" class="btn btn-sdmenu dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="fa fa-filter"></i>
+                    </button>
+                    <div class="dropdown-menu dropdown-menu-right">
+                        <button class="dropdown-item" type="button"><input type="checkbox" checked/>&nbsp;Retweets</button>
+                        <button class="dropdown-item" type="button"><input type="checkbox" checked/>&nbsp;@Replies</button>
+                        <button class="dropdown-item" type="button"><input type="checkbox" checked/>&nbsp;Official tweets</button>
+                      </div>
+                  </div>
+              </span>
                 <span class="float-right"><i class="fa fa-search"></i></span>
                 <span class="percentage-change {{crypto5_change_24h_type}}">{{crypto5_change_24h}}</span>
               </div>
@@ -220,7 +344,12 @@
                   <span class="t_screen_name"><i class="t_name">{{message.user.name}}</i>
                     <a target="_blank" href="https://twitter.com/{{message.user.screen_name}}">@{{message.user.screen_name}}</a>
                   </span>
-                  <span class="float-right">{{message.created_at | timeAgo}}</span><br/>
+                  <span class="float-right timeago">{{message.created_at | timeAgo}}</span>
+                  <span class="float-right t_type" *ngIf="message.retweeted_status?.user?.id_str?.length > 0"><i class="fa fa-retweet" aria-hidden="true"></i></span>
+                  <span class="float-right t_type" *ngIf="message.in_reply_to_user_id_str?.length > 0">@{{message.in_reply_to_screen_name}}</span>
+                  <span class="float-right t_type" *ngIf="message.retweeted_status?.user?.id_str == undefined && 
+                                                      message.in_reply_to_user_id_str == undefined">OFFICIAL</span>
+                  <br/>
                   <span class="t_text" [innerHTML]="message.text"></span>
                 </div>
                 <!-- old feeds load here -->
@@ -229,7 +358,12 @@
                   <span class="t_screen_name"><i class="t_name">{{message.user.name}}</i>
                     <a target="_blank" href="https://twitter.com/{{message.user.screen_name}}">@{{message.user.screen_name}}</a>
                   </span>
-                  <span class="float-right">{{message.created_at | timeAgo}}</span><br/>
+                  <span class="float-right timeago">{{message.created_at | timeAgo}}</span>
+                  <span class="float-right t_type" *ngIf="message.retweeted_status?.user?.id_str?.length > 0"><i class="fa fa-retweet" aria-hidden="true"></i></span>
+                  <span class="float-right t_type" *ngIf="message.in_reply_to_user_id_str?.length > 0">@{{message.in_reply_to_screen_name}}</span>
+                  <span class="float-right t_type" *ngIf="message.retweeted_status?.user?.id_str == undefined && 
+                                                      message.in_reply_to_user_id_str == undefined">OFFICIAL</span>
+                  <br/>
                   <span class="t_text" [innerHTML]="message.text"></span>
                 </div>
                 <div class="loadinggif" *ngIf="loading5"><img src="assets/images/loading.gif" alt="loading" /></div>
@@ -243,8 +377,29 @@
                       <span class="hname float-left">{{crypto6.name}}</span>
                     <a class="handlelink" target="_blank" href="{{crypto6.handleurl}}">{{crypto6.handle}}</a>
                   </span>
-                  <span class="float-right"><i class="fa fa-ellipsis-v"></i></span>
-                  <span class="float-right"><i class="fa fa-filter"></i></span>
+                  <span class="float-right">
+                    <div class="btn-group btn-sdgroup">
+                      <button type="button" class="btn btn-sdmenu dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="fa fa-ellipsis-v"></i>
+                      </button>
+                      <div class="dropdown-menu dropdown-menu-right">
+                          <button class="dropdown-item" type="button"><label class="lbl-rdo-cr6"><input type="radio" (change)="rdo1Change($event)" name="rdo-cr6" id="rdo-cr6-1" checked/>&nbsp;Text only</label></button>
+                          <button class="dropdown-item" type="button"><label class="lbl-rdo-cr6"><input type="radio" (change)="rdo1Change($event)" name="rdo-cr6" id="rdo-cr6-2"/>&nbsp;Image + Text</label></button>
+                        </div>
+                    </div>
+                </span>
+                <span class="float-right">
+                    <div class="btn-group btn-sdgroup">
+                      <button type="button" class="btn btn-sdmenu dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          <i class="fa fa-filter"></i>
+                      </button>
+                      <div class="dropdown-menu dropdown-menu-right">
+                          <button class="dropdown-item" type="button"><input type="checkbox" checked/>&nbsp;Retweets</button>
+                          <button class="dropdown-item" type="button"><input type="checkbox" checked/>&nbsp;@Replies</button>
+                          <button class="dropdown-item" type="button"><input type="checkbox" checked/>&nbsp;Official tweets</button>
+                        </div>
+                    </div>
+                </span>
                   <span class="float-right"><i class="fa fa-search"></i></span>
                   <span class="percentage-change {{crypto6_change_24h_type}}">{{crypto6_change_24h}}</span>
                 </div>
@@ -259,7 +414,12 @@
                     <span class="t_screen_name"><i class="t_name">{{message.user.name}}</i>
                       <a target="_blank" href="https://twitter.com/{{message.user.screen_name}}">@{{message.user.screen_name}}</a>
                     </span>
-                    <span class="float-right">{{message.created_at | timeAgo}}</span><br/>
+                    <span class="float-right timeago">{{message.created_at | timeAgo}}</span>
+                    <span class="float-right t_type" *ngIf="message.retweeted_status?.user?.id_str?.length > 0"><i class="fa fa-retweet" aria-hidden="true"></i></span>
+                    <span class="float-right t_type" *ngIf="message.in_reply_to_user_id_str?.length > 0">@{{message.in_reply_to_screen_name}}</span>
+                    <span class="float-right t_type" *ngIf="message.retweeted_status?.user?.id_str == undefined && 
+                                                        message.in_reply_to_user_id_str == undefined">OFFICIAL</span>
+                    <br/>
                     <span class="t_text" [innerHTML]="message.text"></span>
                   </div>
                   <!-- old feeds load here -->
@@ -268,7 +428,12 @@
                     <span class="t_screen_name"><i class="t_name">{{message.user.name}}</i>
                       <a target="_blank" href="https://twitter.com/{{message.user.screen_name}}">@{{message.user.screen_name}}</a>
                     </span>
-                    <span class="float-right">{{message.created_at | timeAgo}}</span><br/>
+                    <span class="float-right timeago">{{message.created_at | timeAgo}}</span>
+                    <span class="float-right t_type" *ngIf="message.retweeted_status?.user?.id_str?.length > 0"><i class="fa fa-retweet" aria-hidden="true"></i></span>
+                    <span class="float-right t_type" *ngIf="message.in_reply_to_user_id_str?.length > 0">@{{message.in_reply_to_screen_name}}</span>
+                    <span class="float-right t_type" *ngIf="message.retweeted_status?.user?.id_str == undefined && 
+                                                        message.in_reply_to_user_id_str == undefined">OFFICIAL</span>
+                    <br/>
                     <span class="t_text" [innerHTML]="message.text"></span>
                   </div>
                   <div class="loadinggif" *ngIf="loading6"><img src="assets/images/loading.gif" alt="loading" /></div>
@@ -279,8 +444,29 @@
       <div class="col-xs-12 col-sm-6 col-md-3 dashboardcol all-crypto">
           <div class="dashheading">
             <span class="mainheading"> Live Feed</span>
-            <span class="float-right"><i class="fa fa-ellipsis-v"></i></span>
-            <span class="float-right"><i class="fa fa-filter"></i></span>
+            <span class="float-right">
+              <div class="btn-group btn-sdgroup">
+                <button type="button" class="btn btn-sdmenu dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <i class="fa fa-ellipsis-v"></i>
+                </button>
+                <div class="dropdown-menu dropdown-menu-right">
+                    <button class="dropdown-item" type="button"><label class="lbl-rdo-crall"><input type="radio" (change)="rdo1Change($event)" name="rdo-crall" id="rdo-crall-1" checked/>&nbsp;Text only</label></button>
+                    <button class="dropdown-item" type="button"><label class="lbl-rdo-crall"><input type="radio" (change)="rdo1Change($event)" name="rdo-crall" id="rdo-crall-2"/>&nbsp;Image + Text</label></button>
+                  </div>
+              </div>
+          </span>
+          <span class="float-right">
+              <div class="btn-group btn-sdgroup">
+                <button type="button" class="btn btn-sdmenu dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <i class="fa fa-filter"></i>
+                </button>
+                <div class="dropdown-menu dropdown-menu-right">
+                    <button class="dropdown-item" type="button"><input type="checkbox" checked/>&nbsp;Retweets</button>
+                    <button class="dropdown-item" type="button"><input type="checkbox" checked/>&nbsp;@Replies</button>
+                    <button class="dropdown-item" type="button"><input type="checkbox" checked/>&nbsp;Official tweets</button>
+                  </div>
+              </div>
+          </span>
             <span class="float-right"><i class="fa fa-search"></i></span>
           </div>
           <div><input class="searchText" [(ngModel)]="searchText" placeholder="Filter cryptocurrency... "></div>

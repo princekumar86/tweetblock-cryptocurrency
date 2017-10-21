@@ -1,5 +1,5 @@
 .dashboardcol {
-    min-height: 45vh;
+    min-height: 42vh;
     border-right: 1px solid #cecece;
 }
 .dashboardcol.all-crypto {
@@ -17,6 +17,7 @@
 .percentage-change {
     float: right;
     padding-right: 12px;
+    font-size: 14px;
 }
 .iconcolumns a {
     color: #cecece;
@@ -81,7 +82,7 @@
     color: #cecece;
     font-size: 12px;
     padding-top: 3px;
-    max-width: 88px;
+    max-width: 70px;
     display: block;
     float: left;
     text-overflow: ellipsis;
@@ -134,16 +135,12 @@
 }
 
 .btn-sdmenu {
-    padding: 0 0 0 8px;
+    padding: 0 0 0 2px;
     background: #fff;
 }
 .btn-sdmenu.btn:focus {
     outline: 0;
     box-shadow: none;
-}
-.btn-sdmenu.btn:hover {
-    outline: 0;
-    box-shadow: 0 0 0 3px rgba(0,123,255,.25);
 }
 .btn-sdgroup .dropdown-menu {
     padding: 0;
