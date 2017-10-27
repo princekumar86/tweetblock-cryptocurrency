@@ -15,6 +15,8 @@ export class DashboardComponent implements OnInit, OnDestroy {
   UID:String = '';
   prefer_retrieve_url = '/api/userretrivepreference/'+this.UID;
   load_old_tweets_url = '/api/last24hourtweets/';
+  cr1tweettype = '111';
+  cr1sdmenu = ['yes', 'yes', 'yes'];
   crypto1 = { name: 'loading...', logourl: '', id: 1, handle: '', handleurl: '' };
   crypto2 = { name: 'loading...', logourl: '', id: 1, handle: '', handleurl: '' };
   crypto3 = { name: 'loading...', logourl: '', id: 1, handle: '', handleurl: '' };
@@ -258,21 +260,19 @@ export class DashboardComponent implements OnInit, OnDestroy {
         // }
         var tempID = 1;
           if('retweeted_status' in message){
-          //Retweeted
-          console.log(message['retweeted_status']['user']['id_str']);
-          console.log('condition retweeted');
-          //tempID  = message['retweeted_status']['user']['id'];
+          //console.log(message['retweeted_status']['user']['id_str']);
+          //console.log('condition retweeted');
           tempID  = message['retweeted_status']['user']['id_str'];
 
         }else if('in_reply_to_status_id' in message) {
           // in reply to
-          console.log(message['in_reply_to_user_id_str']); // in_reply_to_status_id // in_reply_to_user_id 
-          console.log('condition tweet reply');
+          //console.log(message['in_reply_to_user_id_str']);
+          //console.log('condition tweet reply');
           //tempID = message['in_reply_to_status_id'];
           tempID = message['in_reply_to_user_id_str'];
         } else {
-          console.log(message['user']['id_str']);
-          console.log('condition 3rd, not RT & not R, normal tweet');
+          //console.log(message['user']['id_str']);
+          //console.log('condition 3rd, not RT & not R, normal tweet');
           tempID  = message['user']['id_str'];
         }
         /////////////////////////////////////
@@ -380,6 +380,59 @@ export class DashboardComponent implements OnInit, OnDestroy {
       console.log("Image+Text checked");
     }
   }
+  chk1Change(evt) {
+    var target = evt.target;
+    if (target.checked && target.id =="chk-cr1-1") {
+      console.log("retweet checked");
+      this.cr1sdmenu[0] = 'yes';
+    }else if(target.id =="chk-cr1-1"){
+      console.log("retweet unchecked");
+      this.cr1sdmenu[0] = 'no';
+    }
+    if (target.checked && target.id =="chk-cr1-2") {
+      console.log("reply checked");
+      this.cr1sdmenu[1] = 'yes';
+    }else if(target.id =="chk-cr1-2"){
+      console.log("reply unchecked");
+      this.cr1sdmenu[1] = 'no';
+    }
+    if (target.checked && target.id =="chk-cr1-3") {
+      console.log("official checked");
+      this.cr1sdmenu[2] = 'yes';
+    }else if(target.id =="chk-cr1-3"){
+      console.log("official unchecked");
+      this.cr1sdmenu[2] = 'no';
+    }
+    /////////////// eight condition below
+    if (this.cr1sdmenu[0] == 'yes' && this.cr1sdmenu[1] == 'yes' && this.cr1sdmenu[2] == 'yes' ) {
+      this.cr1tweettype='111'; // all
+    } else if (this.cr1sdmenu[0] == 'yes' && this.cr1sdmenu[1] == 'no' && this.cr1sdmenu[2] == 'no' ) {
+      this.cr1tweettype='100'; // only retweets
+    } else if (this.cr1sdmenu[0] == 'no' && this.cr1sdmenu[1] == 'yes' && this.cr1sdmenu[2] == 'no' ) {
+      this.cr1tweettype='010'; // only replies
+    } else if (this.cr1sdmenu[0] == 'no' && this.cr1sdmenu[1] == 'no' && this.cr1sdmenu[2] == 'yes' ) {
+      this.cr1tweettype='001'; // only official
+    } else if (this.cr1sdmenu[0] == 'yes' && this.cr1sdmenu[1] == 'yes' && this.cr1sdmenu[2] == 'no' ) {
+      this.cr1tweettype='110'; // first two
+    }else if (this.cr1sdmenu[0] == 'yes' && this.cr1sdmenu[1] == 'no' && this.cr1sdmenu[2] == 'yes' ) {
+      this.cr1tweettype='101'; // first and last
+    }else if (this.cr1sdmenu[0] == 'no' && this.cr1sdmenu[1] == 'yes' && this.cr1sdmenu[2] == 'yes' ) {
+      this.cr1tweettype='011'; // last two
+    }else if (this.cr1sdmenu[0] == 'no' && this.cr1sdmenu[1] == 'no' && this.cr1sdmenu[2] == 'no' ) {
+      this.cr1tweettype='000'; // last two
+    }
+    console.log(this.cr1tweettype);
+    var tempURL = '/api/testtweets/'+this.cr1tweettype+'/'+this.crypto1.id;
+    this.http.get(tempURL)
+    .subscribe(res => {
+      this.result = res;
+      this.messages_old_crypto1 = [];
+      for (let res of this.result) {
+        this.messages_old_crypto1.push(res.field1json);
+      }
+    });
+  }
+
 
   loadPercentChange(){
     var tempURL = "https://api.coinmarketcap.com/v1/ticker/";

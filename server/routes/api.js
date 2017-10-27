@@ -84,6 +84,21 @@ router.get('/last24hourtweets/15/:increamentval/allcrypto', (req, res) => {
             res.json(result);
          });
 });
+//another test
+router.get('/testtweets/:cr1tweettype/:cryptoid', (req, res) => {
+    // get all the tweets for this id
+    if(req.params.cryptoid == '111') { 
+        //add more conditional seach in db
+     } else if(req.params.cryptoid == '001'){
+        //
+     }
+    Tweet.find({ "field1json.entities.user_mentions.id_str" : req.params.cryptoid })
+        .sort({ "field1json.timestamp_ms" : "descending"})
+        .limit(15)
+        .exec(function(err, result){ 
+            res.json(result);
+         });
+});
 // test work for last 24 hour tweets for passed ids in post args
 router.get('/last24hourtweets/:cryptoid', (req, res) => {
     // get all the tweets for this id

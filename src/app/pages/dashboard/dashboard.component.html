@@ -35,9 +35,9 @@
                           <i class="fa fa-filter"></i>
                       </button>
                       <div class="dropdown-menu dropdown-menu-right">
-                          <button class="dropdown-item" type="button"><input type="checkbox" checked/>&nbsp;Retweets</button>
-                          <button class="dropdown-item" type="button"><input type="checkbox" checked/>&nbsp;@Replies</button>
-                          <button class="dropdown-item" type="button"><input type="checkbox" checked/>&nbsp;Official tweets</button>
+                          <button class="dropdown-item" type="button"><input type="checkbox" (change)="chk1Change($event)" name="chk-cr1-retweet" id="chk-cr1-1" checked/>&nbsp;Retweets</button>
+                          <button class="dropdown-item" type="button"><input type="checkbox" (change)="chk1Change($event)" name="chk-cr1-reply" id="chk-cr1-2" checked/>&nbsp;@Replies</button>
+                          <button class="dropdown-item" type="button"><input type="checkbox" (change)="chk1Change($event)" name="chk-cr1-official" id="chk-cr1-3" checked/>&nbsp;Official tweets</button>
                         </div>
                     </div>
                 </span>

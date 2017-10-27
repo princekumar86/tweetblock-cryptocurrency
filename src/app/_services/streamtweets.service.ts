@@ -16,7 +16,7 @@ export class StreamtweetsService {
       this.socket = io(this.url);
       this.socket.on('message', (data) => {
         observer.next(data); 
-        console.log(data); 
+        //console.log(data); 
         //console.log('reached till ng client');   
       });
       return () => {
