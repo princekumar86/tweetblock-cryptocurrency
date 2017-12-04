@@ -59,219 +59,219 @@ export const COINS= [
     "Lisk": {
            name: "Lisk",
            id :"4736263474",
-           logourl: "",
+           logourl: "assets/images/cryptoicons-sm/lisk.png",
            handle : "@LiskHQ",
            handleurl: "https://twitter.com/LiskHQ"
           },
     "Bitcoin": {
            name: "Bitcoin",
            id :"357312062",
-           logourl: "",
+           logourl: "assets/images/cryptoicons-sm/bitcoin.png",
            handle : "@Bitcoin",
            handleurl: "https://twitter.com/Bitcoin"
           },
     "EthereumClassic": {
            name: "EthereumClassic",
            id :"759252279862104064",
-           logourl: "",
+           logourl: "assets/images/cryptoicons-sm/ethereum-classic.png",
            handle : "@eth_classic",
            handleurl: "https://twitter.com/eth_classic"
           },
     "NEO": {
            name: "NEO",
            id :"2592325530",
-           logourl: "",
+           logourl: "assets/images/cryptoicons-sm/neo.png",
            handle : "@NEO_Blockchain",
            handleurl: "https://twitter.com/NEO_Blockchain"
           },
     "BitConnect": {
            name: "BitConnect",
            id :"711438260354953216",
-           logourl: "",
+           logourl: "assets/images/cryptoicons-sm/bitconnect.png",
            handle : "@bitconnect",
            handleurl: "https://twitter.com/bitconnect"
           },
     "Qtum": {
            name: "Qtum",
            id :"773009781644677120",
-           logourl: "",
+           logourl: "assets/images/cryptoicons-sm/qtum.png",
            handle : "@QtumOfficial",
            handleurl: "https://twitter.com/QtumOfficial"
           },
     "stratis": {
            name: "stratis",
            id :"734688391942524928",
-           logourl: "",
+           logourl: "assets/images/cryptoicons-sm/stratis.png",
            handle : "@stratisplatform",
            handleurl: "https://twitter.com/stratisplatform"
           },
     "Tether": {
            name: "Tether",
            id :"2893133450",
-           logourl: "",
+           logourl: "assets/images/cryptoicons-sm/tether.png",
            handle : "@Tether_to",
            handleurl: "https://twitter.com/Tether_to"
           },
     "Zcash": {
            name: "Zcash",
            id :"4633094778",
-           logourl: "",
+           logourl: "assets/images/cryptoicons-sm/zcash.png",
            handle : "@zcashco",
            handleurl: "https://twitter.com/zcashco"
           },
     "Waves": {
            name: "Waves",
            id :"707515829798182912",
-           logourl: "",
+           logourl: "assets/images/cryptoicons-sm/waves.png",
            handle : "@wavesplatform",
            handleurl: "https://twitter.com/wavesplatform"
           },
     "Ark": {
            name: "ArkEcosystem",
            id :"774791455680434176",
-           logourl: "",
+           logourl: "assets/images/cryptoicons-sm/ark.png",
            handle : "@ArkEcosystem",
            handleurl: "https://twitter.com/ArkEcosystem"
           },
     "Steem": {
            name: "Steem",
            id :"711030662728437760",
-           logourl: "",
+           logourl: "assets/images/cryptoicons-sm/steem.png",
            handle : "@steemit",
            handleurl: "https://twitter.com/steemit"
           },
     "MaidSafeCoin": {
            name: "MaidSafeCoin",
            id :"1322660676",
-           logourl: "",
+           logourl: "assets/images/cryptoicons-sm/maidsafecoin.png",
            handle : "@maidsafe",
            handleurl: "https://twitter.com/maidsafe"
           },
     "Bytecoin": {
            name: "Bytecoin",
            id :"2510084300",
-           logourl: "",
+           logourl: "assets/images/cryptoicons-sm/bytecoin.png",
            handle : "@Bytecoin_BCN",
            handleurl: "https://twitter.com/Bytecoin_BCN"
           },
     "Golem": {
            name: "Golem",
            id :"4053977488",
-           logourl: "",
+           logourl: "assets/images/cryptoicons-sm/golem-network-tokens.png",
            handle : "@golemproject",
            handleurl: "https://twitter.com/golemproject"
           },
     "EOS": {
            name: "EOS",
            id :"862675563693125632",
-           logourl: "",
+           logourl: "assets/images/cryptoicons-sm/eos.png",
            handle : "@EOS_io",
            handleurl: "https://twitter.com/EOS_io"
           },
     "Decred": {
            name: "Decred",
            id :"2349043879",
-           logourl: "",
+           logourl: "assets/images/cryptoicons-sm/decred.png",
            handle : "@decredproject",
            handleurl: "https://twitter.com/decredproject"
           },
     "Attentiontoken": {
            name: "Attentiontoken",
            id :"841424245938769920",
-           logourl: "",
+           logourl: "assets/images/cryptoicons-sm/basic-attention-token.png",
            handle : "@Attention",
            handleurl: "https://twitter.com/AttentionToken"
           },
     "Veritaseum": {
            name: "Veritaseum",
            id :"2571393578",
-           logourl: "",
+           logourl: "assets/images/cryptoicons-sm/veritaseum.png",
            handle : "@Veritaseuminc",
            handleurl: "https://twitter.com/Veritaseuminc"
           },
     "BitShares": {
            name: "BitShares",
            id :"503238457",
-           logourl: "",
+           logourl: "assets/images/cryptoicons-sm/bitshares.png",
            handle : "@bitshares",
            handleurl: "https://twitter.com/bitshares"
           },
     "Augur": {
            name: "Augur",
            id :"2895317462",
-           logourl: "",
+           logourl: "assets/images/cryptoicons-sm/augur.png",
            handle : "@AugurProject",
            handleurl: "https://twitter.com/AugurProject"
           },
     "TenX": {
            name: "TenX",
            id :"4585412124",
-           logourl: "",
+           logourl: "assets/images/cryptoicons-sm/tenx.png",
            handle : "@tenxwallet",
            handleurl: "https://twitter.com/tenxwallet"
           },
     "StellarLumens": {
            name: "StellarLumens",
            id :"2460502890",
-           logourl: "",
+           logourl: "assets/images/cryptoicons-sm/stellar.png",
            handle : "@StellarOrg",
            handleurl: "https://twitter.com/StellarOrg"
           },
     "Komodo": {
            name: "Komodo",
            id :"769457743807844352",
-           logourl: "",
+           logourl: "assets/images/cryptoicons-sm/komodo.png",
            handle : "@KomodoPlatform",
            handleurl: "https://twitter.com/KomodoPlatform"
           },
     "Hshare": {
            name: "Hshare",
            id :"877078771366453248",
-           logourl: "",
+           logourl: "assets/images/cryptoicons-sm/hshare.png",
            handle : "@Mkt_Hcash",
            handleurl: "https://twitter.com/Mkt_Hcash"
           },
     "PIVX": {
            name: "PIVX",
            id :"4020178512",
-           logourl: "",
+           logourl: "assets/images/cryptoicons-sm/pivx.png",
            handle : "@_pivx",
            handleurl: "https://twitter.com/_pivx"
           },
     "Nexus": {
            name: "Nexus",
            id :"2575764354",
-           logourl: "",
+           logourl: "assets/images/cryptoicons-sm/nexus.png",
            handle : "@NxsEarth",
            handleurl: "https://twitter.com/NxsEarth"
           },
     "Metal": {
            name: "Metal",
            id :"3111739836",
-           logourl: "",
+           logourl: "assets/images/cryptoicons-sm/metal.png",
            handle : "@metalpaysme",
            handleurl: "https://twitter.com/metalpaysme"
           },
     "Factom": {
            name: "Factom",
            id :"2804855658",
-           logourl: "",
+           logourl: "assets/images/cryptoicons-sm/factom.png",
            handle : "@factom",
            handleurl: "https://twitter.com/factom"
           },
-    "iconominet": {
-           name: "iconominet",
+    "iconomi": {
+           name: "iconomi",
            id :"725253338640617472",
-           logourl: "",
-           handle : "",
-           handleurl: ""
+           logourl: "assets/images/cryptoicons-sm/iconomi.png",
+           handle : "@iconominet",
+           handleurl: "https://twitter.com/iconominet"
           },
     "DigixGlobal": {
            name: "DigixGlobal",
            id :"2925093697",
            logourl: "",
-           handle : "",
-           handleurl: ""
+           handle : "@DigixGlobal",
+           handleurl: "https://twitter.com/DigixGlobal"
           },
     "ByteballOrg": {
            name: "ByteballOrg",

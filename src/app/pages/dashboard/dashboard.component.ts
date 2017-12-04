@@ -37,6 +37,7 @@ export class DashboardComponent implements OnInit, OnDestroy {
   crypto6_change_24h_type = "black";
 
   @Output() sendLoggedInEvent = new EventEmitter<boolean>();
+  Lstatus:boolean = false;
 
   messages = [];
   connection;
@@ -238,7 +239,9 @@ export class DashboardComponent implements OnInit, OnDestroy {
           this.userToken = parsedObject.token;
         }
         // changing Login / Logout tag in top bar
-        this.sendLoggedInEvent.emit(true);
+        this.Lstatus = true;
+        this.sendLoggedInEvent.emit(this.Lstatus);
+        console.log("hey there !!!"+this.Lstatus);
       }
       ////////////////////////////////////////
       //////////////  tweet feeding code  ///

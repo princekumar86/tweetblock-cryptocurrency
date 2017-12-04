@@ -144,219 +144,219 @@ var COINS = [
         "Lisk": {
             name: "Lisk",
             id: "4736263474",
-            logourl: "",
+            logourl: "assets/images/cryptoicons-sm/lisk.png",
             handle: "@LiskHQ",
             handleurl: "https://twitter.com/LiskHQ"
         },
         "Bitcoin": {
             name: "Bitcoin",
             id: "357312062",
-            logourl: "",
+            logourl: "assets/images/cryptoicons-sm/bitcoin.png",
             handle: "@Bitcoin",
             handleurl: "https://twitter.com/Bitcoin"
         },
         "EthereumClassic": {
             name: "EthereumClassic",
             id: "759252279862104064",
-            logourl: "",
+            logourl: "assets/images/cryptoicons-sm/ethereum-classic.png",
             handle: "@eth_classic",
             handleurl: "https://twitter.com/eth_classic"
         },
         "NEO": {
             name: "NEO",
             id: "2592325530",
-            logourl: "",
+            logourl: "assets/images/cryptoicons-sm/neo.png",
             handle: "@NEO_Blockchain",
             handleurl: "https://twitter.com/NEO_Blockchain"
         },
         "BitConnect": {
             name: "BitConnect",
             id: "711438260354953216",
-            logourl: "",
+            logourl: "assets/images/cryptoicons-sm/bitconnect.png",
             handle: "@bitconnect",
             handleurl: "https://twitter.com/bitconnect"
         },
         "Qtum": {
             name: "Qtum",
             id: "773009781644677120",
-            logourl: "",
+            logourl: "assets/images/cryptoicons-sm/qtum.png",
             handle: "@QtumOfficial",
             handleurl: "https://twitter.com/QtumOfficial"
         },
         "stratis": {
             name: "stratis",
             id: "734688391942524928",
-            logourl: "",
+            logourl: "assets/images/cryptoicons-sm/stratis.png",
             handle: "@stratisplatform",
             handleurl: "https://twitter.com/stratisplatform"
         },
         "Tether": {
             name: "Tether",
             id: "2893133450",
-            logourl: "",
+            logourl: "assets/images/cryptoicons-sm/tether.png",
             handle: "@Tether_to",
             handleurl: "https://twitter.com/Tether_to"
         },
         "Zcash": {
             name: "Zcash",
             id: "4633094778",
-            logourl: "",
+            logourl: "assets/images/cryptoicons-sm/zcash.png",
             handle: "@zcashco",
             handleurl: "https://twitter.com/zcashco"
         },
         "Waves": {
             name: "Waves",
             id: "707515829798182912",
-            logourl: "",
+            logourl: "assets/images/cryptoicons-sm/waves.png",
             handle: "@wavesplatform",
             handleurl: "https://twitter.com/wavesplatform"
         },
         "Ark": {
             name: "ArkEcosystem",
             id: "774791455680434176",
-            logourl: "",
+            logourl: "assets/images/cryptoicons-sm/ark.png",
             handle: "@ArkEcosystem",
             handleurl: "https://twitter.com/ArkEcosystem"
         },
         "Steem": {
             name: "Steem",
             id: "711030662728437760",
-            logourl: "",
+            logourl: "assets/images/cryptoicons-sm/steem.png",
             handle: "@steemit",
             handleurl: "https://twitter.com/steemit"
         },
         "MaidSafeCoin": {
             name: "MaidSafeCoin",
             id: "1322660676",
-            logourl: "",
+            logourl: "assets/images/cryptoicons-sm/maidsafecoin.png",
             handle: "@maidsafe",
             handleurl: "https://twitter.com/maidsafe"
         },
         "Bytecoin": {
             name: "Bytecoin",
             id: "2510084300",
-            logourl: "",
+            logourl: "assets/images/cryptoicons-sm/bytecoin.png",
             handle: "@Bytecoin_BCN",
             handleurl: "https://twitter.com/Bytecoin_BCN"
         },
         "Golem": {
             name: "Golem",
             id: "4053977488",
-            logourl: "",
+            logourl: "assets/images/cryptoicons-sm/golem-network-tokens.png",
             handle: "@golemproject",
             handleurl: "https://twitter.com/golemproject"
         },
         "EOS": {
             name: "EOS",
             id: "862675563693125632",
-            logourl: "",
+            logourl: "assets/images/cryptoicons-sm/eos.png",
             handle: "@EOS_io",
             handleurl: "https://twitter.com/EOS_io"
         },
         "Decred": {
             name: "Decred",
             id: "2349043879",
-            logourl: "",
+            logourl: "assets/images/cryptoicons-sm/decred.png",
             handle: "@decredproject",
             handleurl: "https://twitter.com/decredproject"
         },
         "Attentiontoken": {
             name: "Attentiontoken",
             id: "841424245938769920",
-            logourl: "",
+            logourl: "assets/images/cryptoicons-sm/basic-attention-token.png",
             handle: "@Attention",
             handleurl: "https://twitter.com/AttentionToken"
         },
         "Veritaseum": {
             name: "Veritaseum",
             id: "2571393578",
-            logourl: "",
+            logourl: "assets/images/cryptoicons-sm/veritaseum.png",
             handle: "@Veritaseuminc",
             handleurl: "https://twitter.com/Veritaseuminc"
         },
         "BitShares": {
             name: "BitShares",
             id: "503238457",
-            logourl: "",
+            logourl: "assets/images/cryptoicons-sm/bitshares.png",
             handle: "@bitshares",
             handleurl: "https://twitter.com/bitshares"
         },
         "Augur": {
             name: "Augur",
             id: "2895317462",
-            logourl: "",
+            logourl: "assets/images/cryptoicons-sm/augur.png",
             handle: "@AugurProject",
             handleurl: "https://twitter.com/AugurProject"
         },
         "TenX": {
             name: "TenX",
             id: "4585412124",
-            logourl: "",
+            logourl: "assets/images/cryptoicons-sm/tenx.png",
             handle: "@tenxwallet",
             handleurl: "https://twitter.com/tenxwallet"
         },
         "StellarLumens": {
             name: "StellarLumens",
             id: "2460502890",
-            logourl: "",
+            logourl: "assets/images/cryptoicons-sm/stellar.png",
             handle: "@StellarOrg",
             handleurl: "https://twitter.com/StellarOrg"
         },
         "Komodo": {
             name: "Komodo",
             id: "769457743807844352",
-            logourl: "",
+            logourl: "assets/images/cryptoicons-sm/komodo.png",
             handle: "@KomodoPlatform",
             handleurl: "https://twitter.com/KomodoPlatform"
         },
         "Hshare": {
             name: "Hshare",
             id: "877078771366453248",
-            logourl: "",
+            logourl: "assets/images/cryptoicons-sm/hshare.png",
             handle: "@Mkt_Hcash",
             handleurl: "https://twitter.com/Mkt_Hcash"
         },
         "PIVX": {
             name: "PIVX",
             id: "4020178512",
-            logourl: "",
+            logourl: "assets/images/cryptoicons-sm/pivx.png",
             handle: "@_pivx",
             handleurl: "https://twitter.com/_pivx"
         },
         "Nexus": {
             name: "Nexus",
             id: "2575764354",
-            logourl: "",
+            logourl: "assets/images/cryptoicons-sm/nexus.png",
             handle: "@NxsEarth",
             handleurl: "https://twitter.com/NxsEarth"
         },
         "Metal": {
             name: "Metal",
             id: "3111739836",
-            logourl: "",
+            logourl: "assets/images/cryptoicons-sm/metal.png",
             handle: "@metalpaysme",
             handleurl: "https://twitter.com/metalpaysme"
         },
         "Factom": {
             name: "Factom",
             id: "2804855658",
-            logourl: "",
+            logourl: "assets/images/cryptoicons-sm/factom.png",
             handle: "@factom",
             handleurl: "https://twitter.com/factom"
         },
-        "iconominet": {
-            name: "iconominet",
+        "iconomi": {
+            name: "iconomi",
             id: "725253338640617472",
-            logourl: "",
-            handle: "",
-            handleurl: ""
+            logourl: "assets/images/cryptoicons-sm/iconomi.png",
+            handle: "@iconominet",
+            handleurl: "https://twitter.com/iconominet"
         },
         "DigixGlobal": {
             name: "DigixGlobal",
             id: "2925093697",
             logourl: "",
-            handle: "",
-            handleurl: ""
+            handle: "@DigixGlobal",
+            handleurl: "https://twitter.com/DigixGlobal"
         },
         "ByteballOrg": {
             name: "ByteballOrg",
@@ -687,12 +687,11 @@ var AppComponent = (function () {
             __WEBPACK_IMPORTED_MODULE_1_jquery__('.navbar-collapse').removeClass('show');
         });
     };
+    AppComponent.prototype.handleLoggedInEvent = function (val) {
+        console.log('sent value is : ', val);
+    };
     return AppComponent;
 }());
-__decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Input"])(),
-    __metadata("design:type", Boolean)
-], AppComponent.prototype, "userloggedIn", void 0);
 AppComponent = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
         selector: 'app-root',
@@ -946,6 +945,7 @@ var DashboardComponent = (function () {
         this.crypto6_change_24h = "";
         this.crypto6_change_24h_type = "black";
         this.sendLoggedInEvent = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["EventEmitter"]();
+        this.Lstatus = false;
         this.messages = [];
         this.scrolled1 = 0;
         this.scrolled2 = 0;
@@ -1127,7 +1127,9 @@ var DashboardComponent = (function () {
                 this.userToken = parsedObject.token;
             }
             // changing Login / Logout tag in top bar
-            this.sendLoggedInEvent.emit(true);
+            this.Lstatus = true;
+            this.sendLoggedInEvent.emit(this.Lstatus);
+            console.log("hey there !!!" + this.Lstatus);
         }
         ////////////////////////////////////////
         //////////////  tweet feeding code  ///
@@ -1272,6 +1274,7 @@ var DashboardComponent = (function () {
         }
     };
     DashboardComponent.prototype.chk1Change = function (evt) {
+        var _this = this;
         var target = evt.target;
         if (target.checked && target.id == "chk-cr1-1") {
             console.log("retweet checked");
@@ -1323,6 +1326,16 @@ var DashboardComponent = (function () {
             this.cr1tweettype = '000'; // last two
         }
         console.log(this.cr1tweettype);
+        var tempURL = '/api/testtweets/' + this.cr1tweettype + '/' + this.crypto1.id;
+        this.http.get(tempURL)
+            .subscribe(function (res) {
+            _this.result = res;
+            _this.messages_old_crypto1 = [];
+            for (var _i = 0, _a = _this.result; _i < _a.length; _i++) {
+                var res_1 = _a[_i];
+                _this.messages_old_crypto1.push(res_1.field1json);
+            }
+        });
     };
     DashboardComponent.prototype.loadPercentChange = function () {
         var _this = this;
@@ -1332,30 +1345,30 @@ var DashboardComponent = (function () {
             _this.result = res;
             //console.log(this.result);
             for (var _i = 0, _a = _this.result; _i < _a.length; _i++) {
-                var res_1 = _a[_i];
-                if (res_1.name == _this.crypto1.name) {
-                    _this.crypto1_change_24h = res_1.percent_change_24h + '%';
-                    _this.crypto1_change_24h_type = (Number(res_1.percent_change_24h) > 0 ? "green" : "red");
+                var res_2 = _a[_i];
+                if (res_2.name == _this.crypto1.name) {
+                    _this.crypto1_change_24h = res_2.percent_change_24h + '%';
+                    _this.crypto1_change_24h_type = (Number(res_2.percent_change_24h) > 0 ? "green" : "red");
                 }
-                else if (res_1.name == _this.crypto2.name) {
-                    _this.crypto2_change_24h = res_1.percent_change_24h + '%';
-                    _this.crypto2_change_24h_type = (Number(res_1.percent_change_24h) > 0 ? "green" : "red");
+                else if (res_2.name == _this.crypto2.name) {
+                    _this.crypto2_change_24h = res_2.percent_change_24h + '%';
+                    _this.crypto2_change_24h_type = (Number(res_2.percent_change_24h) > 0 ? "green" : "red");
                 }
-                else if (res_1.name == _this.crypto3.name) {
-                    _this.crypto3_change_24h = res_1.percent_change_24h + '%';
-                    _this.crypto3_change_24h_type = (Number(res_1.percent_change_24h) > 0 ? "green" : "red");
+                else if (res_2.name == _this.crypto3.name) {
+                    _this.crypto3_change_24h = res_2.percent_change_24h + '%';
+                    _this.crypto3_change_24h_type = (Number(res_2.percent_change_24h) > 0 ? "green" : "red");
                 }
-                else if (res_1.name == _this.crypto4.name) {
-                    _this.crypto4_change_24h = res_1.percent_change_24h + '%';
-                    _this.crypto4_change_24h_type = (Number(res_1.percent_change_24h) > 0 ? "green" : "red");
+                else if (res_2.name == _this.crypto4.name) {
+                    _this.crypto4_change_24h = res_2.percent_change_24h + '%';
+                    _this.crypto4_change_24h_type = (Number(res_2.percent_change_24h) > 0 ? "green" : "red");
                 }
-                else if (res_1.name == _this.crypto5.name) {
-                    _this.crypto5_change_24h = res_1.percent_change_24h + '%';
-                    _this.crypto5_change_24h_type = (Number(res_1.percent_change_24h) > 0 ? "green" : "red");
+                else if (res_2.name == _this.crypto5.name) {
+                    _this.crypto5_change_24h = res_2.percent_change_24h + '%';
+                    _this.crypto5_change_24h_type = (Number(res_2.percent_change_24h) > 0 ? "green" : "red");
                 }
-                else if (res_1.name == _this.crypto6.name) {
-                    _this.crypto6_change_24h = res_1.percent_change_24h + '%';
-                    _this.crypto6_change_24h_type = (Number(res_1.percent_change_24h) > 0 ? "green" : "red");
+                else if (res_2.name == _this.crypto6.name) {
+                    _this.crypto6_change_24h = res_2.percent_change_24h + '%';
+                    _this.crypto6_change_24h_type = (Number(res_2.percent_change_24h) > 0 ? "green" : "red");
                 }
             }
         });
@@ -1369,23 +1382,6 @@ var DashboardComponent = (function () {
             .subscribe(function (res) {
             _this.result = res;
             for (var _i = 0, _a = _this.result; _i < _a.length; _i++) {
-                var res_2 = _a[_i];
-                var tempText = res_2.field1json['text'];
-                var exp = /(\b(https?|ftp|file):\/\/[-A-Z0-9+&@#\/%?=~_|!:,.;]*[-A-Z0-9+&@#\/%=~_|])/ig;
-                var modifiedText = tempText.replace(exp, "<a href='$1' target='_blank'>$1</a>");
-                res_2.field1json['text'] = modifiedText;
-                // remove RT from begining of the text
-                var modifiedText2 = modifiedText.replace(/^(RT\s)/, "");
-                res_2.field1json['text'] = modifiedText2;
-                _this.messages_old_crypto1.push(res_2.field1json);
-            }
-        });
-        // Second box load with its old tweets
-        var tempURL = this.load_old_tweets_url + this.crypto2.id;
-        this.http.get(tempURL)
-            .subscribe(function (res) {
-            _this.result = res;
-            for (var _i = 0, _a = _this.result; _i < _a.length; _i++) {
                 var res_3 = _a[_i];
                 var tempText = res_3.field1json['text'];
                 var exp = /(\b(https?|ftp|file):\/\/[-A-Z0-9+&@#\/%?=~_|!:,.;]*[-A-Z0-9+&@#\/%=~_|])/ig;
@@ -1394,11 +1390,11 @@ var DashboardComponent = (function () {
                 // remove RT from begining of the text
                 var modifiedText2 = modifiedText.replace(/^(RT\s)/, "");
                 res_3.field1json['text'] = modifiedText2;
-                _this.messages_old_crypto2.push(res_3.field1json);
+                _this.messages_old_crypto1.push(res_3.field1json);
             }
         });
-        // Third box load with its old tweets
-        var tempURL = this.load_old_tweets_url + this.crypto3.id;
+        // Second box load with its old tweets
+        var tempURL = this.load_old_tweets_url + this.crypto2.id;
         this.http.get(tempURL)
             .subscribe(function (res) {
             _this.result = res;
@@ -1411,11 +1407,11 @@ var DashboardComponent = (function () {
                 // remove RT from begining of the text
                 var modifiedText2 = modifiedText.replace(/^(RT\s)/, "");
                 res_4.field1json['text'] = modifiedText2;
-                _this.messages_old_crypto3.push(res_4.field1json);
+                _this.messages_old_crypto2.push(res_4.field1json);
             }
         });
-        // Fourth box load with its old tweets
-        var tempURL = this.load_old_tweets_url + this.crypto4.id;
+        // Third box load with its old tweets
+        var tempURL = this.load_old_tweets_url + this.crypto3.id;
         this.http.get(tempURL)
             .subscribe(function (res) {
             _this.result = res;
@@ -1428,11 +1424,11 @@ var DashboardComponent = (function () {
                 // remove RT from begining of the text
                 var modifiedText2 = modifiedText.replace(/^(RT\s)/, "");
                 res_5.field1json['text'] = modifiedText2;
-                _this.messages_old_crypto4.push(res_5.field1json);
+                _this.messages_old_crypto3.push(res_5.field1json);
             }
         });
-        // Fifth box load with its old tweets
-        var tempURL = this.load_old_tweets_url + this.crypto5.id;
+        // Fourth box load with its old tweets
+        var tempURL = this.load_old_tweets_url + this.crypto4.id;
         this.http.get(tempURL)
             .subscribe(function (res) {
             _this.result = res;
@@ -1445,11 +1441,11 @@ var DashboardComponent = (function () {
                 // remove RT from begining of the text
                 var modifiedText2 = modifiedText.replace(/^(RT\s)/, "");
                 res_6.field1json['text'] = modifiedText2;
-                _this.messages_old_crypto5.push(res_6.field1json);
+                _this.messages_old_crypto4.push(res_6.field1json);
             }
         });
-        // Sixth box load with its old tweets
-        var tempURL = this.load_old_tweets_url + this.crypto6.id;
+        // Fifth box load with its old tweets
+        var tempURL = this.load_old_tweets_url + this.crypto5.id;
         this.http.get(tempURL)
             .subscribe(function (res) {
             _this.result = res;
@@ -1462,11 +1458,11 @@ var DashboardComponent = (function () {
                 // remove RT from begining of the text
                 var modifiedText2 = modifiedText.replace(/^(RT\s)/, "");
                 res_7.field1json['text'] = modifiedText2;
-                _this.messages_old_crypto6.push(res_7.field1json);
+                _this.messages_old_crypto5.push(res_7.field1json);
             }
         });
-        // Live Feed box load with its old tweets
-        var tempURL = this.load_old_tweets_url + 'allcrypto';
+        // Sixth box load with its old tweets
+        var tempURL = this.load_old_tweets_url + this.crypto6.id;
         this.http.get(tempURL)
             .subscribe(function (res) {
             _this.result = res;
@@ -1479,7 +1475,24 @@ var DashboardComponent = (function () {
                 // remove RT from begining of the text
                 var modifiedText2 = modifiedText.replace(/^(RT\s)/, "");
                 res_8.field1json['text'] = modifiedText2;
-                _this.messages_old_cryptoall.push(res_8.field1json);
+                _this.messages_old_crypto6.push(res_8.field1json);
+            }
+        });
+        // Live Feed box load with its old tweets
+        var tempURL = this.load_old_tweets_url + 'allcrypto';
+        this.http.get(tempURL)
+            .subscribe(function (res) {
+            _this.result = res;
+            for (var _i = 0, _a = _this.result; _i < _a.length; _i++) {
+                var res_9 = _a[_i];
+                var tempText = res_9.field1json['text'];
+                var exp = /(\b(https?|ftp|file):\/\/[-A-Z0-9+&@#\/%?=~_|!:,.;]*[-A-Z0-9+&@#\/%=~_|])/ig;
+                var modifiedText = tempText.replace(exp, "<a href='$1' target='_blank'>$1</a>");
+                res_9.field1json['text'] = modifiedText;
+                // remove RT from begining of the text
+                var modifiedText2 = modifiedText.replace(/^(RT\s)/, "");
+                res_9.field1json['text'] = modifiedText2;
+                _this.messages_old_cryptoall.push(res_9.field1json);
             }
         });
     };
@@ -1497,8 +1510,8 @@ var DashboardComponent = (function () {
                     .subscribe(function (res) {
                     _this.result = res;
                     for (var _i = 0, _a = _this.result; _i < _a.length; _i++) {
-                        var res_9 = _a[_i];
-                        _this.messages_old_crypto1.push(res_9.field1json);
+                        var res_10 = _a[_i];
+                        _this.messages_old_crypto1.push(res_10.field1json);
                     }
                     _this.loading1 = false;
                 });
@@ -1520,8 +1533,8 @@ var DashboardComponent = (function () {
                     .subscribe(function (res) {
                     _this.result = res;
                     for (var _i = 0, _a = _this.result; _i < _a.length; _i++) {
-                        var res_10 = _a[_i];
-                        _this.messages_old_crypto2.push(res_10.field1json);
+                        var res_11 = _a[_i];
+                        _this.messages_old_crypto2.push(res_11.field1json);
                     }
                     _this.loading2 = false;
                 });
@@ -1542,8 +1555,8 @@ var DashboardComponent = (function () {
                     .subscribe(function (res) {
                     _this.result = res;
                     for (var _i = 0, _a = _this.result; _i < _a.length; _i++) {
-                        var res_11 = _a[_i];
-                        _this.messages_old_crypto3.push(res_11.field1json);
+                        var res_12 = _a[_i];
+                        _this.messages_old_crypto3.push(res_12.field1json);
                     }
                     _this.loading3 = false;
                 });
@@ -1564,8 +1577,8 @@ var DashboardComponent = (function () {
                     .subscribe(function (res) {
                     _this.result = res;
                     for (var _i = 0, _a = _this.result; _i < _a.length; _i++) {
-                        var res_12 = _a[_i];
-                        _this.messages_old_crypto4.push(res_12.field1json);
+                        var res_13 = _a[_i];
+                        _this.messages_old_crypto4.push(res_13.field1json);
                     }
                     _this.loading4 = false;
                 });
@@ -1586,8 +1599,8 @@ var DashboardComponent = (function () {
                     .subscribe(function (res) {
                     _this.result = res;
                     for (var _i = 0, _a = _this.result; _i < _a.length; _i++) {
-                        var res_13 = _a[_i];
-                        _this.messages_old_crypto5.push(res_13.field1json);
+                        var res_14 = _a[_i];
+                        _this.messages_old_crypto5.push(res_14.field1json);
                     }
                     _this.loading5 = false;
                 });
@@ -1608,8 +1621,8 @@ var DashboardComponent = (function () {
                     .subscribe(function (res) {
                     _this.result = res;
                     for (var _i = 0, _a = _this.result; _i < _a.length; _i++) {
-                        var res_14 = _a[_i];
-                        _this.messages_old_crypto6.push(res_14.field1json);
+                        var res_15 = _a[_i];
+                        _this.messages_old_crypto6.push(res_15.field1json);
                     }
                     _this.loading6 = false;
                 });
@@ -1630,8 +1643,8 @@ var DashboardComponent = (function () {
                     .subscribe(function (res) {
                     _this.result = res;
                     for (var _i = 0, _a = _this.result; _i < _a.length; _i++) {
-                        var res_15 = _a[_i];
-                        _this.messages_old_cryptoall.push(res_15.field1json);
+                        var res_16 = _a[_i];
+                        _this.messages_old_cryptoall.push(res_16.field1json);
                     }
                     _this.loadingall = false;
                 });
@@ -2634,7 +2647,7 @@ exports = module.exports = __webpack_require__(3)();
 
 
 // module
-exports.push([module.i, ".main-form-container {\r\n    max-width: 400px;\r\n    margin-top: 15vh;\r\n}\r\n\r\n.fa-facebook, .fa-facebook-square {\r\n    color: #3b5998\r\n}\r\n.fa-twitter, .fa-twitter-square {\r\n    color: #00aced\r\n}\r\n.fa-google-plus, .fa-google-plus-square {\r\n    color: #dd4b39\r\n}\r\n.fa-linkedin, .fa-linkedin-square {\r\n    color: #007bb6\r\n}", ""]);
+exports.push([module.i, ".main-form-container {\r\n    max-width: 400px;\r\n    margin-top: 7vh;\r\n}\r\n\r\n.fa-facebook, .fa-facebook-square {\r\n    color: #3b5998\r\n}\r\n.fa-twitter, .fa-twitter-square {\r\n    color: #00aced\r\n}\r\n.fa-google-plus, .fa-google-plus-square {\r\n    color: #dd4b39\r\n}\r\n.fa-linkedin, .fa-linkedin-square {\r\n    color: #007bb6\r\n}\r\n.grey {\r\n    color: #111;\r\n}", ""]);
 
 // exports
 
@@ -2688,7 +2701,7 @@ exports = module.exports = __webpack_require__(3)();
 
 
 // module
-exports.push([module.i, ".fullheight {\r\n    height: 88vh;\r\n}\r\n.dashboardcol {\r\n    min-height: 45vh;\r\n    border-right: 1px solid #cecece;\r\n}\r\n.dashboardcol .dashheading {\r\n    text-align: center;\r\n    background-color: #f1f1f1;\r\n    padding-top: 5px;\r\n    padding-bottom: 5px;\r\n    font-weight: bold;\r\n}\r\n.dashheading i {\r\n    padding-right: 10px;\r\n    color: #a4a4a4;\r\n}\r\n.iconcolumns a {\r\n    color: #cecece;\r\n    padding: 10px;\r\n    display: inline-block;\r\n}\r\n@media (max-width:550px){\r\n    .iconcolumns a {\r\n        padding: 10px 1px;\r\n    }\r\n}\r\n\r\n.iconcolumns a:hover {\r\n    color: #ffffff;\r\n}\r\n.iconcolumns a.iconactive {\r\n    color: #ffffff;\r\n}\r\n.iconcolumns {\r\n    background-color: #111111;\r\n}\r\n.col-1.iconcolumns {\r\n    max-width: 50px !important;\r\n}", ""]);
+exports.push([module.i, ".fullheight {\r\n    height: 88vh;\r\n}\r\n.dashboardcol {\r\n    min-height: 45vh;\r\n    border-right: 1px solid #cecece;\r\n}\r\n.dashboardcol .dashheading {\r\n    text-align: center;\r\n    background-color: #f1f1f1;\r\n    padding-top: 5px;\r\n    padding-bottom: 5px;\r\n    font-weight: bold;\r\n}\r\n.dashheading i {\r\n    padding-right: 10px;\r\n    color: #a4a4a4;\r\n}\r\n.iconcolumns a {\r\n    color: #cecece;\r\n    padding: 10px;\r\n    display: inline-block;\r\n}\r\n@media (max-width:550px){\r\n    .iconcolumns a {\r\n        padding: 10px 1px;\r\n    }\r\n}\r\n\r\n.iconcolumns a:hover {\r\n    color: #ffffff;\r\n}\r\n.iconcolumns a.iconactive {\r\n    color: #ffffff;\r\n}\r\n.iconcolumns {\r\n    background-color: #111111;\r\n}\r\n.col-1.iconcolumns {\r\n    max-width: 50px !important;\r\n}\r\n.fa-facebook, .fa-facebook-square {\r\n    color: #3b5998\r\n}\r\n.fa-twitter, .fa-twitter-square {\r\n    color: #00aced\r\n}\r\n.fa-google-plus, .fa-google-plus-square {\r\n    color: #dd4b39\r\n}\r\n.fa-linkedin, .fa-linkedin-square {\r\n    color: #007bb6\r\n}\r\n.remove-account {\r\n    color: red;\r\n    font-size: 0.7em;\r\n    text-decoration: underline\r\n}", ""]);
 
 // exports
 
@@ -2724,7 +2737,7 @@ exports = module.exports = __webpack_require__(3)();
 
 
 // module
-exports.push([module.i, ".main-form-container {\r\n    max-width: 400px;\r\n    margin-top: 15vh;\r\n}", ""]);
+exports.push([module.i, ".main-form-container {\r\n    max-width: 400px;\r\n    margin-top: 7vh;\r\n}\r\n\r\n.fa-facebook, .fa-facebook-square {\r\n    color: #3b5998\r\n}\r\n.fa-twitter, .fa-twitter-square {\r\n    color: #00aced\r\n}\r\n.fa-google-plus, .fa-google-plus-square {\r\n    color: #dd4b39\r\n}\r\n.fa-linkedin, .fa-linkedin-square {\r\n    color: #007bb6\r\n}", ""]);
 
 // exports
 
@@ -2791,7 +2804,7 @@ module.exports = module.exports.toString();
 /***/ 253:
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"container-fluid\">\r\n  <!-- Content here -->\r\n  <nav class=\"navbar navbar-expand-lg navbar-dark\" style=\"background-color: #12132d;\">\r\n      <button class=\"navbar-toggler navbar-toggler-right\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarNavAltMarkup\" aria-controls=\"navbarNavAltMarkup\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">\r\n        <span class=\"navbar-toggler-icon\"></span>\r\n      </button>\r\n      <a class=\"navbar-brand\" href=\"#\"><img src=\"assets/images/tweetblock-logo.png\"/></a>\r\n      <div class=\"collapse navbar-collapse\" id=\"navbarNavAltMarkup\">\r\n        <div class=\"navbar-nav\">\r\n          <a class=\"nav-item nav-link active\" routerLink=\"/home\" routerLinkActive=\"active\">Home</a>\r\n          <a class=\"nav-item nav-link\" routerLink=\"/dashboard\" routerLinkActive=\"active\">Dashboard</a>\r\n          <a class=\"nav-item nav-link\" routerLink=\"/twitterwall\" routerLinkActive=\"active\">Wall</a>\r\n          \r\n          \r\n        </div>\r\n      </div>\r\n\r\n      <form class=\"form-inline\">\r\n          <a class=\"navbar-brand\" routerLink=\"/login\"><span *ngIf=\"!userloggedIn;then content else other_content\">here is ignored</span></a>\r\n          <ng-template #content>Login</ng-template>\r\n          <ng-template #other_content>Logout</ng-template>\r\n        </form>\r\n    </nav>\r\n  <router-outlet></router-outlet>\r\n</div>\r\n"
+module.exports = "<div class=\"container-fluid\">\r\n  <!-- Content here -->\r\n  <nav class=\"navbar navbar-expand-lg navbar-dark\" style=\"background-color: #12132d;\">\r\n      <button class=\"navbar-toggler navbar-toggler-right\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarNavAltMarkup\" aria-controls=\"navbarNavAltMarkup\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">\r\n        <span class=\"navbar-toggler-icon\"></span>\r\n      </button>\r\n      <a class=\"navbar-brand\" href=\"#\"><img src=\"assets/images/tweetblock-logo.png\"/></a>\r\n      <div class=\"collapse navbar-collapse\" id=\"navbarNavAltMarkup\">\r\n        <div class=\"navbar-nav\">\r\n          <!-- <a class=\"nav-item nav-link active\" routerLink=\"/home\" routerLinkActive=\"active\">Home</a>\r\n          <a class=\"nav-item nav-link\" routerLink=\"/dashboard\" routerLinkActive=\"active\">Dashboard</a>\r\n          <a class=\"nav-item nav-link\" routerLink=\"/twitterwall\" routerLinkActive=\"active\">Wall</a> -->\r\n          \r\n          \r\n        </div>\r\n      </div>\r\n\r\n      <form class=\"form-inline\">\r\n          <a class=\"navbar-brand\" routerLink=\"/login\"><span *ngIf=\"!userloggedIn;then content else other_content\">here is ignored</span></a>\r\n          <ng-template #content></ng-template>\r\n          <ng-template #other_content>Logout</ng-template>\r\n        </form>\r\n    </nav>\r\n  <router-outlet></router-outlet>\r\n</div>\r\n"
 
 /***/ }),
 
@@ -2840,7 +2853,7 @@ module.exports = "<p>\r\n  linkedincallback !\r\n</p>\r\n\r\n<p>Loading ....    
 /***/ 260:
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"container main-form-container\">\r\n  <h3 class=\"text-center jumbotron-heading\">Login</h3>\r\n  <form>\r\n    <div class=\"form-group row\">\r\n      <label for=\"inputEmail3\" class=\"col-sm-2 col-form-label\">Email</label>\r\n      <div class=\"col-sm-10\">\r\n        <input [(ngModel)]=\"user.email\" name=\"email\" type=\"email\" class=\"form-control\" id=\"email\" placeholder=\"Email\">\r\n      </div>\r\n    </div>\r\n    <div class=\"form-group row\">\r\n      <label for=\"inputPassword3\" class=\"col-sm-2 col-form-label\">Password</label>\r\n      <div class=\"col-sm-10\">\r\n        <input [(ngModel)]=\"user.password\" name=\"password\" type=\"password\" class=\"form-control\" id=\"password\" placeholder=\"Password\">\r\n      </div>\r\n    </div>\r\n    \r\n    <div class=\"form-group row\">\r\n      <div class=\"offset-sm-2 col-sm-12 text-center\">\r\n        <button (click)=\"login()\" type=\"submit\" class=\"btn btn-primary\">Login</button>\r\n      </div>\r\n    </div>\r\n    <div *ngIf=\"error\" class=\"alert alert-danger\">{{error}}</div>\r\n  </form>\r\n  <p class=\"text-center\">\r\n    or Login using <br/>\r\n    <a href=\"/auth/twitter\"><i class=\"fa fa-twitter-square fa-2x\"></i></a>\r\n    <a href=\"/auth/facebook\"><i class=\"fa fa-facebook-square fa-2x\"></i></a>\r\n    <a href=\"/auth/linkedin\"><i class=\"fa fa-linkedin-square fa-2x\"></i></a>\r\n    <a href=\"/auth/google\"><i class=\"fa fa-google-plus-square fa-2x\"></i></a>\r\n</p>\r\n</div>"
+module.exports = "<div class=\"container main-form-container\">\r\n  <h2 class=\"text-center jumbotron-heading\">Login Now</h2>\r\n  <h4 class=\"text-center jumbotron-heading\"><i>Access your dashboard now</i></h4>\r\n  <form>\r\n    <div class=\"form-group row\">\r\n      <label for=\"inputEmail3\" class=\"col-sm-2 col-form-label\">Email</label>\r\n      <div class=\"col-sm-10\">\r\n        <input [(ngModel)]=\"user.email\" name=\"email\" type=\"email\" class=\"form-control\" id=\"email\" placeholder=\"John.doe@myemail.com\">\r\n      </div>\r\n    </div>\r\n    <div class=\"form-group row\">\r\n      <label for=\"inputPassword3\" class=\"col-sm-2 col-form-label\">Password</label>\r\n      <div class=\"col-sm-10\">\r\n        <input [(ngModel)]=\"user.password\" name=\"password\" type=\"password\" class=\"form-control\" id=\"password\" placeholder=\"Fill in your password\">\r\n      </div>\r\n    </div>\r\n    \r\n    <div class=\"form-group row\">\r\n      <div class=\"offset-sm-2 col-sm-12 text-center\">\r\n        <button (click)=\"login()\" type=\"submit\" class=\"btn btn-primary\">LOGIN</button>\r\n      </div>\r\n    </div>\r\n    <div *ngIf=\"error\" class=\"alert alert-danger\">{{error}}</div>\r\n  </form>\r\n  <p class=\"text-center\">\r\n    <i>or login by using </i><br/>\r\n    <a href=\"/auth/twitter\"><i class=\"fa fa-twitter-square fa-2x\"></i></a>\r\n    <a href=\"/auth/facebook\"><i class=\"fa fa-facebook-square fa-2x\"></i></a>\r\n    <a href=\"/auth/linkedin\"><i class=\"fa fa-linkedin-square fa-2x\"></i></a>\r\n    <a href=\"/auth/google\"><i class=\"fa fa-google-plus-square fa-2x\"></i></a>\r\n</p>\r\n<p class=\"text-center\">\r\n    <i>Not registered ? </i><br/>\r\n    <i><u><a class=\"grey\" href=\"/signup\">Click here to register</a></u></i>\r\n</p>\r\n</div>"
 
 /***/ }),
 
@@ -2861,21 +2874,21 @@ module.exports = "<p>\r\n  privacy-policy works!\r\n</p>\r\n"
 /***/ 263:
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"row no-gutters\"> <!-- top first half row -->\r\n    <div class=\"col-1 iconcolumns fullheight\">\r\n      <a href=\"\" routerLink=\"/dashboard\"><i class=\"fa fa-home fa-lg\"></i></a><br/>\r\n      <a href=\"\"><i class=\"fa fa-line-chart fa-lg\"></i></a><br/>\r\n      <a href=\"\" routerLink=\"/events\"><i class=\"fa fa-calendar fa-lg\"></i></a><br/>\r\n      <a href=\"\"><i class=\"fa fa-envelope-o fa-lg\"></i></a><br/>\r\n      <a href=\"\" class=\"iconactive\" routerLink=\"/settings\"><i class=\"fa fa-cogs fa-lg\"></i></a><br/>\r\n      <a href=\"\" routerLink=\"/profile\"><i class=\"fa fa-user fa-lg\"></i></a><br/>\r\n      <a href=\"\"><i class=\"fa fa-plus fa-lg\"></i></a><br/>\r\n    </div>\r\n    <div class=\"col-11\">\r\n        <div class=\"row\">\r\n          <div class=\"container\">\r\n    \r\n        <div class=\"page-header text-center\">\r\n            <h1><span class=\"fa fa-anchor\"></span> Profile</h1>\r\n            <a href=\"/logout\" class=\"btn btn-default btn-sm\">Logout</a>\r\n        </div>\r\n    \r\n        <div class=\"row\">\r\n    \r\n            <!-- LOCAL INFORMATION -->\r\n            <div class=\"col-sm-6\">\r\n                <div class=\"well\">\r\n                    <h3><span class=\"fa fa-user\"></span> Basic profile</h3>\r\n    \r\n                        <p>\r\n                            <strong>id</strong>: {{userid}}<br>\r\n                            <strong>email</strong>: {{userEmail}}<br>\r\n                            <strong>password</strong>: - <br>\r\n                            <strong>Name</strong>: {{userName}}<br>\r\n                            <strong>Logged in As</strong>: {{userLoggedInAs}} user<br>\r\n                            <strong>Token</strong>: {{userToken}}<br>\r\n                            <strong>Phone</strong>: - <br>\r\n                        </p>\r\n    \r\n                </div>\r\n            </div>\r\n    \r\n        </div>\r\n    </div>\r\n    </div>\r\n    </div>\r\n</div>\r\n"
+module.exports = "<div class=\"row no-gutters\"> <!-- top first half row -->\r\n    <div class=\"col-1 iconcolumns fullheight\">\r\n      <a href=\"\" routerLink=\"/dashboard\"><i class=\"fa fa-home fa-lg\"></i></a><br/>\r\n      <a href=\"\"><i class=\"fa fa-line-chart fa-lg\"></i></a><br/>\r\n      <a href=\"\" routerLink=\"/events\"><i class=\"fa fa-calendar fa-lg\"></i></a><br/>\r\n      <a href=\"\"><i class=\"fa fa-envelope-o fa-lg\"></i></a><br/>\r\n      <a href=\"\" class=\"iconactive\" routerLink=\"/settings\"><i class=\"fa fa-cogs fa-lg\"></i></a><br/>\r\n      <a href=\"\" routerLink=\"/profile\"><i class=\"fa fa-user fa-lg\"></i></a><br/>\r\n    </div>\r\n    <div class=\"col-11\">\r\n        <div class=\"row\">\r\n          <div class=\"container\">\r\n    \r\n        <div class=\"page-header\">\r\n            <h3>My Profile</h3>\r\n            <!-- <a href=\"/logout\" class=\"btn btn-default btn-sm\">Logout</a> -->\r\n        </div>\r\n    \r\n        <div class=\"row\">\r\n    \r\n            <!-- LOCAL INFORMATION -->\r\n            <div class=\"col-sm-6 col-md-3\">\r\n                <div class=\"well\">\r\n                    <h5> Avatar Picture</h5>\r\n                    <img src=\"assets/images/profile-img-placeholder.png\" alt=\"profile pic\"/>\r\n                    <h6>Upload picture</h6>\r\n                    <p><a href=\"/auth/twitter\"><i class=\"fa fa-twitter-square fa-2x\"></i></a> Add Twitter</p>\r\n                    <p><a href=\"/auth/facebook\"><i class=\"fa fa-facebook-square fa-2x\"></i></a> Add Facebook</p>\r\n                    <p><a href=\"/auth/linkedin\"><i class=\"fa fa-linkedin-square fa-2x\"></i></a> Add Linkedin</p>\r\n                    <p><a href=\"/auth/google\"><i class=\"fa fa-google-plus-square fa-2x\"></i></a> Add Google+</p>\r\n                        <!-- <p>\r\n                            <strong>id</strong>: {{userid}}<br>\r\n                            <strong>email</strong>: {{userEmail}}<br>\r\n                            <strong>password</strong>: - <br>\r\n                            <strong>Name</strong>: {{userName}}<br>\r\n                            <strong>Logged in As</strong>: {{userLoggedInAs}} user<br>\r\n                            <strong>Token</strong>: {{userToken}}<br>\r\n                            <strong>Phone</strong>: - <br>\r\n                        </p> -->\r\n    \r\n                </div>\r\n            </div>\r\n            <div class=\"col-sm-6 col-md-6\">\r\n                <form>\r\n                    <div class=\"form-group\">\r\n                        <label for=\"fullname\">Fullname</label>\r\n                        <input type=\"text\" name=\"fullname\" class=\"form-control\"  id=\"fullname\" placeholder=\"Fullname\">\r\n                    </div>\r\n                    <div class=\"form-group\">\r\n                        <label for=\"country\">Country</label>\r\n                        <input type=\"text\" name=\"country\" class=\"form-control\"  id=\"country\" placeholder=\"Country\">\r\n                    </div>\r\n                    <div class=\"form-group\">\r\n                        <label for=\"inputEmail3\">Email</label>\r\n                        <input [(ngModel)]=\"user.email\" type=\"email\" name=\"email\" class=\"form-control\"  id=\"email\" placeholder=\"Email\">\r\n                    </div>\r\n                    <div class=\"form-group\">\r\n                        <label for=\"inputPassword3\">Password</label>\r\n                        <input [(ngModel)]=\"user.password\" type=\"password\" name=\"password\" class=\"form-control\" id=\"password\" placeholder=\"Password\">\r\n                    </div>\r\n                    <div class=\"form-group\">\r\n                        <label for=\"inputPassword3\">Repeat Password</label>\r\n                        <input type=\"password\" name=\"password\" class=\"form-control\" id=\"password\" placeholder=\"Confirm your Password\">\r\n                    </div>\r\n                    \r\n                    <div class=\"form-group row\">\r\n                        <div class=\"col-sm-4 text-center\">\r\n                            <a class=\"remove-account\" href=\"\">Remove account</a>\r\n                        </div>\r\n                        <div class=\"col-sm-8 text-center\">\r\n                        <button (click)=\"update_information()\" type=\"submit\" class=\"btn btn-primary\">Update information</button>\r\n                        </div>\r\n                    </div>\r\n                </form>\r\n            </div>\r\n    \r\n        </div>\r\n    </div>\r\n    </div>\r\n    </div>\r\n</div>\r\n"
 
 /***/ }),
 
 /***/ 264:
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"row no-gutters\"> <!-- top first half row -->\r\n  <div class=\"col-1 iconcolumns fullheight\">\r\n    <a href=\"\" routerLink=\"/dashboard\"><i class=\"fa fa-home fa-lg\"></i></a><br/>\r\n    <a href=\"\"><i class=\"fa fa-line-chart fa-lg\"></i></a><br/>\r\n    <a href=\"\" routerLink=\"/events\"><i class=\"fa fa-calendar fa-lg\"></i></a><br/>\r\n    <a href=\"\"><i class=\"fa fa-envelope-o fa-lg\"></i></a><br/>\r\n    <a href=\"\" class=\"iconactive\" routerLink=\"/settings\"><i class=\"fa fa-cogs fa-lg\"></i></a><br/>\r\n    <a href=\"\" routerLink=\"/profile\"><i class=\"fa fa-user fa-lg\"></i></a><br/>\r\n  </div>\r\n  <div class=\"col-11\">\r\n      <div class=\"row\">\r\n        <div class=\"container\">\r\n          <p>&nbsp;</p>\r\n          <!-- <div class=\"col-md-5\">\r\n            <h6>Login using your twitter account to start getting feeds</h6>\r\n            <p>\r\n                <a class=\"btn btn-social btn-twitter\">\r\n                  <i class=\"fa fa-twitter\"></i> Sign in with Twitter\r\n                </a>\r\n            </p>\r\n          </div> -->\r\n\r\n          <div class=\"col-md-5 col-md-offset-3\">\r\n            <h5>Preferred Crypto currencies</h5>\r\n            \r\n            <div>\r\n                <form (ngSubmit)=\"onSubmit()\" #heroForm=\"ngForm\">\r\n                    <div class=\"form-group row\">\r\n                        <label for=\"exampleSelect1\" class=\"col-sm-2 col-form-label\">1.</label>\r\n                        <div class=\"col-sm-10\">\r\n                            <input auto-complete type=\"text\" placeholder=\"1\" name=\"cryptopreference1\" [(ngModel)]=\"data.cryptopreference1\" [source]=\"arrayOfCoins\">\r\n                        </div>\r\n                    </div>\r\n                    <div class=\"form-group row\">\r\n                        <label for=\"exampleSelect1\" class=\"col-sm-2 col-form-label\">2.</label>\r\n                        <div class=\"col-sm-10\">\r\n                            <input auto-complete type=\"text\" placeholder=\"2\" name=\"cryptopreference2\" [(ngModel)]=\"data.cryptopreference2\" [source]=\"arrayOfCoins\"> \r\n                        </div>\r\n                    </div>\r\n                    <div class=\"form-group row\">\r\n                        <label for=\"exampleSelect1\" class=\"col-sm-2 col-form-label\">3.</label>\r\n                        <div class=\"col-sm-10\">\r\n                            <input auto-complete type=\"text\" placeholder=\"3\" name=\"cryptopreference3\" [(ngModel)]=\"data.cryptopreference3\" [source]=\"arrayOfCoins\">\r\n                        </div>\r\n                    </div>\r\n                    <div class=\"form-group row\">\r\n                        <label for=\"exampleSelect1\" class=\"col-sm-2 col-form-label\">4.</label>\r\n                        <div class=\"col-sm-10\">\r\n                            <input auto-complete type=\"text\" placeholder=\"4\" name=\"cryptopreference4\" [(ngModel)]=\"data.cryptopreference4\" [source]=\"arrayOfCoins\">\r\n                        </div>\r\n                    </div>\r\n                    <div class=\"form-group row\">\r\n                        <label for=\"exampleSelect1\" class=\"col-sm-2 col-form-label\">5.</label>\r\n                        <div class=\"col-sm-10\">\r\n                            <input auto-complete type=\"text\" placeholder=\"5\" name=\"cryptopreference5\" [(ngModel)]=\"data.cryptopreference5\" [source]=\"arrayOfCoins\">\r\n                        </div>\r\n                    </div>\r\n                    <div class=\"form-group row\">\r\n                        <label for=\"exampleSelect1\" class=\"col-sm-2 col-form-label\">6.</label>\r\n                        <div class=\"col-sm-10\">\r\n                            <input auto-complete type=\"text\" placeholder=\"6\" name=\"cryptopreference6\" [(ngModel)]=\"data.cryptopreference6\" [source]=\"arrayOfCoins\">\r\n                        </div>\r\n                    </div>\r\n                    <button type=\"submit\" class=\"btn btn-primary\">Save preference</button>\r\n                </form>\r\n\r\n            </div>\r\n            <p><a [routerLink]=\"['/login']\">Logout</a></p>\r\n        </div>\r\n        <div class=\"col-md-6 col-md-offset-3\">\r\n            \r\n        </div>\r\n\r\n        </div>\r\n      </div>\r\n  </div>\r\n</div>"
+module.exports = "<div class=\"row no-gutters\"> <!-- top first half row -->\r\n  <div class=\"col-1 iconcolumns fullheight\">\r\n    <a href=\"\" routerLink=\"/dashboard\"><i class=\"fa fa-home fa-lg\"></i></a><br/>\r\n    <a href=\"\"><i class=\"fa fa-line-chart fa-lg\"></i></a><br/>\r\n    <a href=\"\" routerLink=\"/events\"><i class=\"fa fa-calendar fa-lg\"></i></a><br/>\r\n    <a href=\"\"><i class=\"fa fa-envelope-o fa-lg\"></i></a><br/>\r\n    <a href=\"\" class=\"iconactive\" routerLink=\"/settings\"><i class=\"fa fa-cogs fa-lg\"></i></a><br/>\r\n    <a href=\"\" routerLink=\"/profile\"><i class=\"fa fa-user fa-lg\"></i></a><br/>\r\n  </div>\r\n  <div class=\"col-11\">\r\n      <div class=\"row\">\r\n        <div class=\"container\">\r\n          <p>&nbsp;</p>\r\n          <!-- <div class=\"col-md-5\">\r\n            <h6>Login using your twitter account to start getting feeds</h6>\r\n            <p>\r\n                <a class=\"btn btn-social btn-twitter\">\r\n                  <i class=\"fa fa-twitter\"></i> Sign in with Twitter\r\n                </a>\r\n            </p>\r\n          </div> -->\r\n\r\n          <div class=\"col-md-5 col-md-offset-3\">\r\n            <h4 class=\"navyblue\">Cryptocurrency Feeds</h4>\r\n            <p><i>Please select your preferred cryptocurrencies</i></p>\r\n            <div>\r\n                <form (ngSubmit)=\"onSubmit()\" #heroForm=\"ngForm\">\r\n                    <div class=\"form-group row\">\r\n                        <label for=\"exampleSelect1\" class=\"col-sm-3 col-form-label\">Block 1:</label>\r\n                        <div class=\"col-sm-9\">\r\n                            <input auto-complete type=\"text\" placeholder=\"Select a cryptocurrency\" name=\"cryptopreference1\" [(ngModel)]=\"data.cryptopreference1\" [source]=\"arrayOfCoins\">\r\n                        </div>\r\n                    </div>\r\n                    <div class=\"form-group row\">\r\n                        <label for=\"exampleSelect1\" class=\"col-sm-3 col-form-label\">Block 2:</label>\r\n                        <div class=\"col-sm-9\">\r\n                            <input auto-complete type=\"text\" placeholder=\"Select a cryptocurrency\" name=\"cryptopreference2\" [(ngModel)]=\"data.cryptopreference2\" [source]=\"arrayOfCoins\"> \r\n                        </div>\r\n                    </div>\r\n                    <div class=\"form-group row\">\r\n                        <label for=\"exampleSelect1\" class=\"col-sm-3 col-form-label\">Block 3:</label>\r\n                        <div class=\"col-sm-9\">\r\n                            <input auto-complete type=\"text\" placeholder=\"Select a cryptocurrency\" name=\"cryptopreference3\" [(ngModel)]=\"data.cryptopreference3\" [source]=\"arrayOfCoins\">\r\n                        </div>\r\n                    </div>\r\n                    <div class=\"form-group row\">\r\n                        <label for=\"exampleSelect1\" class=\"col-sm-3 col-form-label\">Block 4:</label>\r\n                        <div class=\"col-sm-9\">\r\n                            <input auto-complete type=\"text\" placeholder=\"Select a cryptocurrency\" name=\"cryptopreference4\" [(ngModel)]=\"data.cryptopreference4\" [source]=\"arrayOfCoins\">\r\n                        </div>\r\n                    </div>\r\n                    <div class=\"form-group row\">\r\n                        <label for=\"exampleSelect1\" class=\"col-sm-3 col-form-label\">Block 5:</label>\r\n                        <div class=\"col-sm-9\">\r\n                            <input auto-complete type=\"text\" placeholder=\"Select a cryptocurrency\" name=\"cryptopreference5\" [(ngModel)]=\"data.cryptopreference5\" [source]=\"arrayOfCoins\">\r\n                        </div>\r\n                    </div>\r\n                    <div class=\"form-group row\">\r\n                        <label for=\"exampleSelect1\" class=\"col-sm-3 col-form-label\">Block 6:</label>\r\n                        <div class=\"col-sm-9\">\r\n                            <input auto-complete type=\"text\" placeholder=\"Select a cryptocurrency\" name=\"cryptopreference6\" [(ngModel)]=\"data.cryptopreference6\" [source]=\"arrayOfCoins\">\r\n                        </div>\r\n                    </div>\r\n                    <div class=\"form-group row\">\r\n                            <div class=\"col-sm-12 offset-sm-2 text-center\">\r\n                                <button type=\"submit\" class=\"btn btn-primary\">Save preference</button>\r\n                            </div>\r\n                    </div>\r\n                </form>\r\n\r\n            </div>\r\n            <!-- <p><a [routerLink]=\"['/login']\">Logout</a></p> -->\r\n        </div>\r\n        <div class=\"col-md-6 col-md-offset-3\">\r\n            \r\n        </div>\r\n\r\n        </div>\r\n      </div>\r\n  </div>\r\n</div>"
 
 /***/ }),
 
 /***/ 265:
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"container main-form-container\">\r\n  <h3 class=\"text-center jumbotron-heading\">Register</h3>\r\n  <form>\r\n    <div class=\"form-group row\">\r\n      <label for=\"inputEmail3\" class=\"col-sm-2 col-form-label\">Email</label>\r\n      <div class=\"col-sm-10\">\r\n        <input [(ngModel)]=\"user.email\" type=\"email\" name=\"email\" class=\"form-control\"  id=\"email\" placeholder=\"Email\">\r\n      </div>\r\n    </div>\r\n    <div class=\"form-group row\">\r\n      <label for=\"inputPassword3\" class=\"col-sm-2 col-form-label\">Password</label>\r\n      <div class=\"col-sm-10\">\r\n        <input [(ngModel)]=\"user.password\" type=\"password\" name=\"password\" class=\"form-control\" id=\"password\" placeholder=\"Password\">\r\n      </div>\r\n    </div>\r\n    \r\n    <div class=\"form-group row\">\r\n      <div class=\"offset-sm-2 col-sm-10 text-center\">\r\n        <button (click)=\"register()\" type=\"submit\" class=\"btn btn-primary\">Signup</button>\r\n      </div>\r\n    </div>\r\n    <div *ngIf=\"error\" class=\"alert alert-danger\">{{error}}</div>\r\n  </form>\r\n  </div>"
+module.exports = "<div class=\"container main-form-container\">\r\n  <h2 class=\"text-center jumbotron-heading\">Register Now!</h2>\r\n  <h4 class=\"text-center jumbotron-heading\"><i>It's 100% free</i></h4>\r\n  <form>\r\n    <div class=\"form-group row\">\r\n      <label for=\"fullname\" class=\"col-sm-2 col-form-label\">Fullname</label>\r\n      <div class=\"col-sm-10\">\r\n        <input type=\"text\" name=\"fullname\" class=\"form-control\"  id=\"fullname\" placeholder=\"Fullname\">\r\n      </div>\r\n    </div>\r\n    <div class=\"form-group row\">\r\n      <label for=\"country\" class=\"col-sm-2 col-form-label\">Country</label>\r\n      <div class=\"col-sm-10\">\r\n        <input type=\"text\" name=\"country\" class=\"form-control\"  id=\"country\" placeholder=\"Country\">\r\n      </div>\r\n    </div>\r\n    <div class=\"form-group row\">\r\n      <label for=\"inputEmail3\" class=\"col-sm-2 col-form-label\">Email</label>\r\n      <div class=\"col-sm-10\">\r\n        <input [(ngModel)]=\"user.email\" type=\"email\" name=\"email\" class=\"form-control\"  id=\"email\" placeholder=\"Email\">\r\n      </div>\r\n    </div>\r\n    <div class=\"form-group row\">\r\n      <label for=\"inputPassword3\" class=\"col-sm-2 col-form-label\">Password</label>\r\n      <div class=\"col-sm-10\">\r\n        <input [(ngModel)]=\"user.password\" type=\"password\" name=\"password\" class=\"form-control\" id=\"password\" placeholder=\"Password\">\r\n      </div>\r\n    </div>\r\n    <div class=\"form-group row\">\r\n        <label for=\"inputPassword3\" class=\"col-sm-2 col-form-label\">Repeat Password</label>\r\n        <div class=\"col-sm-10\">\r\n          <input type=\"password\" name=\"password\" class=\"form-control\" id=\"password\" placeholder=\"Confirm your Password\">\r\n        </div>\r\n      </div>\r\n    \r\n    <div class=\"form-group row\">\r\n      <div class=\"offset-sm-2 col-sm-12 text-center\">\r\n        <button (click)=\"register()\" type=\"submit\" class=\"btn btn-primary\">REGISTER</button>\r\n      </div>\r\n    </div>\r\n    <div *ngIf=\"error\" class=\"alert alert-danger\">{{error}}</div>\r\n  </form>\r\n  <p class=\"text-center\">\r\n      <i>or Continue using </i><br/>\r\n      <a href=\"/auth/twitter\"><i class=\"fa fa-twitter-square fa-2x\"></i></a>\r\n      <a href=\"/auth/facebook\"><i class=\"fa fa-facebook-square fa-2x\"></i></a>\r\n      <a href=\"/auth/linkedin\"><i class=\"fa fa-linkedin-square fa-2x\"></i></a>\r\n      <a href=\"/auth/google\"><i class=\"fa fa-google-plus-square fa-2x\"></i></a>\r\n  </p>\r\n  </div>"
 
 /***/ }),
 

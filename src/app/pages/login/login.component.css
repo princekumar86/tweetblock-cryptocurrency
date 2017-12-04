@@ -1,6 +1,6 @@
 .main-form-container {
     max-width: 400px;
-    margin-top: 15vh;
+    margin-top: 7vh;
 }
 
 .fa-facebook, .fa-facebook-square {
@@ -14,4 +14,7 @@
 }
 .fa-linkedin, .fa-linkedin-square {
     color: #007bb6
+}
+.grey {
+    color: #111;
 }

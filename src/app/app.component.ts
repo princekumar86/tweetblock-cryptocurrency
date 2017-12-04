@@ -13,7 +13,7 @@ export class AppComponent implements OnInit {
   
   // Define a users property to hold our user data
   users: Array<any>;
-  @Input() userloggedIn:boolean = false;
+  userloggedIn:boolean = false;
 
     // Create an instance of the DataService through dependency injection
     constructor(private _dataService: DataService) {
@@ -31,6 +31,10 @@ export class AppComponent implements OnInit {
       });
 
     }
+
+    public handleLoggedInEvent(val: any):void {
+      console.log('sent value is : ', val);
+  }
     
     
 }
