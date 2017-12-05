@@ -1,5 +1,5 @@
 .dashboardcol {
-    min-height: 42vh;
+    min-height: 45vh;
     border-right: 1px solid #cecece;
 }
 .dashboardcol.all-crypto {
@@ -49,15 +49,15 @@
 }
 .dashbody {
     font-size: 0.7em;
-    height: 40vh;
-    max-height: 40vh;
+    height: 41.5vh;
+    max-height: 41.5vh;
     border: 1px solid #cecece;
     overflow-y: scroll;
     overflow-x: hidden;
 }
 .all-crypto .dashbody {
-    height: 82vh;
-    max-height: 82vh;
+    height: 83vh;
+    max-height: 83vh;
 }
 .searchText {
     width: 100%;
@@ -163,4 +163,8 @@
 .t_type {
     font-weight: bold;
     font-size: 10px;
+}
+.dashcols-holder {
+    flex: 1 0 91.666667%;
+    max-width: 96.666667%;
 }
