@@ -56,3 +56,13 @@
     font-size: 0.7em;
     text-decoration: underline
 }
+.page-header {
+    padding-top: 24px;
+}
+.profilepicholder {
+    margin-bottom: 8px;
+}
+.fa-button {
+    position: relative;
+    top: 6px;
+}
