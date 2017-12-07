@@ -121,7 +121,7 @@ client.stream('statuses/filter', {follow: '2312333412,831847934534746114,1051053
       //   field1json : event
       // });
       Tweet.create({field1json: event}, function (err, small) {
-        if (err) return handleError(err);
+        if (err) console.log('some error occured type custom pk 2'+err);//return handleError(err);
         // saved!
         })
       // Tweet.save(function (err, savedtweet) {
