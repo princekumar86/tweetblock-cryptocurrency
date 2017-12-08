@@ -110,33 +110,42 @@ io.sockets.on('connection', function (socket) {
     });
      
 });
-
-//client.stream('statuses/filter', {follow: 'ethereum,OmiseGO,Ripple,Litecoin'}, function(stream) {
-client.stream('statuses/filter', {follow: '2312333412,831847934534746114,1051053836,1393174363,2313671966,2338506822,3992601857,2478439963,4736263474,357312062,759252279862104064,2592325530,711438260354953216,773009781644677120,734688391942524928,2893133450,4633094778,707515829798182912,774791455680434176,711030662728437760,1322660676,2510084300,4053977488,862675563693125632,2349043879,841424245938769920,2571393578,503238457,2895317462,4585412124,2460502890,769457743807844352,877078771366453248,4020178512,2575764354,3111739836,2804855658,725253338640617472,2925093697,773447880564731904,3351041295,4711101020,2266631022,808032684270354433,2611894398,3448833448,744075632997470208,736586614797783040,3094365867,826699259441328128,2842476639,2235729541,119060937,871853588540248064,3741781096,760049490187386880,816646997356777472,864347902029709314,4826209539,774689518767181828,877807935493033984,877429242128023552,805450407078203392,2648931079,2243862290,862007728956485632,723270672986845184,835194759178244096,2917040642,828668619986964480,732169766450954240,2532881881'}, function(stream) {
-    stream.on('data', function(event) {
-      //console.log(event && event.text);
-      //console.log(event);
-      // insert tweet into mongodb database
-      // Tweet.set({
-      //   field1json : event
-      // });
-      Tweet.create({field1json: event}, function (err, small) {
-        if (err) console.log('some error occured type custom pk1'+err);//return handleError(err);
-        // saved!
-        })
-      // Tweet.save(function (err, savedtweet) {
-      //   if (err) return handleError(err);
-      //     console.log('tweet saved');
-      // });
-      //streamHandler(stream,io);
-      io.emit('message', event);
-    });
-   
-    stream.on('error', function(error) {
-      //throw error;
-      console.log("error connecting twitter stream, no internet, error type pk1 "+error);
-    });
-});
+var tempcount = 0;
+function connectstream(){
+  tempcount++;
+  //client.stream('statuses/filter', {follow: 'ethereum,OmiseGO,Ripple,Litecoin'}, function(stream) {
+  client.stream('statuses/filter', {follow: '2312333412,831847934534746114,1051053836,1393174363,2313671966,2338506822,3992601857,2478439963,4736263474,357312062,759252279862104064,2592325530,711438260354953216,773009781644677120,734688391942524928,2893133450,4633094778,707515829798182912,774791455680434176,711030662728437760,1322660676,2510084300,4053977488,862675563693125632,2349043879,841424245938769920,2571393578,503238457,2895317462,4585412124,2460502890,769457743807844352,877078771366453248,4020178512,2575764354,3111739836,2804855658,725253338640617472,2925093697,773447880564731904,3351041295,4711101020,2266631022,808032684270354433,2611894398,3448833448,744075632997470208,736586614797783040,3094365867,826699259441328128,2842476639,2235729541,119060937,871853588540248064,3741781096,760049490187386880,816646997356777472,864347902029709314,4826209539,774689518767181828,877807935493033984,877429242128023552,805450407078203392,2648931079,2243862290,862007728956485632,723270672986845184,835194759178244096,2917040642,828668619986964480,732169766450954240,2532881881'}, function(stream) {
+      stream.on('data', function(event) {
+        //console.log(event && event.text);
+        //console.log(event);
+        // insert tweet into mongodb database
+        // Tweet.set({
+        //   field1json : event
+        // });
+        Tweet.create({field1json: event}, function (err, small) {
+            if (err) {
+              console.log('error occured error type pk2'+err);//return handleError(err);
+              console.log('connecting again '+tempcount);
+              connectstream();
+            }
+          // saved!
+          })
+        // Tweet.save(function (err, savedtweet) {
+        //   if (err) return handleError(err);
+        //     console.log('tweet saved');
+        // });
+        //streamHandler(stream,io);
+        io.emit('message', event);
+      });
+    
+      stream.on('error', function(error) {
+        //throw error;
+        console.log("error connecting twitter stream, no internet, error type pk1 "+error);
+        console.log('connecting again '+tempcount);
+        connectstream();
+      });
+  });
+}
 
 /* ALT+Z for text wrap
 Ethereum 2312333412
