@@ -111,6 +111,8 @@ io.sockets.on('connection', function (socket) {
      
 });
 var tempcount = 0;
+connectstream();
+
 function connectstream(){
   tempcount++;
   //client.stream('statuses/filter', {follow: 'ethereum,OmiseGO,Ripple,Litecoin'}, function(stream) {
