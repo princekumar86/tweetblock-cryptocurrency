@@ -121,6 +121,26 @@ router.get('/last24hourtweets/15/:increamentval/:cryptoid', (req, res) => {
          });
 });
 
+// for tbadmin
+router.get('/getallusers', (req, res) => {
+    // get all the users
+    User.find({}, function(err, users) {
+        if (err) throw err;
+    
+        // object of all the users
+        console.log(users);
+        res.json(users);
+    });
+    // use below code to improve above code for limit, skip, sort etc.
+    // Tweet.find({ "field1json.entities.user_mentions.id_str" : req.params.cryptoid })
+    //     .sort({ "field1json.timestamp_ms" : "descending"})
+    //     .skip(Number(req.params.increamentval))
+    //     .limit(15)
+    //     .exec(function(err, result){ 
+    //         res.json(result);
+    //      });
+});
+
 // This code is working reference from mongo shell or robomongo
 //db.getCollection('tweets').find({ "field1json.timestamp_ms": { $gt: "1508232669089"} })
 // with limit 5

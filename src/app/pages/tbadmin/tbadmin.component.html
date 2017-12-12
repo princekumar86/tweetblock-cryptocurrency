@@ -1,0 +1,63 @@
+<div class="row no-gutters"> <!-- top first half row -->
+  <div class="col-1 iconcolumns fullheight">
+    <a href="" routerLink="/dashboard"><i class="fa fa-home fa-lg"></i></a><br/>
+    <a href=""><i class="fa fa-line-chart fa-lg"></i></a><br/>
+    <a href="" routerLink="/events"><i class="fa fa-calendar fa-lg"></i></a><br/>
+    <a href=""><i class="fa fa-envelope-o fa-lg"></i></a><br/>
+    <a href="" class="iconactive" routerLink="/settings"><i class="fa fa-cogs fa-lg"></i></a><br/>
+    <a href="" routerLink="/profile"><i class="fa fa-user fa-lg"></i></a><br/>
+  </div>
+  <div class="col-11">
+      <div class="row">
+        <div class="container-fluid">
+          <p>&nbsp;</p>
+
+          <div class="col-md-12">
+            <h4 class="navyblue">TB Admin</h4>
+            <p><i>admin section for tweetblock</i> <i><u>All users</u></i></p>
+            <div>
+              <table class="table">
+                <tr>
+                  <th>#</th>
+                  <th>ID</th>
+                  <th>Name</th>
+                  <th>Age</th>
+                  <th>Email</th>
+                  <th>Mobile</th>
+                  <th>City</th>
+                  <th>UserType</th>
+                  <th>P1</th>
+                  <th>P2</th>
+                  <th>P3</th>
+                  <th>P4</th>
+                  <th>P5</th>
+                  <th>P6</th>
+                </tr>
+                <tr *ngFor="let user of Users; let i = index">
+                  <td>{{i + 1}}</td>
+                  <td>{{user._id}}</td>
+                  <td>{{user.name}} {{user.twitter?.displayName}}</td>
+                  <td>{{user.age}}</td>
+                  <td>{{user.local?.email}} {{user.twitter?.username}}</td>
+                  <td>{{user.mobile}}</td>
+                  <td>{{user.city}}</td>
+                  <td>{{user.usertype}}</td>
+                  <td>{{user.cryptopreference1}}</td>
+                  <td>{{user.cryptopreference2}}</td>
+                  <td>{{user.cryptopreference3}}</td>
+                  <td>{{user.cryptopreference4}}</td>
+                  <td>{{user.cryptopreference5}}</td>
+                  <td>{{user.cryptopreference6}}</td>
+                </tr>
+              </table>
+
+            </div>
+        </div>
+        <div class="col-md-6 col-md-offset-3">
+            
+        </div>
+
+        </div>
+      </div>
+  </div>
+</div>

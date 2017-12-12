@@ -33,6 +33,7 @@ import { GooglecallbackComponent } from './pages/googlecallback/googlecallback.c
 import { LinkedincallbackComponent } from './pages/linkedincallback/linkedincallback.component';
 import { TwitterwallComponent } from './pages/twitterwall/twitterwall.component';
 import { EventsComponent } from './pages/events/events.component';
+import { TbadminComponent } from './pages/tbadmin/tbadmin.component';
 
 const appRoutes: Routes = [
   { path: 'home', component: HomeComponent },
@@ -49,6 +50,7 @@ const appRoutes: Routes = [
   { path: 'twitterwall', component: TwitterwallComponent },
   { path: 'privacy-policy', component: PrivacyPolicyComponent },
   { path: 'terms-of-service', component: TermsOfServiceComponent },
+  { path: 'tbadmin', component: TbadminComponent },
   { path: '',   redirectTo: '/home', pathMatch: 'full' },
   { path: '*', component: PageNotFoundComponent }
 ]
@@ -71,7 +73,8 @@ const appRoutes: Routes = [
     TwitterwallComponent,
     FilterPipe,
     TimeAgoPipe,
-    EventsComponent 
+    EventsComponent,
+    TbadminComponent 
   ],
   imports: [
     RouterModule.forRoot(
