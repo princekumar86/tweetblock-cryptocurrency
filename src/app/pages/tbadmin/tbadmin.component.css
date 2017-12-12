@@ -64,3 +64,9 @@
     text-align: center;
     border-right: 1px solid rgba(0,0,0,0.2);
 }
+tbody {
+    font-size: 0.75em;
+}
+.uniqueid {
+    font-size: 0.8em;
+}

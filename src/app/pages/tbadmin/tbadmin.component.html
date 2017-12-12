@@ -35,10 +35,10 @@
                 </tr>
                 <tr *ngFor="let user of Users; let i = index">
                   <td>{{i + 1}}</td>
-                  <td>{{user._id}}</td>
-                  <td>{{user.name}} {{user.twitter?.displayName}}</td>
+                  <td class="uniqueid">{{user._id}}</td>
+                  <td>{{user.name}} {{user.twitter?.displayName}} {{user.facebook?.name}} {{user.google?.name}}</td>
                   <td>{{user.age}}</td>
-                  <td>{{user.local?.email}} {{user.twitter?.username}}</td>
+                  <td>{{user.local?.email}} {{user.twitter?.username}} {{user.facebook?.email}} {{user.google?.email}}</td>
                   <td>{{user.mobile}}</td>
                   <td>{{user.city}}</td>
                   <td>{{user.usertype}}</td>
