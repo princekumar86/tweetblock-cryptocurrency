@@ -2365,6 +2365,8 @@ var TbadminComponent = (function () {
     function TbadminComponent(http) {
         this.http = http;
         this.Users = [];
+        this.admin_id = "";
+        this.admin_email = "";
     }
     TbadminComponent.prototype.ngOnInit = function () {
         var _this = this;
@@ -2373,6 +2375,40 @@ var TbadminComponent = (function () {
             console.log(res);
             _this.Users = res;
         });
+        if (localStorage.getItem('currentUser') === null) {
+            console.log('No local storage item'); // do nothing
+        }
+        else {
+            console.log('local storage item found'); // READ STRING FROM LOCAL STORAGE
+            var retrievedObject = localStorage.getItem('currentUser'); // CONVERT STRING TO REGULAR JS OBJECT
+            var parsedObject = JSON.parse(retrievedObject);
+            console.log(parsedObject.email);
+            this.admin_email = parsedObject.email;
+            console.log(parsedObject.userid._id);
+            this.admin_id = parsedObject.userid._id;
+            console.log(parsedObject.userid);
+        }
+    };
+    TbadminComponent.prototype.delete = function (tempid) {
+        if (this.admin_email == "vividapps.in@gmail.com" || this.admin_email == "keesvlies@gmail.com") {
+            console.log("this id will be delete" + tempid);
+            this.http.get('/api/removeusertbadmin/' + tempid)
+                .subscribe(function (res) {
+                console.log(res);
+                alert("delete process complete, reload admin to see changes");
+            });
+        }
+        else {
+            alert("you dont have permission to delete, contact support");
+        }
+    };
+    TbadminComponent.prototype.edit = function (tempid) {
+        if (this.admin_email == "vividapps.in@gmail.com" || this.admin_email == "keesvlies@gmail.com") {
+            console.log("this id will be edited" + tempid);
+        }
+        else {
+            alert("you dont have permission to edit, contact support");
+        }
     };
     return TbadminComponent;
 }());
@@ -2806,7 +2842,7 @@ exports = module.exports = __webpack_require__(3)();
 
 
 // module
-exports.push([module.i, ".fullheight {\r\n    height: 88vh;\r\n}\r\n.dashboardcol {\r\n    min-height: 45vh;\r\n    border-right: 1px solid #cecece;\r\n}\r\n.dashboardcol .dashheading {\r\n    text-align: center;\r\n    background-color: #f1f1f1;\r\n    padding-top: 5px;\r\n    padding-bottom: 5px;\r\n    font-weight: bold;\r\n}\r\n.dashheading i {\r\n    padding-right: 10px;\r\n    color: #a4a4a4;\r\n}\r\n.iconcolumns a {\r\n    color: #cecece;\r\n    padding: 10px;\r\n    display: inline-block;\r\n}\r\n@media (max-width:550px){\r\n    .iconcolumns a {\r\n        padding: 10px 1px;\r\n    }\r\n}\r\n\r\n.iconcolumns a:hover {\r\n    color: #ffffff;\r\n}\r\n.iconcolumns a.iconactive {\r\n    color: #ffffff;\r\n}\r\n.iconcolumns {\r\n    background-color: #111111;\r\n}\r\n.col-1.iconcolumns {\r\n    max-width: 50px !important;\r\n}\r\n/* social buttons */\r\n.btn-twitter {\r\n    color: #fff !important;\r\n    background-color: #00aced;\r\n    border-color: rgba(0,0,0,0.2);\r\n}\r\n.btn-social {\r\n    position: relative;\r\n    padding-left: 44px;\r\n    text-align: left;\r\n    white-space: nowrap;\r\n    overflow: hidden;\r\n    text-overflow: ellipsis;\r\n}\r\n.btn-social :first-child {\r\n    position: absolute;\r\n    left: 0;\r\n    top: 0;\r\n    bottom: 0;\r\n    width: 32px;\r\n    line-height: 34px;\r\n    font-size: 1.6em;\r\n    text-align: center;\r\n    border-right: 1px solid rgba(0,0,0,0.2);\r\n}\r\ntbody {\r\n    font-size: 0.75em;\r\n}\r\n.uniqueid {\r\n    font-size: 0.8em;\r\n}\r\n.table td, .table th {\r\n    padding: 4px;\r\n}", ""]);
+exports.push([module.i, ".fullheight {\r\n    height: 88vh;\r\n}\r\n.dashboardcol {\r\n    min-height: 45vh;\r\n    border-right: 1px solid #cecece;\r\n}\r\n.dashboardcol .dashheading {\r\n    text-align: center;\r\n    background-color: #f1f1f1;\r\n    padding-top: 5px;\r\n    padding-bottom: 5px;\r\n    font-weight: bold;\r\n}\r\n.dashheading i {\r\n    padding-right: 10px;\r\n    color: #a4a4a4;\r\n}\r\n.iconcolumns a {\r\n    color: #cecece;\r\n    padding: 10px;\r\n    display: inline-block;\r\n}\r\n@media (max-width:550px){\r\n    .iconcolumns a {\r\n        padding: 10px 1px;\r\n    }\r\n}\r\n\r\n.iconcolumns a:hover {\r\n    color: #ffffff;\r\n}\r\n.iconcolumns a.iconactive {\r\n    color: #ffffff;\r\n}\r\n.iconcolumns {\r\n    background-color: #111111;\r\n}\r\n.col-1.iconcolumns {\r\n    max-width: 50px !important;\r\n}\r\n/* social buttons */\r\n.btn-twitter {\r\n    color: #fff !important;\r\n    background-color: #00aced;\r\n    border-color: rgba(0,0,0,0.2);\r\n}\r\n.btn-social {\r\n    position: relative;\r\n    padding-left: 44px;\r\n    text-align: left;\r\n    white-space: nowrap;\r\n    overflow: hidden;\r\n    text-overflow: ellipsis;\r\n}\r\n.btn-social :first-child {\r\n    position: absolute;\r\n    left: 0;\r\n    top: 0;\r\n    bottom: 0;\r\n    width: 32px;\r\n    line-height: 34px;\r\n    font-size: 1.6em;\r\n    text-align: center;\r\n    border-right: 1px solid rgba(0,0,0,0.2);\r\n}\r\ntbody {\r\n    font-size: 0.75em;\r\n}\r\n.uniqueid {\r\n    font-size: 0.8em;\r\n}\r\n.table td, .table th {\r\n    padding: 4px;\r\n}\r\nbutton {\r\n    background-color: #fff;\r\n    border: none;\r\n}", ""]);
 
 // exports
 
@@ -2964,7 +3000,7 @@ module.exports = "<div class=\"container main-form-container\">\r\n  <h2 class=\
 /***/ 268:
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"row no-gutters\"> <!-- top first half row -->\n  <div class=\"col-1 iconcolumns fullheight\">\n    <a href=\"\" routerLink=\"/dashboard\"><i class=\"fa fa-home fa-lg\"></i></a><br/>\n    <a href=\"\"><i class=\"fa fa-line-chart fa-lg\"></i></a><br/>\n    <a href=\"\" routerLink=\"/events\"><i class=\"fa fa-calendar fa-lg\"></i></a><br/>\n    <a href=\"\"><i class=\"fa fa-envelope-o fa-lg\"></i></a><br/>\n    <a href=\"\" class=\"iconactive\" routerLink=\"/settings\"><i class=\"fa fa-cogs fa-lg\"></i></a><br/>\n    <a href=\"\" routerLink=\"/profile\"><i class=\"fa fa-user fa-lg\"></i></a><br/>\n  </div>\n  <div class=\"col-11\">\n      <div class=\"row\">\n        <div class=\"container-fluid\">\n          <p>&nbsp;</p>\n\n          <div class=\"col-md-12\">\n            <h4 class=\"navyblue\">TB Admin</h4>\n            <p><i>admin section for tweetblock</i> <i><u>All users</u></i></p>\n            <div>\n              <table class=\"table\">\n                <tr>\n                  <th>#</th>\n                  <th>ID</th>\n                  <th>Name</th>\n                  <th>Age</th>\n                  <th>Email</th>\n                  <th>Mobile</th>\n                  <th>City</th>\n                  <th>UserType</th>\n                  <th>P1</th>\n                  <th>P2</th>\n                  <th>P3</th>\n                  <th>P4</th>\n                  <th>P5</th>\n                  <th>P6</th>\n                  <th>Edit</th>\n                  <th>Remove</th>\n                </tr>\n                <tr *ngFor=\"let user of Users; let i = index\">\n                  <td>{{i + 1}}</td>\n                  <td class=\"uniqueid\">{{user._id}}</td>\n                  <td>{{user.name}} {{user.twitter?.displayName}} {{user.facebook?.name}} {{user.google?.name}}</td>\n                  <td>{{user.age}}</td>\n                  <td>{{user.local?.email}} {{user.twitter?.username}} {{user.facebook?.email}} {{user.google?.email}}</td>\n                  <td>{{user.mobile}}</td>\n                  <td>{{user.city}}</td>\n                  <td>{{user.usertype}}</td>\n                  <td>{{user.cryptopreference1}}</td>\n                  <td>{{user.cryptopreference2}}</td>\n                  <td>{{user.cryptopreference3}}</td>\n                  <td>{{user.cryptopreference4}}</td>\n                  <td>{{user.cryptopreference5}}</td>\n                  <td>{{user.cryptopreference6}}</td>\n                  <td><i class=\"fa fa-pencil-square-o fa-lg\"></i></td>\n                  <td><i class=\"fa fa-times fa-lg\"></i></td>\n                </tr>\n              </table>\n\n            </div>\n        </div>\n        <div class=\"col-md-6 col-md-offset-3\">\n            \n        </div>\n\n        </div>\n      </div>\n  </div>\n</div>"
+module.exports = "<div class=\"row no-gutters\"> <!-- top first half row -->\n  <div class=\"col-1 iconcolumns fullheight\">\n    <a href=\"\" routerLink=\"/dashboard\"><i class=\"fa fa-home fa-lg\"></i></a><br/>\n    <a href=\"\"><i class=\"fa fa-line-chart fa-lg\"></i></a><br/>\n    <a href=\"\" routerLink=\"/events\"><i class=\"fa fa-calendar fa-lg\"></i></a><br/>\n    <a href=\"\"><i class=\"fa fa-envelope-o fa-lg\"></i></a><br/>\n    <a href=\"\" class=\"iconactive\" routerLink=\"/settings\"><i class=\"fa fa-cogs fa-lg\"></i></a><br/>\n    <a href=\"\" routerLink=\"/profile\"><i class=\"fa fa-user fa-lg\"></i></a><br/>\n  </div>\n  <div class=\"col-11\">\n      <div class=\"row\">\n        <div class=\"container-fluid\">\n          <p>&nbsp;</p>\n\n          <div class=\"col-md-12\">\n            <h4 class=\"navyblue\">TB Admin</h4>\n            <p><i>admin section for tweetblock</i> <i><u>All users</u></i></p>\n            <div>\n              <table class=\"table\">\n                <tr>\n                  <th>#</th>\n                  <th>ID</th>\n                  <th>Name</th>\n                  <th>Age</th>\n                  <th>Email</th>\n                  <th>Mobile</th>\n                  <th>City</th>\n                  <th>UserType</th>\n                  <th>P1</th>\n                  <th>P2</th>\n                  <th>P3</th>\n                  <th>P4</th>\n                  <th>P5</th>\n                  <th>P6</th>\n                  <th>Edit</th>\n                  <th>Remove</th>\n                </tr>\n                <tr *ngFor=\"let user of Users; let i = index\">\n                  <td>{{i + 1}}</td>\n                  <td class=\"uniqueid\">{{user._id}}</td>\n                  <td>{{user.name}} {{user.twitter?.displayName}} {{user.facebook?.name}} {{user.google?.name}}</td>\n                  <td>{{user.age}}</td>\n                  <td>{{user.local?.email}} {{user.twitter?.username}} {{user.facebook?.email}} {{user.google?.email}}</td>\n                  <td>{{user.mobile}}</td>\n                  <td>{{user.city}}</td>\n                  <td>{{user.usertype}}</td>\n                  <td>{{user.cryptopreference1}}</td>\n                  <td>{{user.cryptopreference2}}</td>\n                  <td>{{user.cryptopreference3}}</td>\n                  <td>{{user.cryptopreference4}}</td>\n                  <td>{{user.cryptopreference5}}</td>\n                  <td>{{user.cryptopreference6}}</td>\n                  <td><button (click)=\"edit(user._id)\"><i class=\"fa fa-pencil-square-o fa-lg\"></i></button></td>\n                  <td><button (click)=\"delete(user._id)\"><i class=\"fa fa-times fa-lg\"></i></button></td>\n                </tr>\n              </table>\n\n            </div>\n        </div>\n        <div class=\"col-md-6 col-md-offset-3\">\n            \n        </div>\n\n        </div>\n      </div>\n  </div>\n</div>"
 
 /***/ }),
 

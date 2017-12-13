@@ -63,6 +63,23 @@ router.get('/userretrivepreference/:id', (req, res) => {
 
 });
 
+router.get('/removeusertbadmin/:id', (req, res) => {
+    console.log('user Id passed to be removed is :', req.params.id);
+    // get a user with ID passed
+    User.remove({ _id: req.params.id }, function(err) {
+    if (!err) {
+        console.log('user deleted successfully !');
+        res.send({"status": "deleted successfully"});
+    }
+    else {
+        console.log('error'+ err);
+        res.send({"status": "delete error"});
+    }
+});
+
+
+});
+
 // load 15 tweets by default in LIVE FEED
 router.get('/last24hourtweets/allcrypto', (req, res) => {
     // get all the tweets for this id

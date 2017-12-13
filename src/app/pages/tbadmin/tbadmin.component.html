@@ -50,8 +50,8 @@
                   <td>{{user.cryptopreference4}}</td>
                   <td>{{user.cryptopreference5}}</td>
                   <td>{{user.cryptopreference6}}</td>
-                  <td><i class="fa fa-pencil-square-o fa-lg"></i></td>
-                  <td><i class="fa fa-times fa-lg"></i></td>
+                  <td><button (click)="edit(user._id)"><i class="fa fa-pencil-square-o fa-lg"></i></button></td>
+                  <td><button (click)="delete(user._id)"><i class="fa fa-times fa-lg"></i></button></td>
                 </tr>
               </table>
 
