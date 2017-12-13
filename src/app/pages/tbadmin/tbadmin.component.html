@@ -32,6 +32,8 @@
                   <th>P4</th>
                   <th>P5</th>
                   <th>P6</th>
+                  <th>Edit</th>
+                  <th>Remove</th>
                 </tr>
                 <tr *ngFor="let user of Users; let i = index">
                   <td>{{i + 1}}</td>
@@ -48,6 +50,8 @@
                   <td>{{user.cryptopreference4}}</td>
                   <td>{{user.cryptopreference5}}</td>
                   <td>{{user.cryptopreference6}}</td>
+                  <td><i class="fa fa-pencil-square-o fa-lg"></i></td>
+                  <td><i class="fa fa-times fa-lg"></i></td>
                 </tr>
               </table>
 
