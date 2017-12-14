@@ -44,39 +44,33 @@
                 <form>
                     <div class="form-group">
                         <label for="fullname">Full Name</label>
-                        <input type="text" name="fullname" class="form-control"  id="fullname" placeholder="Full Name">
+                        <input [(ngModel)]="data.userName" type="text" name="fullname" class="form-control"  id="fullname" placeholder="Full Name">
                     </div>
                     <div class="form-group">
                         <label for="country">Country</label>
-                        <input type="text" name="country" class="form-control"  id="country" placeholder="Country">
+                        <input [(ngModel)]="data.userCountry" type="text" name="country" class="form-control"  id="country" placeholder="Country">
                     </div>
                     <div class="form-group">
                         <label for="age">Age</label>
-                        <input type="text" name="age" class="form-control"  id="age" placeholder="Age">
+                        <input [(ngModel)]="data.userAge" type="text" name="age" class="form-control"  id="age" placeholder="Age">
                     </div>
                     <div class="form-group">
                         <label for="mobile">Mobile no</label>
-                        <input type="text" name="mobile" class="form-control"  id="mobile" placeholder="mobile no">
+                        <input [(ngModel)]="data.userMobile" type="text" name="mobile" class="form-control"  id="mobile" placeholder="mobile no">
                     </div>
                     <div class="form-group">
                         <label for="inputEmail3">Email</label>
-                        <input [(ngModel)]="user.email" type="email" name="email" class="form-control"  id="email" placeholder="Email">
-                    </div>
-                    <div class="form-group">
-                        <label for="inputPassword3">Password</label>
-                        <input [(ngModel)]="user.password" type="password" name="password" class="form-control" id="password" placeholder="Password">
-                    </div>
-                    <div class="form-group">
-                        <label for="inputPassword3">Repeat Password</label>
-                        <input type="password" name="password" class="form-control" id="password" placeholder="Confirm your Password">
+                        <input [(ngModel)]="data.userEmail" type="email" name="email" class="form-control"  id="email" placeholder="Email">
                     </div>
                     
                     <div class="form-group row">
                         <div class="col-sm-4 text-center">
                             <a class="remove-account" href="">Remove account</a>
+                            <br/>
+                            <a class="remove-account" href="">Reset Password</a>
                         </div>
                         <div class="col-sm-8 text-center">
-                        <button (click)="update_information()" type="submit" class="btn btn-primary">Update information</button>
+                        <button (click)="update_information(userid)" type="submit" class="btn btn-primary">Update information</button>
                         </div>
                     </div>
                 </form>

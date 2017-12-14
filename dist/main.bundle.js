@@ -710,12 +710,12 @@ var _a;
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__ = __webpack_require__(26);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__ = __webpack_require__(27);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_forms__ = __webpack_require__(48);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_http__ = __webpack_require__(9);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__angular_router__ = __webpack_require__(17);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__angular_common_http__ = __webpack_require__(35);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__angular_common_http__ = __webpack_require__(26);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__ngui_auto_complete__ = __webpack_require__(158);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__ngui_auto_complete___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6__ngui_auto_complete__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_time_ago_pipe__ = __webpack_require__(311);
@@ -726,7 +726,7 @@ var _a;
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__data_service__ = __webpack_require__(85);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__guards_auth_guard__ = __webpack_require__(134);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__services_authentication_service__ = __webpack_require__(36);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__services_socialcallback_service__ = __webpack_require__(27);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__services_socialcallback_service__ = __webpack_require__(28);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__services_user_service__ = __webpack_require__(136);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__services_streamtweets_service__ = __webpack_require__(49);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__pages_dashboard_dashboard_component__ = __webpack_require__(140);
@@ -902,7 +902,7 @@ FilterPipe = __decorate([
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__services_streamtweets_service__ = __webpack_require__(49);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_common_http__ = __webpack_require__(35);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_common_http__ = __webpack_require__(26);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__models_coins__ = __webpack_require__(135);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return DashboardComponent; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -1722,7 +1722,7 @@ EventsComponent = __decorate([
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_map___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_map__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rxjs_add_operator_catch__ = __webpack_require__(45);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rxjs_add_operator_catch___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_rxjs_add_operator_catch__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__services_socialcallback_service__ = __webpack_require__(27);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__services_socialcallback_service__ = __webpack_require__(28);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FbcallbackComponent; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -1789,7 +1789,7 @@ var _a, _b, _c;
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_map___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_map__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rxjs_add_operator_catch__ = __webpack_require__(45);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rxjs_add_operator_catch___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_rxjs_add_operator_catch__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__services_socialcallback_service__ = __webpack_require__(27);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__services_socialcallback_service__ = __webpack_require__(28);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return GooglecallbackComponent; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -1890,7 +1890,7 @@ HomeComponent = __decorate([
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_map___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_map__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rxjs_add_operator_catch__ = __webpack_require__(45);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rxjs_add_operator_catch___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_rxjs_add_operator_catch__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__services_socialcallback_service__ = __webpack_require__(27);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__services_socialcallback_service__ = __webpack_require__(28);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return LinkedincallbackComponent; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -2090,6 +2090,7 @@ PrivacyPolicyComponent = __decorate([
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_common_http__ = __webpack_require__(26);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ProfileComponent; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -2101,16 +2102,28 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 
-//import { UserService } from '../../_services/user.service';
+
 var ProfileComponent = (function () {
-    function ProfileComponent() {
+    function ProfileComponent(http) {
+        this.http = http;
         this.userid = '';
         this.userEmail = '';
         this.userName = '';
+        this.userAge = '';
+        this.userMobile = '';
+        this.userCountry = '';
         this.userLoggedInAs = '';
         this.userToken = '';
+        this.data = { userid: this.userid,
+            userEmail: this.userEmail,
+            userName: this.userName,
+            userAge: this.userAge,
+            userMobile: this.userMobile,
+            userCountry: this.userCountry,
+        };
     }
     ProfileComponent.prototype.ngOnInit = function () {
+        var _this = this;
         // get users details from sessionstorage or localStorage JSON and set user details
         if (localStorage.getItem('currentUser') === null) {
             console.log('No local storage item');
@@ -2125,14 +2138,43 @@ var ProfileComponent = (function () {
             // ACCESS DATA
             //console.log(parsedObject.item[0].Desc);
             console.log(parsedObject);
-            this.userid = parsedObject.userid;
-            this.userEmail = parsedObject.email;
-            this.userName = parsedObject.name;
+            this.userid = parsedObject.userid._id;
             this.userLoggedInAs = parsedObject.loggedinas;
             if (parsedObject.token) {
                 this.userToken = parsedObject.token;
             }
         }
+        console.log('This user details are being fetched ' + this.userid);
+        this.http.get('/api/getsingleuser/' + this.userid)
+            .subscribe(
+        // Successful responses call the first callback.
+        function (data) {
+            // this.myData = data;
+            //console.log(data)
+            console.log(data._id);
+            _this.data.userEmail = data.email;
+            _this.data.userName = data.name;
+            _this.data.userAge = data.age;
+            _this.data.userMobile = data.mobile;
+            _this.data.userCountry = data.country;
+        }, 
+        // Errors will call this callback instead:
+        function (err) {
+            console.log('Something went wrong!');
+        });
+    };
+    ProfileComponent.prototype.update_information = function (tempid) {
+        console.log('update_information function called');
+        console.log('/api/singleuserprofileupdate/' + tempid);
+        console.log(this.data);
+        this.http.post('/api/singleuserprofileupdate/' + tempid, this.data)
+            .subscribe(
+        // Successful responses call the first callback.
+        function (data) { }, 
+        // Errors will call this callback instead:
+        function (err) {
+            console.log('Something went wrong!');
+        });
     };
     return ProfileComponent;
 }());
@@ -2142,9 +2184,10 @@ ProfileComponent = __decorate([
         template: __webpack_require__(265),
         styles: [__webpack_require__(237)]
     }),
-    __metadata("design:paramtypes", [])
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_common_http__["b" /* HttpClient */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_common_http__["b" /* HttpClient */]) === "function" && _a || Object])
 ], ProfileComponent);
 
+var _a;
 //# sourceMappingURL=profile.component.js.map
 
 /***/ }),
@@ -2154,7 +2197,7 @@ ProfileComponent = __decorate([
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_common_http__ = __webpack_require__(35);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_common_http__ = __webpack_require__(26);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SettingsComponent; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -2348,7 +2391,7 @@ var _a, _b;
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_common_http__ = __webpack_require__(35);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_common_http__ = __webpack_require__(26);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return TbadminComponent; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -2390,7 +2433,7 @@ var TbadminComponent = (function () {
         }
     };
     TbadminComponent.prototype.delete = function (tempid) {
-        if (this.admin_email == "vividapps.in@gmail.com" || this.admin_email == "keesvlies@gmail.com") {
+        if (this.admin_email == "vividapps.in@gmail.com" || this.admin_email == "C--keesvlies@gmail.com") {
             console.log("this id will be delete" + tempid);
             this.http.get('/api/removeusertbadmin/' + tempid)
                 .subscribe(function (res) {
@@ -2403,7 +2446,7 @@ var TbadminComponent = (function () {
         }
     };
     TbadminComponent.prototype.edit = function (tempid) {
-        if (this.admin_email == "vividapps.in@gmail.com" || this.admin_email == "keesvlies@gmail.com") {
+        if (this.admin_email == "vividapps.in@gmail.com" || this.admin_email == "C--keesvlies@gmail.com") {
             console.log("this id will be edited" + tempid);
         }
         else {
@@ -2473,7 +2516,7 @@ TermsOfServiceComponent = __decorate([
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_map___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_map__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rxjs_add_operator_catch__ = __webpack_require__(45);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rxjs_add_operator_catch___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_rxjs_add_operator_catch__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__services_socialcallback_service__ = __webpack_require__(27);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__services_socialcallback_service__ = __webpack_require__(28);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return TwittercallbackComponent; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -2979,7 +3022,7 @@ module.exports = "<p>\r\n  privacy-policy works!\r\n</p>\r\n"
 /***/ 265:
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"row no-gutters\"> <!-- top first half row -->\r\n    <div class=\"col-1 iconcolumns fullheight\">\r\n      <a href=\"\" routerLink=\"/dashboard\"><i class=\"fa fa-home fa-lg\"></i></a><br/>\r\n      <a href=\"\"><i class=\"fa fa-line-chart fa-lg\"></i></a><br/>\r\n      <a href=\"\" routerLink=\"/events\"><i class=\"fa fa-calendar fa-lg\"></i></a><br/>\r\n      <a href=\"\"><i class=\"fa fa-envelope-o fa-lg\"></i></a><br/>\r\n      <a href=\"\" class=\"iconactive\" routerLink=\"/settings\"><i class=\"fa fa-cogs fa-lg\"></i></a><br/>\r\n      <a href=\"\" routerLink=\"/profile\"><i class=\"fa fa-user fa-lg\"></i></a><br/>\r\n    </div>\r\n    <div class=\"col-11\">\r\n        <div class=\"row\">\r\n          <div class=\"container\">\r\n    \r\n        <div class=\"page-header\">\r\n            <h3>My Profile</h3>\r\n            <!-- <a href=\"/logout\" class=\"btn btn-default btn-sm\">Logout</a> -->\r\n        </div>\r\n    \r\n        <div class=\"row\">\r\n    \r\n            <!-- LOCAL INFORMATION -->\r\n            <div class=\"col-sm-6 col-md-3\">\r\n                <div class=\"well\">\r\n                    <h5> Avatar Picture</h5>\r\n                    <img class=\"profilepicholder\" src=\"assets/images/profile-img-placeholder.png\" alt=\"profile pic\"/>\r\n                    <h6>Upload picture</h6>\r\n                    <p><a href=\"/auth/twitter\"><i class=\"fa fa-twitter-square fa-2x fa-button\"></i></a> Add Twitter</p>\r\n                    <p><a href=\"/auth/facebook\"><i class=\"fa fa-facebook-square fa-2x fa-button\"></i></a> Add Facebook</p>\r\n                    <p><a href=\"/auth/linkedin\"><i class=\"fa fa-linkedin-square fa-2x fa-button\"></i></a> Add Linkedin</p>\r\n                    <p><a href=\"/auth/google\"><i class=\"fa fa-google-plus-square fa-2x fa-button\"></i></a> Add Google+</p>\r\n                        <!-- <p>\r\n                            <strong>id</strong>: {{userid}}<br>\r\n                            <strong>email</strong>: {{userEmail}}<br>\r\n                            <strong>password</strong>: - <br>\r\n                            <strong>Name</strong>: {{userName}}<br>\r\n                            <strong>Logged in As</strong>: {{userLoggedInAs}} user<br>\r\n                            <strong>Token</strong>: {{userToken}}<br>\r\n                            <strong>Phone</strong>: - <br>\r\n                        </p> -->\r\n    \r\n                </div>\r\n            </div>\r\n            <div class=\"col-sm-6 col-md-6\">\r\n                <form>\r\n                    <div class=\"form-group\">\r\n                        <label for=\"fullname\">Full Name</label>\r\n                        <input type=\"text\" name=\"fullname\" class=\"form-control\"  id=\"fullname\" placeholder=\"Full Name\">\r\n                    </div>\r\n                    <div class=\"form-group\">\r\n                        <label for=\"country\">Country</label>\r\n                        <input type=\"text\" name=\"country\" class=\"form-control\"  id=\"country\" placeholder=\"Country\">\r\n                    </div>\r\n                    <div class=\"form-group\">\r\n                        <label for=\"age\">Age</label>\r\n                        <input type=\"text\" name=\"age\" class=\"form-control\"  id=\"age\" placeholder=\"Age\">\r\n                    </div>\r\n                    <div class=\"form-group\">\r\n                        <label for=\"mobile\">Mobile no</label>\r\n                        <input type=\"text\" name=\"mobile\" class=\"form-control\"  id=\"mobile\" placeholder=\"mobile no\">\r\n                    </div>\r\n                    <div class=\"form-group\">\r\n                        <label for=\"inputEmail3\">Email</label>\r\n                        <input [(ngModel)]=\"user.email\" type=\"email\" name=\"email\" class=\"form-control\"  id=\"email\" placeholder=\"Email\">\r\n                    </div>\r\n                    <div class=\"form-group\">\r\n                        <label for=\"inputPassword3\">Password</label>\r\n                        <input [(ngModel)]=\"user.password\" type=\"password\" name=\"password\" class=\"form-control\" id=\"password\" placeholder=\"Password\">\r\n                    </div>\r\n                    <div class=\"form-group\">\r\n                        <label for=\"inputPassword3\">Repeat Password</label>\r\n                        <input type=\"password\" name=\"password\" class=\"form-control\" id=\"password\" placeholder=\"Confirm your Password\">\r\n                    </div>\r\n                    \r\n                    <div class=\"form-group row\">\r\n                        <div class=\"col-sm-4 text-center\">\r\n                            <a class=\"remove-account\" href=\"\">Remove account</a>\r\n                        </div>\r\n                        <div class=\"col-sm-8 text-center\">\r\n                        <button (click)=\"update_information()\" type=\"submit\" class=\"btn btn-primary\">Update information</button>\r\n                        </div>\r\n                    </div>\r\n                </form>\r\n            </div>\r\n    \r\n        </div>\r\n    </div>\r\n    </div>\r\n    </div>\r\n</div>\r\n"
+module.exports = "<div class=\"row no-gutters\"> <!-- top first half row -->\r\n    <div class=\"col-1 iconcolumns fullheight\">\r\n      <a href=\"\" routerLink=\"/dashboard\"><i class=\"fa fa-home fa-lg\"></i></a><br/>\r\n      <a href=\"\"><i class=\"fa fa-line-chart fa-lg\"></i></a><br/>\r\n      <a href=\"\" routerLink=\"/events\"><i class=\"fa fa-calendar fa-lg\"></i></a><br/>\r\n      <a href=\"\"><i class=\"fa fa-envelope-o fa-lg\"></i></a><br/>\r\n      <a href=\"\" class=\"iconactive\" routerLink=\"/settings\"><i class=\"fa fa-cogs fa-lg\"></i></a><br/>\r\n      <a href=\"\" routerLink=\"/profile\"><i class=\"fa fa-user fa-lg\"></i></a><br/>\r\n    </div>\r\n    <div class=\"col-11\">\r\n        <div class=\"row\">\r\n          <div class=\"container\">\r\n    \r\n        <div class=\"page-header\">\r\n            <h3>My Profile</h3>\r\n            <!-- <a href=\"/logout\" class=\"btn btn-default btn-sm\">Logout</a> -->\r\n        </div>\r\n    \r\n        <div class=\"row\">\r\n    \r\n            <!-- LOCAL INFORMATION -->\r\n            <div class=\"col-sm-6 col-md-3\">\r\n                <div class=\"well\">\r\n                    <h5> Avatar Picture</h5>\r\n                    <img class=\"profilepicholder\" src=\"assets/images/profile-img-placeholder.png\" alt=\"profile pic\"/>\r\n                    <h6>Upload picture</h6>\r\n                    <p><a href=\"/auth/twitter\"><i class=\"fa fa-twitter-square fa-2x fa-button\"></i></a> Add Twitter</p>\r\n                    <p><a href=\"/auth/facebook\"><i class=\"fa fa-facebook-square fa-2x fa-button\"></i></a> Add Facebook</p>\r\n                    <p><a href=\"/auth/linkedin\"><i class=\"fa fa-linkedin-square fa-2x fa-button\"></i></a> Add Linkedin</p>\r\n                    <p><a href=\"/auth/google\"><i class=\"fa fa-google-plus-square fa-2x fa-button\"></i></a> Add Google+</p>\r\n                        <!-- <p>\r\n                            <strong>id</strong>: {{userid}}<br>\r\n                            <strong>email</strong>: {{userEmail}}<br>\r\n                            <strong>password</strong>: - <br>\r\n                            <strong>Name</strong>: {{userName}}<br>\r\n                            <strong>Logged in As</strong>: {{userLoggedInAs}} user<br>\r\n                            <strong>Token</strong>: {{userToken}}<br>\r\n                            <strong>Phone</strong>: - <br>\r\n                        </p> -->\r\n    \r\n                </div>\r\n            </div>\r\n            <div class=\"col-sm-6 col-md-6\">\r\n                <form>\r\n                    <div class=\"form-group\">\r\n                        <label for=\"fullname\">Full Name</label>\r\n                        <input [(ngModel)]=\"data.userName\" type=\"text\" name=\"fullname\" class=\"form-control\"  id=\"fullname\" placeholder=\"Full Name\">\r\n                    </div>\r\n                    <div class=\"form-group\">\r\n                        <label for=\"country\">Country</label>\r\n                        <input [(ngModel)]=\"data.userCountry\" type=\"text\" name=\"country\" class=\"form-control\"  id=\"country\" placeholder=\"Country\">\r\n                    </div>\r\n                    <div class=\"form-group\">\r\n                        <label for=\"age\">Age</label>\r\n                        <input [(ngModel)]=\"data.userAge\" type=\"text\" name=\"age\" class=\"form-control\"  id=\"age\" placeholder=\"Age\">\r\n                    </div>\r\n                    <div class=\"form-group\">\r\n                        <label for=\"mobile\">Mobile no</label>\r\n                        <input [(ngModel)]=\"data.userMobile\" type=\"text\" name=\"mobile\" class=\"form-control\"  id=\"mobile\" placeholder=\"mobile no\">\r\n                    </div>\r\n                    <div class=\"form-group\">\r\n                        <label for=\"inputEmail3\">Email</label>\r\n                        <input [(ngModel)]=\"data.userEmail\" type=\"email\" name=\"email\" class=\"form-control\"  id=\"email\" placeholder=\"Email\">\r\n                    </div>\r\n                    \r\n                    <div class=\"form-group row\">\r\n                        <div class=\"col-sm-4 text-center\">\r\n                            <a class=\"remove-account\" href=\"\">Remove account</a>\r\n                            <br/>\r\n                            <a class=\"remove-account\" href=\"\">Reset Password</a>\r\n                        </div>\r\n                        <div class=\"col-sm-8 text-center\">\r\n                        <button (click)=\"update_information(userid)\" type=\"submit\" class=\"btn btn-primary\">Update information</button>\r\n                        </div>\r\n                    </div>\r\n                </form>\r\n            </div>\r\n    \r\n        </div>\r\n    </div>\r\n    </div>\r\n    </div>\r\n</div>\r\n"
 
 /***/ }),
 
@@ -3000,7 +3043,7 @@ module.exports = "<div class=\"container main-form-container\">\r\n  <h2 class=\
 /***/ 268:
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"row no-gutters\"> <!-- top first half row -->\n  <div class=\"col-1 iconcolumns fullheight\">\n    <a href=\"\" routerLink=\"/dashboard\"><i class=\"fa fa-home fa-lg\"></i></a><br/>\n    <a href=\"\"><i class=\"fa fa-line-chart fa-lg\"></i></a><br/>\n    <a href=\"\" routerLink=\"/events\"><i class=\"fa fa-calendar fa-lg\"></i></a><br/>\n    <a href=\"\"><i class=\"fa fa-envelope-o fa-lg\"></i></a><br/>\n    <a href=\"\" class=\"iconactive\" routerLink=\"/settings\"><i class=\"fa fa-cogs fa-lg\"></i></a><br/>\n    <a href=\"\" routerLink=\"/profile\"><i class=\"fa fa-user fa-lg\"></i></a><br/>\n  </div>\n  <div class=\"col-11\">\n      <div class=\"row\">\n        <div class=\"container-fluid\">\n          <p>&nbsp;</p>\n\n          <div class=\"col-md-12\">\n            <h4 class=\"navyblue\">TB Admin</h4>\n            <p><i>admin section for tweetblock</i> <i><u>All users</u></i></p>\n            <div>\n              <table class=\"table\">\n                <tr>\n                  <th>#</th>\n                  <th>ID</th>\n                  <th>Name</th>\n                  <th>Age</th>\n                  <th>Email</th>\n                  <th>Mobile</th>\n                  <th>City</th>\n                  <th>UserType</th>\n                  <th>P1</th>\n                  <th>P2</th>\n                  <th>P3</th>\n                  <th>P4</th>\n                  <th>P5</th>\n                  <th>P6</th>\n                  <th>Edit</th>\n                  <th>Remove</th>\n                </tr>\n                <tr *ngFor=\"let user of Users; let i = index\">\n                  <td>{{i + 1}}</td>\n                  <td class=\"uniqueid\">{{user._id}}</td>\n                  <td>{{user.name}} {{user.twitter?.displayName}} {{user.facebook?.name}} {{user.google?.name}}</td>\n                  <td>{{user.age}}</td>\n                  <td>{{user.local?.email}} {{user.twitter?.username}} {{user.facebook?.email}} {{user.google?.email}}</td>\n                  <td>{{user.mobile}}</td>\n                  <td>{{user.city}}</td>\n                  <td>{{user.usertype}}</td>\n                  <td>{{user.cryptopreference1}}</td>\n                  <td>{{user.cryptopreference2}}</td>\n                  <td>{{user.cryptopreference3}}</td>\n                  <td>{{user.cryptopreference4}}</td>\n                  <td>{{user.cryptopreference5}}</td>\n                  <td>{{user.cryptopreference6}}</td>\n                  <td><button (click)=\"edit(user._id)\"><i class=\"fa fa-pencil-square-o fa-lg\"></i></button></td>\n                  <td><button (click)=\"delete(user._id)\"><i class=\"fa fa-times fa-lg\"></i></button></td>\n                </tr>\n              </table>\n\n            </div>\n        </div>\n        <div class=\"col-md-6 col-md-offset-3\">\n            \n        </div>\n\n        </div>\n      </div>\n  </div>\n</div>"
+module.exports = "<div class=\"row no-gutters\"> <!-- top first half row -->\n  <div class=\"col-1 iconcolumns fullheight\">\n    <a href=\"\" routerLink=\"/dashboard\"><i class=\"fa fa-home fa-lg\"></i></a><br/>\n    <a href=\"\"><i class=\"fa fa-line-chart fa-lg\"></i></a><br/>\n    <a href=\"\" routerLink=\"/events\"><i class=\"fa fa-calendar fa-lg\"></i></a><br/>\n    <a href=\"\"><i class=\"fa fa-envelope-o fa-lg\"></i></a><br/>\n    <a href=\"\" class=\"iconactive\" routerLink=\"/settings\"><i class=\"fa fa-cogs fa-lg\"></i></a><br/>\n    <a href=\"\" routerLink=\"/profile\"><i class=\"fa fa-user fa-lg\"></i></a><br/>\n  </div>\n  <div class=\"col-11\">\n      <div class=\"row\">\n        <div class=\"container-fluid\">\n          <p>&nbsp;</p>\n\n          <div class=\"col-md-12\">\n            <h4 class=\"navyblue\">TB Admin</h4>\n            <p><i>admin section for tweetblock</i> <i><u>All users</u></i></p>\n            <div>\n              <table class=\"table\">\n                <tr>\n                  <th>#</th>\n                  <th>ID</th>\n                  <th>Name</th>\n                  <th>Age</th>\n                  <th>Email</th>\n                  <th>Mobile</th>\n                  <th>Country</th>\n                  <th>UserType</th>\n                  <th>P1</th>\n                  <th>P2</th>\n                  <th>P3</th>\n                  <th>P4</th>\n                  <th>P5</th>\n                  <th>P6</th>\n                  <th>Edit</th>\n                  <th>Remove</th>\n                </tr>\n                <tr *ngFor=\"let user of Users; let i = index\">\n                  <td>{{i + 1}}</td>\n                  <td class=\"uniqueid\">{{user._id}}</td>\n                  <td>{{user.name}} {{user.twitter?.displayName}} {{user.facebook?.name}} {{user.google?.name}}</td>\n                  <td>{{user.age}}</td>\n                  <td>{{user.local?.email}} {{user.twitter?.username}} {{user.facebook?.email}} {{user.google?.email}}</td>\n                  <td>{{user.mobile}}</td>\n                  <td>{{user.country}}</td>\n                  <td>{{user.usertype}}</td>\n                  <td>{{user.cryptopreference1}}</td>\n                  <td>{{user.cryptopreference2}}</td>\n                  <td>{{user.cryptopreference3}}</td>\n                  <td>{{user.cryptopreference4}}</td>\n                  <td>{{user.cryptopreference5}}</td>\n                  <td>{{user.cryptopreference6}}</td>\n                  <td><button (click)=\"edit(user._id)\"><i class=\"fa fa-pencil-square-o fa-lg\"></i></button></td>\n                  <td><button (click)=\"delete(user._id)\"><i class=\"fa fa-times fa-lg\"></i></button></td>\n                </tr>\n              </table>\n\n            </div>\n        </div>\n        <div class=\"col-md-6 col-md-offset-3\">\n            \n        </div>\n\n        </div>\n      </div>\n  </div>\n</div>"
 
 /***/ }),
 
@@ -3011,7 +3054,21 @@ module.exports = "<p>\r\n  terms-of-service works!\r\n</p>\r\n"
 
 /***/ }),
 
-/***/ 27:
+/***/ 270:
+/***/ (function(module, exports) {
+
+module.exports = "<p>\r\n  twittercallback !\r\n</p>\r\n\r\n<p>Loading ....    Please wait ...</p>"
+
+/***/ }),
+
+/***/ 271:
+/***/ (function(module, exports) {
+
+module.exports = "<p>\r\n  Twitter Wall !\r\n</p>\r\n<div class=\"wall-container\" id=\"twitter-feed\">\r\n  <div *ngFor=\"let message of messages\">\r\n    <span><img src=\"{{message.user.profile_image_url_https}}\" alt=\"photo\"/></span>\r\n    <span class=\"t_screen_name\">{{message.user.screen_name}}<i class=\"t_name\">({{message.user.name}})</i></span>\r\n    <span class=\"t_text\" [innerHTML]=\"message.text\"></span>\r\n  </div>\r\n</div>"
+
+/***/ }),
+
+/***/ 28:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -3143,20 +3200,6 @@ SocialcallbackService = __decorate([
 
 var _a;
 //# sourceMappingURL=socialcallback.service.js.map
-
-/***/ }),
-
-/***/ 270:
-/***/ (function(module, exports) {
-
-module.exports = "<p>\r\n  twittercallback !\r\n</p>\r\n\r\n<p>Loading ....    Please wait ...</p>"
-
-/***/ }),
-
-/***/ 271:
-/***/ (function(module, exports) {
-
-module.exports = "<p>\r\n  Twitter Wall !\r\n</p>\r\n<div class=\"wall-container\" id=\"twitter-feed\">\r\n  <div *ngFor=\"let message of messages\">\r\n    <span><img src=\"{{message.user.profile_image_url_https}}\" alt=\"photo\"/></span>\r\n    <span class=\"t_screen_name\">{{message.user.screen_name}}<i class=\"t_name\">({{message.user.name}})</i></span>\r\n    <span class=\"t_text\" [innerHTML]=\"message.text\"></span>\r\n  </div>\r\n</div>"
 
 /***/ }),
 

@@ -158,6 +158,38 @@ router.get('/getallusers', (req, res) => {
     //      });
 });
 
+// for retrieving single user
+router.get('/getsingleuser/:id', (req, res) => {
+    console.log('user Id passed is :', req.params.id);
+    // get a user with ID passed
+    User.findById(req.params.id, function(err, user) {
+        if (err) throw err;
+        res.send(user);
+    });
+});
+
+// for saving single user profile details 
+router.post('/singleuserprofileupdate/:id', (req, res) => {
+    console.log('user Id passed is :', req.params.id);
+    console.log('userName value 1 is :', req.body.userName);
+    console.log('userCountry preference value 2 is :', req.body.userCountry);
+    // get a user with ID passed
+    User.findById(req.params.id, function(err, user) {
+        if (err) throw err;
+    
+        user.set({ name: req.body.userName,
+            country: req.body.userCountry,
+            age: req.body.userAge,
+            mobile: req.body.userMobile,
+            email: req.body.userEmail
+        });
+        user.save(function (err, updatedUser) {
+          if (err) return handleError(err);
+          res.send(updatedUser);
+        });
+    });
+}); 
+
 // This code is working reference from mongo shell or robomongo
 //db.getCollection('tweets').find({ "field1json.timestamp_ms": { $gt: "1508232669089"} })
 // with limit 5

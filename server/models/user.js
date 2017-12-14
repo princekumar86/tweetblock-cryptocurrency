@@ -34,7 +34,13 @@ var userSchema = mongoose.Schema({
         email       : String,
         name        : String
     },
+    name : String,
+    email: String,
+    country: String,
+    mobile: String,
     age : String,
+    usertype: String,
+    status: String,
     cryptopreference1 : String,
     cryptopreference2 : String,
     cryptopreference3 : String,

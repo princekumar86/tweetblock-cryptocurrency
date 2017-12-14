@@ -35,7 +35,7 @@ export class TbadminComponent implements OnInit {
   }
 
   delete(tempid) {
-    if(this.admin_email=="vividapps.in@gmail.com" || this.admin_email=="keesvlies@gmail.com" ) {
+    if(this.admin_email=="vividapps.in@gmail.com" || this.admin_email=="C--keesvlies@gmail.com" ) {
       console.log("this id will be delete"+tempid);
       this.http.get('/api/removeusertbadmin/'+tempid)
       .subscribe((res : any[]) => {
@@ -48,7 +48,7 @@ export class TbadminComponent implements OnInit {
   }
 
   edit(tempid) {
-    if(this.admin_email=="vividapps.in@gmail.com" || this.admin_email=="keesvlies@gmail.com" ) {
+    if(this.admin_email=="vividapps.in@gmail.com" || this.admin_email=="C--keesvlies@gmail.com" ) {
       console.log("this id will be edited"+tempid);
     } else {
       alert("you dont have permission to edit, contact support");
