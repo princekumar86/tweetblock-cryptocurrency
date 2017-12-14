@@ -2106,7 +2106,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var ProfileComponent = (function () {
     function ProfileComponent(http) {
         this.http = http;
-        this.userid = '';
+        this.UID = '';
         this.userEmail = '';
         this.userName = '';
         this.userAge = '';
@@ -2114,7 +2114,7 @@ var ProfileComponent = (function () {
         this.userCountry = '';
         this.userLoggedInAs = '';
         this.userToken = '';
-        this.data = { userid: this.userid,
+        this.data = { userid: this.UID,
             userEmail: this.userEmail,
             userName: this.userName,
             userAge: this.userAge,
@@ -2137,15 +2137,18 @@ var ProfileComponent = (function () {
             var parsedObject = JSON.parse(retrievedObject);
             // ACCESS DATA
             //console.log(parsedObject.item[0].Desc);
-            console.log(parsedObject);
-            this.userid = parsedObject.userid._id;
-            this.userLoggedInAs = parsedObject.loggedinas;
-            if (parsedObject.token) {
-                this.userToken = parsedObject.token;
+            console.log(parsedObject.email);
+            console.log(parsedObject.userid._id);
+            console.log(parsedObject.userid);
+            if (parsedObject.userid._id) {
+                this.UID = parsedObject.userid._id;
+            }
+            else if (parsedObject.userid) {
+                this.UID = parsedObject.userid;
             }
         }
-        console.log('This user details are being fetched ' + this.userid);
-        this.http.get('/api/getsingleuser/' + this.userid)
+        console.log('This user details are being fetched ' + this.UID);
+        this.http.get('/api/getsingleuser/' + this.UID)
             .subscribe(
         // Successful responses call the first callback.
         function (data) {

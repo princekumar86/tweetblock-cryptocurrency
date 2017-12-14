@@ -8,7 +8,7 @@ import { HttpClient } from '@angular/common/http';
   styleUrls: ['./profile.component.css']
 })
 export class ProfileComponent implements OnInit {
-  userid: string = '';
+  UID: string = '';
   userEmail: string = '';
   userName: string = '';
   userAge: string = '';
@@ -17,7 +17,7 @@ export class ProfileComponent implements OnInit {
   userLoggedInAs: String = '';
   userToken: String = '';
 
-  data = {userid: this.userid,
+  data = {userid: this.UID,
     userEmail: this.userEmail,
     userName: this.userName,
     userAge: this.userAge,
@@ -41,13 +41,15 @@ export class ProfileComponent implements OnInit {
         var parsedObject = JSON.parse(retrievedObject);
 
         // ACCESS DATA
-        //console.log(parsedObject.item[0].Desc);
-        console.log(parsedObject);
-        this.userid = parsedObject.userid._id;
-        this.userLoggedInAs = parsedObject.loggedinas;
-        if(parsedObject.token) {
-          this.userToken = parsedObject.token;
-        }
+      //console.log(parsedObject.item[0].Desc);
+      console.log(parsedObject.email);
+      console.log(parsedObject.userid._id);
+      console.log(parsedObject.userid);
+      if(parsedObject.userid._id) {
+        this.UID = parsedObject.userid._id;
+      } else if(parsedObject.userid) {
+        this.UID = parsedObject.userid;
+      }
       }
 
       //ajax call
@@ -59,8 +61,8 @@ export class ProfileComponent implements OnInit {
         email: string;
         mobile: string;
       }
-      console.log('This user details are being fetched '+ this.userid);
-      this.http.get<UserResponse>('/api/getsingleuser/'+this.userid)
+      console.log('This user details are being fetched '+ this.UID);
+      this.http.get<UserResponse>('/api/getsingleuser/'+this.UID)
       .subscribe(
         // Successful responses call the first callback.
         data => { 
