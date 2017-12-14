@@ -46,9 +46,9 @@ export class ProfileComponent implements OnInit {
       console.log(parsedObject.userid._id);
       console.log(parsedObject.userid);
       if(parsedObject.userid._id) {
-        this.UID = parsedObject.userid._id;
+        this.data.userid = parsedObject.userid._id;
       } else if(parsedObject.userid) {
-        this.UID = parsedObject.userid;
+        this.data.userid = parsedObject.userid;
       }
       }
 
@@ -61,8 +61,8 @@ export class ProfileComponent implements OnInit {
         email: string;
         mobile: string;
       }
-      console.log('This user details are being fetched '+ this.UID);
-      this.http.get<UserResponse>('/api/getsingleuser/'+this.UID)
+      console.log('This user details are being fetched '+ this.data.userid);
+      this.http.get<UserResponse>('/api/getsingleuser/'+this.data.userid)
       .subscribe(
         // Successful responses call the first callback.
         data => { 
