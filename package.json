@@ -34,7 +34,7 @@
     "express-session": "^1.15.5",
     "font-awesome": "^4.7.0",
     "jquery": "^3.2.1",
-    "mongodb": "^2.2.31",
+    "mongodb": "^3.6.1",
     "mongoose": "^4.11.11",
     "morgan": "^1.8.2",
     "ngx-infinite-scroll": "^0.5.2",
